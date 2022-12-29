@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {memo, FC} from 'react';
+import {Line} from "../config";
+import classNames from "classnames";
 
+interface DLRProps {
+        name: Line;
+        isSelected: boolean;
+        onClick: (line: Line) => void;
+}
 
-function Dlr() {
+export const DLR: FC<DLRProps> = memo(({name, isSelected, onClick}) => {
     return (
-        <g id="dlr" className="line">
+        <g id="dlr" className={classNames("line", {"disabled": !isSelected})} onClick={() => onClick(name)}>
             <path id="dlr_940gzzdlwfe_940gzzdlwiq" fill="none" stroke="#00B1B0" strokeWidth="2.2707"
                   strokeLinejoin="round" strokeMiterlimit="3.9938"
                   d=" M795.5,489.8c0,0,0-8.5,0-10.2c0-1.8-1-4.2-2.3-5.4l-4.6-4.6c-1.2-1.2-3.5-2.3-5.1-2.3c-1.7,0-10.9,0-10.9,0"/>
@@ -130,6 +137,4 @@ function Dlr() {
             </g>
         </g>
     )
-}
-
-export default Dlr;
+})

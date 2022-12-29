@@ -5,11 +5,11 @@ import './App.css';
 function App() {
 
 
-    function handleClick(event: Event) {
-        console.log(event.target)
-    }
-
-    document.addEventListener("click", handleClick);
+    // function handleClick(event: Event) {
+    //     // console.log(event.target)
+    // }
+    //
+    // document.addEventListener("click", handleClick);
 
 
   return (

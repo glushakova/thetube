@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 import {COLORS} from "./constant/colors";
 import Elizabeth from "./lines/Elizabeth";
-import Dlr from "./lines/Dlr";
+import {DLR} from "./lines/DLR";
+
+
+import {Line} from './config';
 
 function Map() {
+    const [selectedLines, setSelectedLines] = useState<Line[]>(Object.values(Line));
+
+    const onLineClick = useCallback((line: Line) => {
+        if (selectedLines.length === 1 && selectedLines[0] === line) {
+            setSelectedLines(Object.values(Line))
+        } else {
+            setSelectedLines([line])
+        }
+    }, [selectedLines, setSelectedLines])
+    console.log(selectedLines)
+
     return (
         <div className="Map">
                 <svg id="status-map" version="1.1"
@@ -709,8 +723,8 @@ function Map() {
                               strokeLinejoin="round" strokeMiterlimit="3.9938"
                               d=" M544.2,296.9c0,0,2.4,0,3.7,0c1.8,0,4.2-1,5.4-2.3l19.9-19.9c1.2-1.2,3.7-2.3,5.4-2.3h37.4c1.8,0,4.2-1,5.4-2.3l23.3-23.3 c1.2-1.2,3.7-2.3,5.4-2.3c2.3,0,90.7,0,90.7,0c1.9,0,4.2,1,5.4,2.3l45.2,45.3c1.2,1.2,3.7,2.3,6.5,2.3l79.4,0c1.5,0,4,1,5.2,2.3 l18.7,18.7c1.2,1.2,2.3,3.7,2.3,5.4l0,7.8l0,1l0,6.9c0,1.8,1,4.2,2.3,5.4l3.1,3.1l0.5,0.5l9.2,9.2c1.2,1.2,3.7,2.3,5.4,2.3l5.2,0 l2.1,0l4.1,0c1.8,0,4.2,1,5.4,2.3l46.6,46.6"/>
                     </g>
-                    <Dlr/>
-                    <Elizabeth/>
+                    <DLR isSelected={selectedLines.includes(Line.DLR)} name={Line.DLR} onClick={onLineClick} />
+                    <Elizabeth isSelected={selectedLines.includes(Line.Elizabeth)} name={Line.Elizabeth} onClick={onLineClick}/>
                     <g id="lul-waterloo-city" className="line">
                         <path id="lul-waterloo-city_940gzzluwlo_940gzzlubnk_00000147205344099926852660000000184576883436414141_"
                               fill="none" stroke="#86CEBC" strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"

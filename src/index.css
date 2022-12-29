@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*find path*/
+
+
+svg .disabled path,
+svg .disabled line {
+  stroke: #ccc;
+}
+
+.elizabeth {
+  stroke: #634EA0
+}
