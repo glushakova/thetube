@@ -1,17 +1,10 @@
 import React, {FC, memo} from 'react';
 import classNames from 'classnames';
-import {Line} from "../config";
+import {LineProps} from "../../interface/line";
 
-// TODO: make type LineProps
-interface ElizabethProps {
-    name: Line;
-    isSelected: boolean;
-    onClick: (line: Line) => void;
-}
-
-const Elizabeth: FC<ElizabethProps> = memo(({ isSelected, name, onClick }) => {
+const Elizabeth: FC<LineProps> = memo(({ line, isSelected, onStationClick, onLineClick }) => {
     return (
-    <g id="elizabeth" className={classNames("line", {"disabled": !isSelected})} onClick={() => onClick(name)}>
+    <g id="elizabeth" className={classNames("line", {"disabled": !isSelected})} onClick={() => onLineClick(line)}>
         <path id="elizabeth_910ghtrwapt_910ghtrwtm5" fill="none" stroke="#634EA0" strokeWidth="2.3443" strokeLinejoin="round"
               strokeMiterlimit="3.994" d=" M109.4,570.6l0,3.7c0,2.3-0.9,4.4-2.5,6l-8.3,8.3l-2.5,2.5l-12.7,12.7c-1.5,1.5-2.5,3.6-2.5,6v14"
               className="disrupted"/>

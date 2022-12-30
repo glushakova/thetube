@@ -16,6 +16,7 @@ code {
 
 
 svg .disabled path,
+svg .disabled rect,
 svg .disabled line {
   stroke: #ccc;
 }

@@ -1,0 +1,485 @@
+import React, {memo, FC} from 'react';
+import classNames from "classnames";
+import {LineProps} from "../../interface/line";
+
+const Overground: FC<LineProps> = memo(({ line, isSelected, onStationClick, onLineClick }) => {
+        return (
+            <g className={classNames("line", {"disabled": !isSelected})} onClick={() => onLineClick(line)}>
+                    <path id="overground_910ggosplok_910guprhlwy" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M595,272.4h-16.3c-1.8,0-4.2,1-5.4,2.3l-19.9,19.9c-1.2,1.2-3.7,2.3-5.4,2.3c-1.3,0-3.7,0-3.7,0"
+                          className="disrupted"/>
+                    <path id="overground_910guprhlwy_910gcrouchh" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M638,253.7l-15,15l-1.5,1.5c-1.2,1.2-3.7,2.3-5.4,2.3H595" className="disrupted"/>
+                    <path id="overground_910gcrouchh_910ghrgygl" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M695.4,244.7l-45.1,0c-1.8,0-4.2,1-5.4,2.3l-7.8,7.8" className="disrupted"/>
+                    <line id="overground_910ghrgygl_910gstotnhm" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="731" y1="244.7" x2="695.4" y2="244.7"
+                          className="disrupted"/>
+                    <path id="overground_910gstotnhm_910gblchsrd" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M756.2,256.7l-9.8-9.8c-1.2-1.2-3.7-2.3-5.4-2.3l-10,0" className="disrupted"/>
+                    <line id="overground_910gblchsrd_910gwlthqrd" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="776.7" y1="277.2"
+                          x2="756.2" y2="256.7" className="disrupted"/>
+                    <path id="overground_910gwlthqrd_910gleytnmr" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M807.4,294.5h-10.3c-1.7,0-4.2-1-5.4-2.3l-14.9-15" className="disrupted"/>
+                    <line id="overground_910gleytnmr_910glytnshr" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="827.9" y1="294.5"
+                          x2="805.9" y2="294.5" className="disrupted"/>
+                    <line id="overground_910glytnshr_910gwnstdpk" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="870.2" y1="294.5"
+                          x2="826.4" y2="294.5" className="disrupted"/>
+                    <path id="overground_910gwnstdpk_910gwdgrnpk" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M899.6,313.6l-16.8-16.8c-1.2-1.2-3.7-2.3-5.4-2.3h-7.2" className="disrupted"/>
+                    <path id="overground_910gwdgrnpk_910gbkg" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M909,345l-3.1-3.1c-1.2-1.2-2.3-3.7-2.3-5.4l0-6.9l0-1l0-7.8c0-1.8-1-4.2-2.3-5.4l-3.1-3.1"/>
+                    <path id="overground_910gdalskld_910ghacknyc" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M753.1,339.9h-22.2c-1.8,0-4.2-1-5.4-2.3l-6.9-7c-1.7-1.7-4.1-2.8-6.8-2.8h-4.2"
+                          className="disrupted"/>
+                    <path id="overground_910gshmpstd_910geuston" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M472.6,350l43.5,0c1.8,0,4.2,1,5.4,2.3c1.2,1.2,16.6,16.7,16.6,16.7"
+                          className="disrupted"/>
+                    <line id="overground_910gklbrnhr_910gshmpstd" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="374.7" y1="350"
+                          x2="474.1" y2="350" className="disrupted"/>
+                    <path id="overground_910gqprk_910gklbrnhr" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M322.5,341.6l0,3.1c0,1.3,0.6,2.9,1.6,3.7l0,0l0,0c0.9,0.9,2.5,1.6,3.7,1.6l48.3,0"
+                          className="disrupted"/>
+                    <line id="overground_910gkenslg_910gqprk" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="332.5" x2="322.5" y2="341.6"
+                          className="disrupted"/>
+                    <line id="overground_910gwlsdjhl_910gkenslg" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="324.1" x2="322.5" y2="334"
+                          className="disrupted"/>
+                    <line id="overground_910gharlsdn_910gwlsdjhl" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="314.6"
+                          x2="322.5" y2="324.1" className="disrupted"/>
+                    <line id="overground_910gstnbgpk_910gharlsdn" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="305.5"
+                          x2="322.5" y2="316.1" className="disrupted"/>
+                    <line id="overground_910gwmby_910gstnbgpk" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="297" x2="322.5" y2="307"
+                          className="disrupted"/>
+                    <line id="overground_910gnwembly_910gwmby" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="287.2" x2="322.5" y2="297"
+                          className="disrupted"/>
+                    <line id="overground_910gskenton_910gnwembly" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="277.7"
+                          x2="322.5" y2="288.7" className="disrupted"/>
+                    <line id="overground_910gkton_910gskenton" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="245.7" x2="322.5" y2="279.2"
+                          className="disrupted"/>
+                    <line id="overground_910ghrow_910gkton" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="226.4" x2="322.5" y2="245.7"
+                          className="disrupted"/>
+                    <line id="overground_910ghedstnl_910ghrow" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="214.7" x2="322.5" y2="226.4"
+                          className="disrupted"/>
+                    <line id="overground_910ghtchend_910ghedstnl" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="201.5"
+                          x2="322.5" y2="216.2" className="disrupted"/>
+                    <line id="overground_910gcrpndpk_910ghtchend" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="189.1"
+                          x2="322.5" y2="203" className="disrupted"/>
+                    <line id="overground_910gbushydc_910gcrpndpk" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="175.8"
+                          x2="322.5" y2="189.1" className="disrupted"/>
+                    <line id="overground_910gwatfdhs_910gbushydc" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="160.3"
+                          x2="322.5" y2="175.8" className="disrupted"/>
+                    <line id="overground_910gwatfjdc_910gwatfdhs" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="322.5" y1="147.7"
+                          x2="322.5" y2="161.8" className="disrupted"/>
+                    <line id="overground_910gcnnb_910gdalskld" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="709.1" y1="327.9" x2="691.7" y2="327.9"
+                          className="disrupted"/>
+                    <line id="overground_910grichmnd_910gkewgrdn" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="203.2" y1="566.3"
+                          x2="191.2" y2="578.2" className="disrupted"/>
+                    <line id="overground_910gkewgrdn_910ggnrsbry" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="229" y1="540.5"
+                          x2="203.7" y2="565.7" className="disrupted"/>
+                    <path
+                        id="overground_910ggnrsbry_910gsacton_00000061429662627198764800000010400389789070440606_"
+                        fill="none" stroke="#F58025" strokeWidth="2.2707" strokeLinejoin="round"
+                        strokeMiterlimit="3.9938" d=" M271.4,488.1v6.8c0,1.8-1,4.2-2.3,5.4l-30.6,30.6l-9.6,9.6"
+                        className="disrupted"/>
+                    <line id="overground_910gsacton_910gactnctl" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="271.4" y1="475" x2="271.4" y2="488.1"
+                          className="disrupted"/>
+                    <path
+                        id="overground_910gactnctl_910gwlsdjhl_00000107572231721596735410000011096577582436266136_"
+                        fill="none" stroke="#F58025" strokeWidth="2.2706" strokeLinejoin="round"
+                        strokeMiterlimit="3.9938" d=" M321.1,323.8l-47.4,47.4c-1.2,1.2-2.3,3.7-2.3,5.4V475"
+                        className="disrupted"/>
+                    <line id="overground_910gkenr_910gbrbypk" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="377.4" y1="319.3" x2="349.6" y2="319.3"
+                          className="disrupted"/>
+                    <line id="overground_910gbrbypk_910gbrby" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="397.1" y1="319.3" x2="376" y2="319.3"
+                          className="disrupted"/>
+                    <path id="overground_910gbrby_910gwhmdstd" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M438.2,307.4h-18.5c-1.8,0-4.2,1-5.4,2.3l0,0l-7.5,7.5c-1.2,1.2-3.7,2.3-5.4,2.3h-0.8h-4.8"
+                          className="disrupted"/>
+                    <line id="overground_910gwhmdstd_910gfnchlyr" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="458.5" y1="307.4"
+                          x2="438.2" y2="307.4" className="disrupted"/>
+                    <line id="overground_910gfnchlyr_910ghmpstdh" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="496.9" y1="307.4"
+                          x2="458.5" y2="307.4" className="disrupted"/>
+                    <line id="overground_910ghmpstdh_910ggosplok" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="544.9" y1="307.4"
+                          x2="496.8" y2="307.4" className="disrupted"/>
+                    <path id="overground_910ggosplok_910gkntshtw" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M555.2,311.1l-1.5-1.5c-1.2-1.2-3.7-2.3-5.4-2.3c-0.9,0-3.2,0-3.2,0" className="disrupted"/>
+                    <line id="overground_910gkntshtw_910gcmdnrd" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="566" y1="321.9" x2="554.2" y2="310.1"
+                          className="disrupted"/>
+                    <path id="overground_910gcmdnrd_910gcldnnrb" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M643.1,327.9h-68c-1.8,0-4.2-1-5.4-2.3l-3.7-3.7" className="disrupted"/>
+                    <line id="overground_910gcldnnrb_910ghghi" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="667.1" y1="327.9" x2="643.1" y2="327.9"
+                          className="disrupted"/>
+                    <line id="overground_910ghghi_910gcnnb" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="691.7" y1="327.9" x2="667.1" y2="327.9"
+                          className="disrupted"/>
+                    <line id="overground_910ghacknyc_910ghomrton" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="783.5" y1="339.9"
+                          x2="753.1" y2="339.9" className="disrupted"/>
+                    <line id="overground_910ghomrton_910ghacknyw" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="810.4" y1="339.9"
+                          x2="783.5" y2="339.9" className="disrupted"/>
+                    <line id="overground_910ghacknyw_910gstfd" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="837.4" y1="339.9" x2="810.4" y2="339.9"
+                          className="disrupted"/>
+                    <line id="overground_910gpckhmqd_910gpckhmry" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="641" y1="629.2"
+                          x2="662.7" y2="607.5"/>
+                    <path id="overground_910gpckhmry_910gdenmrkh" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M579.8,655.9c0,0,29.7,0,31.2,0c2.1,0,4.1-0.9,5.5-2.3l24.5-24.5"/>
+                    <path id="overground_910gdenmrkh_910gclphhs" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M500.5,648.4l5.3,5.3c1.5,1.5,3.5,2.3,5.5,2.3l68.5,0"/>
+                    <path id="overground_910gclphhs_910gwndswrd" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M462,629.2l16.2,0c2,0,4,0.8,5.5,2.3c1.8,1.8,10.9,10.9,16.8,16.8"/>
+                    <path id="overground_910gwndswrd_910gclphmj1" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M424.9,629.2c2.6,0,38.5,0,38.5,0"/>
+                    <path id="overground_910gclphmjc_910gcseah" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M402.8,583.7l13,13c1.2,1.2,2.3,4.5,2.3,6.3c0,2.7,0,18.2,0,18.2" className="disrupted"/>
+                    <path id="overground_910gcseah_910gwbrmptn" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M369.4,542.7v4.4c0,1.8,1,4.2,2.3,5.4l31.1,31.1" className="disrupted"/>
+                    <line id="overground_910gwbrmptn_910gkenolym" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="369.4" y1="483.8"
+                          x2="369.4" y2="542.7" className="disrupted"/>
+                    <path id="overground_910gkenolym_910gshpdsb" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M355.1,463l12.2,12.2c1.2,1.2,2.2,3.6,2.2,5.3v3.2" className="disrupted"/>
+                    <path id="overground_910gshpdsb_910gwlsdjhl_00000147207102146365207910000006439579314516934059_"
+                          fill="none" stroke="#F58025" strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M321.1,323.8l-33.6,33.6c-1.2,1.2-2.3,3.7-2.3,5.4l-0.1,26.1c0,2.3,0.6,4.9,2.2,6.5l67.6,67.6"
+                          className="disrupted"/>
+                    <path id="overground_910gkenr_910gwlsdjhl" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M349.6,319.3h-18.2h-1h-1.7c-1.8,0-4.2,1-5.4,2.3" className="disrupted"/>
+                    <path id="overground_910gemrspkh_910gupmnstr" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M974.6,250.2l10.8,10.8c1.2,1.2,3.7,2.3,5.4,2.3c2.5,0,5.7,0,5.7,0" className="disrupted"/>
+                    <line id="overground_910gromford_910gemrspkh" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="954.9" y1="230.5"
+                          x2="974.6" y2="250.2" className="disrupted"/>
+                    <rect id="overground_910gwatfdhs" x="323.7" y="160.3" fill="#F58025" width="1.5" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910ghtchend" x="323.7" y="201.5" fill="#F58025" width="1.5" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910ghedstnl" x="323.7" y="214.7" fill="#F58025" width="1.5" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910gklbrnhr" x="374.7" y="347.4" fill="#F58025" width="1.5" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910gbrbypk" x="376" y="316.7" fill="#F58025" width="1.5" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910gbrby" x="395.6" y="320.4" fill="#F58025" width="1.5" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910gkntshtw" x="555.3" y="308.5"
+                          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -55.8465 483.7562)" fill="#F58025" width="1.5"
+                          height="1.5" className="disrupted"/>
+                    <rect id="overground_910gdalskld" x="707.5" y="325.2" fill="#F58025" width="1.5" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910gwndswrd" x="462" y="630.4" fill="#F58025" width="1.5" height="1.5"/>
+                    <rect id="overground_910gleytnmr" x="805.9" y="291.8" fill="#F58025" width="1.5" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910glytnshr" x="826.4" y="295.6" fill="#F58025" width="1.5" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910gwdgrnpk" x="899.4" y="310.7"
+                          transform="matrix(0.7071 -0.7071 0.7071 0.7071 43.4011 727.7626)" fill="#F58025" width="1.5"
+                          height="1.5" className="disrupted"/>
+                    <rect id="overground_910gcrouchh" x="635.4" y="252.2"
+                          transform="matrix(0.7071 -0.7071 0.7071 0.7071 7.4928 523.9271)" fill="#F58025" width="1.5"
+                          height="1.5" className="disrupted"/>
+                    <path id="overground_910gsurreyq_910gpckhmqd" fill="none" stroke="#F58025"
+                          strokeWidth="2.2706" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M722.8,557.4c0,0,0,8.9,0,10.9c0,2-0.8,4-2.3,5.5c-1.4,1.4-12,12-14.9,14.9c-1.4,1.4-3.3,2.3-5.5,2.3h-17.6 c-2.1,0-4.1,0.9-5.5,2.3c-1,1-14.4,14.4-14.4,14.4"/>
+                    <path id="overground_910gsurreyq_910gnwcrell" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M722.8,560.5c0,0,0,5.7,0,7.7c0,2,0.8,4,2.3,5.5c1.4,1.4,6.4,6.4,6.4,6.4c1.5,1.5,2.3,3.5,2.3,5.5v1.1v9.7"
+                          className="disrupted"/>
+                    <path id="overground_910gbarking_910gbkrvs_00000029020383429301200320000015285000965090029742_"
+                          fill="none" stroke="#F58025" strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M909,345l9.7,9.7c1.2,1.2,3.7,2.3,5.4,2.3l6.4,0l1.6,0l3.4,0c1.8,0,4.2,1,5.4,2.3l46.6,46.6"
+                          className="disrupted"/>
+                    <path id="overground_white_line" fill="none" stroke="#FFFFFF" strokeWidth="0.7795"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M322.5,141.7l0,203c0,1.2,0.6,2.9,1.6,3.7l0,0l0,0c0.9,0.9,2.5,1.6,3.7,1.6l188.2,0c1.8,0,4.2,1,5.4,2.3 c1.2,1.2,16.6,16.7,16.6,16.7"/>
+                    <g id="overground_white_line_14_">
+                        <path
+                            id="overground_white_line_00000069393998114885106170000013894217348503592097_" fill="none"
+                            stroke="#FFFFFF" strokeWidth="0.7795" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                            d=" M837.4,339.9H730.9c-1.8,0-4.2-1-5.4-2.3l-6.9-7c-1.7-1.7-4.1-2.8-6.8-2.8H575.1c-1.8,0-4.2-1-5.4-2.3l-16-16 c-1.2-1.2-3.7-2.3-5.4-2.3l-128.6,0c-1.8,0-4.2,1-5.4,2.3l-7.5,7.5c-1.2,1.2-3.7,2.3-5.4,2.3h-72.6c-1.8,0-4.2,1-5.4,2.3 l-49.6,49.6c-1.2,1.2-2.3,3.7-2.3,5.4v118.2c0,1.8-1,4.2-2.3,5.4l-22.1,22.1l-56,56"/>
+                        <path id="overground_white_line" fill="none" stroke="#FFFFFF" strokeWidth="0.7795"
+                              strokeLinejoin="round" strokeMiterlimit="3.9938"
+                              d=" M287.5,357.3c-1.2,1.2-2.3,3.7-2.3,5.4l-0.1,26.1c0,2.3,0.6,4.9,2.2,6.5l79.8,79.8c1.2,1.2,2.2,3.6,2.2,5.3v62.2v4.4 c0,1.8,1,4.2,2.3,5.4l44.2,44.2c1.2,1.2,2.3,4.5,2.3,6.3c0,2.7,0,18.2,0,18.2"/>
+                    </g>
+                    <path id="overground_910gsbury_910gedmngrn" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M724.5,174.1l-8.1,8.1c-1.2,1.2-2.3,3.7-2.3,5.4c0,1.6,0,4.6,0,4.6" className="disrupted"/>
+                    <line id="overground_910gturkyst_910gsbury" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="737.5" y1="161.1" x2="723.4" y2="175.1"
+                          className="disrupted"/>
+                    <line id="overground_910gthbldsg_910gturkyst" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="749.9" y1="148.7"
+                          x2="736.4" y2="162.2" className="disrupted"/>
+                    <line id="overground_910gcheshnt_910gthbldsg" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="760.9" y1="137.6"
+                          x2="748.8" y2="149.7" className="disrupted"/>
+                    <rect id="overground_910gbthnlgr" x="737.9" y="370.2"
+                          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -45.9834 630.9449)" fill="#F58025" width="1.5"
+                          height="1.6" className="disrupted"/>
+                    <rect id="overground_910gcamhth" x="745.3" y="362.7"
+                          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -38.5087 634.0317)" fill="#F58025" width="1.5"
+                          height="1.6" className="disrupted"/>
+                    <rect id="overground_910glonflds" x="749.1" y="354.3" fill="#F58025" width="1.6" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910gwdst" x="786.5" y="230.9" fill="#F58025" width="1.6" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910gbrucgrv" x="715.2" y="224.8" fill="#F58025" width="1.6" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910gwhhrtla" x="715.2" y="214.7" fill="#F58025" width="1.6" height="1.5"/>
+                    <rect id="overground_910gsivrst" x="715.2" y="203.1" fill="#F58025" width="1.6" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910gstmfdhl" x="715.2" y="280.5" fill="#F58025" width="1.6" height="1.5"
+                          className="disrupted"/>
+                    <path id="overground_910genfldtn_910gbhillpk" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M714.1,163.3c0-9.6,0-16,0-16" className="disrupted"/>
+                    <path id="overground_910gbhillpk_910gedmngrn" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M714.1,192.5c0-12,0-20.9,0-29.2" className="disrupted"/>
+                    <path id="overground_910gedmngrn_910gsivrst" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" d=" M714.1,204.6c0,0,0-7.9,0-12.1"
+                          className="disrupted"/>
+                    <line id="overground_910gsivrst_910gwhhrtla" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="714.1" y1="215.4" x2="714.1" y2="203.1"
+                          className="disrupted"/>
+                    <line id="overground_910gwhhrtla_910gbrucgrv" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="714.1" y1="226.3"
+                          x2="714.1" y2="215.4" className="disrupted"/>
+                    <path id="overground_910gbrucgrv_910gsevnsis" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M714.1,261.6c0-15.8,0-36.8,0-36.8" className="disrupted"/>
+                    <path id="overground_910gsevnsis_910gstmfdhl" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M714.1,282c0,0,0-13.1,0-20.4" className="disrupted"/>
+                    <path id="overground_910gstmfdhl_910gstknwng" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M726.5,299.8l-10.2-10.2c-1.2-1.2-2.3-3.7-2.3-5.4c0-0.2,0-3.7,0-3.7" className="disrupted"/>
+                    <line id="overground_910gstknwng_910grctryrd" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="740.7" y1="313.9"
+                          x2="725.5" y2="298.7" className="disrupted"/>
+                    <path id="overground_910grctryrd_910ghaknynm" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M747.9,328.6c0-2.6,0-4.2,0-4.2c0-1.8-1-4.2-2.3-5.4l-6.1-6.1" className="disrupted"/>
+                    <line id="overground_910ghaknynm_910glonflds" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="747.9" y1="355.8"
+                          x2="747.9" y2="330.6" className="disrupted"/>
+                    <path id="overground_910glonflds_910gcamhth" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M744.2,362.7l1.5-1.5c1.2-1.2,2.3-3.7,2.3-5.4c0-0.3,0-1.5,0-1.5" className="disrupted"/>
+                    <line id="overground_910gcamhth_910gbthnlgr" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="734.8" y1="372.1" x2="745.2" y2="361.7"
+                          className="disrupted"/>
+                    <path id="overground_910gbthnlgr_910glivst_00000054266296952207365130000012265618881419884427_"
+                          fill="none" stroke="#F58025" strokeWidth="2.2707" strokeLinejoin="round"
+                          strokeMiterlimit="3.9938" d=" M657.2,386.5h60.1c1.8,0,4.2-1,5.4-2.3l13.2-13.2"
+                          className="disrupted"/>
+                    <path id="overground_910gchingfd_910ghghmspk" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M785.4,206.1c0-13.9,0-26.6,0-26.6" className="disrupted"/>
+                    <line id="overground_910ghghmspk_910gwdst" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="785.4" y1="232.4" x2="785.4" y2="206.1"
+                          className="disrupted"/>
+                    <line id="overground_910gwdst_910gwltwcen" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="785.4" y1="267.2" x2="785.4" y2="230.9"
+                          className="disrupted"/>
+                    <path id="overground_910gwltwcen_910gstjmsst" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M772,297.2l11.2-11.2c1.2-1.2,2.3-3.7,2.3-5.4c0-0.5,0-13.3,0-13.3" className="disrupted"/>
+                    <line id="overground_910gstjmsst_910gclapton" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="762.7" y1="306.4"
+                          x2="773.1" y2="296" className="disrupted"/>
+                    <path id="overground_910gclapton_910ghaknynm" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M763.8,305.3l-13.5,13.5c-1.4,1.4-2.4,3.8-2.4,5.6c0,1.5,0,6.2,0,6.2" className="disrupted"/>
+                    <rect id="overground_910gsbury" x="724.6" y="175.2"
+                          transform="matrix(0.707 -0.7072 0.7072 0.707 88.0782 564.4648)" fill="#F58025" width="1.5"
+                          height="1.6" className="disrupted"/>
+                    <rect id="overground_910gturkyst" x="737.5" y="162.2"
+                          transform="matrix(0.707 -0.7072 0.7072 0.707 101.0484 569.8392)" fill="#F58025" width="1.5"
+                          height="1.6" className="disrupted"/>
+                    <rect id="overground_910gthbldsg" x="750" y="149.7"
+                          transform="matrix(0.707 -0.7072 0.7072 0.707 113.4861 574.9827)" fill="#F58025" width="1.5"
+                          height="1.6" className="disrupted"/>
+                    <rect id="overground_910gclapton" x="763.9" y="306.4"
+                          transform="matrix(0.707 -0.7072 0.7072 0.707 6.7604 630.7397)" fill="#F58025" width="1.5"
+                          height="1.6" className="disrupted"/>
+                    <rect id="overground_910gstjmsst" x="773.2" y="297.2"
+                          transform="matrix(0.707 -0.7072 0.7072 0.707 16.0394 634.5893)" fill="#F58025" width="1.5"
+                          height="1.6" className="disrupted"/>
+                    <rect id="overground_910grctryrd" x="740.7" y="311.3"
+                          transform="matrix(0.707 -0.7072 0.7072 0.707 -3.4333 615.7886)" fill="#F58025" width="1.6"
+                          height="1.5" className="disrupted"/>
+                    <rect id="overground_910gstknwng" x="726.5" y="297.2"
+                          transform="matrix(0.707 -0.7072 0.7072 0.707 2.4095 601.6308)" fill="#F58025" width="1.6"
+                          height="1.5" className="disrupted"/>
+                    <g id="overground_white_line_15_">
+                        <path id="overground_white_line" fill="none" stroke="#FFFFFF" strokeWidth="0.7795"
+                              strokeLinejoin="round" strokeMiterlimit="3.9938"
+                              d=" M954.9,230.5l30.5,30.5c1.2,1.2,3.7,2.3,5.4,2.3c2.5,0,5.7,0,5.7,0"/>
+                        <g id="overground_white_line_10_">
+                            <path id="overground_white_line_13_" fill="none" stroke="#FFFFFF" strokeWidth="0.7795"
+                                  strokeLinejoin="round" strokeMiterlimit="3.9938"
+                                  d=" M760.9,137.6l-44.6,44.6c-1.2,1.2-2.3,3.7-2.3,5.4"/>
+                            <path id="overground_white_line_00000082339925914980486520000017147542395136271038_"
+                                  fill="none" stroke="#FFFFFF" strokeWidth="0.7795" strokeLinejoin="round"
+                                  strokeMiterlimit="3.9938"
+                                  d=" M657.2,386.5h60.1c1.8,0,4.2-1,5.4-2.3l23-23c1.2-1.2,2.3-3.7,2.3-5.4c0-0.3,0,0,0,0v-31.4c0-1.8-1-4.2-2.3-5.4l-29.3-29.3 c-1.2-1.2-2.3-3.7-2.3-5.4c0,0.2,0,0.2,0-136.9"></path>
+                            <path id="overground_white_line_16_" fill="none" stroke="#FFFFFF" strokeWidth="0.7795"
+                                  strokeLinejoin="round" strokeMiterlimit="3.9938"
+                                  d=" M747.9,324.4c0-1.8,1-4.2,2.3-5.5l32.8-32.8c1.3-1.3,2.4-3.8,2.4-5.5c0-0.5,0-101,0-101"/>
+                        </g>
+                    </g>
+                    <path id="overground_910gsydenhm_910gcrystlp" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M699.7,689.1c0,0,13.2-13.2,20.8-20.8c1.5-1.5,2.3-3.5,2.3-5.5c0-1.6,0-4.1,0-4.1"
+                          className="disrupted"/>
+                    <line id="overground_910gnorwdj_910gwcroydn" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="722.8" y1="694" x2="722.8" y2="714.8"
+                          className="disrupted"/>
+                    <line id="overground_910ganerley_910gnorwdj" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="722.8" y1="682.3" x2="722.8" y2="694"
+                          className="disrupted"/>
+                    <line id="overground_910gpenew_910ganerley" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="722.8" y1="670.1" x2="722.8" y2="682.4"
+                          className="disrupted"/>
+                    <line id="overground_910gsydenhm_910gpenew" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="722.8" y1="658.2" x2="722.8" y2="671.6"
+                          className="disrupted"/>
+                    <line id="overground_910gforesth_910gsydenhm" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="722.8" y1="646.5"
+                          x2="722.8" y2="658.2" className="disrupted"/>
+                    <line id="overground_910ghonropk_910gforesth" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="722.8" y1="633.7"
+                          x2="722.8" y2="646.5" className="disrupted"/>
+                    <line id="overground_910gbrockly_910ghonropk" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="722.8" y1="621.7"
+                          x2="722.8" y2="633.7" className="disrupted"/>
+                    <line id="overground_910gnewxgte_910gbrockly" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="722.8" y1="607.2"
+                          x2="722.8" y2="621.7" className="disrupted"/>
+                    <line id="overground_910ghghi_910gcnnb" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" x1="691.4" y1="334.9" x2="673.2" y2="334.9"/>
+                    <path id="overground_910gcnnb_910gdals" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M716.9,346.2l-10.1-10.1c-0.8-0.8-1.9-1.3-3.1-1.3c-1,0-6,0-12.3,0" className="disrupted"/>
+                    <path id="overground_910gdals_910ghaggers" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M722.8,362.8c0,0,0-4.9,0-7.6c0-1.8-1-4.2-2.3-5.4l-3.6-3.6" className="disrupted"/>
+                    <path id="overground_910ghaggers_910ghoxton" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" d=" M722.8,375.4c0-4.9,0-7.5,0-12.6"
+                          className="disrupted"/>
+                    <path id="overground_910ghoxton_910gshrdhst" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" d=" M722.8,393.5c0-8.1,0-9.3,0-18.1"
+                          className="disrupted"/>
+                    <path id="overground_910gshrdhst_910gwchapel" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M722.8,420c0-5.5,0-20.6,0-26.5" className="disrupted"/>
+                    <path id="overground_910gwchapel_910gshadwel" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M722.8,477c0-13.1,0-41.1,0-56.8" className="disrupted"/>
+                    <line id="overground_910gshadwel_910gwapping" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="722.8" y1="487.5"
+                          x2="722.8" y2="477" className="disrupted"/>
+                    <path id="overground_910gwapping_910grtherhi" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M722.8,515.7c0,0,0-29.6,0-29.6" className="disrupted"/>
+                    <path id="overground_910grtherhi_910gcndaw" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" d=" M722.8,536.6c0,0,0-10.2,0-20.9"
+                          className="disrupted"/>
+                    <path id="overground_910gcndaw_910gsurreyq" fill="none" stroke="#F58025" strokeWidth="2.2707"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938" d=" M722.8,557.7c0-7.5,0-11.6,0-21.1"
+                          className="disrupted"/>
+                    <rect id="overground_910gwapping" x="723.9" y="486" fill="#F58025" width="1.5" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910grtherhi" x="720.2" y="514.9" fill="#F58025" width="1.5" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910gsurreyq" x="720.2" y="556.2" fill="#F58025" width="1.5" height="1.5"
+                          className="disrupted"/>
+                    <rect id="overground_910gpenew" x="723.9" y="670.1" fill="#F58025" width="1.5" height="1.5"
+                          className="disrupted"/>
+                    <line id="overground_910gsurreyq_910gnewxgte" fill="none" stroke="#F58025"
+                          strokeWidth="2.2707" strokeLinejoin="round" strokeMiterlimit="3.9938" x1="722.8" y1="556.2"
+                          x2="722.7" y2="607.2" className="disrupted"/>
+                    <g id="overground_white_line">
+                        <path id="overground_white_line_11_" fill="none" stroke="#FFFFFF" strokeWidth="0.7795"
+                              strokeLinejoin="round" strokeMiterlimit="3.9938"
+                              d=" M699.7,689.1c0,0,19.1-19.1,20.8-20.8c1.5-1.5,2.3-3.5,2.3-5.5c0-1.6,0-4.1,0-4.1"/>
+                        <path id="overground_white_line" fill="none" stroke="#FFFFFF" strokeWidth="0.7795"
+                              strokeLinejoin="round" strokeMiterlimit="3.9938"
+                              d=" M722.8,714.8c0,0,0-356.9,0-359.6c0-1.8-1-4.2-2.3-5.4l-13.7-13.6c-0.8-0.8-1.9-1.3-3.1-1.3c-1,0-30.5,0-30.5,0"/>
+                        <path id="overground_white_line" fill="none" stroke="#FFFFFF" strokeWidth="0.7795"
+                              strokeLinejoin="round" strokeMiterlimit="3.9938"
+                              d=" M722.8,568.2c0,2-0.8,4-2.3,5.5c-1.4,1.4-13.1,13.1-14.9,14.9c-1.4,1.4-3.3,2.3-5.5,2.3h-17.6c-2.1,0-4.1,0.9-5.5,2.3 c-1,1-60.5,60.5-60.5,60.5c-1.4,1.4-3.3,2.3-5.5,2.3c-1.5,0-99.8,0-99.8,0c-2,0-4-0.8-5.5-2.3c0,0-20.3-20.3-22.1-22.1 c-1.5-1.5-3.5-2.3-5.5-2.3l-53.3,0"/>
+                        <path id="overground_white_line" fill="none" stroke="#FFFFFF" strokeWidth="0.7795"
+                              strokeLinejoin="round" strokeMiterlimit="3.9938"
+                              d=" M722.8,568.2c0,2,0.8,4,2.3,5.5c1.4,1.4,6.4,6.4,6.4,6.4c1.5,1.5,2.3,3.5,2.3,5.5v1.1v9.7"/>
+                    </g>
+                    <g id="bakerloo_940gzzluksl_overground_910gkensig">
+                        <rect id="bakerloo_940gzzluksl" x="320.5" y="332.5" fill="#B06010" width="1.5" height="1.5" className="disrupted"/>
+                        <g id="overground_910gkenslg">
+                            <rect id="overground_910gkenslg" x="323.7" y="332.5" fill="#F58025" width="1.5" height="1.5" className="disrupted"/>
+                        </g>
+                    </g>
+                    <path id="overground_white_line" fill="none" stroke="#FFFFFF" strokeWidth="0.7795"
+                          strokeLinejoin="round" strokeMiterlimit="3.9938"
+                          d=" M544.2,296.9c0,0,2.4,0,3.7,0c1.8,0,4.2-1,5.4-2.3l19.9-19.9c1.2-1.2,3.7-2.3,5.4-2.3h37.4c1.8,0,4.2-1,5.4-2.3l23.3-23.3 c1.2-1.2,3.7-2.3,5.4-2.3c2.3,0,90.7,0,90.7,0c1.9,0,4.2,1,5.4,2.3l45.2,45.3c1.2,1.2,3.7,2.3,6.5,2.3l79.4,0c1.5,0,4,1,5.2,2.3 l18.7,18.7c1.2,1.2,2.3,3.7,2.3,5.4l0,7.8l0,1l0,6.9c0,1.8,1,4.2,2.3,5.4l3.1,3.1l0.5,0.5l9.2,9.2c1.2,1.2,3.7,2.3,5.4,2.3l5.2,0 l2.1,0l4.1,0c1.8,0,4.2,1,5.4,2.3l46.6,46.6"/>
+                </g>
+        )
+    }
+);
+
+export default Overground;

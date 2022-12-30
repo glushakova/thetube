@@ -1,16 +1,10 @@
 import React, {memo, FC} from 'react';
-import {Line} from "../config";
 import classNames from "classnames";
+import {LineProps} from "../../interface/line";
 
-interface DLRProps {
-        name: Line;
-        isSelected: boolean;
-        onClick: (line: Line) => void;
-}
-
-export const DLR: FC<DLRProps> = memo(({name, isSelected, onClick}) => {
+const DLR: FC<LineProps> = memo(({line, isSelected, onStationClick, onLineClick}) => {
     return (
-        <g id="dlr" className={classNames("line", {"disabled": !isSelected})} onClick={() => onClick(name)}>
+        <g className={classNames("line", {"disabled": !isSelected})} onClick={() => onLineClick(line)}>
             <path id="dlr_940gzzdlwfe_940gzzdlwiq" fill="none" stroke="#00B1B0" strokeWidth="2.2707"
                   strokeLinejoin="round" strokeMiterlimit="3.9938"
                   d=" M795.5,489.8c0,0,0-8.5,0-10.2c0-1.8-1-4.2-2.3-5.4l-4.6-4.6c-1.2-1.2-3.5-2.3-5.1-2.3c-1.7,0-10.9,0-10.9,0"/>
@@ -120,14 +114,11 @@ export const DLR: FC<DLRProps> = memo(({name, isSelected, onClick}) => {
                   d=" M905.2,507.2l-37.6-37.6c-1.2-1.2-3.7-2.3-5.4-2.3c-2,0-15.2,0-15.2,0"/>
             <g id="dlr_white_line">
                 <path id="dlr_white_line" fill="none" stroke="#FFFFFF" strokeWidth="0.7795" strokeLinejoin="round"
-                      strokeMiterlimit="3.9938"
-                      d=" M795.5,479.6c0-1.8-1-4.2-2.3-5.4l-4.6-4.6c-1.2-1.2-3.5-2.3-5.1-2.3"/>
-                <path id="dlr_white_line" fill="none" stroke="#FFFFFF" strokeWidth="0.7795"
-                      strokeLinejoin="round" strokeMiterlimit="3.9938"
-                      d=" M692.4,480.8c0,0,9.5-9.5,11.2-11.2c1.2-1.2,3.7-2.3,5.4-2.3"/>
-                <path id="dlr_white_line" fill="none" stroke="#FFFFFF" strokeWidth="0.7795"
-                      strokeLinejoin="round" strokeMiterlimit="3.9938"
-                      d=" M853.6,339.5l-55.8,55.9c-1.2,1.2-2.3,3.1-2.3,4.9V638"/>
+                      strokeMiterlimit="3.9938" d=" M795.5,479.6c0-1.8-1-4.2-2.3-5.4l-4.6-4.6c-1.2-1.2-3.5-2.3-5.1-2.3"/>
+                <path id="dlr_white_line" fill="none" stroke="#FFFFFF" strokeWidth="0.7795" strokeLinejoin="round"
+                      strokeMiterlimit="3.9938" d=" M692.4,480.8c0,0,9.5-9.5,11.2-11.2c1.2-1.2,3.7-2.3,5.4-2.3"/>
+                <path id="dlr_white_line" fill="none" stroke="#FFFFFF" strokeWidth="0.7795" strokeLinejoin="round"
+                      strokeMiterlimit="3.9938" d=" M853.6,339.5l-55.8,55.9c-1.2,1.2-2.3,3.1-2.3,4.9V638"/>
                 <path id="dlr_white_line" fill="none" stroke="#FFFFFF" strokeWidth="0.7795"
                       strokeLinejoin="round" strokeMiterlimit="3.9938"
                       d=" M908.4,585.7c0,0,0-69.9,0-72.1c0-1.8-1-4.2-2.3-5.4l-3.3-3.3l-35.2-35.2c-1.2-1.2-4.1-2.3-5.8-2.3c-1.8,0-3.3-1-4.6-2.3 l-0.1-0.1c-0.7-0.7-2.3-2.5-2.3-6.5l0-123.1c0-1.8-1-4.2-2.3-5.4c-1.7-1.7-12-12.1-12-12.1c-1.2-1.2-3.7-2.3-5.4-2.3 c-2.3,0-16.3,0-16.3,0"/>
@@ -138,3 +129,5 @@ export const DLR: FC<DLRProps> = memo(({name, isSelected, onClick}) => {
         </g>
     )
 })
+
+export default DLR;
