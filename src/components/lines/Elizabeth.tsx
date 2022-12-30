@@ -167,7 +167,7 @@ const Elizabeth: FC<LineProps> = memo(({ line, isSelected, onStationClick, onLin
         <line id="elizabeth_910grdngstn_910gtwyford" fill="none" stroke="#634EA0" strokeWidth="2.3442"
               strokeLinejoin="round" strokeMiterlimit="3.9938" x1="106.1" y1="327.7" x2="106.1" y2="339.3"
               className="disrupted"/>
-        {/*find path*/}
+        <g>
         <path id="elizabeth_white_line"  fill="none" stroke="#FFFFFF" strokeWidth="0.805"
               strokeLinejoin="round" strokeMiterlimit="3.9938"
               d=" M1019.5,165.5c-236.1,236.1-206.2,206.2-213,213c-1.2,1.2-3.7,2.2-5.4,2.2c-2.9,0-28.4,0-28.4,0l-0.6,0h-14c-1.6,0-3.8,0.9-4.9,2 l-17.5,17.5l-2.8,2.8l-0.1,0.1l-4.1,4.1c-1.1,1.1-3.3,2-4.9,2h-1.9l-2.9,0l-6.9,0"/>
@@ -204,6 +204,7 @@ const Elizabeth: FC<LineProps> = memo(({ line, isSelected, onStationClick, onLin
         <path id="elizabeth_white_line_00000088092452985300344610000005370851978374377099_" fill="none"
               stroke="#FFFFFF" strokeWidth="0.8042" strokeLinejoin="round" strokeMiterlimit="3.9938"
               d=" M109.5,572.3c0,0,0-117.9,0-119.8h0c0-1.8,1-4.2,2.3-5.4c1.2-1.2,3.7-2.3,5.4-2.3c1.7,0,6.8,0,6.8,0"/>
+        </g>
     </g>
     )
 })
