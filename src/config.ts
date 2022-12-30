@@ -58,9 +58,26 @@ export enum Station {
     Edgware = 'Edgware',
     BurntOak = 'BurntOak',
     Colindale = 'Colindale',
-
-
-
+    Chesham = 'Chesham',
+    Amersham = 'Amersham',
+    ChalfontLatimer = 'ChalfontLatimer',
+    Chorleywood = 'Chorleywood',
+    Watford = 'Watford',
+    Rickmansworth = 'Rickmansworth',
+    Croxley = 'Croxley',
+    MoorPark = 'MoorPark',
+    Northwood = 'Northwood',
+    NorthwoodHills = 'Northwood Hills',
+    Pinner = 'Pinner',
+    NorthHarrow = 'NorthHarrow',
+    BeckenhamJunction = 'BeckenhamJunction',
+    BeckenhamRoad = 'BeckenhamRoad',
+    AvenueRoad = 'AvenueRoad',
+    Birkbeck = 'Birkbeck',
+    HarringtonRoad = 'HarringtonRoad',
+    ElmersEnd = 'ElmersEnd',
+    Arena = 'Arena',
+    IFSCloudRoyalDocks = 'IFSCloudRoyalDocks',
 }
 
 // export const StationsByLine: Record<Line, Set<Station>> = {
@@ -117,6 +134,29 @@ export const LinesByStation: Record<Station, Set<Line>> = {
     [Station.DagenhamHeathway]: new Set([Line.District]),
     [Station.Becontree]: new Set([Line.District]),
     [Station.Upney]: new Set([Line.District]),
+
+    [Station.Chesham]: new Set([Line.Metropolitan]),
+    [Station.Amersham]: new Set([Line.Metropolitan]),
+    [Station.ChalfontLatimer]: new Set([Line.Metropolitan]),
+    [Station.Chorleywood]: new Set([Line.Metropolitan]),
+    [Station.Watford]: new Set([Line.Metropolitan]),
+    [Station.Rickmansworth]: new Set([Line.Metropolitan]),
+    [Station.Croxley]: new Set([Line.Metropolitan]),
+    [Station.MoorPark]: new Set([Line.Metropolitan]),
+    [Station.Northwood]: new Set([Line.Metropolitan]),
+    [Station.NorthwoodHills]: new Set([Line.Metropolitan]),
+    [Station.Pinner]: new Set([Line.Metropolitan]),
+    [Station.NorthHarrow]: new Set([Line.Metropolitan]),
+
+    [Station.BeckenhamJunction]: new Set([Line.Tram]),
+    [Station.BeckenhamRoad]: new Set([Line.Tram]),
+    [Station.AvenueRoad]: new Set([Line.Tram]),
+    [Station.Birkbeck]: new Set([Line.Tram]),
+    [Station.HarringtonRoad]: new Set([Line.Tram]),
+    [Station.ElmersEnd]: new Set([Line.Tram]),
+    [Station.Arena]: new Set([Line.Tram]),
+
+    [Station.IFSCloudRoyalDocks]: new Set([Line.CloudCableCar]),
 
     [Station.MansionHouse]: new Set([Line.Circle, Line.District]),
     [Station.Aldgate]: new Set([Line.Circle, Line.Metropolitan]),

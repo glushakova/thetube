@@ -28,7 +28,7 @@ import './Map.css';
 function Map() {
     const [selectedItem, setSelectedLines] = useState<Line | Station | undefined>();
 
-    const [selectedLines, setSelectedLines] = useState<Line[]>(Object.values(Line));
+    // const [selectedLines, setSelectedLines] = useState<Line[]>(Object.values(Line));
     // const [selectedStation, setSelectedStation] = useState<Station[]>(Object.values(Station));
 
     const onLineClick = useCallback((line: Line) => {
