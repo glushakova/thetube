@@ -12,15 +12,25 @@ code {
     monospace;
 }
 
-/*find path*/
-
-
 svg .disabled path,
-svg .disabled rect,
-svg .disabled line {
+svg .disabled line,
+svg .disabled polyline {
   stroke: #ccc;
 }
 
-.elizabeth {
-  stroke: #634EA0
+svg .disabled rect,
+svg .disabled polygon {
+  fill: #ccc;
+}
+
+svg .white_line path,
+svg .white_line line,
+svg .white_line polyline {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round
+}
+svg .disabled .transparent-field,
+svg .transparent-field {
+  fill: transparent;
 }

@@ -1,42 +1,45 @@
-import React, {memo, FC} from 'react';
+import React, { memo, FC } from "react";
 import classNames from "classnames";
-import {LineProps} from "../../interface/line";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { getIsLineActiveSelector, selectLine } from "../../store/map";
+import { Line } from "../../config";
 
-const CloudCableCar : FC<LineProps> = memo(({ line, isSelected, onStationClick, onLineClick }) => {
-        return (
-            <g className={classNames("line", {"disabled": !isSelected})} onClick={() => onLineClick(line)}>
-                    <g id="cab-air-line-940GZZALGWP_x5F_cab-air-line-940GZZALRDK">
-                        <path fill="none" stroke="#FFFFFF" strokeWidth="2.3905" strokeLinejoin="round"
-                              strokeMiterlimit="3.9938"
-                              d="M892.2,480.8 c0,0-2,0-4.4,0c-1.8,0-4.2,1-5.4,2.3l-25.6,25.6c-1.2,1.2-3.7,2.3-5.4,2.3c-2.1,0-4.1,0-4.1,0"></path>
-                        <path fill="none" stroke="#EE3124" strokeWidth="2.2707" strokeLinejoin="round"
-                              strokeMiterlimit="3.9938"
-                              d="M892.2,480.8 c0,0-2,0-4.4,0c-1.8,0-4.2,1-5.4,2.3l-25.6,25.6c-1.2,1.2-3.7,2.3-5.4,2.3c-2.1,0-4.1,0-4.1,0"></path>
-                        <path fill="none" stroke="#FFFFFF" strokeWidth="1.362" strokeMiterlimit="1"
-                              d="M892.2,480.8c0,0-2,0-4.4,0 c-1.8,0-4.2,1-5.4,2.3l-25.6,25.6c-1.2,1.2-3.7,2.3-5.4,2.3c-2.1,0-4.1,0-4.1,0"></path>
-                        <path fill="none" stroke="#EE3124" strokeWidth="0.454" strokeLinejoin="round"
-                              strokeMiterlimit="3.9938"
-                              d="M892.2,480.8 c0,0-2,0-4.4,0c-1.8,0-4.2,1-5.4,2.3l-25.6,25.6c-1.2,1.2-3.7,2.3-5.4,2.3c-2.1,0-4.1,0-4.1,0"></path>
-                    </g>
-                    <path id="cab-air-line_00000145776896600639083870000018157990878848952479_" fill="#EE3124"
-                          d="M870.8,501.2 c0-0.1,0.1-0.3,0.1-0.5c0,0,0.2-0.8-0.6-2.6l0.9-0.7l-0.2-0.2l-2.5,2.1l0.2,0.2l1.1-0.9c1.1,0.9,0.7,2,0.7,2s-0.2,0.6-0.6,0.5 c-0.4-0.1,0,0.2,0,0.2l1.3,0.2C871.1,501.5,870.8,501.3,870.8,501.2"/>
-                    <rect id="cab-air-line_00000171712527939103587410000009145108687409734543_" x="868" y="498.1"
-                          transform="matrix(0.7128 -0.7013 0.7013 0.7128 -99.6222 752.9698)" fill="#D71920" width="3.3"
-                          height="0"/>
-                    <polygon id="cab-air-line_00000150102589118854964030000017536527416837940892_" fill="#750D1D"
-                             points="870.8,497 868.5,499.3 868.5,499.3 871,497.2 "/>
-                    <path id="cab-air-line_00000039133926065451892080000002798177853023531434_" fill="#EE3124"
-                          d="M871.8,501.7L871.8,501.7 c0-0.1-0.1-0.1-0.1-0.1c0,0,0,0,0,0l-2.1-0.4c-0.1,0-0.1,0-0.2,0c-0.1,0-0.2,0-0.4,0c0,0-0.1,0-0.1,0l-0.9,0.1c0,0,0,0,0,0 c0,0,0,0,0,0c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.2-0.3,0.5-0.4,0.7c-0.1,0.4-0.2,0.7-0.2,1.1c0,0.4,0.1,0.9,0.3,1.3 c0.1,0.2,0.2,0.5,0.4,0.7c0,0,0,0,0,0c0,0,0.1,0.1,0.2,0.1c0,0,0,0,0.1,0l0.7,0.1c0,0,0.1,0,0.1,0c0.1,0,0.3,0.1,0.4,0.1 c0,0,0,0,0.1,0c0.1,0,0.2,0,0.2,0c0.1,0,0.2,0,0.3-0.1c0.3-0.1,0.6-0.1,0.8-0.2c0.2-0.1,0.4-0.1,0.7-0.2l0,0c0,0,0.1,0,0.1,0 c0,0,0.1,0,0.1-0.1c0-0.1,0.1-0.1,0.1-0.2l0,0c0.1-0.1,0.1-0.2,0.2-0.4c0.2-0.4,0.3-0.9,0.2-1.3c0-0.3-0.1-0.7-0.2-1 C872.1,502,871.9,501.8,871.8,501.7"/>
-                    <path id="cab-air-line_00000134948037991802869320000015846879729935756962_" fill="#FFFFFF"
-                          d="M869.3,501.5 c0,0.2,0,0.3-0.1,0.5c0,0.3,0,0.5-0.1,0.8c0,0.3,0,0.6,0,0.9c-0.2,0-0.3,0-0.5,0c-0.3,0-0.6,0-0.9-0.1c0,0-0.1,0-0.1,0 c0-0.2,0-0.4,0-0.7c0.1-0.4,0.2-0.8,0.4-1.2c0,0,0,0,0-0.1c0.1-0.1,0.1-0.1,0.2-0.1L869.3,501.5 C869.2,501.5,869.3,501.5,869.3,501.5"
-                          className="white-fill"/>
-                    <path id="cab-air-line_00000183963892428757273770000004741770586710552714_" fill="#750D1D"
-                          d="M870.1,505.6 c0.3-0.1,0.6-0.1,0.8-0.2c0.2-0.1,0.4-0.1,0.7-0.2l0,0c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1-0.1c0-0.1,0.1-0.1,0.1-0.2l0,0 c0.1-0.1,0.1-0.2,0.2-0.4c0.2-0.4,0.3-0.9,0.2-1.3c0-0.3-0.1-0.7-0.2-1c-0.1-0.2-0.2-0.4-0.3-0.6l0,0c0,0,0-0.1-0.1-0.1 c0,0,0,0-0.1,0c-0.2,0-1.3-0.3-1.9-0.4c-0.1,0-0.1,0-0.2,0c-0.1,0.6-0.3,2.5,0,4.6c0.1,0,0.1,0,0.2,0 C869.9,505.6,870,505.6,870.1,505.6"/>
-                    <path id="cab-air-line_00000020376833395498318450000014715247803622237074_" fill="#DCDDDE"
-                          d="M872.1,503.6c-0.1,0-0.1,0-0.2,0 c-0.2,0-0.4,0-0.6,0c-0.2,0-0.5,0-0.7,0l-0.6,0c-0.1,0-0.1,0-0.2,0c0,0,0,0,0,0c0-0.4,0-0.8,0-2.2l1.6,0.2c0,0,0,0,0,0 c0,0,0.2,0,0.2,0.1c0,0,0,0,0,0c0,0,0,0.1,0.1,0.1c0,0,0,0.1,0,0.1c0,0,0,0.1,0.1,0.1C872,502.7,872.1,503.1,872.1,503.6"/>
-            </g>
-        )
-    }
-);
+const CloudCableCar: FC = memo(() => {
+  const isActive = useAppSelector(getIsLineActiveSelector(Line.CloudCableCar));
+  const dispatch = useAppDispatch();
+
+  return (
+    <g
+      className={classNames("line", { disabled: !isActive })}
+      onClick={() => dispatch(selectLine({ line: Line.CloudCableCar }))}
+    >
+      <path
+        fill="none"
+        stroke="#EE3124"
+        strokeWidth="2.2707"
+        strokeLinejoin="round"
+        strokeMiterlimit="3.9938"
+        d="M892.2,480.8 c0,0-2,0-4.4,0c-1.8,0-4.2,1-5.4,2.3l-25.6,25.6c-1.2,1.2-3.7,2.3-5.4,2.3c-2.1,0-4.1,0-4.1,0"
+      />
+      <g className="white_line">
+        <path
+          fill="none"
+          stroke="#FFFFFF"
+          strokeWidth="1.362"
+          strokeMiterlimit="1"
+          d="M892.2,480.8c0,0-2,0-4.4,0 c-1.8,0-4.2,1-5.4,2.3l-25.6,25.6c-1.2,1.2-3.7,2.3-5.4,2.3c-2.1,0-4.1,0-4.1,0"
+        />
+      </g>
+      <path
+        fill="none"
+        stroke="#EE3124"
+        strokeWidth="0.454"
+        strokeLinejoin="round"
+        strokeMiterlimit="3.9938"
+        d="M892.2,480.8 c0,0-2,0-4.4,0c-1.8,0-4.2,1-5.4,2.3l-25.6,25.6c-1.2,1.2-3.7,2.3-5.4,2.3c-2.1,0-4.1,0-4.1,0"
+      />
+    </g>
+  );
+});
 
 export default CloudCableCar;
