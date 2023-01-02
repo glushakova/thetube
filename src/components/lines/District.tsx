@@ -720,14 +720,24 @@ const District: FC = memo(() => {
           height="1.5"
         />
       </g>
-      <rect
-        id="district_940gzzlutmp"
-        x="574.3"
-        y="514.5"
-        fill="#00853F"
-        width="1.5"
-        height="1.5"
-      />
+      <g id="lul-circle_district_940gzzlutmp">
+        <rect
+          id="lul-circle_940gzzlutmp"
+          x="574.3"
+          y="512.2"
+          fill="#FFD200"
+          width="1.5"
+          height="1.5"
+        />
+        <rect
+          id="district_940gzzlutmp"
+          x="574.3"
+          y="514.5"
+          fill="#00853F"
+          width="1.5"
+          height="1.5"
+        />
+      </g>
       <g id="lul-circle_district_940gzzlusjp">
         <rect
           id="lul-circle_940gzzlusjp"
@@ -760,24 +770,6 @@ const District: FC = memo(() => {
           x="448.2"
           y="512.2"
           fill="#FFD200"
-          width="1.5"
-          height="1.5"
-        />
-      </g>
-      <g id="lul-circle_district_lul-piccadilly_940gzzlugtr">
-        <rect
-          id="lul-circle_940gzzlugtr"
-          x="406.7"
-          y="508.5"
-          fill="#FFD200"
-          width="1.5"
-          height="1.5"
-        />
-        <rect
-          id="district_940gzzlugtr"
-          x="406.7"
-          y="510.7"
-          fill="#00853F"
           width="1.5"
           height="1.5"
         />
@@ -864,6 +856,14 @@ const District: FC = memo(() => {
           height="1.5"
         />
       </g>
+      <rect
+        id="district_940gzzlugtr"
+        x="406.7"
+        y="510.7"
+        fill="#00853F"
+        width="1.5"
+        height="1.5"
+      />
       <rect
         id="district_940gzzlubec"
         x="930.4"

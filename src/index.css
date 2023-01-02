@@ -23,6 +23,14 @@ svg .disabled polygon {
   fill: #ccc;
 }
 
+svg text {
+  cursor: pointer;
+}
+
+svg text.disabled {
+  fill: #bbb;
+}
+
 svg .white_line path,
 svg .white_line line,
 svg .white_line polyline {

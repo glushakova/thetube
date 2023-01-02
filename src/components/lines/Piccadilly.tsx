@@ -814,6 +814,35 @@ const Piccadilly: FC = memo(() => {
         height="1.5"
         className="blue-fill"
       />
+      <rect
+        id="piccadilly_940gzzlursp"
+        x="174.2"
+        y="229.9"
+        fill="#1C3F94"
+        width="1.5"
+        height="1.5"
+        className="blue-fill"
+      />
+      <rect
+        id="piccadilly_940gzzlursm"
+        x="193.1"
+        y="234.5"
+        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -109.5915 205.9444)"
+        fill="#1C3F94"
+        width="1.5"
+        height="1.5"
+        className="blue-fill"
+      />
+      <rect
+        id="piccadilly_940gzzlueae"
+        x="204.8"
+        y="246.2"
+        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -114.4371 217.672)"
+        fill="#1C3F94"
+        width="1.5"
+        height="1.5"
+        className="blue-fill"
+      />
     </g>
   );
 });

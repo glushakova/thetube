@@ -25,9 +25,10 @@ export const StationIcon: FC<StationIconProps> = ({
     >
       <rect
         className="transparent-field"
-        width="10"
-        height="10"
-        x="-5"
+        fill="black"
+        width="8"
+        height="8"
+        x="-4"
         y="-4"
       />
       {isSelected ? (

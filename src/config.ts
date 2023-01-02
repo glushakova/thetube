@@ -79,6 +79,9 @@ export enum Station {
   Arena = "Arena",
   IFSCloudRoyalDocks = "IFSCloudRoyalDocks",
   GantsHill = "GantsHill",
+  Redbridge = "Redbridge",
+  Leytonstone = "Leytonstone",
+  TheydonBois = "TheydonBois",
 }
 
 // export const StationsByLine: Record<Line, Set<Station>> = {
@@ -121,6 +124,9 @@ export const LinesByStation: Record<Station, Set<Line>> = {
   [Station.Debden]: new Set([Line.Central]),
   [Station.Loughton]: new Set([Line.Central]),
   [Station.GantsHill]: new Set([Line.Central]),
+  [Station.Redbridge]: new Set([Line.Central]),
+  [Station.Leytonstone]: new Set([Line.Central]),
+  [Station.TheydonBois]: new Set([Line.Central]),
 
   [Station.Bank]: new Set([Line.DLR]),
   [Station.LimeHouse]: new Set([Line.DLR]),

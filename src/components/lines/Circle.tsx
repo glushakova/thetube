@@ -517,14 +517,6 @@ const Circle: FC = memo(() => {
         height="1.5"
       />
       <rect
-        id="circle_940gzzlutmp"
-        x="574.3"
-        y="512.2"
-        fill="#FFD200"
-        width="1.5"
-        height="1.5"
-      />
-      <rect
         id="circle_940gzzluhsk"
         x="391.9"
         y="475.6"
@@ -536,6 +528,14 @@ const Circle: FC = memo(() => {
         id="circle_940gzzlubwt"
         x="391.9"
         y="423.1"
+        fill="#FFD200"
+        width="1.5"
+        height="1.5"
+      />
+      <rect
+        id="lul-circle_940gzzlugtr"
+        x="406.7"
+        y="508.5"
         fill="#FFD200"
         width="1.5"
         height="1.5"

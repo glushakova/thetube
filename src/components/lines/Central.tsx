@@ -546,6 +546,30 @@ const Central: FC = memo(() => {
         x2="161.9"
         y2="291.5"
       />
+      <g>
+        <line
+          fill="none"
+          stroke="#F1F2F2"
+          strokeWidth="2.948"
+          strokeLinejoin="round"
+          strokeMiterlimit="3.9938"
+          x1="161.9"
+          y1="227.8"
+          x2="161.9"
+          y2="230.7"
+        />
+        <line
+          fill="none"
+          stroke="#EE3124"
+          strokeWidth="2.2706"
+          strokeLinejoin="round"
+          strokeMiterlimit="3.9938"
+          x1="161.9"
+          y1="227.8"
+          x2="161.9"
+          y2="230.7"
+        />
+      </g>
       <rect
         id="central_940gzzlursg"
         x="159.3"
@@ -642,25 +666,40 @@ const Central: FC = memo(() => {
       <rect x="738.7" y="388.3" fill="#EE3124" width="1.5" height="1.5" />
       <rect x="845.7" y="311.1" fill="#EE3124" width="1.5" height="1.5" />
       <rect x="845.7" y="280.8" fill="#EE3124" width="1.5" height="1.5" />
+      <StationIcon
+        x={844.56}
+        y={281.55}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Leytonstone }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Leytonstone}
+      />
       <rect x="857.6" y="267.3" fill="#EE3124" width="1.5" height="1.5" />
       <StationIcon
         x={885.9}
         y={266.16}
         strokeWidth={STROKE_WIDTH}
         rotationAngle={180}
+        // TODO: add single event listener and lookup for station name from attributes
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Redbridge }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Redbridge}
+      />
+      <StationIcon
+        x={872.15}
+        y={266.235}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
         onClick={(event) => {
           dispatch(selectStation({ station: Station.GantsHill }));
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.GantsHill}
-      />
-      <rect
-        id="central_940gzzlurbg"
-        x="871.4"
-        y="263.6"
-        fill="#EE3124"
-        width="1.5"
-        height="1.5"
       />
       <rect
         id="central_940gzzlusnb"

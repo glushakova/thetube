@@ -446,67 +446,32 @@ const Metropolitan: FC = memo(() => {
         width="1.5"
         height="1.5"
       />
-      <g id="metropolitan_piccadilly_940gzzlursp">
-        <rect
-          id="metropolitan_940gzzlursp"
-          x="174.2"
-          y="226.8"
-          fill="#97005E"
-          width="1.5"
-          height="1.5"
-        />
-        <rect
-          id="piccadilly_940gzzlursp"
-          x="174.2"
-          y="229.9"
-          fill="#1C3F94"
-          width="1.5"
-          height="1.5"
-          className="blue-fill"
-        />
-      </g>
-      <g id="metropolitan_piccadilly_940gzzlursm">
-        <rect
-          id="metropolitan_940gzzlursm"
-          x="195.3"
-          y="232.2"
-          transform="matrix(0.707 -0.7072 0.7072 0.707 -107.3249 206.9091)"
-          fill="#97005E"
-          width="1.5"
-          height="1.5"
-        />
-        <rect
-          id="piccadilly_940gzzlursm"
-          x="193.1"
-          y="234.5"
-          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -109.5915 205.9444)"
-          fill="#1C3F94"
-          width="1.5"
-          height="1.5"
-          className="blue-fill"
-        />
-      </g>
-      <g id="metropolitan_piccadilly_940gzzlueae">
-        <rect
-          id="metropolitan_940gzzlueae"
-          x="207"
-          y="244"
-          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -112.1917 218.6145)"
-          fill="#97005E"
-          width="1.5"
-          height="1.5"
-        />
-        <rect
-          id="piccadilly_940gzzlueae"
-          x="204.8"
-          y="246.2"
-          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -114.4371 217.672)"
-          fill="#1C3F94"
-          width="1.5"
-          height="1.5"
-          className="blue-fill"
-        />
-      </g>
+      <rect
+        id="metropolitan_940gzzlursp"
+        x="174.2"
+        y="226.8"
+        fill="#97005E"
+        width="1.5"
+        height="1.5"
+      />
+      <rect
+        id="metropolitan_940gzzlursm"
+        x="195.3"
+        y="232.2"
+        transform="matrix(0.707 -0.7072 0.7072 0.707 -107.3249 206.9091)"
+        fill="#97005E"
+        width="1.5"
+        height="1.5"
+      />
+      <rect
+        id="metropolitan_940gzzlueae"
+        x="207"
+        y="244"
+        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -112.1917 218.6145)"
+        fill="#97005E"
+        width="1.5"
+        height="1.5"
+      />
       <rect
         id="metropolitan_940gzzluprd"
         x="339.8"
@@ -557,30 +522,6 @@ const Metropolitan: FC = memo(() => {
           fill="#FFD200"
           width="1.5"
           height="1.5"
-        />
-      </g>
-      <g>
-        <line
-          fill="none"
-          stroke="#F1F2F2"
-          strokeWidth="2.948"
-          strokeLinejoin="round"
-          strokeMiterlimit="3.9938"
-          x1="161.9"
-          y1="227.8"
-          x2="161.9"
-          y2="230.7"
-        />
-        <line
-          fill="none"
-          stroke="#EE3124"
-          strokeWidth="2.2706"
-          strokeLinejoin="round"
-          strokeMiterlimit="3.9938"
-          x1="161.9"
-          y1="227.8"
-          x2="161.9"
-          y2="230.7"
         />
       </g>
     </g>

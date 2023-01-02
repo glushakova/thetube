@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction, createSelector } from "@reduxjs/toolkit";
 import { Station, Line, LinesByStation } from "../config";
 import type { RootState } from "./index";
 
@@ -45,6 +45,9 @@ export const { selectLine, selectStation, unselect } = mapSlice.actions;
 
 export const selectSelectedLine = (state: RootState) => state.map.selectedLine;
 
+export const selectSelectedStation = (state: RootState) =>
+  state.map.selectedStation;
+
 export const getIsLineActiveSelector = (line: Line) => (state: RootState) => {
   const selectedLine = selectSelectedLine(state);
   const selectedStation = selectSelectedStation(state);
@@ -56,5 +59,25 @@ export const getIsLineActiveSelector = (line: Line) => (state: RootState) => {
   );
 };
 
-export const selectSelectedStation = (state: RootState) =>
-  state.map.selectedStation;
+export const selectActiveStationsSet = createSelector(
+  selectSelectedLine,
+  selectSelectedStation,
+  (selectedLine, selectedStation): Set<Station> => {
+    if (selectedStation) {
+      const selectedLines = Array.from(LinesByStation[selectedStation]);
+      return new Set(
+        Object.values(Station).filter((station) =>
+          selectedLines.some((line) => LinesByStation[station].has(line))
+        )
+      );
+    }
+    if (selectedLine) {
+      return new Set(
+        Object.values(Station).filter((station) =>
+          LinesByStation[station].has(selectedLine)
+        )
+      );
+    }
+    return new Set(Object.values(Station));
+  }
+);
