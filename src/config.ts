@@ -82,6 +82,11 @@ export enum Station {
   Redbridge = "Redbridge",
   Leytonstone = "Leytonstone",
   TheydonBois = "TheydonBois",
+  KingsCrossStPancras = "KingsCrossStPancras",
+  Moorgate = "Moorgate",
+  StPauls = "StPauls",
+  Holborn = "Holborn",
+  EustonSquare = "EustonSquare",
 }
 
 // export const StationsByLine: Record<Line, Set<Station>> = {
@@ -127,8 +132,8 @@ export const LinesByStation: Record<Station, Set<Line>> = {
   [Station.Redbridge]: new Set([Line.Central]),
   [Station.Leytonstone]: new Set([Line.Central]),
   [Station.TheydonBois]: new Set([Line.Central]),
+  [Station.StPauls]: new Set([Line.Central]),
 
-  [Station.Bank]: new Set([Line.DLR]),
   [Station.LimeHouse]: new Set([Line.DLR]),
   [Station.Westferry]: new Set([Line.DLR]),
   [Station.Poplar]: new Set([Line.DLR]),
@@ -166,6 +171,32 @@ export const LinesByStation: Record<Station, Set<Line>> = {
 
   [Station.IFSCloudRoyalDocks]: new Set([Line.CloudCableCar]),
 
+  [Station.Bank]: new Set([Line.DLR, Line.Central, Line.Northern]),
   [Station.MansionHouse]: new Set([Line.Circle, Line.District]),
   [Station.Aldgate]: new Set([Line.Circle, Line.Metropolitan]),
+  [Station.Holborn]: new Set([Line.Central, Line.Piccadilly]),
+  [Station.KingsCrossStPancras]: new Set([
+    Line.Circle,
+    Line.HammersmithCity,
+    Line.Metropolitan,
+    Line.Northern,
+    Line.Piccadilly,
+    Line.Victoria,
+  ]),
+  [Station.Moorgate]: new Set([
+    Line.Circle,
+    Line.HammersmithCity,
+    Line.Metropolitan,
+    Line.Northern,
+  ]),
+  [Station.EustonSquare]: new Set([
+    Line.Circle,
+    Line.HammersmithCity,
+    Line.Metropolitan,
+  ]),
+};
+
+// needed for the search functionality later
+export const multiWordStationNames: Partial<Record<Station, string>> = {
+  [Station.StPauls]: "St Paul’s",
 };

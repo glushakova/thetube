@@ -27,6 +27,11 @@ svg text {
   cursor: pointer;
 }
 
+svg text {
+  fill: #1C3F94;
+}
+
+svg .disabled text,
 svg text.disabled {
   fill: #bbb;
 }

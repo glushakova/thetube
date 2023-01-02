@@ -51,7 +51,6 @@ export const selectSelectedStation = (state: RootState) =>
 export const getIsLineActiveSelector = (line: Line) => (state: RootState) => {
   const selectedLine = selectSelectedLine(state);
   const selectedStation = selectSelectedStation(state);
-  console.log(selectedLine, selectedStation);
   return (
     (!selectedLine && !selectedStation) ||
     selectedLine === line ||

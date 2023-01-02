@@ -1,13 +1,10 @@
-import React, { memo, FC } from "react";
+import React, { FC, memo } from "react";
 import { Station } from "../../config";
-import classNames from "classnames";
-import { selectActiveStationsSet } from "../../store/map";
-import { useAppSelector } from "../../store/hooks";
+import StationTextName from "./StationTextName";
 
 const StationNames: FC = memo(() => {
-  const activeStationsSet = useAppSelector(selectActiveStationsSet);
   return (
-    <g id="station-names">
+    <g>
       <text
         id="910GBTHNLGR_label_00000013884954316938471730000009364662351823030448_"
         transform="matrix(1 0 0 1 739.5474 375.0828)"
@@ -755,39 +752,28 @@ const StationNames: FC = memo(() => {
           id="940GZZLULVT_nr_00000013179052902281604880000010416007723264440766_"
           fill="#EE3124"
           points="678.8,398.2 677,397.4 679.5,397.4 679.5,396.9 677,396.9 678.2,396.3 679.5,396.3 679.5,395.8 678.2,395.8 676.7,395 675.5,395 677.1,395.8 674.6,395.8 674.6,396.3 677.1,396.3 675.8,396.9 674.6,396.9 674.6,397.4 675.9,397.4 677.6,398.2 "
-        ></polygon>{" "}
+        ></polygon>
       </g>
-      <g id="940GZZLUMGT_label">
-        {" "}
+      <StationTextName station={Station.Moorgate} tag={"g"}>
         <g id="940GZZLUMGT_label">
-          {" "}
-          <text
-            transform="matrix(1 0 0 1 603.4033 425.4646)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            Moorgate
-          </text>{" "}
+          <text transform="matrix(1 0 0 1 603.4033 425.4646)">
+            {Station.Moorgate}
+          </text>
         </g>
         <polygon
-          id="940GZZLUMGT_nr"
           fill="#EE3124"
           points="601.7,425.5 600,424.7 602.4,424.7 602.4,424.2 599.9,424.2 601.2,423.6 602.4,423.6 602.4,423.1 601.2,423.1 599.6,422.3 598.4,422.3 600.1,423.1 597.5,423.1 597.5,423.6 600.1,423.6 598.7,424.2 597.5,424.2 597.5,424.7 598.8,424.7 600.5,425.5 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZLUKSX_label">
-        {" "}
-        <text
-          id="940GZZLUKSX_label"
-          transform="matrix(1 0 0 1 598.285 359.6533)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+        />
+      </StationTextName>
+      <StationTextName station={Station.KingsCrossStPancras} tag={"g"}>
+        <text transform="matrix(1 0 0 1 598.285 359.6533)">
+          <tspan x="0" y="0">
             King’s Cross
           </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            &amp; St Pancras{" "}
+          <tspan x="0" y="4.5">
+            &amp; St Pancras
           </tspan>
-          <tspan x="0" y="9.1" fill="#1C3F94" className="blue-fill">
+          <tspan x="0" y="9.1">
             International
           </tspan>
         </text>
@@ -795,25 +781,18 @@ const StationNames: FC = memo(() => {
           id="940GZZLUKSX-nr"
           fill="#EE3124"
           points="632.5,369 630.8,368.3 633.2,368.3 633.2,367.7 630.7,367.7 632,367.1 633.2,367.1 633.2,366.6 632,366.6 630.4,365.9 629.3,365.9 630.9,366.6 628.4,366.6 628.4,367.1 630.9,367.1 629.6,367.7 628.4,367.7 628.4,368.3 629.7,368.3 631.3,369 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZLUESQ_label">
-        {" "}
-        <g>
-          {" "}
-          <text
-            id="940GZZLUESQ_label_00000137118027050385293340000001430348509227106491_"
-            transform="matrix(1 0 0 1 513.0743 388.9251)"
-          >
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              Euston
-            </tspan>
-            <tspan x="0.1" y="4.5" fill="#1C3F94" className="blue-fill">
-              Square
-            </tspan>
-          </text>{" "}
-        </g>{" "}
-      </g>
+        />
+      </StationTextName>
+      <StationTextName tag={"g"} station={Station.EustonSquare}>
+        <text transform="matrix(1 0 0 1 513.0743 388.9251)">
+          <tspan x="0" y="0">
+            Euston
+          </tspan>
+          <tspan x="0.1" y="4.5">
+            Square
+          </tspan>
+        </text>
+      </StationTextName>
       <g id="940GZZLUMSH_label">
         {" "}
         <text
@@ -1617,35 +1596,19 @@ const StationNames: FC = memo(() => {
       >
         Mile End
       </text>
-      <g id="940GZZLUHBN_label">
-        {" "}
-        <text
-          id="940GZZLUHBN_label"
-          transform="matrix(1 0 0 1 563.0166 439.3994)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Holborn
-        </text>{" "}
-      </g>
-      <text
-        id="940GZZLUSPU_label"
+      <StationTextName
+        transform="matrix(1 0 0 1 563.0166 439.3994)"
+        station={Station.Holborn}
+      />
+      <StationTextName
         transform="matrix(1 0 0 1 598.1855 459.6808)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        St Paul’s
-      </text>
-      <text
-        id="940GZZLUBNK_label"
+        station={Station.StPauls}
+      />
+      <StationTextName
         transform="matrix(1 0 0 1 639.7977 455.3154)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Bank
-      </text>
+        station={Station.Bank}
+      />
       <g id="940GZZLUCHL_label_00000023251595683712646770000008491995693324426931_">
-        {" "}
         <text
           id="940GZZLUCHL_label_00000052823527750041440750000013871081143767652240_"
           transform="matrix(1 0 0 1 590.0864 437.487)"
@@ -1653,7 +1616,7 @@ const StationNames: FC = memo(() => {
           className="blue-fill"
         >
           Chancery Lane
-        </text>{" "}
+        </text>
       </g>
       <text
         id="940GZZLULYS_label_00000157995025126988630650000001848695814445597604_"
@@ -1822,23 +1785,14 @@ const StationNames: FC = memo(() => {
           Chigwell
         </text>
       </g>
-      <text
-        data-station-name={Station.TheydonBois}
+      <StationTextName
+        station={Station.TheydonBois}
         transform="matrix(1 0 0 1 880.757 151.8156)"
-        fill="#1C3F94"
-        className={classNames({
-          disabled: !activeStationsSet.has(Station.TheydonBois),
-        })}
-      >
-        Theydon Bois
-      </text>
-      <text
-        data-station-name={Station.Epping}
+      />
+      <StationTextName
+        station={Station.Epping}
         transform="matrix(1 0 0 1 889.0088 143.7236)"
-        fill="#1C3F94"
-      >
-        Epping
-      </text>
+      />
       <text
         id="940GZZLUDBN_label_00000072967881968430286750000006978614011042939327_"
         transform="matrix(1 0 0 1 873.6655 159.2458)"
@@ -4839,10 +4793,9 @@ const StationNames: FC = memo(() => {
           <tspan x="2.8" y="4.5" fill="#1C3F94" className="blue-fill">
             Road
           </tspan>
-        </text>{" "}
+        </text>
       </g>
       <g id="940GZZCRSAN_label">
-        {" "}
         <text
           id="940GZZCRSAN_label"
           transform="matrix(0.9997 0 0 1 796.4144 752.2637)"
@@ -4853,7 +4806,6 @@ const StationNames: FC = memo(() => {
         </text>{" "}
       </g>
       <g id="940GZZCRKGH_label">
-        {" "}
         <text
           id="940GZZCRKGH_label"
           transform="matrix(0.9997 0 0 1 821.9615 795.4863)"
@@ -4861,10 +4813,9 @@ const StationNames: FC = memo(() => {
           className="blue-fill"
         >
           King Henry’s Drive
-        </text>{" "}
+        </text>
       </g>
       <g id="940GZZCRNWA_label">
-        {" "}
         <text
           id="940GZZCRNWA_label"
           transform="matrix(0.9997 0 0 1 836.2895 803.8238)"
@@ -4872,10 +4823,9 @@ const StationNames: FC = memo(() => {
           className="blue-fill"
         >
           New Addington
-        </text>{" "}
+        </text>
       </g>
       <g id="940GZZCRFLD_label">
-        {" "}
         <text
           id="940GZZCRFLD_label"
           transform="matrix(0.9997 0 0 1 863.7947 787.1628)"
