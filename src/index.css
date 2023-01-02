@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+svg text {
+  cursor: pointer;
+  fill: #1C3F94;
+}
+
+
 svg .disabled path,
 svg .disabled line,
 svg .disabled polyline {
@@ -19,16 +25,9 @@ svg .disabled polyline {
 }
 
 svg .disabled rect,
-svg .disabled polygon {
+svg .disabled polygon,
+svg .disabled .transport {
   fill: #ccc;
-}
-
-svg text {
-  cursor: pointer;
-}
-
-svg text {
-  fill: #1C3F94;
 }
 
 svg .disabled text,
