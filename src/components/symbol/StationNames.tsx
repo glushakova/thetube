@@ -593,7 +593,6 @@ const StationNames: FC = memo(() => {
           points="267.6,251.9 265.9,251.1 268.3,251.1 268.3,250.6 265.8,250.6 267.1,250 268.3,250 268.3,249.5 267.1,249.5 265.5,248.8 264.3,248.8 266,249.5 263.5,249.5 263.5,250 266,250 264.7,250.6 263.5,250.6 263.5,251.1 264.8,251.1 266.4,251.9 "
         />
       </g>
-
       <StationTextName
         station={Station.PrestonRoad}
         transform="matrix(1 0 0 1 325.8085 256.9566)"
@@ -839,7 +838,6 @@ const StationNames: FC = memo(() => {
           points=" 402.7,414.8 400.9,414 403.4,414 403.4,413.5 400.9,413.5 402.1,412.9 403.4,412.9 403.4,412.4 402.1,412.4 400.6,411.7 399.4,411.7 401,412.4 398.5,412.4 398.5,412.9 401,412.9 399.7,413.5 398.5,413.5 398.5,414 399.8,414 401.5,414.8 "
         />
       </StationTextName>
-
       <g id="940GZZLUERC_label">
         <text
           id="lul_circle_lul-district_lul-hammersmith-city_940GZZLUERC_label"
@@ -2018,10 +2016,9 @@ const StationNames: FC = memo(() => {
           West Brompton
         </text>
         <polygon
-          id="940GZZLUWBN_nr"
           fill="#EE3124"
           points="328.5,543.9 326.7,543.1 329.2,543.1 329.2,542.6 326.7,542.6 327.9,542 329.2,542 329.2,541.5 327.9,541.5 326.4,540.8 325.2,540.8 326.8,541.5 324.3,541.5 324.3,542 326.8,542 325.5,542.6 324.3,542.6 324.3,543.1 325.6,543.1 327.3,543.9 "
-        ></polygon>{" "}
+        />{" "}
       </g>
       <g id="940GZZLUWIM_label">
         {" "}
@@ -2034,2433 +2031,1489 @@ const StationNames: FC = memo(() => {
           Wimbledon
         </text>
         <polygon
-          id="940GZZLUWIM_nr"
           fill="#EE3124"
           points="344.7,639.5 343,638.8 345.4,638.8 345.4,638.2 342.9,638.2 344.2,637.6 345.4,637.6 345.4,637.1 344.2,637.1 342.6,636.4 341.4,636.4 343.1,637.1 340.5,637.1 340.5,637.6 343.1,637.6 341.8,638.2 340.5,638.2 340.5,638.8 341.8,638.8 343.5,639.5 "
-        ></polygon>{" "}
+        />{" "}
       </g>
-      <g id="940GZZLUECT_label">
-        {" "}
-        <text
-          id="940GZZLUECT_label"
-          transform="matrix(1 0 0 1 379.7295 521.043)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Earl’s
-          </tspan>
-          <tspan x="-0.4" y="4.5" fill="#1C3F94" className="blue-fill">
-            Court
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZLUCWP_label_00000168081458907113538460000015569336267004114874_">
-        {" "}
-        <text
-          id="940GZZLUCWP_label_00000181796736473794267470000003684241624858156439_"
-          transform="matrix(1 0 0 1 215.6736 520.7617)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Chiswick{" "}
-          </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            Park
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZLUTNG_label_00000058571578866066363490000010685679828990458774_">
-        {" "}
-        <text
-          id="940GZZLUTNG_label_00000159447224265930099030000001150872141110249355_"
-          transform="matrix(1 0 0 1 260.9138 521.2543)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Turnham
-          </tspan>
-          <tspan x="3.3" y="4.5" fill="#1C3F94" className="blue-fill">
-            Green
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZLUSFB_label_00000052062348490744112640000000149028624567158459_">
-        {" "}
-        <text
-          id="940GZZLUSFB_label_00000161614502240035063720000005155298163798807973_"
-          transform="matrix(1 0 0 1 282.343 519.7745)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Stamford
-          </tspan>
-          <tspan x="3.8" y="4.5" fill="#1C3F94" className="blue-fill">
-            Brook
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZLURVP_label_00000005258619691244687160000003533797453874240658_">
-        {" "}
-        <text
-          id="940GZZLURVP_label_00000085972344060769924650000007249758666517103533_"
-          transform="matrix(1 0 0 1 304.2829 519.7696)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Ravenscourt
-          </tspan>
-          <tspan x="8.9" y="4.5" fill="#1C3F94" className="blue-fill">
-            Park
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZLUWKN_label">
-        {" "}
-        <text
-          id="940GZZLUWKN_label"
-          transform="matrix(1 0 0 1 353.7798 520.0518)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            West
-          </tspan>
-          <tspan x="-13.4" y="4.5" fill="#1C3F94" className="blue-fill">
-            Kensington
-          </tspan>
-        </text>{" "}
-      </g>
-      <text id="940GZZLUBSC" transform="matrix(1 0 0 1 343.8001 497.0796)">
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+
+      <StationTextName
+        station={Station.EarlsCourt}
+        transform="matrix(1 0 0 1 379.7295 521.043)"
+      >
+        <tspan x="0" y="0">
+          Earl’s
+        </tspan>
+        <tspan x="-0.4" y="4.5">
+          Earl’s
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.ChiswickPark}
+        transform="matrix(1 0 0 1 215.6736 520.7617)"
+      >
+        <tspan x="0" y="0">
+          Chiswick
+        </tspan>
+        <tspan x="0" y="4.5">
+          Park
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.TurnhamGreen}
+        transform="matrix(1 0 0 1 260.9138 521.2543)"
+      >
+        <tspan x="0" y="0">
+          Turnham
+        </tspan>
+        <tspan x="3.3" y="4.5">
+          Green
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.StamfordBrook}
+        transform="matrix(1 0 0 1 282.343 519.7745)"
+      >
+        <tspan x="0" y="0">
+          Stamford
+        </tspan>
+        <tspan x="3.8" y="4.5">
+          Brook
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.RavenscourtPark}
+        transform="matrix(1 0 0 1 304.2829 519.7696)"
+      >
+        <tspan x="0" y="0">
+          Ravenscourt
+        </tspan>
+        <tspan x="8.9" y="4.5">
+          Park
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.WestKensington}
+        transform="matrix(1 0 0 1 353.7798 520.0518)"
+      >
+        <tspan x="0" y="0">
+          West
+        </tspan>
+        <tspan x="-13.4" y="4.5">
+          Kensington
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.BaronsCourt}
+        transform="matrix(1 0 0 1 343.8001 497.0796)"
+      >
+        <tspan x="0" y="0">
           Barons
         </tspan>
-        <tspan x="1.2" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="1.2" y="4.5">
           Court
         </tspan>
-      </text>
-      <text
-        id="940GZZLUECM_label"
+      </StationTextName>
+      <StationTextName
+        station={Station.EalingCommon}
         transform="matrix(1 0 0 1 200.3741 483.2966)"
       >
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-          Ealing{" "}
+        <tspan x="0" y="0">
+          Ealing
         </tspan>
-        <tspan x="-7.3" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="-6" y="4.5">
           Common
         </tspan>
-      </text>
-      <text
-        id="940GZZLUGBY_label"
+      </StationTextName>
+      <StationTextName
+        station={Station.Gunnersbury}
         transform="matrix(1 0 0 1 233.6751 542.7182)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Gunnersbury
-      </text>
-      <text
-        id="940GZZLUKWG_label_00000042018314992481646880000011971983881127601840_"
+      />
+      <StationTextName
+        station={Station.KewGardens}
         transform="matrix(1 0 0 1 204.5973 572.6741)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Kew Gardens
-      </text>
-      <g id="940GZZLURMD_label">
-        {" "}
-        <text
-          id="940GZZLURMD_label"
-          transform="matrix(1 0 0 1 193.218 585.704)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Richmond
+      />
+      <StationTextName station={Station.Richmond} tag={"g"}>
+        <text transform="matrix(1 0 0 1 193.218 585.704)">
+          {Station.Richmond}
         </text>
         <polygon
-          id="940GZZLURMD_nr"
           fill="#EE3124"
           points="220.6,585.7 218.8,584.9 221.3,584.9 221.3,584.4 218.8,584.4 220,583.8 221.3,583.8 221.3,583.3 220,583.3 218.5,582.6 217.3,582.6 218.9,583.3 216.4,583.3 216.4,583.8 218.9,583.8 217.6,584.4 216.4,584.4 216.4,584.9 217.7,584.9 219.4,585.7 "
-        ></polygon>{" "}
-      </g>
-      <g id="9400ZZALRDK_label">
-        {" "}
-        <text
-          id="9400ZZALRDK_label"
-          transform="matrix(1 0 0 1 898.1535 482.3464)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            IFS Cloud{" "}
-          </tspan>
-          <tspan x="0" y="4.4" fill="#1C3F94" className="blue-fill">
-            Royal
-          </tspan>
-          <tspan x="0" y="8.8" fill="#1C3F94" className="blue-fill">
-            Docks
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZALGWP_label_00000134211356112220503130000001865599549424627368_">
-        {" "}
-        <text
-          id="940GZZALGWP_label"
-          transform="matrix(1 0 0 1 844.9306 518.9301)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            IFS Cloud{" "}
-          </tspan>
-          <tspan x="0" y="4.4" fill="#1C3F94" className="blue-fill">
-            Greenwich
-          </tspan>
-          <tspan x="0" y="8.8" fill="#1C3F94" className="blue-fill">
-            Peninsula
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZLUCWR_label">
-        {" "}
-        <text
-          id="940GZZLUCWR_label"
-          transform="matrix(1 0 0 1 703.9748 542.6545)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Canada
-          </tspan>
-          <tspan x="2.7" y="4.5" fill="#1C3F94" className="blue-fill">
-            Water
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZLUGPK_label">
-        {" "}
-        <text
-          id="940GZZLUGPK_label"
-          transform="matrix(1 0 0 1 478.9248 461.5342)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Green Park
-        </text>{" "}
-      </g>
-      <g id="940GZZLULNB_label">
-        {" "}
-        <g id="940GZZLULNB_label">
-          {" "}
-          <text transform="matrix(1 0 0 1 639.7979 519.7413)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              London{" "}
-            </tspan>
-            <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-              Bridge
-            </tspan>
-          </text>{" "}
-        </g>
-        <polygon
-          id="940GZZLULNB_nr"
-          fill="#EE3124"
-          points="644.2,529.4 642.5,528.6 645,528.6 645,528.1 642.4,528.1 643.7,527.5 645,527.5 645,527 643.7,527 642.2,526.3 641,526.3 642.6,527 640.1,527 640.1,527.5 642.6,527.5 641.3,528.1 640.1,528.1 640.1,528.6 641.4,528.6 643.1,529.4 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZLUBMY_label">
-        {" "}
-        <text
-          id="940GZZLUBMY_label"
-          transform="matrix(1 0 0 1 677.3954 527.8297)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Bermondsey
-        </text>{" "}
-      </g>
-      <g id="940GZZLUSWK_label">
-        {" "}
-        <text
-          id="940GZZLUSWK_label"
-          transform="matrix(1 0 0 1 553.7783 564.7515)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Southwark
-        </text>{" "}
-      </g>
-      <g id="940GZZLUWLO_label">
-        {" "}
-        <polygon
-          id="940GZZLUWLO_nr"
-          fill="#EE3124"
-          points="523.9,549.8 522.1,549 524.6,549 524.6,548.5 522.1,548.5 523.4,547.8 524.6,547.8 524.6,547.3 523.4,547.3 521.8,546.6 520.6,546.6 522.3,547.3 519.7,547.3 519.7,547.8 522.3,547.8 520.9,548.5 519.7,548.5 519.7,549 521,549 522.7,549.8 "
-        ></polygon>
-        <text
-          id="940GZZLUWLO_label"
-          transform="matrix(1 0 0 1 504.2974 545.4026)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Waterloo
-        </text>{" "}
-      </g>
-      <g id="940GZZLUNGW_label">
-        {" "}
-        <g id="940GZZLUNGW_label">
-          {" "}
-          <text transform="matrix(1 0 0 1 825.2872 518.9883)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              North
-            </tspan>
-            <tspan x="-10.7" y="4.5" fill="#1C3F94" className="blue-fill">
-              Greenwich
-            </tspan>
-          </text>{" "}
-        </g>{" "}
-      </g>
-      <g id="940GZZLUMHL_label">
-        {" "}
-        <text
-          id="940GZZLUMHL_label"
-          transform="matrix(1 0 0 1 537.6718 203.7545)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Mill Hill East
-        </text>{" "}
-      </g>
-      <text
-        id="940GZZLUHBT_label"
-        transform="matrix(1 0 0 1 589.833 169.2129)"
-        fill="#1C3F94"
-        className="blue-fill"
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.IFSCloudRoyalDocks}
+        transform="matrix(1 0 0 1 898.1535 482.3464)"
       >
-        High Barnet
-      </text>
-      <text
-        id="940GZZLUTAW_label"
-        transform="matrix(1 0 0 1 588.874 181.0464)"
-        fill="#1C3F94"
-        className="blue-fill"
+        <tspan x="0" y="0">
+          IFS Cloud
+        </tspan>
+        <tspan x="0" y="4.4">
+          Royal
+        </tspan>
+        <tspan x="0" y="8.8">
+          Docks
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.IFSCloudGreenwichPeninsula}
+        transform="matrix(1 0 0 1 844.9306 518.9301)"
       >
-        Totteridge &amp; Whetstone
-      </text>
-      <text
-        id="940GZZLUWOP_label"
-        transform="matrix(1 0 0 1 589.6572 192.9063)"
-        fill="#1C3F94"
-        className="blue-fill"
+        <tspan x="0" y="0">
+          IFS Cloud
+        </tspan>
+        <tspan x="0" y="4.4">
+          Greenwich
+        </tspan>
+        <tspan x="0" y="8.8">
+          Peninsula
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.CanadaWater}
+        transform="matrix(1 0 0 1 703.9748 542.6545)"
       >
-        Woodside Park
-      </text>
-      <text
-        id="940GZZLUWFN_label"
-        transform="matrix(1 0 0 1 589.6514 204.7076)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        West Finchley
-      </text>
-      <text
-        id="940GZZLUFYC_label"
-        transform="matrix(1 0 0 1 589.6514 224.0541)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Finchley Central
-      </text>
-      <text
-        id="940GZZLUEFY_label"
-        transform="matrix(1 0 0 1 588.8721 236.2514)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        East Finchley
-      </text>
-      <text
-        id="940GZZLUHGT_label"
-        transform="matrix(1 0 0 1 588.8721 248.3443)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Highgate
-      </text>
-      <text
-        id="940GZZLUACY_label"
-        transform="matrix(1 0 0 1 588.875 260.3068)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Archway
-      </text>
-      <g id="940GZZLUKSH_label">
-        {" "}
-        <text
-          id="940GZZLUKSH_label"
-          transform="matrix(1 0 0 1 583.7312 303.7052)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Kentish Town
+        <tspan x="0" y="0">
+          Canada
+        </tspan>
+        <tspan x="2.7" y="4.5">
+          Water
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.GreenPark}
+        transform="matrix(1 0 0 1 478.9248 461.5342)"
+      />
+      <StationTextName station={Station.LondonBridge} tag={"g"}>
+        <text transform="matrix(1 0 0 1 639.7979 519.7413)">
+          <tspan x="0" y="0">
+            London
+          </tspan>
+          <tspan x="0" y="4.5">
+            Bridge
+          </tspan>
         </text>
         <polygon
-          id="940GZZLUKSH_nr"
+          fill="#EE3124"
+          points="644.2,529.4 642.5,528.6 645,528.6 645,528.1 642.4,528.1 643.7,527.5 645,527.5 645,527 643.7,527 642.2,526.3 641,526.3 642.6,527 640.1,527 640.1,527.5 642.6,527.5 641.3,528.1 640.1,528.1 640.1,528.6 641.4,528.6 643.1,529.4 "
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.Bermondsey}
+        transform="matrix(1 0 0 1 677.3954 527.8297)"
+      />
+      <StationTextName
+        station={Station.Southwark}
+        transform="matrix(1 0 0 1 553.7783 564.7515)"
+      />
+      <StationTextName station={Station.Waterloo} tag={"g"}>
+        <text transform="matrix(1 0 0 1 504.2974 545.4026)">
+          {Station.Waterloo}
+        </text>
+        <polygon
+          fill="#EE3124"
+          points="523.9,549.8 522.1,549 524.6,549 524.6,548.5 522.1,548.5 523.4,547.8 524.6,547.8 524.6,547.3 523.4,547.3 521.8,546.6 520.6,546.6 522.3,547.3 519.7,547.3 519.7,547.8 522.3,547.8 520.9,548.5 519.7,548.5 519.7,549 521,549 522.7,549.8 "
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.NorthGreenwich}
+        transform="matrix(1 0 0 1 825.2872 518.9883)"
+      >
+        <tspan x="0" y="0">
+          North
+        </tspan>
+        <tspan x="-10.7" y="4.5">
+          Greenwich
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.MillHillEast}
+        transform="matrix(1 0 0 1 537.6718 203.7545)"
+      />
+      <StationTextName
+        station={Station.HighBarnet}
+        transform="matrix(1 0 0 1 589.833 169.2129)"
+      />
+      <StationTextName
+        station={Station.TotteridgeWhetstone}
+        transform="matrix(1 0 0 1 588.874 181.0464)"
+      />
+      <StationTextName
+        station={Station.WoodsidePark}
+        transform="matrix(1 0 0 1 589.6572 192.9063)"
+      />
+      <StationTextName
+        station={Station.WestFinchley}
+        transform="matrix(1 0 0 1 589.6514 204.7076)"
+      />
+      <StationTextName
+        station={Station.FinchleyCentral}
+        transform="matrix(1 0 0 1 589.6514 224.0541)"
+      />
+      <StationTextName
+        station={Station.EastFinchley}
+        transform="matrix(1 0 0 1 588.8721 236.2514)"
+      />
+      <StationTextName
+        station={Station.Highgate}
+        transform="matrix(1 0 0 1 588.8721 248.3443)"
+      />
+      <StationTextName
+        station={Station.Archway}
+        transform="matrix(1 0 0 1 588.875 260.3068)"
+      />
+      <StationTextName station={Station.KentishTown} tag={"g"}>
+        <text transform="matrix(1 0 0 1 583.7312 303.7052)">
+          {multiWordStationNames[Station.KentishTown]}
+        </text>
+        <polygon
           fill="#EE3124"
           points="588.3,308.2 586.6,307.4 589.1,307.4 589.1,306.9 586.5,306.9 587.8,306.3 589.1,306.3 589.1,305.8 587.8,305.8 586.3,305.1 585.1,305.1 586.7,305.8 584.2,305.8 584.2,306.3 586.7,306.3 585.4,306.9 584.2,306.9 584.2,307.4 585.5,307.4 587.2,308.2 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZLUTFP_label">
-        {" "}
-        <text
-          id="940GZZLUTFP_label"
-          transform="matrix(1 0 0 1 588.8623 290.7417)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Tufnell Park
-        </text>{" "}
-      </g>
-      <g id="940GZZLUEGW_label">
-        {" "}
-        <text
-          id="940GZZLUEGW_label"
-          transform="matrix(1 0 0 1 411.2397 210.1685)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Edgware
-        </text>{" "}
-      </g>
-      <g id="940GZZLUBTK_label">
-        {" "}
-        <text
-          id="940GZZLUBTK_label"
-          transform="matrix(1 0 0 1 423.2921 225.4519)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Burnt Oak
-        </text>{" "}
-      </g>
-      <g id="940GZZLUCND_label">
-        {" "}
-        <text
-          id="940GZZLUCND_label"
-          transform="matrix(1 0 0 1 436.2765 237.0548)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Colindale
-        </text>{" "}
-      </g>
-      <g id="940GZZLUHCL_label">
-        {" "}
-        <text
-          id="940GZZLUHCL_label"
-          transform="matrix(1 0 0 1 433.4591 248.5626)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Hendon Central
-        </text>{" "}
-      </g>
-      <g id="940GZZLUBTX_label">
-        {" "}
-        <text
-          id="940GZZLUBTX_label"
-          transform="matrix(1 0 0 1 455.4767 260.9855)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Brent Cross
-        </text>{" "}
-      </g>
-      <g id="940GZZLUGGN_label">
-        {" "}
-        <text
-          id="940GZZLUGGN_label"
-          transform="matrix(1 0 0 1 460.8593 273.4087)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Golders Green
-        </text>{" "}
-      </g>
-      <g id="940GZZLUHTD_label">
-        {" "}
-        <text
-          id="940GZZLUHTD_label"
-          transform="matrix(1 0 0 1 480.7899 285.0793)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Hampstead
-        </text>{" "}
-      </g>
-      <g id="940GZZLUBZP_label">
-        {" "}
-        <text
-          id="940GZZLUBZP_label"
-          transform="matrix(1 0 0 1 510.4686 315.8456)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Belsize Park
-        </text>{" "}
-      </g>
-      <g id="940GZZLUCFM_label">
-        {" "}
-        <text
-          id="940GZZLUCFM_label"
-          transform="matrix(1 0 0 1 522.0057 325.7899)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Chalk Farm
-        </text>{" "}
-      </g>
-      <text
-        id="940GZZLUCTN_label"
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.TufnellPark}
+        transform="matrix(1 0 0 1 588.8623 290.7417)"
+      />
+      <StationTextName
+        station={Station.Edgware}
+        transform="matrix(1 0 0 1 411.2397 210.1685)"
+      />
+      <StationTextName
+        station={Station.BurntOak}
+        transform="matrix(1 0 0 1 423.2921 225.4519)"
+      />
+      <StationTextName
+        station={Station.Colindale}
+        transform="matrix(1 0 0 1 436.2765 237.0548)"
+      />
+      <StationTextName
+        station={Station.HendonCentral}
+        transform="matrix(1 0 0 1 433.4591 248.5626)"
+      />
+      <StationTextName
+        station={Station.BrentCross}
+        transform="matrix(1 0 0 1 455.4767 260.9855)"
+      />
+      <StationTextName
+        station={Station.GoldersGreen}
+        transform="matrix(1 0 0 1 460.8593 273.4087)"
+      />
+      <StationTextName
+        station={Station.Hampstead}
+        transform="matrix(1 0 0 1 480.7899 285.0793)"
+      />
+      <StationTextName
+        station={Station.BelsizePark}
+        transform="matrix(1 0 0 1 510.4686 315.8456)"
+      />
+      <StationTextName
+        station={Station.ChalkFarm}
+        transform="matrix(1 0 0 1 522.0057 325.7899)"
+      />
+      <StationTextName
+        station={Station.CamdenTown}
         transform="matrix(1 0 0 1 516.5774 335.9116)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Camden Town
-      </text>
-      <text
-        id="940GZZLUMTC_label"
+      />
+      <StationTextName
+        station={Station.MorningtonCrescent}
         transform="matrix(1 0 0 1 519.4922 348.3104)"
       >
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+        <tspan x="0" y="0">
           Mornington
         </tspan>
-        <tspan x="6.1" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="6.1" y="4.5">
           Crescent
         </tspan>
-      </text>
-      <text
-        id="940GZZLUGDG_label_00000039815852876718259100000011708191824323188361_"
+      </StationTextName>
+      <StationTextName
+        station={Station.GoodgeStreet}
         transform="matrix(1 0 0 1 516.3997 416.7274)"
       >
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+        <tspan x="0" y="0">
           Goodge
         </tspan>
-        <tspan x="3.5" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="3.5" y="4.5">
           Street
         </tspan>
-      </text>
-      <text id="940GZZLUWRR_label" transform="matrix(1 0 0 1 541.0989 393.056)">
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+      </StationTextName>
+      <StationTextName
+        station={Station.WarrenStreet}
+        transform="matrix(1 0 0 1 541.0989 393.056)"
+      >
+        <tspan x="0" y="0">
           Warren
         </tspan>
-        <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="0" y="4.5">
           Street
         </tspan>
-      </text>
-      <g id="940GZZLULSQ_label">
-        {" "}
-        <text
-          id="940GZZLULSQ_label"
-          transform="matrix(1 0 0 1 540.5107 462.9912)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Leicester Square
-        </text>{" "}
-      </g>
-      <g id="940GZZLUBOR_label_00000054963474354519071800000015928225502850536122_">
-        {" "}
-        <text
-          id="940GZZLUBOR_label_00000011716264446194053670000006162005874992917144_"
-          transform="matrix(1 0 0 1 603.8345 570.1442)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Borough
-        </text>{" "}
-      </g>
-      <g id="940GZZLUAGL_label_00000097474572904719797200000013103342613370202536_">
-        {" "}
-        <text
-          id="940GZZLUAGL_label_00000161618154534449539240000007337005373257525121_"
-          transform="matrix(1 0 0 1 604.8154 383.2585)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Angel
-        </text>{" "}
-      </g>
-      <g id="940GZZNEUGST_label">
-        {" "}
-        <text
-          id="940GZZNEUGST_label"
-          transform="matrix(1 0 0 1 452.7015 611.9494)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Nine Elms
-        </text>{" "}
-      </g>
-      <g id="940GZZBPSUST_label">
-        {" "}
-        <text
-          id="940GZZBPSUST_label"
-          transform="matrix(1 0 0 1 423.3479 611.359)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Battersea{" "}
+      </StationTextName>
+      <StationTextName
+        station={Station.LeicesterSquare}
+        transform="matrix(1 0 0 1 540.5107 462.9912)"
+      />
+      <StationTextName
+        station={Station.Borough}
+        transform="matrix(1 0 0 1 603.8345 570.1442)"
+      />
+      <StationTextName
+        station={Station.Angel}
+        transform="matrix(1 0 0 1 604.8154 383.2585)"
+      />
+      <StationTextName
+        station={Station.NineElms}
+        transform="matrix(1 0 0 1 452.7015 611.9494)"
+      />
+      <StationTextName
+        station={Station.BatterseaPowerStation}
+        transform="matrix(1 0 0 1 423.3479 611.359)"
+      >
+        <tspan x="0" y="0">
+          Battersea
+        </tspan>
+        <tspan x="6.7" y="4.5">
+          Power
+        </tspan>
+        <tspan x="5.2" y="9.1">
+          Station
+        </tspan>
+      </StationTextName>
+      <StationTextName station={Station.OldStreet} tag={"g"}>
+        <text transform="matrix(1 0 0 1 639.7898 376.1506)">
+          <tspan x="0" y="0">
+            Old
           </tspan>
-          <tspan x="6.7" y="4.5" fill="#1C3F94" className="blue-fill">
-            Power{" "}
-          </tspan>
-          <tspan x="5.2" y="9.1" fill="#1C3F94" className="blue-fill">
-            Station
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZLUODS_label">
-        {" "}
-        <text
-          id="940GZZLUODS_label"
-          transform="matrix(1 0 0 1 639.7898 376.1506)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Old{" "}
-          </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
+          <tspan x="0" y="4.5">
             Street
           </tspan>
         </text>
         <polygon
-          id="940GZZLUODS_nr"
           fill="#EE3124"
           points="644.1,371.9 642.4,371.1 644.8,371.1 644.8,370.6 642.3,370.6 643.6,370 644.8,370 644.8,369.5 643.6,369.5 642,368.7 640.8,368.7 642.5,369.5 640,369.5 640,370 642.5,370 641.2,370.6 640,370.6 640,371.1 641.3,371.1 642.9,371.9 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZLUKNG_label_00000094583281232357750590000005046492310500553365_">
-        {" "}
-        <text
-          id="940GZZLUKNG_label_00000178189706542798184400000000281676625881284736_"
-          transform="matrix(1 0 0 1 507.3153 612.836)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Kennington
-        </text>{" "}
-      </g>
-      <g id="940GZZLUCPN_label">
-        {" "}
-        <text
-          id="940GZZLUCPN_label"
-          transform="matrix(1 0 0 1 460.1666 660.7785)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Clapham North
-        </text>{" "}
-      </g>
-      <g id="910GCLPHHS_label">
-        <text
-          id="910GCLPHHS_label"
-          transform="matrix(1 0 0 1 448.5531 648.8156)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Clapham High Street
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.Kennington}
+        transform="matrix(1 0 0 1 507.3153 612.836)"
+      />
+      <StationTextName
+        station={Station.ClaphamNorth}
+        transform="matrix(1 0 0 1 460.1666 660.7785)"
+      />
+      <StationTextName
+        station={Station.ClaphamHighStreet}
+        transform="matrix(1 0 0 1 448.5531 648.8156)"
+      />
+      <StationTextName
+        station={Station.Oval}
+        transform="matrix(1 0 0 1 510.5453 632.8904)"
+      />
+      <StationTextName
+        station={Station.ClaphamCommon}
+        transform="matrix(1 0 0 1 445.2223 668.1854)"
+      />
+      <StationTextName
+        station={Station.ClaphamSouth}
+        transform="matrix(1 0 0 1 444.1051 676.8129)"
+      />
+      <StationTextName
+        station={Station.TootingBec}
+        transform="matrix(1 0 0 1 466.5534 700.8143)"
+      />
+      <StationTextName
+        station={Station.TootingBroadway}
+        transform="matrix(1 0 0 1 457.8398 709.5274)"
+      />
+      <StationTextName
+        station={Station.ColliersWood}
+        transform="matrix(1 0 0 1 448.4025 718.4955)"
+      />
+      <StationTextName
+        station={Station.SouthWimbledon}
+        transform="matrix(1 0 0 1 438.2034 727.0908)"
+      />
+      <StationTextName
+        station={Station.Morden}
+        transform="matrix(1 0 0 1 406.7735 761.8661)"
+      />
+      <StationTextName station={Station.Balham} tag={"g"}>
+        <text transform="matrix(1 0 0 1 450.9135 686.0406)">
+          {Station.Balham}
         </text>
-      </g>
-      <g id="940GZZLUOVL_label_00000139996596645068958320000014736113727806992276_">
-        <text
-          id="940GZZLUOVL_label_00000044867933459683744830000009703917637598633143_"
-          transform="matrix(1 0 0 1 510.5453 632.8904)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Oval
-        </text>
-      </g>
-      <g id="940GZZLUCPC_label">
-        <text
-          id="940GZZLUCPC_label"
-          transform="matrix(1 0 0 1 445.2223 668.1854)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Clapham Common
-        </text>
-      </g>
-      <g id="940GZZLUCPS_label">
-        <text
-          id="940GZZLUCPS_label"
-          transform="matrix(1 0 0 1 444.1051 676.8129)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Clapham South
-        </text>
-      </g>
-      <g id="940GZZLUTBC_label">
-        {" "}
-        <text
-          id="940GZZLUTBC_label"
-          transform="matrix(1 0 0 1 466.5534 700.8143)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Tooting Bec
-        </text>{" "}
-      </g>
-      <g id="940GZZLUTBY_label">
-        {" "}
-        <text
-          id="940GZZLUTBY_label"
-          transform="matrix(1 0 0 1 457.8398 709.5274)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Tooting Broadway
-        </text>{" "}
-      </g>
-      <g id="940GZZLUCSD_label">
-        {" "}
-        <text
-          id="940GZZLUCSD_label"
-          transform="matrix(1 0 0 1 448.4025 718.4955)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Colliers Wood
-        </text>{" "}
-      </g>
-      <g id="940GZZLUSWN_label">
-        {" "}
-        <text
-          id="940GZZLUSWN_label"
-          transform="matrix(1 0 0 1 438.2034 727.0908)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          South Wimbledon
-        </text>{" "}
-      </g>
-      <g id="940GZZLUMDN_label">
-        {" "}
-        <text
-          id="940GZZLUMDN_label"
-          transform="matrix(1 0 0 1 406.7735 761.8661)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Morden
-        </text>{" "}
-      </g>
-      <g id="940GZZLUBLM_label">
-        {" "}
-        <g id="940GZZLUBLM_label">
-          {" "}
-          <text
-            transform="matrix(1 0 0 1 450.9135 686.0406)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            Balham
-          </text>{" "}
-        </g>
         <polygon
-          id="940GZZLUBLM_nr"
           fill="#EE3124"
           points="448.8,686 447.1,685.3 449.5,685.3 449.5,684.7 447,684.7 448.3,684.1 449.5,684.1 449.5,683.6 448.3,683.6 446.7,682.9 445.5,682.9 447.2,683.6 444.7,683.6 444.7,684.1 447.2,684.1 445.9,684.7 444.7,684.7 444.7,685.3 446,685.3 447.6,686 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZLURYL_label">
-        {" "}
-        <text
-          id="940GZZLURYL_label"
-          transform="matrix(1 0 0 1 183.2716 262.7036)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Rayners Lane
-        </text>{" "}
-      </g>
-      <text
-        id="940GZZLUSHH_label_00000088815603332474413570000000193781208908841131_"
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.RaynersLane}
+        transform="matrix(1 0 0 1 183.2716 262.7036)"
+      />
+      <StationTextName
+        station={Station.SouthHarrow}
         transform="matrix(1 0 0 1 190.5788 284.4829)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        South Harrow
-      </text>
-      <text
-        id="940GZZLUSUH_label_00000093145606304877859880000013989329852443505074_"
+      />
+      <StationTextName
+        station={Station.SudburyHill}
         transform="matrix(1 0 0 1 192.6002 306.042)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Sudbury Hill
-      </text>
-      <text
-        id="940GZZLUSUT_label_00000048481908092049602260000016286826891211378823_"
+      />
+      <StationTextName
+        station={Station.SudburyTown}
         transform="matrix(1 0 0 1 188.1452 327.5528)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Sudbury Town
-      </text>
-      <text
-        id="940GZZLUALP_label_00000137833395917458020410000006246169902100264345_"
+      />
+      <StationTextName
+        station={Station.Alperton}
         transform="matrix(1 0 0 1 201.6647 349.0157)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Alperton
-      </text>
-      <text
-        id="940GZZLUPKR_label"
+      />
+      <StationTextName
+        station={Station.ParkRoyal}
         transform="matrix(1 0 0 1 198.376 425.4648)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Park Royal
-      </text>
-      <text
-        id="940GZZLUNEN_label_00000084509068825557771920000013920418326011860114_"
+      />
+      <StationTextName
+        station={Station.NorthEaling}
         transform="matrix(1 0 0 1 193.7379 437.6872)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        North Ealing
-      </text>
-      <text
-        id="940GZZLUHR4_label"
+      />
+      <StationTextName
+        station={Station.HeathrowTerminal4}
         transform="matrix(1 0 0 1 104.8791 631.3719)"
       >
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+        <tspan x="0" y="0">
           Heathrow
         </tspan>
-        <tspan x="-0.8" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="-0.8" y="4.5">
           Terminal 4
         </tspan>
-      </text>
-      <g id="940GZZLUHR5_label">
-        {" "}
-        <text
-          id="940GZZLUHR5_label"
-          transform="matrix(1 0 0 1 74.5677 631.3724)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+      </StationTextName>
+      <StationTextName
+        station={Station.HeathrowTerminal5}
+        transform="matrix(1 0 0 1 74.5677 631.3724)"
+      >
+        <tspan x="0" y="0">
+          Heathrow
+        </tspan>
+        <tspan x="-0.7" y="4.5">
+          Terminal 5
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.Northfields}
+        transform="matrix(1 0 0 1 187.6244 513.3064)"
+      />
+      <StationTextName
+        station={Station.BostonManor}
+        transform="matrix(1 0 0 1 178.0502 524.0193)"
+      >
+        <tspan x="0" y="0">
+          Boston
+        </tspan>
+        <tspan x="0" y="4.5">
+          Manor
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.SouthEaling}
+        transform="matrix(1 0 0 1 200.78 497.6436)"
+      >
+        <tspan x="0" y="0">
+          South
+        </tspan>
+        <tspan x="0" y="4.5">
+          Ealing
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.Osterley}
+        transform="matrix(1 0 0 1 166.8688 535.7355)"
+      />
+      <StationTextName
+        station={Station.HounslowCentral}
+        transform="matrix(1 0 0 1 150.1485 552.3395)"
+      />
+      <StationTextName
+        station={Station.HounslowEast}
+        transform="matrix(1 0 0 1 159.6801 543.8352)"
+      />
+      <StationTextName
+        station={Station.HounslowWest}
+        transform="matrix(1 0 0 1 141.2345 561.8819)"
+      >
+        <tspan x="0" y="0">
+          Hounslow
+        </tspan>
+        <tspan x="0" y="4.5">
+          West
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.HattonCross}
+        transform="matrix(1 0 0 1 127.0797 575.0977)"
+      />
+      <StationTextName station={Station.HeathrowTerminals23} tag={"g"}>
+        <text transform="matrix(1 0 0 1 82.96 571.35)">
+          <tspan x="0" y="0">
             Heathrow
           </tspan>
-          <tspan x="-0.7" y="4.5" fill="#1C3F94" className="blue-fill">
-            Terminal 5
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZLUNFD_label_00000166638346589202013860000006590051733823237277_">
-        {" "}
-        <text
-          id="940GZZLUNFD_label_00000163788528848376835250000011484939731260612005_"
-          transform="matrix(1 0 0 1 187.6244 513.3064)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Northfields
-        </text>{" "}
-      </g>
-      <g id="940GZZLUBOS_label_00000034082208936561717090000011812259318207488433_">
-        {" "}
-        <text
-          id="940GZZLUBOS_label_00000143585245732197575170000003303253434916080560_"
-          transform="matrix(1 0 0 1 178.0502 524.0193)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Boston{" "}
-          </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            Manor
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZLUSEA_label_00000034780073369602492530000006781407894390094005_">
-        {" "}
-        <text
-          id="940GZZLUSEA_label_00000140714748978070581740000014550517953361390515_"
-          transform="matrix(1 0 0 1 200.78 497.6436)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            South
-          </tspan>
-          <tspan x="-0.1" y="4.5" fill="#1C3F94" className="blue-fill">
-            Ealing
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZLUOSY_label_00000013892881348641057000000013603797446094556825_">
-        {" "}
-        <text
-          id="940GZZLUOSY_label_00000018202965862198062170000006929925337248680113_"
-          transform="matrix(1 0 0 1 166.8688 535.7355)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Osterley
-        </text>{" "}
-      </g>
-      <g id="940GZZLUHWC_label_00000098214634395089960800000005457041090092629430_">
-        {" "}
-        <text
-          id="940GZZLUHWC_label_00000072254218339719160800000015861140777821612422_"
-          transform="matrix(1 0 0 1 150.1485 552.3395)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Hounslow Central
-        </text>{" "}
-      </g>
-      <g id="940GZZLUHWE_label_00000008120628472175979910000007822684979455533238_">
-        {" "}
-        <text
-          id="940GZZLUHWE_label_00000105428281187136419560000000383941413946996102_"
-          transform="matrix(1 0 0 1 159.6801 543.8352)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Hounslow East
-        </text>{" "}
-      </g>
-      <g id="940GZZLUHWT_label_00000077283206853530188360000014308797712970818690_">
-        {" "}
-        <text
-          id="940GZZLUHWT_label_00000113352051166758502820000000042646834505348247_"
-          transform="matrix(1 0 0 1 141.2345 561.8819)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Hounslow
-          </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            West
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZLUHNX_label_00000000187021209440005640000005185227795362860475_">
-        {" "}
-        <text
-          id="940GZZLUHNX_label_00000124153208509629474730000004646659687280106924_"
-          transform="matrix(1 0 0 1 127.0797 575.0977)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Hatton Cross
-        </text>{" "}
-      </g>
-      <g id="940GZZLUHRC_label">
-        {" "}
-        <text id="940GZZLUHRC_label" transform="matrix(1 0 0 1 82.96 571.35)">
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Heathrow
-          </tspan>
-          <tspan x="-11.3" y="4.5" fill="#1C3F94" className="blue-fill">
-            T
-          </tspan>
-          <tspan x="-8.4" y="4.5" fill="#1C3F94" className="blue-fill">
-            erminals{" "}
-          </tspan>
-          <tspan x="12" y="4.5" fill="#1C3F94" className="blue-fill">
-            2
-          </tspan>
-          <tspan x="14.3" y="4.5" fill="#1C3F94" className="blue-fill">
-            {" "}
-            &amp;
-          </tspan>
-          <tspan x="18.5" y="4.5" fill="#1C3F94" className="blue-fill">
-            {" "}
-          </tspan>
-          <tspan x="19.6" y="4.5" fill="#1C3F94" className="blue-fill">
-            3
+          <tspan x="-12.5" y="4.5">
+            Terminals 2 &amp; 3
           </tspan>
         </text>
-      </g>
-      <path
-        id="heathrow-airport"
-        fill="#1C3F94"
-        d="M85.6,582.7c0.3,0,0.4,0.4,0.4,0.7l0,1.8l2.5,1.9c0.1,0.1,0.4,0.3,0.4,0.3 c0.1,0.1,0.1,0.3,0.1,0.4v0.2l-2.4-1c-0.1,0-0.2-0.1-0.3-0.1c-0.3,0-0.2,0.4-0.3,0.5l0,1l0.8,0.6l0.1,0.5l-1.1-0.3h-0.2l-1.1,0.3 l0.1-0.5l0.8-0.6l0-1c0-0.2,0-0.5-0.2-0.5c-0.1,0-0.2,0-0.4,0.1l-2.4,1v-0.2c0-0.1,0-0.3,0.1-0.4c0-0.1,0.4-0.3,0.4-0.3l2.5-1.9 l0-1.8C85.3,583.1,85.3,582.7,85.6,582.7L85.6,582.7z"
-        className="blue-fill"
-      />
-      <text
-        id="940GZZLURSQ_label_00000162315232275633950680000006874917825993005477_"
+        <path
+          fill="#1C3F94"
+          d="M85.6,582.7c0.3,0,0.4,0.4,0.4,0.7l0,1.8l2.5,1.9c0.1,0.1,0.4,0.3,0.4,0.3 c0.1,0.1,0.1,0.3,0.1,0.4v0.2l-2.4-1c-0.1,0-0.2-0.1-0.3-0.1c-0.3,0-0.2,0.4-0.3,0.5l0,1l0.8,0.6l0.1,0.5l-1.1-0.3h-0.2l-1.1,0.3 l0.1-0.5l0.8-0.6l0-1c0-0.2,0-0.5-0.2-0.5c-0.1,0-0.2,0-0.4,0.1l-2.4,1v-0.2c0-0.1,0-0.3,0.1-0.4c0-0.1,0.4-0.3,0.4-0.3l2.5-1.9 l0-1.8C85.3,583.1,85.3,582.7,85.6,582.7L85.6,582.7z"
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.RussellSquare}
         transform="matrix(1 0 0 1 567.5333 391.823)"
       >
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+        <tspan x="0" y="0">
           Russell
         </tspan>
-        <tspan x="0.7" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="0.7" y="4.5">
           Square
         </tspan>
-      </text>
-      <g id="940GZZLUHPC_label">
-        <text
-          id="940GZZLUHPC_label"
-          transform="matrix(1 0 0 1 422.7012 467.8985)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Hyde Park Corner
-        </text>
-      </g>
-      <g id="940GZZLUKNB_label">
-        <text
-          id="940GZZLUKNB_label"
-          transform="matrix(1 0 0 1 410.8315 488.2129)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Knightsbridge
-        </text>
-      </g>
-      <g id="940GZZLUCGN_label">
-        <text
-          id="940GZZLUCGN_label"
-          transform="matrix(1 0 0 1 550.9121 450.8623)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Covent Garden
-        </text>
-      </g>
-      <text
-        id="910GENFCOAK_label"
-        transform="matrix(1 0 0 1 656.2578 176.9611)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Oakwood
-      </text>
-      <text
-        id="940GZZLUCKS_label"
+      </StationTextName>
+      <StationTextName
+        station={Station.HydeParkCorner}
+        transform="matrix(1 0 0 1 422.7012 467.8985)"
+      />
+      <StationTextName
+        station={Station.Knightsbridge}
+        transform="matrix(1 0 0 1 410.8315 488.2129)"
+      />
+      <StationTextName
+        station={Station.CoventGarden}
+        transform="matrix(1 0 0 1 550.9121 450.8623)"
+      />
+      <StationTextName
+        station={Station.Oakwood}
+        transform="matrix(1 0 0 1 656.7 176.96)"
+      />
+      <StationTextName
+        station={Station.Cockfosters}
         transform="matrix(1 0 0 1 650.8818 164.8114)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Cockfosters
-      </text>
-      <text
-        id="940GZZLUSGT_label"
+      />
+      <StationTextName
+        station={Station.Southgate}
         transform="matrix(1 0 0 1 656.373 189.239)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Southgate
-      </text>
-      <text
-        id="940GZZLUASG_label"
+      />
+      <StationTextName
+        station={Station.ArnosGrove}
         transform="matrix(1 0 0 1 651.126 201.5022)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Arnos Grove
-      </text>
-      <text
-        id="940GZZLUBDS_label"
+      />
+      <StationTextName
+        station={Station.BoundsGreen}
         transform="matrix(1 0 0 1 647.708 213.7793)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Bounds Green
-      </text>
-      <text
-        id="940GZZLUWOG_label"
+      />
+      <StationTextName
+        station={Station.WoodGreen}
         transform="matrix(1 0 0 1 650.9336 226.0647)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Wood Green
-      </text>
-      <text
-        id="940GZZLUTPN_label"
+      />
+      <StationTextName
+        station={Station.TurnpikeLane}
         transform="matrix(1 0 0 1 647.5156 238.3374)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Turnpike Lane
-      </text>
-      <text
-        id="940GZZLUMRH_label"
+      />
+      <StationTextName
+        station={Station.ManorHouse}
         transform="matrix(1 0 0 1 649.4113 258.2836)"
-        fill="#1C3F94"
-        className="blue-fill"
+      />
+      <StationTextName
+        station={Station.Arsenal}
+        transform="matrix(1 0 0 1 639.785 291.2278)"
+      />
+      <StationTextName
+        station={Station.HollowayRoad}
+        transform="matrix(1 0 0 1 622.6916 298.8438)"
       >
-        Manor House
-      </text>
-      <g id="940GZZLUASL_label_00000139263236055369229020000007356379321411894713_">
-        <text
-          id="940GZZLUASL_label_00000041280518109329306990000007295310953759429027_"
-          transform="matrix(1 0 0 1 639.785 291.2278)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Arsenal
-        </text>
-      </g>
-      <g id="940GZZLUHWY_label_00000139258680293067170480000012379836974381495207_">
-        <text
-          id="940GZZLUHWY_label_00000067946324377386564180000001666991026601854377_"
-          transform="matrix(1 0 0 1 622.6916 298.8438)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Holloway{" "}
-          </tspan>
-          <tspan x="10.3" y="4.5" fill="#1C3F94" className="blue-fill">
-            Road
-          </tspan>
-        </text>
-      </g>
-      <text
-        id="910GBLCHSRD_label"
-        transform="matrix(1 0 0 1 758.8127 248.6091)"
-      >
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-          Blackhorse{" "}
+        <tspan x="0" y="0">
+          Holloway
         </tspan>
-        <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="10.3" y="4.5">
           Road
         </tspan>
-      </text>
-      <g id="940GZZLUHAI_label">
-        <g id="940GZZLUHAI_label">
-          <text transform="matrix(1 0 0 1 666.3233 317.8708)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              Highbury &amp;
-            </tspan>
-            <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-              Islington
-            </tspan>
-          </text>
-        </g>
+      </StationTextName>
+      <StationTextName
+        station={Station.BlackhorseRoad}
+        transform="matrix(1 0 0 1 758.8127 248.6091)"
+      >
+        <tspan x="0" y="0">
+          Blackhorse
+        </tspan>
+        <tspan x="0" y="4.5">
+          Road
+        </tspan>
+      </StationTextName>
+      <StationTextName station={Station.HighburyIslington} tag={"g"}>
+        <text transform="matrix(1 0 0 1 666.3233 317.8708)">
+          <tspan x="0" y="0">
+            Highbury &amp;
+          </tspan>
+          <tspan x="0" y="4.5">
+            Islington
+          </tspan>
+        </text>
         <polygon
-          id="940GZZLUHAI_nr"
           fill="#EE3124"
           points="690.8,322.4 689.1,321.6 691.5,321.6 691.5,321.1 689,321.1 690.3,320.5 691.5,320.5 691.5,320 690.3,320 688.7,319.3 687.5,319.3 689.2,320 686.7,320 686.7,320.5 689.2,320.5 687.9,321.1 686.7,321.1 686.7,321.6 688,321.6 689.6,322.4 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZLUFPK_label">
-        {" "}
-        <g id="940GZZLUFPK_label">
-          <text transform="matrix(1 0 0 1 678.8333 284.2267)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              Finsbury
-            </tspan>
-            <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-              Park
-            </tspan>
-          </text>
-        </g>
+        />
+      </StationTextName>
+      <StationTextName station={Station.FinsburyPark} tag={"g"}>
+        <text transform="matrix(1 0 0 1 678.8333 284.2267)">
+          <tspan x="0" y="0">
+            Finsbury
+          </tspan>
+          <tspan x="0" y="4.5">
+            Park
+          </tspan>
+        </text>
         <polygon
-          id="940GZZLUFPK_nr"
-          fill="#EE3124"
-          points="693.4,288.8 691.7,288 694.2,288 694.2,287.5 691.6,287.5 692.9,286.9 694.2,286.9 694.2,286.4 692.9,286.4 691.3,285.6 690.2,285.6 691.8,286.4 689.3,286.4 689.3,286.9 691.8,286.9 690.5,287.5 689.3,287.5 689.3,288 690.6,288 692.3,288.8 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZLUSVS_label">
-        {" "}
-        <g id="940GZZLUSVS_label">
-          <text transform="matrix(1 0 0 1 698.4442 253.6152)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              Seven
-            </tspan>
-            <tspan x="-1.5" y="4.5" fill="#1C3F94" className="blue-fill">
-              Sisters
-            </tspan>
-          </text>
-        </g>
-        <polygon
-          id="940GZZLUSVS_nr"
           fill="#EE3124"
           points="697.2,253.6 695.5,252.8 698,252.8 698,252.3 695.4,252.3 696.7,251.7 698,251.7 698,251.2 696.7,251.2 695.2,250.5 694,250.5 695.6,251.2 693.1,251.2 693.1,251.7 695.6,251.7 694.3,252.3 693.1,252.3 693.1,252.8 694.4,252.8 696.1,253.6 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZLUTMH_label">
-        <g id="940GZZLUTMH_label">
-          <text transform="matrix(1 0 0 1 720.3927 269.2832)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              Tottenham
-            </tspan>
-            <tspan x="7.3" y="4.5" fill="#1C3F94" className="blue-fill">
-              Hale
-            </tspan>
-          </text>
-        </g>
+        />
+      </StationTextName>
+      <StationTextName station={Station.SevenSisters} tag={"g"}>
+        <text transform="matrix(1 0 0 1 698.4442 253.6152)">
+          <tspan x="0" y="0">
+            Seven
+          </tspan>
+          <tspan x="-2.3" y="4.5">
+            Sisters
+          </tspan>
+        </text>
         <polygon
-          id="940GZZLUTMH_nr"
+          fill="#EE3124"
+          points="697.2,253.6 695.5,252.8 698,252.8 698,252.3 695.4,252.3 696.7,251.7 698,251.7 698,251.2 696.7,251.2 695.2,250.5 694,250.5 695.6,251.2 693.1,251.2 693.1,251.7 695.6,251.7 694.3,252.3 693.1,252.3 693.1,252.8 694.4,252.8 696.1,253.6 "
+        />
+      </StationTextName>
+      <StationTextName station={Station.TottenhamHale} tag={"g"}>
+        <text transform="matrix(1 0 0 1 720.3927 269.2832)">
+          <tspan x="0" y="0">
+            Tottenham
+          </tspan>
+          <tspan x="7.3" y="4.5">
+            Hale
+          </tspan>
+        </text>
+        <polygon
           fill="#EE3124"
           points="742.5,273.8 740.8,273.1 743.2,273.1 743.2,272.5 740.7,272.5 742,271.9 743.2,271.9 743.2,271.4 742,271.4 740.4,270.7 739.2,270.7 740.9,271.4 738.4,271.4 738.4,271.9 740.9,271.9 739.6,272.5 738.4,272.5 738.4,273.1 739.7,273.1 741.3,273.8 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZLUWWL_label">
-        {" "}
-        <g id="940GZZLUWWL_label">
-          <text transform="matrix(1 0 0 1 795.8745 260.9099)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              Walthamstow
-            </tspan>
-            <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-              Central
-            </tspan>
-          </text>
-        </g>
-      </g>
-      <text
-        id="940GZZLUPCO_label"
-        transform="matrix(1 0 0 1 455.7627 555.3077)"
-        fill="#1C3F94"
-        className="blue-fill"
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.WalthamstowCentral}
+        transform="matrix(1 0 0 1 795.8745 260.9099)"
       >
-        Pimlico
-      </text>
-      <g id="940GZZLUVXL_label">
-        {" "}
-        <g id="940GZZLUVXL_label">
-          {" "}
-          <text
-            transform="matrix(1 0 0 1 459.1848 622.1716)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            Vauxhall
-          </text>{" "}
-        </g>
+        <tspan x="0" y="0">
+          Walthamstow
+        </tspan>
+        <tspan x="0" y="4.5">
+          Central
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.Pimlico}
+        transform="matrix(1 0 0 1 455.7627 555.3077)"
+      />
+      <StationTextName station={Station.Vauxhall} tag={"g"}>
+        <text transform="matrix(1 0 0 1 459.1848 622.1716)">
+          {Station.Vauxhall}
+        </text>
         <polygon
-          id="940GZZLUVXL_nr"
           fill="#EE3124"
           points="482.6,622.2 480.9,621.4 483.3,621.4 483.3,620.9 480.8,620.9 482.1,620.3 483.3,620.3 483.3,619.8 482.1,619.8 480.5,619 479.3,619 481,619.8 478.5,619.8 478.5,620.3 481,620.3 479.7,620.9 478.5,620.9 478.5,621.4 479.8,621.4 481.4,622.2 "
-        ></polygon>{" "}
-      </g>
-      <text
-        id="940GZZLUSKW_label"
-        transform="matrix(1 0 0 1 519.3076 646.1436)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Stockwell
-      </text>
-      <g id="940GZZLUBXN_label">
-        <text
-          id="940GZZLUBXN_label"
-          transform="matrix(1 0 0 1 541.7598 674.3204)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Brixton
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.Stockwell}
+        transform="matrix(1 0 0 1 519.3076 646.4)"
+      />
+      <StationTextName station={Station.Brixton} tag={"g"}>
+        <text transform="matrix(1 0 0 1 541.7598 673.6)">
+          {Station.Brixton}
         </text>
         <polygon
-          id="940GZZLUBXN_nr"
           fill="#EE3124"
           points="563,674.3 561.3,673.5 563.7,673.5 563.7,673 561.2,673 562.5,672.4 563.7,672.4 563.7,671.9 562.5,671.9 560.9,671.2 559.7,671.2 561.4,671.9 558.9,671.9 558.9,672.4 561.4,672.4 560.1,673 558.9,673 558.9,673.5 560.2,673.5 561.8,674.3 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZDLWSV_label">
-        {" "}
-        <text
-          id="940GZZDLWSV_label"
-          transform="matrix(1 0 0 1 894.7065 513.515)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            West{" "}
-          </tspan>
-          <tspan x="-12.7" y="4.4" fill="#1C3F94" className="blue-fill">
-            Silvertown
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZDLPDK_label">
-        {" "}
-        <text
-          id="940GZZDLPDK_label"
-          transform="matrix(1 0 0 1 883.8154 526.5579)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Pontoon{" "}
-          </tspan>
-          <tspan x="7.8" y="4.4" fill="#1C3F94" className="blue-fill">
-            Dock
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZDLKGV_label">
-        {" "}
-        <text
-          id="940GZZDLKGV_label"
-          transform="matrix(1 0 0 1 894.0841 556.9661)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            King{" "}
-          </tspan>
-          <tspan x="-10.6" y="4.4" fill="#1C3F94" className="blue-fill">
-            George V
-          </tspan>
-        </text>{" "}
-      </g>
-      <text
-        id="940GZZDLPRE_label_00000160160483955794891920000006053162382897908413_"
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.WestSilvertown}
+        transform="matrix(1 0 0 1 894.7065 513.515)"
+      >
+        <tspan x="0" y="0">
+          West
+        </tspan>
+        <tspan x="-12.7" y="4.4">
+          Silvertown
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.PontoonDock}
+        transform="matrix(1 0 0 1 883.8154 526.5579)"
+      >
+        <tspan x="1" y="0">
+          Pontoon
+        </tspan>
+        <tspan x="8" y="4.4">
+          Dock
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.KingGeorgeV}
+        transform="matrix(1 0 0 1 894.0841 556.9661)"
+      >
+        <tspan x="0" y="0">
+          King
+        </tspan>
+        <tspan x="-10.6" y="4.4">
+          George V
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.PrinceRegent}
         transform="matrix(1 0 0 1 949.3324 492.5805)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Prince Regent
-      </text>
-      <text
-        id="940GZZDLRAL_label_00000102526578843388548160000018020725332040158113_"
+      />
+      <StationTextName
+        station={Station.RoyalAlbert}
         transform="matrix(1 0 0 1 959.1375 513.726)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Royal Albert
-      </text>
-      <text
-        id="940GZZDLBPK_label_00000079480175540651964840000015767066376573297280_"
+      />
+      <StationTextName
+        station={Station.BecktonPark}
         transform="matrix(1 0 0 1 959.0289 524.2914)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Beckton Park
-      </text>
-      <text
-        id="940GZZDLCYP_label_00000080204130541083178620000006917395554917821060_"
+      />
+      <StationTextName
+        station={Station.Cyprus}
         transform="matrix(1 0 0 1 959.1378 534.4178)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Cyprus
-      </text>
-      <text
-        id="940GZZDLGAL_label"
+      />
+      <StationTextName
+        station={Station.GallionsReach}
         transform="matrix(1 0 0 1 958.8894 545.8425)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Gallions Reach
-      </text>
-      <text
-        id="940GZZDLBEC_label"
+      />
+      <StationTextName
+        station={Station.Beckton}
         transform="matrix(1 0 0 1 959.0297 556.8019)"
-        fill="#1C3F94"
-        className="blue-fill"
+      />
+      <StationTextName
+        station={Station.Blackwall}
+        transform="matrix(1 0 0 1 799.6306 474.6104)"
+      />
+      <StationTextName
+        station={Station.RoyalVictoria}
+        transform="matrix(1 0 0 1 887.5356 457.7119)"
       >
-        Beckton
-      </text>
-      <g id="940GZZDLBLA_label">
-        {" "}
-        <text
-          id="940GZZDLBLA_label"
-          transform="matrix(1 0 0 1 799.6306 474.6104)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Blackwall
-        </text>{" "}
-      </g>
-      <g id="940GZZDLRVC_label">
-        {" "}
-        <text
-          id="940GZZDLRVC_label"
-          transform="matrix(1 0 0 1 887.5356 457.7119)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Royal
-          </tspan>
-          <tspan x="-2.4" y="4.5" fill="#1C3F94" className="blue-fill">
-            Victoria
-          </tspan>
-        </text>{" "}
-      </g>
-      <text id="940GZZDLBOW_label" transform="matrix(1 0 0 1 800.379 409.1649)">
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+        <tspan x="0" y="0">
+          Royal
+        </tspan>
+        <tspan x="-2.4" y="4.5">
+          Victoria
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.BowChurch}
+        transform="matrix(1 0 0 1 800.379 409.1649)"
+      >
+        <tspan x="0" y="0">
           Bow
         </tspan>
-        <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="0" y="4.5">
           Church
         </tspan>
-      </text>
-      <text
-        id="940GZZDLISL_label"
+      </StationTextName>
+      <StationTextName
+        station={Station.IslandGardens}
         transform="matrix(1 0 0 1 757.3604 571.5528)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Island Gardens
-      </text>
-      <text
-        id="940GZZDLDEP_label"
+      />
+      <StationTextName
+        station={Station.DeptfordBridge}
         transform="matrix(1 0 0 1 800.1992 616.5753)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Deptford Bridge
-      </text>
-      <text
-        id="940GZZDLSOQ_label"
+      />
+      <StationTextName
+        station={Station.SouthQuay}
         transform="matrix(1 0 0 1 764.2148 536.4673)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        South Quay
-      </text>
-      <text
-        id="940GZZDLCLA_label"
+      />
+      <StationTextName
+        station={Station.Crossharbour}
         transform="matrix(1 0 0 1 760.2109 548.1621)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Crossharbour
-      </text>
-      <text
-        id="940GZZDLMUD_label"
+      />
+      <StationTextName
+        station={Station.Mudchute}
         transform="matrix(1 0 0 1 767.877 559.858)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Mudchute
-      </text>
-      <text
-        id="940GZZDLHEQ_label"
+      />
+      <StationTextName
+        station={Station.HeronQuays}
         transform="matrix(1 0 0 1 761.3691 524.7725)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Heron Quays
-      </text>
-      <text
-        id="940GZZDLWIQ_label_00000008836372203715927830000000633499532256259978_"
+      />
+      <StationTextName
+        station={Station.WestIndiaQuay}
         transform="matrix(1 0 0 1 799.6346 482.8608)"
       >
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+        <tspan x="0" y="0">
           West India
         </tspan>
-        <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="0" y="4.5">
           Quay
         </tspan>
-      </text>
-      <text
-        id="940GZZDLELV_label"
+      </StationTextName>
+      <StationTextName
+        station={Station.ElversonRoad}
         transform="matrix(1 0 0 1 800.2549 628.0928)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Elverson Road
-      </text>
-      <text
-        id="940GZZDLDEV_label"
+      />
+      <StationTextName
+        station={Station.DevonsRoad}
         transform="matrix(1 0 0 1 762.1582 418.2907)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Devons Road
-      </text>
-      <text
-        id="940GZZDLLDP_label"
+      />
+      <StationTextName
+        station={Station.LangdonPark}
         transform="matrix(1 0 0 1 772.2471 428.9059)"
       >
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-          Langdon{" "}
+        <tspan x="0" y="0">
+          Langdon
         </tspan>
-        <tspan x="9.1" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="9.1" y="4.5">
           Park
         </tspan>
-      </text>
-      <text id="940GZZDLALL_label" transform="matrix(1 0 0 1 784.6592 439.522)">
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-          All{" "}
+      </StationTextName>
+      <StationTextName
+        station={Station.AllSaints}
+        transform="matrix(1 0 0 1 784.6592 439.522)"
+      >
+        <tspan x="0" y="0">
+          All
         </tspan>
-        <tspan x="-6.9" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="-6.9" y="4.5">
           Saints
         </tspan>
-      </text>
-      <g id="940GZZDLCGT_label">
-        {" "}
-        <text
-          id="940GZZDLCGT_label"
-          transform="matrix(1 0 0 1 857.937 450.8135)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Canning
+      </StationTextName>
+      <StationTextName
+        station={Station.CanningTown}
+        transform="matrix(1 0 0 1 857.937 450.8135)"
+      >
+        <tspan x="0" y="0">
+          Canning
+        </tspan>
+        <tspan x="0" y="4.5">
+          Town
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.Poplar}
+        transform="matrix(1 0 0 1 779.1746 463.58)"
+      />
+      <StationTextName
+        station={Station.PuddingMillLane}
+        transform="matrix(1 0 0 1 823.6797 375.917)"
+      >
+        <tspan x="0" y="0">
+          Pudding
+        </tspan>
+        <tspan x="0" y="4.5">
+          Mill Lane
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.EastIndia}
+        transform="matrix(1 0 0 1 827.115 475.1387)"
+      >
+        <tspan x="0" y="0">
+          East
+        </tspan>
+        <tspan x="-0.8" y="4.5">
+          India
+        </tspan>
+      </StationTextName>
+      <StationTextName station={Station.LondonCityAirport} tag={"g"}>
+        <text transform="matrix(1 0 0 1 887.2384 539.1827)">
+          <tspan x="0" y="0">
+            London
           </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            Town
+          <tspan x="7" y="4.4">
+            City
           </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZDLPOP_label">
-        {" "}
-        <text
-          id="940GZZDLPOP_label"
-          transform="matrix(1 0 0 1 779.1746 463.58)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Poplar
-        </text>{" "}
-      </g>
-      <g id="940GZZDLPUD_label">
-        {" "}
-        <text
-          id="940GZZDLPUD_label"
-          transform="matrix(1 0 0 1 823.6797 375.917)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Pudding
+          <tspan x="0" y="8.8">
+            Airport
           </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            Mill Lane
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZDLEIN_label_00000022558410135056704200000007725260095309501579_">
-        {" "}
-        <text
-          id="940GZZDLEIN_label_00000051344464977372583930000017038360722179985294_"
-          transform="matrix(1 0 0 1 827.115 475.1387)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            East
-          </tspan>
-          <tspan x="-0.8" y="4.5" fill="#1C3F94" className="blue-fill">
-            India
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZDLLCA_label">
-        {" "}
-        <g id="940GZZDLLCA_label">
-          {" "}
-          <text transform="matrix(1 0 0 1 887.2384 539.1827)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              London
-            </tspan>
-            <tspan x="7.7" y="4.4" fill="#1C3F94" className="blue-fill">
-              City{" "}
-            </tspan>
-            <tspan x="0.8" y="8.8" fill="#1C3F94" className="blue-fill">
-              Airport
-            </tspan>
-          </text>{" "}
-        </g>
+        </text>
         <path
-          id="940GZZDLLCA_airport"
           fill="#1C3F94"
           d="M884.4,535.5c0.2,0,0.2,0.3,0.2,0.5l0,1.2l1.6,1.2 c0.1,0,0.3,0.2,0.3,0.2c0.1,0.1,0,0.2,0,0.3v0.1l-1.6-0.6c-0.1,0-0.2,0-0.2,0c-0.2,0-0.2,0.2-0.2,0.4l0,0.6l0.5,0.4l0.1,0.3 l-0.7-0.2h-0.1l-0.7,0.2l0.1-0.3l0.5-0.4l0-0.6c0-0.1,0-0.4-0.2-0.4c-0.1,0-0.2,0-0.2,0l-1.6,0.6v-0.1c0-0.1,0-0.2,0-0.3 c0,0,0.2-0.2,0.3-0.2l1.7-1.2l0-1.2C884.2,535.8,884.3,535.5,884.4,535.5L884.4,535.5z"
-          className="blue-fill"
-        ></path>{" "}
-      </g>
-      <g id="940GZZDLLIM_label">
-        {" "}
-        <g id="940GZZDLLIM_label">
-          {" "}
-          <text
-            transform="matrix(1 0 0 1 736.2912 462.4893)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            Limehouse
-          </text>{" "}
-        </g>
+        />
+      </StationTextName>
+      <StationTextName station={Station.Limehouse} tag={"g"}>
+        <text transform="matrix(1 0 0 1 736.2912 462.4893)">
+          {Station.Limehouse}
+        </text>
         <polygon
-          id="940GZZDLLIM_nr"
           fill="#EE3124"
           points="750,458.7 748.3,457.9 750.7,457.9 750.7,457.4 748.2,457.4 749.5,456.8 750.7,456.8 750.7,456.3 749.5,456.3 747.9,455.6 746.8,455.6 748.4,456.3 745.9,456.3 745.9,456.8 748.4,456.8 747.1,457.4 745.9,457.4 745.9,457.9 747.2,457.9 748.8,458.7 "
-        ></polygon>{" "}
-      </g>
-      <g id="910GWOLWXR_label">
-        {" "}
-        <g id="940GZZDLWLA_label_00000033368290232535219300000000376478369804373695_">
-          {" "}
-          <text transform="matrix(1 0 0 1 897.4194 593.1918)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              Woolwich{" "}
-            </tspan>
-            <tspan x="2.8" y="4.4" fill="#1C3F94" className="blue-fill">
-              Arsenal
-            </tspan>
-          </text>{" "}
-        </g>
-        <g id="910GWOLWXR_label_00000131351497236079654900000010500960171327108792_">
-          {" "}
-          <text
-            transform="matrix(1 0 0 1 933.6148 586.5044)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
+        />
+      </StationTextName>
+      <StationTextName station={Station.WoolwichArsenal} tag={"g"}>
+        <text transform="matrix(1 0 0 1 897.4194 593.1918)">
+          <tspan x="0" y="0">
             Woolwich
-          </text>{" "}
-        </g>
-        <g id="910GABWDXR_label_00000008108960984516542140000014890682756674291368_">
-          {" "}
-          <text
-            transform="matrix(1 0 0 1 933.6148 599.0184)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            Abbey Wood
-          </text>{" "}
-        </g>
+          </tspan>
+          <tspan x="2.8" y="4.4">
+            Arsenal
+          </tspan>
+        </text>
         <polygon
-          id="940GZZDLWLA_nr_00000095316061842324361780000015386550967165362614_"
           fill="#EE3124"
           points="910.2,602.2 908.4,601.4 910.9,601.4 910.9,600.9 908.4,600.9 909.6,600.3 910.9,600.3 910.9,599.8 909.6,599.8 908.1,599 906.9,599 908.5,599.8 906,599.8 906,600.3 908.5,600.3 907.2,600.9 906,600.9 906,601.4 907.3,601.4 909,602.2 "
-        ></polygon>
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.Woolwich}
+        transform="matrix(1 0 0 1 933.6148 586.5044)"
+      />
+      <StationTextName station={Station.AbbeyWood} tag={"g"}>
+        <text transform="matrix(1 0 0 1 933.6148 599.0184)">
+          {multiWordStationNames[Station.AbbeyWood]}
+        </text>
         <polygon
-          id="910GABWDXR_nr_00000080192772879290993680000015486601526961663116_"
           fill="#EE3124"
           points="937.9,603.3 936.2,602.5 938.6,602.5 938.6,602 936.1,602 937.4,601.4 938.6,601.4 938.6,600.9 937.4,600.9 935.8,600.2 934.6,600.2 936.3,600.9 933.8,600.9 933.8,601.4 936.3,601.4 935,602 933.8,602 933.8,602.5 935.1,602.5 936.7,603.3 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZDLCUT_label">
-        {" "}
-        <text
-          id="940GZZDLCUT_label"
-          transform="matrix(1 0 0 1 800.166 590.4805)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Cutty Sark for{" "}
-          </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            Maritime Greenwich
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZDLGRE_label">
-        {" "}
-        <text
-          id="940GZZDLGRE_label"
-          transform="matrix(1 0 0 1 800.1992 605.0967)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Greenwich
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.CuttySarkForMaritimeGreenwich}
+        transform="matrix(1 0 0 1 800.166 590.4805)"
+      >
+        <tspan x="0" y="0">
+          Cutty Sark for
+        </tspan>
+        <tspan x="0" y="4.5">
+          Maritime Greenwich
+        </tspan>
+      </StationTextName>
+      <StationTextName station={Station.Greenwich} tag={"g"}>
+        <text transform="matrix(1 0 0 1 800.1992 605.0967)">
+          {Station.Greenwich}
         </text>
         <polygon
-          id="940GZZDLGRE_nr"
           fill="#EE3124"
           points="828.8,605.1 827.1,604.3 829.6,604.3 829.6,603.8 827,603.8 828.3,603.2 829.6,603.2 829.6,602.7 828.3,602.7 826.8,602 825.6,602 827.2,602.7 824.7,602.7 824.7,603.2 827.2,603.2 825.9,603.8 824.7,603.8 824.7,604.3 826,604.3 827.7,605.1 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZDLLEW_label">
-        {" "}
-        <text
-          id="940GZZDLLEW_label"
-          transform="matrix(1 0 0 1 800.1992 639.3614)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Lewisham
+        />
+      </StationTextName>
+      <StationTextName station={Station.Lewisham} tag={"g"}>
+        <text transform="matrix(1 0 0 1 800.1992 639.3614)">
+          {Station.Lewisham}
         </text>
         <polygon
-          id="940GZZDLLEW_nr"
           fill="#EE3124"
           points="827.3,639.4 825.6,638.6 828,638.6 828,638.1 825.5,638.1 826.8,637.5 828,637.5 828,637 826.8,637 825.2,636.2 824.1,636.2 825.7,637 823.2,637 823.2,637.5 825.7,637.5 824.4,638.1 823.2,638.1 823.2,638.6 824.5,638.6 826.1,639.4 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZDLTWG_label">
-        {" "}
-        <text
-          id="940GZZDLTWG_label"
-          transform="matrix(1 0 0 1 695.8655 486.9103)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Tower{" "}
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.TowerGateway}
+        transform="matrix(1 0 0 1 696 486.3)"
+      >
+        <tspan x="0" y="0">
+          Tower
+        </tspan>
+        <tspan x="0" y="4.5">
+          Gateway
+        </tspan>
+      </StationTextName>
+      <StationTextName station={Station.StratfordInternational} tag={"g"}>
+        <text transform="matrix(1 0 0 1 808.2188 323.0362)">
+          <tspan x="0" y="0">
+            Stratford
           </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            Gateway
+          <tspan x="-4.4" y="4.5">
+            International
           </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZDLSIT_label">
-        {" "}
-        <g id="940GZZDLSIT_label">
-          {" "}
-          <text transform="matrix(1 0 0 1 808.2188 323.0362)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              Stratford
-            </tspan>
-            <tspan x="-4.4" y="4.5" fill="#1C3F94" className="blue-fill">
-              International
-            </tspan>
-          </text>{" "}
-        </g>
+        </text>
         <polygon
-          id="940GZZDLSIT_nr"
           fill="#EE3124"
           points="807.2,323 805.5,322.3 807.9,322.3 807.9,321.7 805.4,321.7 806.7,321.1 807.9,321.1 807.9,320.6 806.7,320.6 805.1,319.9 803.9,319.9 805.6,320.6 803.1,320.6 803.1,321.1 805.6,321.1 804.3,321.7 803.1,321.7 803.1,322.3 804.4,322.3 806,323 "
-        ></polygon>{" "}
-      </g>
-      <g id="940GZZLUTWH_label">
-        {" "}
-        <g id="940GZZLUTWH_label">
-          {" "}
-          <text transform="matrix(1 0 0 1 664.4221 475.4186)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              Tower
-            </tspan>
-            <tspan x="6.4" y="4.5" fill="#1C3F94" className="blue-fill">
-              Hill
-            </tspan>
-          </text>{" "}
-        </g>
-        <polygon
-          id="940GZZLUTWH_nr"
-          fill="#EE3124"
-          points="660.5,483.3 659.5,482.9 660.9,482.9 660.9,482.5 659.4,482.5 660.2,482.2 660.9,482.2 660.9,481.9 660.2,481.9 659.3,481.5 658.5,481.5 659.5,481.9 658,481.9 658,482.2 659.5,482.2 658.7,482.5 658,482.5 658,482.9 658.8,482.9 659.8,483.3 "
-        ></polygon>
-        <text
-          id="940GZZLUTWH_fenchurch-street"
-          transform="matrix(1 0 0 1 661.8351 483.2965)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Fenchurch St
-        </text>{" "}
-      </g>
-      <g id="940GZZDLSHS_label">
-        {" "}
-        <text
-          id="940GZZDLSHS_label"
-          transform="matrix(1 0 0 1 859.5967 358.7022)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Stratford{" "}
-          </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            High Street
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZDLABR_label">
-        {" "}
-        <text
-          id="940GZZDLABR_label"
-          transform="matrix(1 0 0 1 859.3057 377.086)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Abbey{" "}
-          </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            Road
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="940GZZDLSTL_label">
-        {" "}
-        <text
-          id="940GZZDLSTL_label"
-          transform="matrix(1 0 0 1 859.5767 431.2884)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Star Lane
-        </text>{" "}
-      </g>
-      <text
-        id="910GACTNCTL_label"
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.TowerHill}
+        transform="matrix(1 0 0 1 664.4221 477)"
+      >
+        <tspan x="0" y="0">
+          Tower
+        </tspan>
+        <tspan x="3.5" y="4.5">
+          Hill
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.StratfordHighStreet}
+        transform="matrix(1 0 0 1 859.5967 358.7022)"
+      >
+        <tspan x="0" y="0">
+          Stratford
+        </tspan>
+        <tspan x="0" y="4.5">
+          High Street
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.AbbeyRoad}
+        transform="matrix(1 0 0 1 859.3057 377.086)"
+      >
+        <tspan x="0" y="0">
+          Abbey
+        </tspan>
+        <tspan x="0" y="4.5">
+          Road
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.StarLane}
+        transform="matrix(1 0 0 1 859.5767 431.2884)"
+      />
+      <StationTextName
+        station={Station.ActonCentral}
         transform="matrix(1 0 0 1 235.6235 476.5684)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Acton Central
-      </text>
-      <text
-        id="910GSACTON_label"
+      />
+      <StationTextName
+        station={Station.SouthActon}
         transform="matrix(1 0 0 1 239.1396 489.75)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        South Acton
-      </text>
-      <g id="940GZZLUKOY_label">
-        {" "}
-        <text
-          id="940GZZLUKOY_label"
-          transform="matrix(1 0 0 1 340.0356 482.893)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+      />
+      <StationTextName station={Station.KensingtonOlympia} tag={"g"}>
+        <text transform="matrix(1 0 0 1 340.0356 482.893)">
+          <tspan x="0" y="0">
             Kensington
           </tspan>
-          <tspan x="3.3" y="4.5" fill="#1C3F94" className="blue-fill">
+          <tspan x="3.3" y="4.5">
             (Olympia)
           </tspan>
         </text>
         <polygon
-          id="940GZZLUKOY_nr"
           fill="#EE3124"
           points="363.9,479.1 362.1,478.3 364.6,478.3 364.6,477.8 362.1,477.8 363.4,477.2 364.6,477.2 364.6,476.7 363.4,476.7 361.8,476 360.6,476 362.3,476.7 359.7,476.7 359.7,477.2 362.3,477.2 360.9,477.8 359.7,477.8 359.7,478.3 361,478.3 362.7,479.1 "
-        ></polygon>{" "}
-      </g>
-      <g id="910GKLBRNHR_label">
-        {" "}
-        <text
-          id="910GKLBRNHR_label"
-          transform="matrix(1 0 0 1 367.2635 341.5307)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Kilburn
-          </tspan>
-          <tspan x="-3" y="4.5" fill="#1C3F94" className="blue-fill">
-            High Road
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GSHMPSTD_label">
-        {" "}
-        <text
-          id="910GSHMPSTD_label"
-          transform="matrix(1 0 0 1 475.6879 346.1093)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          South Hampstead
-        </text>{" "}
-      </g>
-      <g id="910GKENR_label">
-        {" "}
-        <text id="910GKENR_label" transform="matrix(1 0 0 1 342.2906 310.1613)">
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Kensal
-          </tspan>
-          <tspan x="2.9" y="4.5" fill="#1C3F94" className="blue-fill">
-            Rise
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GBRBYPK_label">
-        {" "}
-        <text
-          id="910GBRBYPK_label"
-          transform="matrix(1 0 0 1 362.5418 310.8029)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Brondesbury
-          </tspan>
-          <tspan x="9.3" y="4.5" fill="#1C3F94" className="blue-fill">
-            Park
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GHMPSTDH_label">
-        {" "}
-        <text
-          id="910GHMPSTDH_label"
-          transform="matrix(1 0 0 1 484.1726 297.9658)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Hampstead
-          </tspan>
-          <tspan x="5.9" y="4.5" fill="#1C3F94" className="blue-fill">
-            Heath
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GFNCHLYR_label">
-        {" "}
-        <text
-          id="910GFNCHLYR_label"
-          transform="matrix(1 0 0 1 457.3565 315.6377)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Finchley Road
-          </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            &amp; Frognal
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GBRBY_label">
-        {" "}
-        <text
-          id="910GBRBY_label"
-          transform="matrix(1 0 0 1 382.2551 326.6027)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.KilburnHighRoad}
+        transform="matrix(1 0 0 1 367.2635 341.5307)"
+      >
+        <tspan x="0" y="0">
+          Kilburn
+        </tspan>
+        <tspan x="-3" y="4.5">
+          High Road
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.SouthHampstead}
+        transform="matrix(1 0 0 1 475.6879 346.1093)"
+      />
+      <StationTextName
+        station={Station.KensalRise}
+        transform="matrix(1 0 0 1 342.2906 310.1613)"
+      >
+        <tspan x="0" y="0">
+          Kensal
+        </tspan>
+        <tspan x="2.9" y="4.5">
+          Rise
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.BrondesburyPark}
+        transform="matrix(1 0 0 1 362.5418 310.8029)"
+      >
+        <tspan x="0" y="0">
           Brondesbury
-        </text>{" "}
-      </g>
-      <text
-        id="910GGOSPLOK_label"
-        transform="matrix(1 0 0 1 536.7096 287.3974)"
-      >
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-          Gospel
         </tspan>
-        <tspan x="3.3" y="4.5" fill="#1C3F94" className="blue-fill">
-          Oak
-        </tspan>
-      </text>
-      <g id="910GKNTSHTW_label">
-        {" "}
-        <text
-          id="910GKNTSHTW_label"
-          transform="matrix(1 0 0 1 556.0942 298.9589)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Kentish
-          </tspan>
-          <tspan x="0" y="4.4" fill="#1C3F94" className="blue-fill">
-            Town
-          </tspan>
-          <tspan x="0" y="8.8" fill="#1C3F94" className="blue-fill">
-            West
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GCMDNRD_label">
-        {" "}
-        <text
-          id="910GCMDNRD_label"
-          transform="matrix(1 0 0 1 568.2383 318.967)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Camden Road
-        </text>{" "}
-      </g>
-      <g id="910GDALSKLD_label">
-        {" "}
-        <text
-          id="910GDALSKLD_label"
-          transform="matrix(1 0 0 1 699.0579 319.2596)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Dalston{" "}
-          </tspan>
-          <tspan x="-1.5" y="4.4" fill="#1C3F94" className="blue-fill">
-            Kingsland
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GHACKNYC_label">
-        {" "}
-        <text
-          id="910GHACKNYC_label"
-          transform="matrix(1 0 0 1 755.7787 330.1177)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Hackney
-          </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            Central
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GCLDNNRB_label">
-        {" "}
-        <text
-          id="910GCLDNNRB_label"
-          transform="matrix(1 0 0 1 630.6536 335.7538)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Caledonian
-          </tspan>
-          <tspan x="4.6" y="4.5" fill="#1C3F94" className="blue-fill">
-            Road &amp;
-          </tspan>
-          <tspan x="1.2" y="9.1" fill="#1C3F94" className="blue-fill">
-            Barnsbury
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GHACKNYW_label">
-        {" "}
-        <text
-          id="910GHACKNYW_label"
-          transform="matrix(1 0 0 1 800.8916 347.3731)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Hackney
-          </tspan>
-          <tspan x="4" y="4.5" fill="#1C3F94" className="blue-fill">
-            Wick
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GHOMRTON_label">
-        {" "}
-        <text
-          id="910GHOMRTON_label"
-          transform="matrix(1 0 0 1 772.0247 347.2051)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Homerton
-        </text>{" "}
-      </g>
-      <g id="910GCNNB_label">
-        {" "}
-        <text
-          id="910GCNNB_label"
-          transform="matrix(1 0 0 1 678.8272 342.6335)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Canonbury
-        </text>{" "}
-      </g>
-      <g id="910GNORWDJ_label">
-        {" "}
-        <g id="910GNORWDJ_label">
-          {" "}
-          <text
-            transform="matrix(1 0 0 1 727.2828 695.6157)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            Norwood Junction
-          </text>{" "}
-        </g>
-        <polygon
-          id="910GNORWDJ_nr"
-          fill="#EE3124"
-          points="774.3,695.6 772.6,694.8 775.1,694.8 775.1,694.3 772.5,694.3 773.8,693.7 775.1,693.7 775.1,693.2 773.8,693.2 772.3,692.5 771.1,692.5 772.7,693.2 770.2,693.2 770.2,693.7 772.7,693.7 771.4,694.3 770.2,694.3 770.2,694.8 771.5,694.8 773.2,695.6 "
-        ></polygon>{" "}
-      </g>
-      <g id="910GFORESTH_label">
-        {" "}
-        <text
-          id="910GFORESTH_label"
-          transform="matrix(1 0 0 1 695.4449 647.7618)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Forest Hill
-        </text>{" "}
-      </g>
-      <g id="910GANERLEY_label">
-        {" "}
-        <text
-          id="910GANERLEY_label"
-          transform="matrix(1 0 0 1 727.3766 683.912)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Anerley
-        </text>{" "}
-      </g>
-      <g id="910GPENEW_label">
-        {" "}
-        <text
-          id="910GPENEW_label"
-          transform="matrix(1 0 0 1 726.6559 672.2452)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Penge West
-        </text>{" "}
-      </g>
-      <g id="910GHONROPK_label">
-        {" "}
-        <text
-          id="910GHONROPK_label"
-          transform="matrix(1 0 0 1 683.4215 635.546)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Honor Oak Park
-        </text>{" "}
-      </g>
-      <g id="910GBROCKLY_label">
-        {" "}
-        <text
-          id="910GBROCKLY_label"
-          transform="matrix(1 0 0 1 699.0582 623.2764)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Brockley
-        </text>{" "}
-      </g>
-      <g id="910GWCROYDON_label">
-        {" "}
-        <g id="910GWCROYDON_label">
-          {" "}
-          <text
-            transform="matrix(1 0 0 1 727.3085 716.2119)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            West Croydon
-          </text>{" "}
-        </g>
-        <polygon
-          id="910GWCROYDON_nr"
-          fill="#EE3124"
-          points="763.6,716.2 761.8,715.4 764.3,715.4 764.3,714.9 761.8,714.9 763.1,714.3 764.3,714.3 764.3,713.8 763.1,713.8 761.5,713.1 760.3,713.1 762,713.8 759.4,713.8 759.4,714.3 762,714.3 760.6,714.9 759.4,714.9 759.4,715.4 760.7,715.4 762.4,716.2 "
-        ></polygon>{" "}
-      </g>
-      <text
-        id="910GWAPPING_label"
-        transform="matrix(1 0 0 1 726.7064 488.1127)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Wapping
-      </text>
-      <g id="910GNEWXGTE_label">
-        {" "}
-        <g id="910GNEWXGTE_label">
-          {" "}
-          <text
-            id="New_Cross_Gate"
-            transform="matrix(1 0 0 1 682.7135 608.7817)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            New Cross Gate
-          </text>{" "}
-        </g>
-        <polygon
-          id="910GNEWXGTE_nr"
-          fill="#EE3124"
-          points="681.2,608.8 679.5,608 682,608 682,607.5 679.4,607.5 680.7,606.9 682,606.9 682,606.4 680.7,606.4 679.1,605.6 678,605.6 679.6,606.4 677.1,606.4 677.1,606.9 679.6,606.9 678.3,607.5 677.1,607.5 677.1,608 678.4,608 680.1,608.8 "
-        ></polygon>{" "}
-      </g>
-      <g id="910GSYDENHM_label">
-        {" "}
-        <g id="910GSYDENHM_label">
-          {" "}
-          <text
-            transform="matrix(1 0 0 1 695.5289 659.4233)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            Sydenham
-          </text>{" "}
-        </g>
-        <polygon
-          id="910GSYDENHM_nr"
-          fill="#EE3124"
-          points="693.8,659.4 692,658.7 694.5,658.7 694.5,658.1 692,658.1 693.2,657.5 694.5,657.5 694.5,657 693.2,657 691.7,656.3 690.5,656.3 692.1,657 689.6,657 689.6,657.5 692.1,657.5 690.8,658.1 689.6,658.1 689.6,658.7 690.9,658.7 692.6,659.4 "
-        ></polygon>{" "}
-      </g>
-      <g id="910GNWCRELL_label">
-        {" "}
-        <g id="910GNWCRELL_label">
-          {" "}
-          <text
-            transform="matrix(1 0 0 1 738.2949 598.1895)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            New Cross
-          </text>{" "}
-        </g>
-        <polygon
-          id="910GNWCRELL_nr"
-          fill="#EE3124"
-          points="767.4,598.2 765.7,597.4 768.1,597.4 768.1,596.9 765.6,596.9 766.9,596.3 768.1,596.3 768.1,595.8 766.9,595.8 765.3,595 764.1,595 765.8,595.8 763.3,595.8 763.3,596.3 765.8,596.3 764.5,596.9 763.3,596.9 763.3,597.4 764.6,597.4 766.2,598.2 "
-        ></polygon>{" "}
-      </g>
-      <g id="910GCRYSTLP_label">
-        {" "}
-        <g id="910GCRYSTLP_label">
-          {" "}
-          <text
-            transform="matrix(1 0 0 1 667.18 693.4089)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            Crystal Palace
-          </text>{" "}
-        </g>
-        <polygon
-          id="910GCRYSTLP_nr"
-          fill="#EE3124"
-          points="665.7,693.4 664,692.7 666.5,692.7 666.5,692.1 663.9,692.1 665.2,691.5 666.5,691.5 666.5,691 665.2,691 663.7,690.3 662.5,690.3 664.1,691 661.6,691 661.6,691.5 664.1,691.5 662.8,692.1 661.6,692.1 661.6,692.7 662.9,692.7 664.6,693.4 "
-        ></polygon>{" "}
-      </g>
-      <g id="910GSURREYQ_label">
-        {" "}
-        <text
-          id="910GSURREYQ_label"
-          transform="matrix(1 0 0 1 689.6361 558.0772)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Surrey Quays
-        </text>{" "}
-      </g>
-      <g id="910GRTHERHI_label_00000087378791727812996660000007107492370903362981_">
-        {" "}
-        <text
-          id="910GRTHERHI_label_00000160876312123836787160000000998234997470112432_"
-          transform="matrix(1 0 0 1 692.5941 517.0043)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Rotherhithe
-        </text>{" "}
-      </g>
-      <text
-        id="940GZZDLSHA_label"
-        transform="matrix(1 0 0 1 728.5438 476.3383)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Shadwell
-      </text>
-      <g id="910GPCKHMQD_label">
-        {" "}
-        <g id="910GPCKHMQD_label">
-          {" "}
-          <text transform="matrix(1 0 0 1 630.3648 599.6573)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              Queens Road
-            </tspan>
-            <tspan x="9.3" y="4.5" fill="#1C3F94" className="blue-fill">
-              Peckham
-            </tspan>
-          </text>{" "}
-        </g>
-        <polygon
-          id="910GPCKHMQD_nr"
-          fill="#EE3124"
-          points="628.7,599.7 626.9,598.9 629.4,598.9 629.4,598.4 626.9,598.4 628.2,597.8 629.4,597.8 629.4,597.3 628.2,597.3 626.6,596.5 625.4,596.5 627.1,597.3 624.5,597.3 624.5,597.8 627.1,597.8 625.7,598.4 624.5,598.4 624.5,598.9 625.8,598.9 627.5,599.7 "
-        ></polygon>{" "}
-      </g>
-      <g id="910GPCKHMRY_label">
-        {" "}
-        <g id="910GPCKHMRY_label">
-          {" "}
-          <text
-            transform="matrix(1 0 0 1 608.4297 626.046)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            Peckham Rye
-          </text>{" "}
-        </g>
-        <polygon
-          id="910GPCKHMRY_nr"
-          fill="#EE3124"
-          points="636.4,622 634.6,621.2 637.1,621.2 637.1,620.7 634.6,620.7 635.9,620.1 637.1,620.1 637.1,619.6 635.9,619.6 634.3,618.9 633.1,618.9 634.8,619.6 632.2,619.6 632.2,620.1 634.8,620.1 633.4,620.7 632.2,620.7 632.2,621.2 633.5,621.2 635.2,622 "
-        ></polygon>{" "}
-      </g>
-      <g id="910GDENMRKH_label">
-        {" "}
-        <g id="910GDENMRKH_label">
-          {" "}
-          <text
-            transform="matrix(1 0 0 1 565.333 650.6592)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            Denmark Hill
-          </text>{" "}
-        </g>
-        <polygon
-          id="910GDENMRKH_nr"
-          fill="#EE3124"
-          points="598.9,650.7 597.1,649.9 599.6,649.9 599.6,649.4 597.1,649.4 598.3,648.8 599.6,648.8 599.6,648.3 598.3,648.3 596.8,647.5 595.6,647.5 597.2,648.3 594.7,648.3 594.7,648.8 597.2,648.8 595.9,649.4 594.7,649.4 594.7,649.9 596,649.9 597.7,650.7 "
-        ></polygon>{" "}
-      </g>
-      <g id="910GWNDSWRD_label">
-        {" "}
-        <text
-          id="910GWNDSWRD_label"
-          transform="matrix(1 0 0 1 448.4175 635.6016)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Wandsworth
-          </tspan>
-          <tspan x="8.8" y="4.5" fill="#1C3F94" className="blue-fill">
-            Road
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GCSEAH_label">
-        {" "}
-        <text
-          id="910GCSEAH_label"
-          transform="matrix(1 0 0 1 399.2653 571.5524)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Imperial{" "}
-          </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            Wharf
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GWNSTDPK_label">
-        {" "}
-        <text
-          id="910GWNSTDPK_label"
-          transform="matrix(1 0 0 1 850.1918 301.9141)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Wanstead
-          </tspan>
-          <tspan x="12.3" y="4.4" fill="#1C3F94" className="blue-fill">
-            Park
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GLYTNSHR_label">
-        {" "}
-        <text
-          id="910GLYTNSHR_label"
-          transform="matrix(1 0 0 1 813.2542 301.0034)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Leytonstone
-          </tspan>
-          <tspan x="2.8" y="4.5" fill="#1C3F94" className="blue-fill">
-            High Road
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GLEYTNMR_label">
-        {" "}
-        <text
-          id="910GLEYTNMR_label"
-          transform="matrix(1 0 0 1 798.9058 285.857)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Leyton
-          </tspan>
-          <tspan x="-7.4" y="4.5" fill="#1C3F94" className="blue-fill">
-            Midland Road
-          </tspan>
-        </text>{" "}
-      </g>
-      <text
-        id="910GWLTHQRD_label"
-        transform="matrix(1 0 0 1 741.9529 282.5926)"
-      >
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-          Walthamstow
-        </tspan>
-        <tspan x="0.9" y="4.5" fill="#1C3F94" className="blue-fill">
-          Queen’s Road
-        </tspan>
-      </text>
-      <text id="910GWDGRNPK_label" transform="matrix(1 0 0 1 901.3949 305.588)">
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-          Woodgrange
-        </tspan>
-        <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="9.3" y="4.5">
           Park
         </tspan>
-      </text>
-      <g id="940GZZLUACT_label">
-        {" "}
-        <text
-          id="940GZZLUACT_label"
-          transform="matrix(1 0 0 1 232.0119 501.6226)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Acton Town
-        </text>{" "}
-      </g>
-      <g id="910GHRGYGL_label">
-        {" "}
-        <text
-          id="910GHRGYGL_label"
-          transform="matrix(1 0 0 1 684.6867 230.779)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Harringay
+      </StationTextName>
+      <StationTextName
+        station={Station.HampsteadHeath}
+        transform="matrix(1 0 0 1 484.1726 297.9658)"
+      >
+        <tspan x="0" y="0">
+          Hampstead
+        </tspan>
+        <tspan x="5.9" y="4.5">
+          Heath
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.FinchleyRoadFrognal}
+        transform="matrix(1 0 0 1 457.3565 315.6377)"
+      >
+        <tspan x="0" y="0">
+          Finchley Road
+        </tspan>
+        <tspan x="0" y="4.5">
+          &amp; Frognal
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.Brondesbury}
+        transform="matrix(1 0 0 1 382.2551 326.6027)"
+      />
+      <StationTextName
+        station={Station.GospelOak}
+        transform="matrix(1 0 0 1 536.7096 287.3974)"
+      >
+        <tspan x="0" y="0">
+          Gospel
+        </tspan>
+        <tspan x="3.3" y="4.5">
+          Oak
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.KentishTownWest}
+        transform="matrix(1 0 0 1 556.0942 298.9589)"
+      >
+        <tspan x="0" y="0">
+          Kentish
+        </tspan>
+        <tspan x="0" y="4.4">
+          Town
+        </tspan>
+        <tspan x="0" y="8.8">
+          West
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.CamdenRoad}
+        transform="matrix(1 0 0 1 570 319)"
+      />
+      <StationTextName
+        station={Station.DalstonKingsland}
+        transform="matrix(1 0 0 1 699.0579 319.2596)"
+      >
+        <tspan x="0" y="0">
+          Dalston
+        </tspan>
+        <tspan x="-1.5" y="4.4">
+          Kingsland
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.HackneyCentral}
+        transform="matrix(1 0 0 1 755.7787 330.1177)"
+      >
+        <tspan x="0" y="0">
+          Hackney
+        </tspan>
+        <tspan x="0" y="4.5">
+          Central
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.CaledonianRoadBarnsbury}
+        transform="matrix(1 0 0 1 630.6536 335.7538)"
+      >
+        <tspan x="0" y="0">
+          Caledonian
+        </tspan>
+        <tspan x="4.6" y="4.5">
+          Road &amp;
+        </tspan>
+        <tspan x="1.2" y="8.5">
+          Barnsbury
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.HackneyWick}
+        transform="matrix(1 0 0 1 800.8916 347.3731)"
+      >
+        <tspan x="0" y="0">
+          Hackney
+        </tspan>
+        <tspan x="4" y="4.5">
+          Wick
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.Homerton}
+        transform="matrix(1 0 0 1 772.0247 347.2051)"
+      />
+      <StationTextName
+        station={Station.Canonbury}
+        transform="matrix(1 0 0 1 678.8272 342.6335)"
+      />
+      <StationTextName station={Station.NorwoodJunction} tag={"g"}>
+        <text transform="matrix(1 0 0 1 727.2828 695.6157)">
+          {Station.NorwoodJunction}
+        </text>
+        <polygon
+          fill="#EE3124"
+          points="774.3,695.6 772.6,694.8 775.1,694.8 775.1,694.3 772.5,694.3 773.8,693.7 775.1,693.7 775.1,693.2 773.8,693.2 772.3,692.5 771.1,692.5 772.7,693.2 770.2,693.2 770.2,693.7 772.7,693.7 771.4,694.3 770.2,694.3 770.2,694.8 771.5,694.8 773.2,695.6 "
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.ForestHill}
+        transform="matrix(1 0 0 1 695.4449 647.7618)"
+      />
+      <StationTextName
+        station={Station.Anerley}
+        transform="matrix(1 0 0 1 727.3766 683.912)"
+      />
+      <StationTextName
+        station={Station.PengeWest}
+        transform="matrix(1 0 0 1 726.6559 672.2452)"
+      />
+      <StationTextName
+        station={Station.HonorOakPark}
+        transform="matrix(1 0 0 1 683.4215 635.546)"
+      />
+      <StationTextName
+        station={Station.Brockley}
+        transform="matrix(1 0 0 1 699.0582 623.2764)"
+      />
+      <StationTextName station={Station.WestCroydon} tag={"g"}>
+        <text transform="matrix(1 0 0 1 727.3085 716.2119)">
+          {multiWordStationNames[Station.WestCroydon]}
+        </text>
+        <polygon
+          fill="#EE3124"
+          points="763.6,716.2 761.8,715.4 764.3,715.4 764.3,714.9 761.8,714.9 763.1,714.3 764.3,714.3 764.3,713.8 763.1,713.8 761.5,713.1 760.3,713.1 762,713.8 759.4,713.8 759.4,714.3 762,714.3 760.6,714.9 759.4,714.9 759.4,715.4 760.7,715.4 762.4,716.2 "
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.Wapping}
+        transform="matrix(1 0 0 1 726.7064 488.1127)"
+      />
+      <StationTextName station={Station.NewCrossGate} tag={"g"}>
+        <text transform="matrix(1 0 0 1 682.7135 608.7817)">
+          New Cross Gate
+        </text>
+        <polygon
+          fill="#EE3124"
+          points="681.2,608.8 679.5,608 682,608 682,607.5 679.4,607.5 680.7,606.9 682,606.9 682,606.4 680.7,606.4 679.1,605.6 678,605.6 679.6,606.4 677.1,606.4 677.1,606.9 679.6,606.9 678.3,607.5 677.1,607.5 677.1,608 678.4,608 680.1,608.8 "
+        />
+      </StationTextName>
+      <StationTextName station={Station.Sydenham} tag={"g"}>
+        <text transform="matrix(1 0 0 1 695.5289 659.4233)">
+          {Station.Sydenham}
+        </text>
+        <polygon
+          fill="#EE3124"
+          points="693.8,659.4 692,658.7 694.5,658.7 694.5,658.1 692,658.1 693.2,657.5 694.5,657.5 694.5,657 693.2,657 691.7,656.3 690.5,656.3 692.1,657 689.6,657 689.6,657.5 692.1,657.5 690.8,658.1 689.6,658.1 689.6,658.7 690.9,658.7 692.6,659.4 "
+        />
+      </StationTextName>
+      <StationTextName station={Station.NewCross} tag={"g"}>
+        <text transform="matrix(1 0 0 1 738.2949 598.1895)">
+          {multiWordStationNames[Station.NewCross]}
+        </text>
+        <polygon
+          fill="#EE3124"
+          points="767.4,598.2 765.7,597.4 768.1,597.4 768.1,596.9 765.6,596.9 766.9,596.3 768.1,596.3 768.1,595.8 766.9,595.8 765.3,595 764.1,595 765.8,595.8 763.3,595.8 763.3,596.3 765.8,596.3 764.5,596.9 763.3,596.9 763.3,597.4 764.6,597.4 766.2,598.2 "
+        />
+      </StationTextName>
+      <StationTextName station={Station.CrystalPalace} tag={"g"}>
+        <text transform="matrix(1 0 0 1 667.18 693.4089)">
+          {multiWordStationNames[Station.CrystalPalace]}
+        </text>
+        <polygon
+          fill="#EE3124"
+          points="665.7,693.4 664,692.7 666.5,692.7 666.5,692.1 663.9,692.1 665.2,691.5 666.5,691.5 666.5,691 665.2,691 663.7,690.3 662.5,690.3 664.1,691 661.6,691 661.6,691.5 664.1,691.5 662.8,692.1 661.6,692.1 661.6,692.7 662.9,692.7 664.6,693.4 "
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.SurreyQuays}
+        transform="matrix(1 0 0 1 689.6361 558.0772)"
+      />
+      <StationTextName
+        station={Station.Rotherhithe}
+        transform="matrix(1 0 0 1 692.5941 517.0043)"
+      />
+      <StationTextName
+        station={Station.Shadwell}
+        transform="matrix(1 0 0 1 728.5438 476.3383)"
+      />
+      <StationTextName station={Station.QueensRoadPeckham} tag={"g"}>
+        <text transform="matrix(1 0 0 1 630.3648 599.6573)">
+          <tspan x="0" y="0">
+            Queens Road
           </tspan>
-          <tspan x="3.9" y="4.5" fill="#1C3F94" className="blue-fill">
-            Green
+          <tspan x="9.3" y="4.5">
+            Peckham
           </tspan>
-          <tspan x="4.3" y="9.1" fill="#1C3F94" className="blue-fill">
-            Lanes
-          </tspan>
-        </text>{" "}
-      </g>
-      <text id="910GSTOTNHM_label" transform="matrix(1 0 0 1 724.459 235.2953)">
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+        </text>
+        <polygon
+          fill="#EE3124"
+          points="628.7,599.7 626.9,598.9 629.4,598.9 629.4,598.4 626.9,598.4 628.2,597.8 629.4,597.8 629.4,597.3 628.2,597.3 626.6,596.5 625.4,596.5 627.1,597.3 624.5,597.3 624.5,597.8 627.1,597.8 625.7,598.4 624.5,598.4 624.5,598.9 625.8,598.9 627.5,599.7 "
+        />
+      </StationTextName>
+      <StationTextName station={Station.PeckhamRye} tag={"g"}>
+        <text transform="matrix(1 0 0 1 608.4297 626.046)">
+          {multiWordStationNames[Station.PeckhamRye]}
+        </text>
+        <polygon
+          fill="#EE3124"
+          points="636.4,622 634.6,621.2 637.1,621.2 637.1,620.7 634.6,620.7 635.9,620.1 637.1,620.1 637.1,619.6 635.9,619.6 634.3,618.9 633.1,618.9 634.8,619.6 632.2,619.6 632.2,620.1 634.8,620.1 633.4,620.7 632.2,620.7 632.2,621.2 633.5,621.2 635.2,622 "
+        />
+      </StationTextName>
+      <StationTextName station={Station.DenmarkHill} tag={"g"}>
+        <text transform="matrix(1 0 0 1 565.333 650.6592)">
+          {multiWordStationNames[Station.DenmarkHill]}
+        </text>
+        <polygon
+          fill="#EE3124"
+          points="598.9,650.7 597.1,649.9 599.6,649.9 599.6,649.4 597.1,649.4 598.3,648.8 599.6,648.8 599.6,648.3 598.3,648.3 596.8,647.5 595.6,647.5 597.2,648.3 594.7,648.3 594.7,648.8 597.2,648.8 595.9,649.4 594.7,649.4 594.7,649.9 596,649.9 597.7,650.7 "
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.WandsworthRoad}
+        transform="matrix(1 0 0 1 448.4175 635.6016)"
+      >
+        <tspan x="0" y="0">
+          Wandsworth
+        </tspan>
+        <tspan x="8.8" y="4.5">
+          Road
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.ImperialWharf}
+        transform="matrix(1 0 0 1 399.2653 571.5524)"
+      >
+        <tspan x="0" y="0">
+          Imperial
+        </tspan>
+        <tspan x="0" y="4.5">
+          Wharf
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.WansteadPark}
+        transform="matrix(1 0 0 1 850.1918 301.9141)"
+      >
+        <tspan x="0" y="0">
+          Wanstead
+        </tspan>
+        <tspan x="12.3" y="4.5">
+          Park
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.LeytonstoneHighRoad}
+        transform="matrix(1 0 0 1 813.2542 301.0034)"
+      >
+        <tspan x="0" y="0">
+          Leytonstone
+        </tspan>
+        <tspan x="2.8" y="4.5">
+          High Road
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.LeytonMidlandRoad}
+        transform="matrix(1 0 0 1 800 285.857)"
+      >
+        <tspan x="0" y="0">
+          Leyton
+        </tspan>
+        <tspan x="-7.4" y="4.5">
+          Midland Road
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.WalthamstowQueensRoad}
+        transform="matrix(1 0 0 1 742.5 282.5926)"
+      >
+        <tspan x="0" y="0">
+          Walthamstow
+        </tspan>
+        <tspan x="0.9" y="4.5">
+          Queen’s Road
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.WoodgrangePark}
+        transform="matrix(1 0 0 1 901.3949 305.588)"
+      >
+        <tspan x="0" y="0">
+          Woodgrange
+        </tspan>
+        <tspan x="0" y="4.5">
+          Park
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.ActonTown}
+        transform="matrix(1 0 0 1 232.0119 501.6226)"
+      />
+      <StationTextName
+        station={Station.HarringayGreenLanes}
+        transform="matrix(1 0 0 1 684.6867 230.779)"
+      >
+        <tspan x="0" y="0">
+          Harringay
+        </tspan>
+        <tspan x="3.9" y="4.5">
+          Green
+        </tspan>
+        <tspan x="4.3" y="9.1">
+          Lanes
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.SouthTottenham}
+        transform="matrix(1 0 0 1 724.459 235.2953)"
+      >
+        <tspan x="0" y="0">
           South
         </tspan>
-        <tspan x="-5.8" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="-5.8" y="4.5">
           Tottenham
         </tspan>
-      </text>
-      <g id="910GUPRHLWY_label">
-        {" "}
-        <text
-          id="910GUPRHLWY_label"
-          transform="matrix(1 0 0 1 597.5086 279.3814)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Upper Holloway
-        </text>{" "}
-      </g>
-      <g id="910GCROUCHH_label">
-        {" "}
-        <text
-          id="910GCROUCHH_label"
-          transform="matrix(1 0 0 1 619.1778 247.1509)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Crouch
+      </StationTextName>
+      <StationTextName
+        station={Station.UpperHolloway}
+        transform="matrix(1 0 0 1 597.5086 279.3814)"
+      />
+      <StationTextName
+        station={Station.CrouchHill}
+        transform="matrix(1 0 0 1 619.1778 247.1509)"
+      >
+        <tspan x="0" y="0">
+          Crouch
+        </tspan>
+        <tspan x="8.2" y="4.5">
+          Hill
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.ShoreditchHighStreet}
+        transform="matrix(1 0 0 1 693.9174 393.4017)"
+      >
+        <tspan x="0" y="0">
+          Shoreditch
+        </tspan>
+        <tspan x="-0.8" y="4.5">
+          High Street
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.DalstonJunction}
+        transform="matrix(1 0 0 1 676.8123 353.0698)"
+      />
+      <StationTextName
+        station={Station.Haggerston}
+        transform="matrix(1 0 0 1 692.5 364.3)"
+      />
+      <StationTextName
+        station={Station.Hoxton}
+        transform="matrix(1 0 0 1 701.7631 376.1294)"
+      />
+      <StationTextName station={Station.ClaphamJunction} tag={"g"}>
+        <text transform="matrix(1 0 0 1 414.9565 636.5958)">
+          <tspan x="0" y="0">
+            Clapham
           </tspan>
-          <tspan x="8.2" y="4.5" fill="#1C3F94" className="blue-fill">
-            Hill
+          <tspan x="0.4" y="4.5">
+            Junction
           </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GSHRDHST_label">
-        {" "}
-        <text
-          id="910GSHRDHST_label"
-          transform="matrix(1 0 0 1 693.9174 393.4017)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Shoreditch
-          </tspan>
-          <tspan x="-0.8" y="4.5" fill="#1C3F94" className="blue-fill">
-            High Street
-          </tspan>
-        </text>{" "}
-      </g>
-      <g id="910GDALS_label">
-        {" "}
-        <text
-          id="910GDALS_label"
-          transform="matrix(1 0 0 1 676.8123 353.0698)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Dalston Junction
-        </text>{" "}
-      </g>
-      <g id="910GHAGGERS_label">
-        {" "}
-        <text
-          id="910GHAGGERS_label"
-          transform="matrix(1 0 0 1 693.14 364.2277)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Haggerston
-        </text>{" "}
-      </g>
-      <g id="910GHOXTON_label_00000070820264268445577110000009944379830397929091_">
-        {" "}
-        <text
-          id="910GHOXTON_label_00000048480024328638957780000009735500676135907485_"
-          transform="matrix(1 0 0 1 701.7631 376.1294)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Hoxton
-        </text>{" "}
-      </g>
-      <g id="910GCLPHMJW_label">
-        {" "}
-        <g id="910GCLPHMJW_label">
-          {" "}
-          <text transform="matrix(1 0 0 1 414.9565 636.5958)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              Clapham
-            </tspan>
-            <tspan x="0.4" y="4.5" fill="#1C3F94" className="blue-fill">
-              Junction
-            </tspan>
-          </text>{" "}
-        </g>
+        </text>
         <polygon
-          id="910GCLPHMJW_nr"
           fill="#EE3124"
           points="439.5,641.2 437.8,640.4 440.2,640.4 440.2,639.9 437.7,639.9 439,639.3 440.2,639.3 440.2,638.8 439,638.8 437.4,638 436.2,638 437.9,638.8 435.3,638.8 435.3,639.3 437.9,639.3 436.6,639.9 435.3,639.9 435.3,640.4 436.6,640.4 438.3,641.2 "
-        ></polygon>{" "}
-      </g>
-
+        />
+      </StationTextName>
       <StationTextName
         station={Station.HollandPark}
         transform="matrix(1 0 0 1 364.7246 458.9121)"
@@ -4472,7 +3525,6 @@ const StationNames: FC = memo(() => {
           Park
         </tspan>
       </StationTextName>
-
       <StationTextName
         station={Station.CaledonianRoad}
         transform="matrix(1 0 0 1 606.3379 310.6598)"
@@ -4485,7 +3537,9 @@ const StationNames: FC = memo(() => {
         </tspan>
       </StationTextName>
       <StationTextName station={Station.Victoria} tag={"g"}>
-        <text transform="matrix(1 0 0 1 453.1426 506.309)">Victoria</text>
+        <text transform="matrix(1 0 0 1 453.1426 506.309)">
+          {Station.Victoria}
+        </text>
         <polygon
           fill="#EE3124"
           points="469.2,502.5 467.4,501.8 469.9,501.8 469.9,501.2 467.4,501.2 468.7,500.6 469.9,500.6 469.9,500.1 468.7,500.1 467.1,499.4 465.9,499.4 467.6,500.1 465,500.1 465,500.6 467.6,500.6 466.2,501.2 465,501.2 465,501.8 466.3,501.8 468,502.5 "
@@ -4778,7 +3832,7 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName station={Station.ElmersEnd} tag={"g"}>
         <text transform="matrix(0.9997 0 0 1 897.8661 697.2582)">
-          Elmers End
+          {multiWordStationNames[Station.ElmersEnd]}
         </text>
         <polygon
           fill="#EE3124"
@@ -4786,7 +3840,9 @@ const StationNames: FC = memo(() => {
         />
       </StationTextName>
       <StationTextName station={Station.Birkbeck} tag={"g"}>
-        <text transform="matrix(0.9997 0 0 1 914.8126 682.5182)">Birkbeck</text>
+        <text transform="matrix(0.9997 0 0 1 914.8126 682.5182)">
+          {Station.Birkbeck}
+        </text>
         <polygon
           fill="#EE3124"
           points="938.8,682.5 937,681.7 939.5,681.7 939.5,681.2 937,681.2 938.2,680.6 939.5,680.6 939.5,680.1 938.2,680.1 936.7,679.4 935.5,679.4 937.2,680.1 934.6,680.1 934.6,680.6 937.2,680.6 935.8,681.2 934.6,681.2 934.6,681.7 935.9,681.7 937.6,682.5 "

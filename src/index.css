@@ -17,6 +17,10 @@ svg text {
   fill: #1C3F94;
 }
 
+svg transport {
+  fill: #1C3F94;
+}
+
 
 svg .disabled path,
 svg .disabled line,
