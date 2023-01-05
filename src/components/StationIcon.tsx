@@ -23,14 +23,7 @@ export const StationIcon: FC<StationIconProps> = ({
       id="StationIconStationIcon"
       onClick={onClick}
     >
-      <rect
-        className="transparent-field"
-        fill="black"
-        width="8"
-        height="8"
-        x="-4"
-        y="-4"
-      />
+      <rect className="transparent-field" width="8" height="8" x="-4" y="-4" />
       {isSelected ? (
         <>
           <circle r="3.3" fill="black" />
