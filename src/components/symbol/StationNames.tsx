@@ -5,375 +5,218 @@ import StationTextName from "./StationTextName";
 const StationNames: FC = memo(() => {
   return (
     <g>
-      <text
-        id="910GBTHNLGR_label_00000013884954316938471730000009364662351823030448_"
+      <StationTextName
+        station={Station.BethnalGreenOverground}
         transform="matrix(1 0 0 1 739.5474 375.0828)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Bethnal Green
-      </text>
-      <text
-        id="910GCAMHTH_label"
+      />
+      <StationTextName
+        station={Station.CambridgeHeath}
         transform="matrix(1 0 0 1 746.8243 367.0745)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Cambridge Heath
-      </text>
-      <text
-        id="910GLONFLDS_label"
+      />
+      <StationTextName
+        station={Station.LondonFields}
         transform="matrix(1 0 0 1 751.6514 356.5692)"
-        fill="#1C3F94"
-        className="blue-fill"
+      />
+      <StationTextName
+        station={Station.RectoryRoad}
+        transform="matrix(1 0 0 1 742.4007 306.2911)"
       >
-        London Fields
-      </text>
-      <g id="910GRCTRYRD_label">
-        <text
-          id="910GRCTRYRD_label"
-          transform="matrix(1 0 0 1 742.4007 306.2911)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Rectory
-          </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            Road
-          </tspan>
-        </text>
-      </g>
-      <text
-        id="910GWDST_label"
+        <tspan x="0" y="0">
+          Rectory
+        </tspan>
+        <tspan x="0" y="4.5">
+          Road
+        </tspan>
+      </StationTextName>
+      <StationTextName
+        station={Station.WoodStreet}
         transform="matrix(1 0 0 1 789.1305 232.9279)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Wood Street
-      </text>
-      <text
-        id="910GBRUCGRV_label"
+      />
+      <StationTextName
+        station={Station.BruceGrove}
         transform="matrix(1 0 0 1 717.8124 226.8038)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Bruce Grove
-      </text>
-      <text
-        id="910GWHHRTLA_label"
+      />
+      <StationTextName
+        station={Station.WhiteHartLane}
         transform="matrix(1 0 0 1 718.9723 216.7298)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        White Hart Lane
-      </text>
-      <text
-        id="910GSIVRST_label"
+      />
+      <StationTextName
+        station={Station.SilverStreet}
         transform="matrix(1 0 0 1 717.8124 205.1583)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Silver Street
-      </text>
-      <text
-        id="910GSBURY_label"
+      />
+      <StationTextName
+        station={Station.Southbury}
         transform="matrix(1 0 0 1 726.2225 179.9966)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Southbury
-      </text>
-      <text
-        id="910GTURKYST_label"
+      />
+      <StationTextName
+        station={Station.TurkeyStreet}
         transform="matrix(1 0 0 1 739.4305 166.9815)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Turkey Street
-      </text>
-      <text
-        id="910GTHBLDSG_label"
+      />
+      <StationTextName
+        station={Station.TheobaldsGrove}
         transform="matrix(1 0 0 1 752.0477 154.5357)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Theobalds Grove
-      </text>
-      <text
-        id="910GENFLDTN_label"
+      />
+      <StationTextName
+        station={Station.EnfieldTown}
         transform="matrix(1 0 0 1 680.3973 150.3345)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Enfield Town
-      </text>
-      <text
-        id="910GSTMFDHL_label"
+      />
+      <StationTextName
+        station={Station.StamfordHill}
         transform="matrix(1 0 0 1 717.8124 280.4867)"
       >
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+        <tspan x="0" y="0">
           Stamford
         </tspan>
-        <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="0" y="4.5">
           Hill
         </tspan>
-      </text>
-      <text
-        id="910GBHILLPK_label"
+      </StationTextName>
+      <StationTextName
+        station={Station.BushHillPark}
         transform="matrix(1 0 0 1 689.9598 162.7379)"
       >
-        <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
+        <tspan x="0" y="0">
           Bush Hill
         </tspan>
-        <tspan x="10.1" y="4.5" fill="#1C3F94" className="blue-fill">
+        <tspan x="10.1" y="4.5">
           Park
         </tspan>
-      </text>
-      <text
-        id="910GHGHMSPK_label"
+      </StationTextName>
+      <StationTextName
+        station={Station.HighamsPark}
         transform="matrix(1 0 0 1 789.6979 207.6988)"
-        fill="#1C3F94"
-        className="blue-fill"
-      >
-        Highams Park
-      </text>
-      <text
-        id="910GCHINGFD_label"
+      />
+      <StationTextName
+        station={Station.Chingford}
         transform="matrix(1 0 0 1 789.776 180.9871)"
-        fill="#1C3F94"
-        className="blue-fill"
+      />
+      <StationTextName
+        station={Station.Clapton}
+        transform="matrix(1 0 0 1 765.4576 311.5362)"
+      />
+      <StationTextName
+        station={Station.StJamesStreet}
+        transform="matrix(1 0 0 1 774.7269 302.2621)"
+      />
+      <StationTextName
+        station={Station.StokeNewington}
+        transform="matrix(1 0 0 1 728.4773 292.2455)"
       >
-        Chingford
-      </text>
-      <g id="910GCLAPTON_label">
-        <text
-          id="910GCLAPTON_label"
-          transform="matrix(1 0 0 1 765.4576 311.5362)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Clapton
-        </text>
-      </g>
-      <g id="910GSTJMSST_label">
-        <text
-          id="910GSTJMSST_label"
-          transform="matrix(1 0 0 1 774.7269 302.2621)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          St James Street
-        </text>
-      </g>
-      <g id="910GSTKNWNG_label">
-        <text
-          id="910GSTKNWNG_label"
-          transform="matrix(1 0 0 1 728.4773 292.2455)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Stoke
+        <tspan x="0" y="0">
+          Stoke
+        </tspan>
+        <tspan x="0" y="4.5">
+          Park
+        </tspan>
+      </StationTextName>
+      <StationTextName station={Station.HackneyDowns} tag={"g"}>
+        <text transform="matrix(1 0 0 1 724.8032 327.7218)">
+          <tspan x="0" y="0">
+            Hackney
           </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            Newington
+          <tspan x="3.4" y="4.5">
+            Downs
           </tspan>
         </text>
-      </g>
-      <g id="910GHAKNYNM_label">
-        {" "}
-        <g id="910GHAKNYNM_label">
-          <text transform="matrix(1 0 0 1 724.8032 327.7218)">
-            <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-              Hackney
-            </tspan>
-            <tspan x="3.4" y="4.5" fill="#1C3F94" className="blue-fill">
-              Downs
-            </tspan>
-          </text>
-        </g>
         <polygon
-          id="910GHAKNYNM_nr"
           fill="#EE3124"
           points="742.7,324.3 741,323.5 743.5,323.5 743.5,323 740.9,323 742.2,322.4 743.5,322.4 743.5,321.9 742.2,321.9 740.7,321.2 739.5,321.2 741.1,321.9 738.6,321.9 738.6,322.4 741.1,322.4 739.8,323 738.6,323 738.6,323.5 739.9,323.5 741.6,324.3 "
         />
-      </g>
-      <g id="910GEDMNGRN_label">
-        <text
-          id="910GEDMNGRN_label"
-          transform="matrix(1 0 0 1 718.8446 193.8356)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Edmonton Green
+      </StationTextName>
+      <StationTextName station={Station.EdmontonGreen} tag={"g"}>
+        <text transform="matrix(1 0 0 1 718.8446 193.8356)">
+          {Station.EdmontonGreen}
         </text>
         <polygon
-          id="910GEDMNGRN_nr"
           fill="#EE3124"
           points="761.7,193.8 760,193 762.5,193 762.5,192.5 759.9,192.5 761.2,191.9 762.5,191.9 762.5,191.4 761.2,191.4 759.7,190.6 758.5,190.6 760.1,191.4 757.6,191.4 757.6,191.9 760.1,191.9 758.8,192.5 757.6,192.5 757.6,193 758.9,193 760.6,193.8 "
-        ></polygon>{" "}
-      </g>
-      <g id="910GCHESHNT_label">
-        <text
-          id="910GCHESHNT_label"
-          transform="matrix(1 0 0 1 764.6307 140.6885)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Cheshunt
+        />
+      </StationTextName>
+      <StationTextName station={Station.Cheshunt} tag={"g"}>
+        <text transform="matrix(1 0 0 1 764.6307 140.6885)">
+          {Station.Cheshunt}
         </text>
         <polygon
-          id="910GCHESHNT_nr"
           fill="#EE3124"
           points="791,140.7 789.3,139.9 791.7,139.9 791.7,139.4 789.2,139.4 790.5,138.7 791.7,138.7 791.7,138.2 790.5,138.2 788.9,137.5 787.8,137.5 789.4,138.2 786.9,138.2 786.9,138.7 789.4,138.7 788.1,139.4 786.9,139.4 786.9,139.9 788.2,139.9 789.9,140.7 "
-        ></polygon>{" "}
-      </g>
-      <g id="910GILFORD_label">
-        <text
-          id="910GILFORD_label"
-          transform="matrix(1 0 0 1 907.1184 287.0277)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Ilford
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.Ilford}
+        transform="matrix(1 0 0 1 907.1184 287.0277)"
+      />
+      <StationTextName
+        station={Station.Goodmayes}
+        transform="matrix(1 0 0 1 923.9969 269.1395)"
+      />
+      <StationTextName
+        station={Station.ChadwellHeath}
+        transform="matrix(1 0 0 1 941.3464 251.9344)"
+      >
+        <tspan x="0" y="0">
+          Chadwell
+        </tspan>
+        <tspan x="0" y="4.5">
+          Heath
+        </tspan>
+      </StationTextName>
+      <StationTextName station={Station.Romford} tag={"g"}>
+        <text transform="matrix(1 0 0 1 959.7061 231.7549)">
+          {Station.Romford}
         </text>
-      </g>
-      <g id="910GGODMAYS_label">
-        <text
-          id="910GGODMAYS_label"
-          transform="matrix(1 0 0 1 923.9969 269.1395)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Goodmayes
-        </text>
-      </g>
-      <g id="910GCHDWLHT_label">
-        <text
-          id="910GCHDWLHT_label"
-          transform="matrix(1 0 0 1 941.3464 251.9344)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Chadwell{" "}
-          </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            Heath
-          </tspan>
-        </text>
-      </g>
-      <g id="910GROMFORD_label">
         <polygon
-          id="910GROMFORD_nr"
           fill="#EE3124"
           points="984.3,231.7 982.5,231 985,231 985,230.4 982.5,230.4 983.8,229.8 985,229.8 985,229.3 983.8,229.3 982.2,228.6 981,228.6 982.7,229.3 980.1,229.3 980.1,229.8 982.7,229.8 981.3,230.4 980.1,230.4 980.1,231 981.4,231 983.1,231.7 "
-        ></polygon>
-        <g id="910GROMFORD_label">
-          <text
-            id="910GROMFORD_label"
-            transform="matrix(1 0 0 1 959.7061 231.7549)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            Romford
-          </text>
-        </g>
-      </g>
-      <g id="910GGIDEAPK_label">
-        <text
-          id="910GGIDEAPK_label"
-          transform="matrix(1 0 0 1 969.2869 224.3816)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Gidea Park
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.GideaPark}
+        transform="matrix(1 0 0 1 969.2869 224.3816)"
+      />
+      <StationTextName
+        station={Station.HaroldWood}
+        transform="matrix(1 0 0 1 979.3634 214.9132)"
+      />
+      <StationTextName station={Station.Shenfield} tag={"g"}>
+        <text transform="matrix(1 0 0 1 1001.6055 160.4576)">
+          {Station.Shenfield}
         </text>
-      </g>
-      <g id="910GHRLDWOD_label">
-        <text
-          id="910GHRLDWOD_label"
-          transform="matrix(1 0 0 1 979.3634 214.9132)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Harold Wood
-        </text>
-      </g>
-      <g id="910GSHENFLD_label">
         <polygon
-          id="910GSHENFLD_nr"
           fill="#EE3124"
           points="999.7,160.5 998,159.7 1000.4,159.7 1000.4,159.2 997.9,159.2 999.2,158.6 1000.4,158.6 1000.4,158.1 999.2,158.1 997.6,157.3 996.4,157.3 998.1,158.1 995.6,158.1 995.6,158.6 998.1,158.6 996.8,159.2 995.6,159.2 995.6,159.7 996.9,159.7 998.5,160.5 "
-        ></polygon>
-        <g id="910GSHENFLD_label">
-          <text
-            id="910GSHENFLD_label"
-            transform="matrix(1 0 0 1 1001.6055 160.4576)"
-            fill="#1C3F94"
-            className="blue-fill"
-          >
-            Shenfield
-          </text>
-        </g>
-      </g>
-      <g id="910GBRTWOOD_label">
-        <text
-          id="910GBRTWOOD_label"
-          transform="matrix(1 0 0 1 1004.8018 189.0142)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Brentwood
-        </text>
-      </g>
-      <g id="910GSVNKNGS_label">
-        <text
-          id="910GSVNKNGS_label"
-          transform="matrix(1 0 0 1 916.7372 276.9848)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Seven Kings
-        </text>
-      </g>
-      <text
-        id="910GEMRSPKH_label"
+        />
+      </StationTextName>
+      <StationTextName
+        station={Station.Brentwood}
+        transform="matrix(1 0 0 1 1004.8018 189.0142)"
+      />
+      <StationTextName
+        station={Station.SevenKings}
+        transform="matrix(1 0 0 1 916.7372 276.9848)"
+      />
+      <StationTextName
+        station={Station.EmersonPark}
         transform="matrix(1 0 0 1 977.2217 247.1133)"
-        fill="#1C3F94"
-        className="blue-fill"
+      />
+      <StationTextName
+        station={Station.Maryland}
+        transform="matrix(1 0 0 1 866.7809 327.8037)"
+      />
+      <StationTextName
+        station={Station.ManorPark}
+        transform="matrix(1 0 0 1 898.8948 295.336)"
+      />
+      <StationTextName
+        station={Station.ForestGate}
+        transform="matrix(1 0 0 1 879.0323 311.8677)"
       >
-        Emerson Park
-      </text>
-      <g id="910GMRYLAND_label">
-        <text
-          id="910GMRYLAND_label"
-          transform="matrix(1 0 0 1 866.7809 327.8037)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Maryland
-        </text>
-      </g>
-      <g id="910GMANRPK_label">
-        <text
-          id="910GMANRPK_label"
-          transform="matrix(1 0 0 1 898.8948 295.336)"
-          fill="#1C3F94"
-          className="blue-fill"
-        >
-          Manor Park
-        </text>
-      </g>
-      <g id="910GFRSTGT_label">
-        <text
-          id="910GFRSTGT_label"
-          transform="matrix(1 0 0 1 879.0323 311.8677)"
-        >
-          <tspan x="0" y="0" fill="#1C3F94" className="blue-fill">
-            Forest{" "}
-          </tspan>
-          <tspan x="0" y="4.5" fill="#1C3F94" className="blue-fill">
-            Gate
-          </tspan>
-        </text>
-      </g>
-
+        <tspan x="0" y="0">
+          Forest
+        </tspan>
+        <tspan x="0" y="4.5">
+          Gate
+        </tspan>
+      </StationTextName>
       <StationTextName
         station={Station.Chorleywood}
         transform="matrix(1 0 0 1 143.3916 177.1592)"
@@ -862,7 +705,7 @@ const StationNames: FC = memo(() => {
         station={Station.EdgwareRoadBakerloo}
       />
       <StationTextName station={Station.ElephantCastle} tag={"g"}>
-        <text transform="matrix(1 0 0 1 555.8326 619.5723)">
+        <text transform="matrix(1 0 0 1 560 619)">
           {Station.ElephantCastle}
         </text>
         <polygon
@@ -1083,7 +926,7 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         transform="matrix(1 0 0 1 730.8867 382.396)"
-        station={Station.BethnalGreen}
+        station={Station.BethnalGreenCentral}
       >
         <tspan x="0" y="0">
           Bethnal
