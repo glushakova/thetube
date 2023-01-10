@@ -1,17 +1,27 @@
 import React, { memo, FC } from "react";
 import classNames from "classnames";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getIsLineActiveSelector, selectLine } from "../../store/map";
-import { Line } from "../../config";
+import {
+  getIsLineActiveSelector,
+  selectLine,
+  selectSelectedStation,
+  selectStation,
+} from "../../store/map";
+import { Line, Station } from "../../config";
+import { StationIcon } from "../StationIcon";
+
+const STROKE_WIDTH = 2.27;
 
 const Jubilee: FC = memo(() => {
   const isActive = useAppSelector(getIsLineActiveSelector(Line.Jubilee));
-  const dispatch = useAppDispatch();
+  const selectedStation = useAppSelector(selectSelectedStation);
 
+  const dispatch = useAppDispatch();
   return (
     <g
       className={classNames("line", { disabled: !isActive })}
       onClick={() => dispatch(selectLine({ line: Line.Jubilee }))}
+      fill="#949CA1"
     >
       <path
         id="jubilee_940gzzluwhm_940gzzlustd"
@@ -86,7 +96,7 @@ const Jubilee: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M636.7,513.4h16.4c1.8,0,4.2,1,5.4,2.3l15.3,15.3"
+        d="M636.7,513.4h16.4c1.8,0,4.2,1,6.5,3.4l15.3,15.3"
       />
       <path
         id="jubilee_940gzzlubmy_940gzzlucwr_00000114036259827503229430000017952540963520762008_"
@@ -113,7 +123,7 @@ const Jubilee: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M529.6,535.8l0,13.1c0,4.2,3.4,7.6,7.6,7.6h28.6"
+        d=" M529.6,535.8l0,13.1c0,4.2,3.4,7.6,8.6,7.6h28.6"
       />
       <path
         id="jubilee_940gzzluwsm_940gzzluwlo"
@@ -189,9 +199,9 @@ const Jubilee: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="397.8"
-        y1="286.4"
-        x2="407.7"
-        y2="296.4"
+        y1="286.5"
+        x2="407.8"
+        y2="296.5"
       />
       <line
         id="jubilee_940gzzludoh_940gzzluwig"
@@ -274,49 +284,6 @@ const Jubilee: FC = memo(() => {
         x2="370"
         y2="225.6"
       />
-      <rect
-        id="jubilee_940gzzlucpk"
-        x="371.1"
-        y="224.1"
-        fill="#949CA1"
-        width="1.5"
-        height="1.5"
-      />
-      <rect
-        id="jubilee_940gzzluqby"
-        x="371.1"
-        y="235.5"
-        fill="#949CA1"
-        width="1.5"
-        height="1.5"
-      />
-      <rect
-        id="jubilee_940gzzlundn"
-        x="381.1"
-        y="267.3"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -77.6766 348.4876)"
-        fill="#949CA1"
-        width="1.5"
-        height="1.5"
-      />
-      <rect
-        id="jubilee_940gzzludoh"
-        x="390"
-        y="276.1"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -81.292 357.4077)"
-        fill="#949CA1"
-        width="1.5"
-        height="1.5"
-      />
-      <rect
-        id="jubilee_940gzzluwig"
-        x="398.9"
-        y="284.9"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -84.9496 366.2344)"
-        fill="#949CA1"
-        width="1.5"
-        height="1.5"
-      />
       <line
         id="jubilee_940gzzluswc_940gzzlusjw"
         fill="none"
@@ -350,6 +317,83 @@ const Jubilee: FC = memo(() => {
         x2="438.6"
         y2="327.2"
       />
+      <StationIcon
+        x={370.1}
+        y={224.85}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.CanonsPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.CanonsPark}
+      />
+      <StationIcon
+        x={370.1}
+        y={236.25}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Queensbury }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Queensbury}
+      />
+      <StationIcon
+        x={370.1}
+        y={247.95}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Kingsbury }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Kingsbury}
+      />
+      <StationIcon
+        x={380.6}
+        y={269.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Neasden }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Neasden}
+      />
+      <StationIcon
+        x={389.5}
+        y={278.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.DollisHill }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.DollisHill}
+      />
+      <StationIcon
+        x={397.7}
+        y={286.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WillesdenGreen }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WillesdenGreen}
+      />
+      <StationIcon
+        x={407.2}
+        y={295.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Kilburn }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Kilburn}
+      />
       <rect
         id="jubilee_940gzzlusjw"
         x="464.7"
@@ -357,6 +401,17 @@ const Jubilee: FC = memo(() => {
         fill="#949CA1"
         width="1.5"
         height="1.5"
+      />
+      <StationIcon
+        x={673.4}
+        y={530.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Bermondsey }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Bermondsey}
       />
     </g>
   );

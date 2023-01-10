@@ -510,7 +510,7 @@ const Central: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="174.4"
         y1="356"
-        x2="198.2"
+        x2="198.1"
         y2="379.8"
       />
       <path
@@ -570,38 +570,61 @@ const Central: FC = memo(() => {
           y2="230.7"
         />
       </g>
-      <rect
-        id="central_940gzzlursg"
-        x="159.3"
-        y="265.3"
-        fill="#EE3124"
-        width="1.5"
-        height="1.5"
+      <line
+        fill="none"
+        stroke="#F1F2F2"
+        strokeWidth="2.9476"
+        strokeLinejoin="round"
+        strokeMiterlimit="3.9938"
+        x1="161.9"
+        y1="234.4"
+        x2="161.9"
+        y2="231.1"
       />
-      <rect
-        id="central_940gzzlunht"
-        x="159.3"
-        y="315.9"
-        fill="#EE3124"
-        width="1.5"
-        height="1.5"
+      <line
+        id="central_940gzzluwrp_940gzzlursg"
+        fill="none"
+        stroke="#EE3124"
+        strokeWidth="2.2707"
+        strokeLinejoin="round"
+        strokeMiterlimit="3.9938"
+        x1="161.9"
+        y1="214.1"
+        x2="161.9"
+        y2="266.8"
       />
-      <rect
-        id="central_940gzzlupvl"
-        x="195.5"
-        y="379.9"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -211.6485 250.2835)"
-        fill="#EE3124"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={161.9}
+        y={266}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.RuislipGardens }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.RuislipGardens}
       />
-      <rect
-        id="central_940gzzluwta"
-        x="248"
-        y="453.1"
-        fill="#EE3124"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={161.9}
+        y={316.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Northolt }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Northolt}
+      />
+      <StationIcon
+        x={196.7}
+        y={378.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Perivale }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Perivale}
       />
       <StationIcon
         x={248.75}
@@ -911,29 +934,6 @@ const Central: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.TheydonBois}
-      />
-      <line
-        fill="none"
-        stroke="#F1F2F2"
-        strokeWidth="2.9476"
-        strokeLinejoin="round"
-        strokeMiterlimit="3.9938"
-        x1="161.9"
-        y1="234.4"
-        x2="161.9"
-        y2="231.1"
-      />
-      <line
-        id="central_940gzzluwrp_940gzzlursg"
-        fill="none"
-        stroke="#EE3124"
-        strokeWidth="2.2707"
-        strokeLinejoin="round"
-        strokeMiterlimit="3.9938"
-        x1="161.9"
-        y1="214.1"
-        x2="161.9"
-        y2="266.8"
       />
     </g>
   );
