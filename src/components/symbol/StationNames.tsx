@@ -1702,15 +1702,15 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.SouthHarrow}
-        transform="matrix(1 0 0 1 190.5788 284.4829)"
+        transform="matrix(1 0 0 1 190.75 284.4829)"
       />
       <StationTextName
         station={Station.SudburyHill}
-        transform="matrix(1 0 0 1 192.6002 306.042)"
+        transform="matrix(1 0 0 1 193.7 306.042)"
       />
       <StationTextName
         station={Station.SudburyTown}
-        transform="matrix(1 0 0 1 188.1452 327.5528)"
+        transform="matrix(1 0 0 1 189.7 327.5528)"
       />
       <StationTextName
         station={Station.Alperton}
@@ -1752,7 +1752,7 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.BostonManor}
-        transform="matrix(1 0 0 1 178.0502 524.0193)"
+        transform="matrix(1 0 0 1 178.6 524.0193)"
       >
         <tspan x="0" y="0">
           Boston
@@ -1774,7 +1774,7 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         station={Station.Osterley}
-        transform="matrix(1 0 0 1 166.8688 535.7355)"
+        transform="matrix(1 0 0 1 166.8 535.3)"
       />
       <StationTextName
         station={Station.HounslowCentral}
@@ -1782,11 +1782,11 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.HounslowEast}
-        transform="matrix(1 0 0 1 159.6801 543.8352)"
+        transform="matrix(1 0 0 1 158.9 543.75)"
       />
       <StationTextName
         station={Station.HounslowWest}
-        transform="matrix(1 0 0 1 141.2345 561.8819)"
+        transform="matrix(1 0 0 1 140.9 561.5)"
       >
         <tspan x="0" y="0">
           Hounslow
@@ -1826,11 +1826,11 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         station={Station.HydeParkCorner}
-        transform="matrix(1 0 0 1 422.7012 467.8985)"
+        transform="matrix(1 0 0 1 422.6 467.8985)"
       />
       <StationTextName
         station={Station.Knightsbridge}
-        transform="matrix(1 0 0 1 410.8315 488.2129)"
+        transform="matrix(1 0 0 1 409.8 488.2129)"
       />
       <StationTextName
         station={Station.CoventGarden}

@@ -9,8 +9,7 @@ import {
 } from "../../store/map";
 import { Line, Station } from "../../config";
 import { StationIcon } from "../StationIcon";
-
-const STROKE_WIDTH = 2.27;
+import { STROKE_WIDTH } from "../../constant/main";
 
 const Jubilee: FC = memo(() => {
   const isActive = useAppSelector(getIsLineActiveSelector(Line.Jubilee));
@@ -401,6 +400,17 @@ const Jubilee: FC = memo(() => {
         fill="#949CA1"
         width="1.5"
         height="1.5"
+      />
+      <StationIcon
+        x={565.4}
+        y={556.55}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Southwark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Southwark}
       />
       <StationIcon
         x={673.4}

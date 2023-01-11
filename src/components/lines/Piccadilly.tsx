@@ -1,16 +1,25 @@
 import React, { FC, memo } from "react";
 import classNames from "classnames";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getIsLineActiveSelector, selectLine } from "../../store/map";
-import { Line } from "../../config";
+import {
+  getIsLineActiveSelector,
+  selectLine,
+  selectSelectedStation,
+  selectStation,
+} from "../../store/map";
+import { Line, Station } from "../../config";
+import { StationIcon } from "../StationIcon";
+import { STROKE_WIDTH } from "../../constant/main";
 
 const Piccadilly: FC = memo(() => {
   const isActive = useAppSelector(getIsLineActiveSelector(Line.Piccadilly));
+  const selectedStation = useAppSelector(selectSelectedStation);
   const dispatch = useAppDispatch();
   return (
     <g
       className={classNames("line", { disabled: !isActive })}
       onClick={() => dispatch(selectLine({ line: Line.Piccadilly }))}
+      fill="#1C3F94"
     >
       <line
         id="piccadilly_940gzzluosy_940gzzlubos_00000128457183479018220690000005391031151591931797_"
@@ -67,10 +76,10 @@ const Piccadilly: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="124.1"
-        y1="570"
-        x2="137.7"
-        y2="556.4"
+        x1="124"
+        y1="570.1"
+        x2="137.8"
+        y2="556.3"
       />
       <line
         id="piccadilly_940gzzluhrc_940gzzluhnx_00000152229805290269682140000016347440962863845523_"
@@ -238,7 +247,7 @@ const Piccadilly: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="587.2"
+        x1="587.3"
         y1="393.9"
         x2="587.2"
         y2="374.5"
@@ -259,7 +268,7 @@ const Piccadilly: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="547.8"
+        x1="547.9"
         y1="446.3"
         x2="561.4"
         y2="432.7"
@@ -564,7 +573,7 @@ const Piccadilly: FC = memo(() => {
         x1="225"
         y1="482"
         x2="225"
-        y2="435.7"
+        y2="435.6"
       />
       <g id="piccadilly_940gzzluact_940gzzlutng">
         <line
@@ -603,7 +612,7 @@ const Piccadilly: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M115.4,623.4c3-1.6,5.1-4.8,5.1-8.5v-37.8c0-2.2,0.8-4.4,2.5-6.1c1-1,1.5-1.5,1.5-1.5"
+        d="M115.4,623.4c3-1.6,5.1-4.8,5.1-8.5v-37.8c0-2.2,0.8-4.4,2.8-6.1c1-1,1.5-1.5,1.5-1.5"
       />
       <path
         id="piccadilly_940gzzluhr4_940gzzluhrc_00000182502800174523004510000003663949030502928768_"
@@ -635,110 +644,192 @@ const Piccadilly: FC = memo(() => {
         height="1.5"
         className="blue-fill"
       />
-      <rect
-        id="piccadilly_940gzzlualp"
-        x="222.4"
-        y="347.1"
-        fill="#1C3F94"
-        width="1.5"
-        height="1.5"
-        className="blue-fill"
+      <StationIcon
+        x={225}
+        y={283.25}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.SouthHarrow }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.SouthHarrow}
       />
-      <rect
-        id="piccadilly_940gzzlunen"
-        x="222.4"
-        y="435.7"
-        fill="#1C3F94"
-        width="1.5"
-        height="1.5"
-        className="blue-fill"
+      <StationIcon
+        x={225}
+        y={304.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.SudburyHill }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.SudburyHill}
       />
-      <rect
-        id="piccadilly_940gzzlusea"
-        x="206.5"
-        y="503.9"
-        fill="#1C3F94"
-        width="1.5"
-        height="1.5"
-        className="blue-fill"
+      <StationIcon
+        x={225}
+        y={326.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.SudburyTown }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.SudburyTown}
       />
-      <rect
-        id="piccadilly_940gzzlunfd"
-        x="192"
-        y="507.6"
-        fill="#1C3F94"
-        width="1.5"
-        height="1.5"
-        className="blue-fill"
+      <StationIcon
+        x={225}
+        y={347.85}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Alperton }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Alperton}
       />
-      <rect
-        id="piccadilly_940gzzlubos_00000170275118267951676880000005116982447117377469_"
-        x="176.3"
-        y="519"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -315.6179 277.3873)"
-        fill="#1C3F94"
-        width="1.5"
-        height="1.5"
-        className="blue-fill"
+      <StationIcon
+        x={225}
+        y={436.45}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.NorthEaling }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.NorthEaling}
       />
-      <rect
-        id="piccadilly_940gzzluhwc_00000106110428250336516490000013030805652695785647_"
-        x="148"
-        y="547.3"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -343.9577 265.6877)"
-        fill="#1C3F94"
-        width="1.5"
-        height="1.5"
-        className="blue-fill"
+      <StationIcon
+        x={207.25}
+        y={506.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.SouthEaling }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.SouthEaling}
       />
-      <rect
-        id="piccadilly_940gzzluhnx_00000089555564226591853860000014523572585588853684_"
-        x="125.2"
-        y="570"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -366.7116 256.2376)"
-        fill="#1C3F94"
-        width="1.5"
-        height="1.5"
-        className="blue-fill"
+      <StationIcon
+        x={192.7}
+        y={506.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Northfields }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Northfields}
       />
-      <rect
-        id="piccadilly_940gzzlursq"
-        x="584.7"
-        y="392.4"
-        fill="#1C3F94"
-        width="1.5"
-        height="1.5"
-        className="blue-fill"
+      <StationIcon
+        x={175.6}
+        y={518.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.BostonManor }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.BostonManor}
       />
-      <rect
-        id="piccadilly_940gzzlucgn"
-        x="548.9"
-        y="446.4"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -155.1712 519.6078)"
-        fill="#1C3F94"
-        width="1.5"
-        height="1.5"
-        className="blue-fill"
+      <StationIcon
+        x={163.95}
+        y={530.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Osterley }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Osterley}
       />
-      <rect
-        id="piccadilly_940gzzluhpc"
-        x="462"
-        y="468.3"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -196.1478 464.6669)"
-        fill="#1C3F94"
-        width="1.5"
-        height="1.5"
-        className="blue-fill"
+      <StationIcon
+        x={155.5}
+        y={538.55}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.HounslowEast }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.HounslowEast}
       />
-      <rect
-        id="piccadilly_940gzzluknb"
-        x="441.8"
-        y="488.6"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -216.3866 456.2551)"
-        fill="#1C3F94"
-        width="1.5"
-        height="1.5"
-        className="blue-fill"
+      <StationIcon
+        x={147.4}
+        y={546.7}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.HounslowCentral }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.HounslowCentral}
+      />
+      <StationIcon
+        x={138.4}
+        y={555.7}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.HounslowWest }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.HounslowWest}
+      />
+      <StationIcon
+        x={124.55}
+        y={569.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.HattonCross }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.HattonCross}
+      />
+      <StationIcon
+        x={587.3}
+        y={392.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.RussellSquare }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.RussellSquare}
+      />
+      <StationIcon
+        x={548.05}
+        y={446.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.CoventGarden }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.CoventGarden}
+      />
+      <StationIcon
+        x={464.35}
+        y={470}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={315}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.HydeParkCorner }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.HydeParkCorner}
+      />
+      <StationIcon
+        x={443.8}
+        y={490.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={315}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Knightsbridge }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Knightsbridge}
       />
       <rect
         id="piccadilly_940gzzlusgt"
