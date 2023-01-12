@@ -1,17 +1,26 @@
 import React, { memo, FC } from "react";
 import classNames from "classnames";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getIsLineActiveSelector, selectLine } from "../../store/map";
-import { Line } from "../../config";
+import {
+  getIsLineActiveSelector,
+  selectLine,
+  selectSelectedStation,
+  selectStation,
+} from "../../store/map";
+import { Line, Station } from "../../config";
+import { StationIcon } from "../StationIcon";
+import { STROKE_WIDTH } from "../../constant/main";
 
 const Northern: FC = memo(() => {
   const isActive = useAppSelector(getIsLineActiveSelector(Line.Northern));
+  const selectedStation = useAppSelector(selectSelectedStation);
   const dispatch = useAppDispatch();
 
   return (
     <g
       className={classNames("line", { disabled: !isActive })}
       onClick={() => dispatch(selectLine({ line: Line.Northern }))}
+      fill="blue"
     >
       <line
         id="northern_940gzzluegw_940gzzlubtk"
@@ -150,7 +159,7 @@ const Northern: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="585"
-        y1="202.9"
+        y1="203"
         x2="585"
         y2="191.3"
       />
@@ -161,7 +170,7 @@ const Northern: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="585"
+        x1="585.1"
         y1="222.4"
         x2="585"
         y2="202.9"
@@ -245,7 +254,7 @@ const Northern: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="585"
+        x1="585.1"
         y1="222.4"
         x2="585"
         y2="235.4"
@@ -586,30 +595,82 @@ const Northern: FC = memo(() => {
         x2="536.7"
         y2="505.1"
       />
-      <polyline
-        id="northern_940gzzlutaw"
-        points="587.1,178.7 587.6,178.7 587.6,180.2 586.1,180.2 586.1,178.7 587.1,178.7 "
+      <StationIcon
+        x={585}
+        y={179.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.TotteridgeWhetstone }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.TotteridgeWhetstone}
       />
-      <rect
-        id="northern_940gzzluefy"
-        x="586.1"
-        y="233.9"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={585}
+        y={191.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WoodsidePark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WoodsidePark}
       />
-      <rect
-        id="northern_940gzzluhgt"
-        x="586.1"
-        y="246"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={585}
+        y={203.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WestFinchley }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WestFinchley}
       />
-      <rect
-        id="northern_940gzzlutfp"
-        x="586.1"
-        y="288.4"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={585}
+        y={222.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.FinchleyCentral }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.FinchleyCentral}
+      />
+      <StationIcon
+        x={585}
+        y={234.65}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.EastFinchley }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.EastFinchley}
+      />
+      <StationIcon
+        x={585}
+        y={246.75}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Highgate }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Highgate}
+      />
+      <StationIcon
+        x={585}
+        y={289.15}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.TufnellPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.TufnellPark}
       />
       <polyline
         id="northern_940gzzlubtk"

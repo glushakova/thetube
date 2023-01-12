@@ -1838,7 +1838,7 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.Oakwood}
-        transform="matrix(1 0 0 1 656.7 176.96)"
+        transform="matrix(1 0 0 1 658.24 176.96)"
       />
       <StationTextName
         station={Station.Cockfosters}
@@ -1846,11 +1846,11 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.Southgate}
-        transform="matrix(1 0 0 1 656.373 189.239)"
+        transform="matrix(1 0 0 1 655.68 189.239)"
       />
       <StationTextName
         station={Station.ArnosGrove}
-        transform="matrix(1 0 0 1 651.126 201.5022)"
+        transform="matrix(1 0 0 1 651.35 201.5022)"
       />
       <StationTextName
         station={Station.BoundsGreen}
@@ -1858,11 +1858,11 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.WoodGreen}
-        transform="matrix(1 0 0 1 650.9336 226.0647)"
+        transform="matrix(1 0 0 1 651.9336 226.0647)"
       />
       <StationTextName
         station={Station.TurnpikeLane}
-        transform="matrix(1 0 0 1 647.5156 238.3374)"
+        transform="matrix(1 0 0 1 647.3 238.3374)"
       />
       <StationTextName
         station={Station.ManorHouse}
@@ -1870,7 +1870,7 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.Arsenal}
-        transform="matrix(1 0 0 1 639.785 291.2278)"
+        transform="matrix(1 0 0 1 639.3 291.2278)"
       />
       <StationTextName
         station={Station.HollowayRoad}
