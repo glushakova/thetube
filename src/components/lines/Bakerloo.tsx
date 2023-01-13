@@ -1,17 +1,26 @@
 import React, { memo, FC } from "react";
 import classNames from "classnames";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getIsLineActiveSelector, selectLine } from "../../store/map";
-import { Line } from "../../config";
+import {
+  getIsLineActiveSelector,
+  selectLine,
+  selectSelectedStation,
+  selectStation,
+} from "../../store/map";
+import { Line, Station } from "../../config";
+import { StationIcon } from "../StationIcon";
+import { STROKE_WIDTH } from "../../constant/main";
 
 const Bakerloo: FC = memo(() => {
   const isActive = useAppSelector(getIsLineActiveSelector(Line.Bakerloo));
+  const selectedStation = useAppSelector(selectSelectedStation);
   const dispatch = useAppDispatch();
 
   return (
     <g
       className={classNames("line", { disabled: !isActive })}
       onClick={() => dispatch(selectLine({ line: Line.Bakerloo }))}
+      fill="#B06010"
     >
       <line
         id="bakerloo_940gzzluhaw_940gzzluken"
@@ -146,9 +155,9 @@ const Bakerloo: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="331.1"
+        x1="331.2"
         y1="371.4"
-        x2="321.8"
+        x2="321.9"
         y2="362.2"
       />
       <path
@@ -206,7 +215,7 @@ const Bakerloo: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="483.1"
+        x1="483"
         y1="410.1"
         x2="463.5"
         y2="390.5"
@@ -298,7 +307,6 @@ const Bakerloo: FC = memo(() => {
         id="bakerloo_940gzzluskt"
         x="316.8"
         y="277.8"
-        fill="#B06010"
         width="1.5"
         height="1.5"
         className="disrupted"
@@ -307,7 +315,6 @@ const Bakerloo: FC = memo(() => {
         id="bakerloo_940gzzlunwy"
         x="316.8"
         y="287.2"
-        fill="#B06010"
         width="1.5"
         height="1.5"
         className="disrupted"
@@ -316,7 +323,6 @@ const Bakerloo: FC = memo(() => {
         id="bakerloo_940gzzlusgp"
         x="316.8"
         y="305.5"
-        fill="#B06010"
         width="1.5"
         height="1.5"
         className="disrupted"
@@ -325,61 +331,83 @@ const Bakerloo: FC = memo(() => {
         id="bakerloo_940gzzluhsn"
         x="316.8"
         y="314.6"
-        fill="#B06010"
         width="1.5"
         height="1.5"
         className="disrupted"
       />
       <rect
-        id="bakerloo_940gzzlukpk"
-        x="320.3"
-        y="363.2"
-        transform="matrix(0.707 -0.7072 0.7072 0.707 -163.3463 333.6854)"
-        fill="#B06010"
+        id="lul-bakerloo_940gzzluksl"
+        x="320.5"
+        y="332.5"
         width="1.5"
         height="1.5"
       />
-      <rect
-        id="bakerloo_940gzzlumvl"
-        x="328.5"
-        y="371.4"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -166.7316 341.8276)"
-        fill="#B06010"
-        width="1.5"
-        height="1.5"
+
+      <StationIcon
+        x={322.35}
+        y={362.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.KilburnPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.KilburnPark}
       />
-      <rect
-        id="bakerloo_940gzzluwka"
-        x="341.7"
-        y="374.9"
-        fill="#B06010"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={330.55}
+        y={370.7}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.MaidaVale }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.MaidaVale}
       />
-      <rect
-        id="bakerloo_940gzzluerb"
-        x="399.8"
-        y="371.2"
-        fill="#B06010"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={342.45}
+        y={373.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WarwickAvenue }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WarwickAvenue}
       />
-      <rect
-        id="bakerloo_940gzzlurgp"
-        x="483.2"
-        y="407.5"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -146.9484 461.795)"
-        fill="#B06010"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={400.55}
+        y={373.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.EdgwareRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.EdgwareRoad}
       />
-      <rect
-        id="bakerloo_940gzzlulbn"
-        x="545"
-        y="570.8"
-        fill="#B06010"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={482.4}
+        y={409.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.RegentsPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.RegentsPark}
+      />
+      <StationIcon
+        x={543.75}
+        y={571.55}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.LambethNorth }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.LambethNorth}
       />
     </g>
   );

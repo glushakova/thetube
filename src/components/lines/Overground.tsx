@@ -779,6 +779,14 @@ const Overground: FC = memo(() => {
         className="disrupted"
       />
       <rect
+        id="raillo-overground_910gkenslg"
+        x="323.7"
+        y="332.5"
+        fill="#F58025"
+        width="1.5"
+        height="1.5"
+      />
+      <rect
         id="raillo-overground_910gskenton"
         x="319.9"
         y="277.8"
