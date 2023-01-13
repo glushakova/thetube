@@ -916,7 +916,6 @@ export const LinesByStation: Record<Station, Set<Line>> = {
   [Station.GreenPark]: new Set([Line.Piccadilly, Line.Jubilee, Line.Victoria]),
   [Station.CanadaWater]: new Set([Line.Overground, Line.Jubilee]),
   [Station.LondonBridge]: new Set([Line.Northern, Line.Jubilee]),
-  [Station.GoodgeStreet]: new Set([Line.Northern, Line.Victoria]),
   [Station.WarrenStreet]: new Set([Line.Northern, Line.Victoria]),
   [Station.LeicesterSquare]: new Set([Line.Northern, Line.Piccadilly]),
   [Station.RaynersLane]: new Set([Line.Piccadilly, Line.Metropolitan]),

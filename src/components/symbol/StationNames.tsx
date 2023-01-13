@@ -911,7 +911,7 @@ const StationNames: FC = memo(() => {
         />
       </StationTextName>
       <StationTextName
-        transform="matrix(1 0 0 1 539.1312 413.7653)"
+        transform="matrix(1 0 0 1 540.4 413.9)"
         station={Station.TottenhamCourtRoad}
       >
         <tspan x="0" y="0">
@@ -1483,35 +1483,35 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.HighBarnet}
-        transform="matrix(1 0 0 1 589.833 169.2129)"
+        transform="matrix(1 0 0 1 589.65 169.2129)"
       />
       <StationTextName
         station={Station.TotteridgeWhetstone}
-        transform="matrix(1 0 0 1 588.874 181.0464)"
+        transform="matrix(1 0 0 1 589.65 181.0464)"
       />
       <StationTextName
         station={Station.WoodsidePark}
-        transform="matrix(1 0 0 1 589.6572 192.9063)"
+        transform="matrix(1 0 0 1 589.65 192.9063)"
       />
       <StationTextName
         station={Station.WestFinchley}
-        transform="matrix(1 0 0 1 589.6514 204.7076)"
+        transform="matrix(1 0 0 1 589.65 204.7076)"
       />
       <StationTextName
         station={Station.FinchleyCentral}
-        transform="matrix(1 0 0 1 589.6514 224.0541)"
+        transform="matrix(1 0 0 1 589.65 224.0541)"
       />
       <StationTextName
         station={Station.EastFinchley}
-        transform="matrix(1 0 0 1 588.8721 236.2514)"
+        transform="matrix(1 0 0 1 589.65 236.2514)"
       />
       <StationTextName
         station={Station.Highgate}
-        transform="matrix(1 0 0 1 588.8721 248.3443)"
+        transform="matrix(1 0 0 1 589.65 248.3443)"
       />
       <StationTextName
         station={Station.Archway}
-        transform="matrix(1 0 0 1 588.875 260.3068)"
+        transform="matrix(1 0 0 1 589.65 260.3068)"
       />
       <StationTextName station={Station.KentishTown} tag={"g"}>
         <text transform="matrix(1 0 0 1 583.7312 303.7052)">
@@ -1524,7 +1524,7 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         station={Station.TufnellPark}
-        transform="matrix(1 0 0 1 588.8623 290.7417)"
+        transform="matrix(1 0 0 1 589.65 290.7417)"
       />
       <StationTextName
         station={Station.Edgware}
@@ -1540,7 +1540,7 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.HendonCentral}
-        transform="matrix(1 0 0 1 433.4591 248.5626)"
+        transform="matrix(1 0 0 1 433.6 248.5626)"
       />
       <StationTextName
         station={Station.BrentCross}
@@ -1548,19 +1548,19 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.GoldersGreen}
-        transform="matrix(1 0 0 1 460.8593 273.4087)"
+        transform="matrix(1 0 0 1 461.8 273.4087)"
       />
       <StationTextName
         station={Station.Hampstead}
-        transform="matrix(1 0 0 1 480.7899 285.0793)"
+        transform="matrix(1 0 0 1 479.5 285.0793)"
       />
       <StationTextName
         station={Station.BelsizePark}
-        transform="matrix(1 0 0 1 510.4686 315.8456)"
+        transform="matrix(1 0 0 1 511.6 318)"
       />
       <StationTextName
         station={Station.ChalkFarm}
-        transform="matrix(1 0 0 1 522.0057 325.7899)"
+        transform="matrix(1 0 0 1 522.6 326.7)"
       />
       <StationTextName
         station={Station.CamdenTown}
@@ -1573,18 +1573,18 @@ const StationNames: FC = memo(() => {
         <tspan x="0" y="0">
           Mornington
         </tspan>
-        <tspan x="6.1" y="4.5">
+        <tspan x="5.4" y="4.5">
           Crescent
         </tspan>
       </StationTextName>
       <StationTextName
         station={Station.GoodgeStreet}
-        transform="matrix(1 0 0 1 516.3997 416.7274)"
+        transform="matrix(1 0 0 1 516.1 416.7274)"
       >
         <tspan x="0" y="0">
           Goodge
         </tspan>
-        <tspan x="3.5" y="4.5">
+        <tspan x="3" y="4.5">
           Street
         </tspan>
       </StationTextName>
@@ -1613,7 +1613,7 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.NineElms}
-        transform="matrix(1 0 0 1 452.7015 611.9494)"
+        transform="matrix(1 0 0 1 452.7015 611.5)"
       />
       <StationTextName
         station={Station.BatterseaPowerStation}

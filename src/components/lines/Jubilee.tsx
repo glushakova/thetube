@@ -131,7 +131,7 @@ const Jubilee: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M516.3,505.1l11.1,11c1.2,1.2,2.3,3.7,2.3,5.4l0,14.3"
+        d=" M516.2,505.1l11.1,11c1.2,1.2,2.3,3.7,2.3,5.4l0,14.3"
       />
       <line
         id="jubilee_940gzzlugpk_940gzzluwsm"

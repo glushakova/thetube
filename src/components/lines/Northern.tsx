@@ -20,7 +20,6 @@ const Northern: FC = memo(() => {
     <g
       className={classNames("line", { disabled: !isActive })}
       onClick={() => dispatch(selectLine({ line: Line.Northern }))}
-      fill="blue"
     >
       <line
         id="northern_940gzzluegw_940gzzlubtk"
@@ -29,7 +28,7 @@ const Northern: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="449.2"
+        x1="449.1"
         y1="220.7"
         x2="433.4"
         y2="204.9"
@@ -41,7 +40,7 @@ const Northern: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="460.8"
+        x1="460.7"
         y1="232.3"
         x2="448.1"
         y2="219.7"
@@ -53,8 +52,8 @@ const Northern: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="471"
-        y1="242.6"
+        x1="471.1"
+        y1="242.7"
         x2="459.7"
         y2="231.3"
       />
@@ -65,7 +64,7 @@ const Northern: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="484.7"
+        x1="484.6"
         y1="256.2"
         x2="471"
         y2="242.6"
@@ -77,8 +76,8 @@ const Northern: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="495.7"
-        y1="267.3"
+        x1="495.8"
+        y1="267.4"
         x2="483.6"
         y2="255.2"
       />
@@ -89,7 +88,7 @@ const Northern: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="508.5"
+        x1="508.6"
         y1="280.1"
         x2="495.7"
         y2="267.3"
@@ -113,9 +112,9 @@ const Northern: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="550"
-        y1="321.5"
-        x2="538.7"
+        x1="550.1"
+        y1="321.6"
+        x2="538.6"
         y2="310.2"
       />
       <path
@@ -296,7 +295,7 @@ const Northern: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M523.8,635.6l0.9-0.9c1.2-1.2,2.3-3.7,2.3-5.4v-0.4c0-1.8,1-4.2,2.3-5.4l5.5-5.5"
+        d=" M523.2,635.9l0.9-0.9c1.2-1.2,2.3-3.7,2.3-5.4v-0.4c0-1.8,1-4.2,2.3-5.4l5.5-5.5"
       />
       <path
         id="northern_940gzzlukng_940gzzluovl_00000126283776768652596900000017666989161671549603_"
@@ -305,7 +304,7 @@ const Northern: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M544.3,621.8l-4.3,4.3l-1.1,1.1l-3,3c-1.2,1.2-3.7,2.3-5.4,2.3l-0.4,0c-1.8,0-4.2,1-5.4,2.3l-0.9,0.9"
+        d=" M544.1,621.8l-4.3,4.3l-1.1,1.1l-3,3c-1.2,1.2-3.7,2.3-5.4,2.3l-0.4,0c-1.8,0-4.2,1-5.4,2.3l-0.9,0.9"
       />
       <path
         id="northern_940gzzlueus_940gzzluksx_00000112614294657915762640000008476395738356244911_"
@@ -389,7 +388,7 @@ const Northern: FC = memo(() => {
         x1="552.5"
         y1="613.6"
         x2="601.6"
-        y2="564.4"
+        y2="564.5"
       />
       <line
         id="northern_940gzzlueac_940gzzlukng"
@@ -449,7 +448,7 @@ const Northern: FC = memo(() => {
         x1="479.6"
         y1="679.7"
         x2="489.3"
-        y2="670.1"
+        y2="670"
       />
       <line
         id="northern_940gzzlucps_940gzzlublm"
@@ -461,7 +460,7 @@ const Northern: FC = memo(() => {
         x1="470.4"
         y1="689"
         x2="480.7"
-        y2="678.7"
+        y2="678.6"
       />
       <line
         id="northern_940gzzlublm_940gzzlutbc"
@@ -495,9 +494,9 @@ const Northern: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="445.8"
-        y1="713.5"
+        y1="713.6"
         x2="455.8"
-        y2="703.5"
+        y2="703.6"
       />
       <line
         id="northern_940gzzlucsd_940gzzluswn"
@@ -595,6 +594,36 @@ const Northern: FC = memo(() => {
         x2="536.7"
         y2="505.1"
       />
+      <polyline
+        id="northern_940gzzluwlo_940gzzlukng_00000129174250633689794610000016137394338102995893_"
+        fill="none"
+        stroke="#000000"
+        strokeWidth="2.2707"
+        strokeLinejoin="round"
+        strokeMiterlimit="3.9938"
+        points=" 536.8,613.7 536.8,606.9 536.8,588.5 536.7,544.1 "
+      />
+      <path
+        id="northern_940gzzlukng_940gzzneugst"
+        fill="none"
+        stroke="#000000"
+        strokeWidth="2.2707"
+        strokeLinejoin="round"
+        strokeMiterlimit="3.9938"
+        d=" M464,604.2l23.1,0l0.6,0h1.2c1.8,0,4.2,1,5.4,2.3l11.6,11.6c1.2,1.2,3.7,2.3,5.4,2.3l4.3,0h1.5l6.1,0l0.8,0l4.9,0 c2.1,0,4.1-0.9,5.5-2.3c1.4-1.4,2.3-3.3,2.3-5.5"
+      />
+      <line
+        id="northern_940gzzneugst_940gzzbpsust_00000034805371516734183900000012010113958000597667_"
+        fill="none"
+        stroke="#000000"
+        strokeWidth="2.2707"
+        strokeLinejoin="round"
+        strokeMiterlimit="3.9938"
+        x1="464"
+        y1="604.2"
+        x2="445.8"
+        y2="604.2"
+      />
       <StationIcon
         x={585}
         y={179.6}
@@ -672,137 +701,215 @@ const Northern: FC = memo(() => {
         }}
         isSelected={selectedStation === Station.TufnellPark}
       />
-      <polyline
-        id="northern_940gzzlubtk"
-        points="447,220.8 447.4,220.4 448.4,221.5 447.3,222.6 446.3,221.5 447,220.8 "
+      <StationIcon
+        x={448.7}
+        y={220.35}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.BurntOak }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.BurntOak}
       />
-      <polyline
-        id="northern_940gzzlucnd"
-        points="458.6,232.4 458.9,232 460,233.1 458.9,234.2 457.9,233.1 458.6,232.4 "
+      <StationIcon
+        x={460.3}
+        y={231.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Colindale }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Colindale}
       />
-      <polyline
-        id="northern_940gzzlubtx"
-        points="482.5,256.4 482.8,256 483.9,257 482.8,258.1 481.8,257 482.5,256.4 "
+      <StationIcon
+        x={472.2}
+        y={243.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.HendonCentral }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.HendonCentral}
       />
-      <polyline
-        id="northern_940gzzluhtd"
-        points="506.3,280.2 506.7,279.8 507.7,280.9 506.7,281.9 505.6,280.9 506.3,280.2 "
+      <StationIcon
+        x={484.2}
+        y={255.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.BrentCross }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.BrentCross}
       />
-      <polyline
-        id="northern_940gzzlubzp"
-        points="537.5,311.4 537.9,311 538.9,312.1 537.9,313.1 536.8,312.1 537.5,311.4 "
+      <StationIcon
+        x={496.25}
+        y={267.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.GoldersGreen }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.GoldersGreen}
       />
-      <polyline
-        id="northern_940gzzlucfm"
-        points="547.7,321.6 548.1,321.2 549.2,322.3 548.1,323.4 547.1,322.3 547.7,321.6 "
+      <StationIcon
+        x={508.2}
+        y={279.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Hampstead }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Hampstead}
       />
-      <rect
-        id="northern_940gzzlumtc"
-        x="545.9"
-        y="348.6"
-        width="1.5"
-        height="1.5"
-        className="disrupted closed"
+      <StationIcon
+        x={542.25}
+        y={313.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.BelsizePark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.BelsizePark}
       />
-      <rect
-        id="northern_940gzzlugdg"
-        x="534.2"
-        y="416.8"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={549.9}
+        y={321.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ChalkFarm }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ChalkFarm}
       />
-      <rect
-        id="northern_940gzzlubor"
-        x="601.7"
-        y="565.4"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -223.875 591.7933)"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={548.5}
+        y={349.15}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.MorningtonCrescent }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.MorningtonCrescent}
       />
-      <rect
-        id="northern_940gzzluagl"
-        x="610.4"
-        y="378.1"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={536.7}
+        y={417.55}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.GoodgeStreet }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.GoodgeStreet}
       />
-      <polyline
-        id="northern_940gzzluwlo_940gzzlukng_00000129174250633689794610000016137394338102995893_"
-        fill="none"
-        stroke="#000000"
-        strokeWidth="2.2707"
-        strokeLinejoin="round"
-        strokeMiterlimit="3.9938"
-        points=" 536.8,613.7 536.8,606.9 536.8,588.5 536.7,544.1 "
+
+      <StationIcon
+        x={611.15}
+        y={376.85}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Angel }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Angel}
       />
-      <path
-        id="northern_940gzzlukng_940gzzneugst"
-        fill="none"
-        stroke="#000000"
-        strokeWidth="2.2707"
-        strokeLinejoin="round"
-        strokeMiterlimit="3.9938"
-        d=" M464,604.2l23.1,0l0.6,0h1.2c1.8,0,4.2,1,5.4,2.3l11.6,11.6c1.2,1.2,3.7,2.3,5.4,2.3l4.3,0h1.5l6.1,0l0.8,0l4.9,0 c2.1,0,4.1-0.9,5.5-2.3c1.4-1.4,2.3-3.3,2.3-5.5"
+      <StationIcon
+        x={601.2}
+        y={564.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Borough }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Borough}
       />
-      <line
-        id="northern_940gzzneugst_940gzzbpsust_00000034805371516734183900000012010113958000597667_"
-        fill="none"
-        stroke="#000000"
-        strokeWidth="2.2707"
-        strokeLinejoin="round"
-        strokeMiterlimit="3.9938"
-        x1="463.6"
-        y1="604.2"
-        x2="445.8"
-        y2="604.2"
+      <StationIcon
+        x={523.7}
+        y={635.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={315}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Oval }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Oval}
       />
-      <rect
-        id="northern_940gzzluovl"
-        x="521.6"
-        y="633.6"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -295.5288 555.1703)"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={464}
+        y={604.2}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.NineElms }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.NineElms}
       />
-      <rect
-        id="northern_940gzzlucpc"
-        x="486.7"
-        y="668.5"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -330.4763 540.7175)"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={488.7}
+        y={670.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={315}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ClaphamCommon }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ClaphamCommon}
       />
-      <rect
-        id="northern_940gzzlucps"
-        x="478.1"
-        y="677.1"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -339.094 537.1474)"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={480.1}
+        y={679.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={315}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ClaphamSouth }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ClaphamSouth}
       />
-      <rect
-        id="northern_940gzzlutbc"
-        x="464.6"
-        y="695.9"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -356.2978 533.0469)"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={464}
+        y={695.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.TootingBec }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.TootingBec}
       />
-      <rect
-        id="northern_940gzzlutby"
-        x="455.9"
-        y="704.6"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -365.0188 529.4745)"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={455.3}
+        y={704.0}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.TootingBroadway }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.TootingBroadway}
       />
-      <rect
-        id="northern_940gzzlucsd"
-        x="446.9"
-        y="713.6"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -373.9852 525.7621)"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={446.45}
+        y={712.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ColliersWood }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ColliersWood}
       />
     </g>
   );
