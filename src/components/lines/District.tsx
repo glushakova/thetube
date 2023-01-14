@@ -1,17 +1,26 @@
 import React, { memo, FC } from "react";
 import classNames from "classnames";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getIsLineActiveSelector, selectLine } from "../../store/map";
-import { Line } from "../../config";
+import {
+  getIsLineActiveSelector,
+  selectLine,
+  selectSelectedStation,
+  selectStation,
+} from "../../store/map";
+import { Line, Station } from "../../config";
+import { StationIcon } from "../StationIcon";
+import { STROKE_WIDTH } from "../../constant/main";
 
 const District: FC = memo(() => {
   const isActive = useAppSelector(getIsLineActiveSelector(Line.District));
+  const selectedStation = useAppSelector(selectSelectedStation);
   const dispatch = useAppDispatch();
 
   return (
     <g
       className={classNames("line", { disabled: !isActive })}
       onClick={() => dispatch(selectLine({ line: Line.District }))}
+      fill="#00853F"
     >
       <path
         id="district_940gzzlupac_940gzzluerc"
@@ -179,7 +188,7 @@ const District: FC = memo(() => {
         x1="376.6"
         y1="542.6"
         x2="376.6"
-        y2="567.2"
+        y2="567.3"
       />
       <path
         id="district_940gzzluwbn_940gzzluect"
@@ -314,7 +323,7 @@ const District: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="620.1"
+        x1="620.2"
         y1="478.6"
         x2="608.8"
         y2="489.9"
@@ -482,10 +491,10 @@ const District: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="929.9"
-        y1="337.2"
-        x2="920.7"
-        y2="346.4"
+        x1="930"
+        y1="337.1"
+        x2="920.6"
+        y2="346.5"
       />
       <line
         id="district_940gzzlubec_940gzzludgy"
@@ -506,10 +515,10 @@ const District: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="952.1"
+        x1="952"
         y1="315.1"
-        x2="939.8"
-        y2="327.3"
+        x2="939.7"
+        y2="327.4"
       />
       <line
         id="district_940gzzludge_940gzzluepk"
@@ -530,10 +539,10 @@ const District: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="976.3"
+        x1="976.4"
         y1="290.8"
-        x2="967.3"
-        y2="299.9"
+        x2="967.2"
+        y2="300"
       />
       <line
         id="district_940gzzluhch_940gzzluupb"
@@ -856,99 +865,181 @@ const District: FC = memo(() => {
           height="1.5"
         />
       </g>
-      <rect
-        id="district_940gzzlugtr"
-        x="406.7"
-        y="510.7"
-        fill="#00853F"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={985.65}
+        y={281.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.UpminsterBridge }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.UpminsterBridge}
       />
-      <rect
-        id="district_940gzzlubec"
-        x="930.4"
-        y="337.8"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 33.3146 757.5812)"
-        fill="#00853F"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={975.8}
+        y={291.35}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Hornchurch }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Hornchurch}
       />
-      <rect
-        id="district_940gzzludge"
-        x="952.1"
-        y="316.1"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 55.0048 766.5839)"
-        fill="#00853F"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={964.9}
+        y={302.2}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ElmPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ElmPark}
       />
-      <rect
-        id="district_940gzzluhch"
-        x="976.4"
-        y="291.9"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 79.2346 776.6049)"
-        fill="#00853F"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={951.9}
+        y={315.2}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.DagenhamEast }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.DagenhamEast}
       />
-      <rect
-        id="district_940gzzluupb"
-        x="986.3"
-        y="281.9"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 89.2015 780.7336)"
-        fill="#00853F"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={937.95}
+        y={329.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.DagenhamHeathway }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.DagenhamHeathway}
       />
-      <rect
-        id="district_940gzzlupsg"
-        x="374"
-        y="576.5"
-        fill="#00853F"
-        width="1.5"
-        height="1.5"
-        className="disrupted"
+      <StationIcon
+        x={930.0}
+        y={337.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Becontree }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Becontree}
       />
-      <rect
-        id="district_940gzzluepy"
-        x="374"
-        y="604.2"
-        fill="#00853F"
-        width="1.5"
-        height="1.5"
-        className="disrupted"
+      <StationIcon
+        x={920.45}
+        y={346.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Upney }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Upney}
       />
-      <rect
-        id="district_940gzzlucwp"
-        x="234.1"
-        y="514.5"
-        fill="#00853F"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={376.6}
+        y={567.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.FulhamBroadway }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.FulhamBroadway}
       />
-      <rect
-        id="district_940gzzluwkn"
-        x="363.7"
-        y="514.5"
-        fill="#00853F"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={376.6}
+        y={577.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ParsonsGreen }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ParsonsGreen}
       />
-      <rect
-        id="district_940gzzlusfb"
-        x="291.9"
-        y="514.5"
-        fill="#00853F"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={376.6}
+        y={605.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.EastPutney }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.EastPutney}
       />
-      <rect
-        id="district_940gzzlurvp"
-        x="317.2"
-        y="514.5"
-        fill="#00853F"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={376.6}
+        y={616.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Southfields }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Southfields}
+      />
+      <StationIcon
+        x={376.6}
+        y={627.2}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WimbledonPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WimbledonPark}
+      />
+      <StationIcon
+        x={364.45}
+        y={513.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WestKensington }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WestKensington}
+      />
+      <StationIcon
+        x={317.95}
+        y={513.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.RavenscourtPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.RavenscourtPark}
+      />
+      <StationIcon
+        x={292.65}
+        y={513.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.StamfordBrook }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.StamfordBrook}
+      />
+      <StationIcon
+        x={234.85}
+        y={513.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ChiswickPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ChiswickPark}
       />
       <rect
         id="lul-hammersmith-city_940gzzlusgn"
