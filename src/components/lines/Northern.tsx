@@ -20,6 +20,7 @@ const Northern: FC = memo(() => {
     <g
       className={classNames("line", { disabled: !isActive })}
       onClick={() => dispatch(selectLine({ line: Line.Northern }))}
+      data-testid="northern-line-path"
     >
       <line
         id="northern_940gzzluegw_940gzzlubtk"

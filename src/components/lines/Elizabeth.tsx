@@ -20,6 +20,7 @@ const Elizabeth: FC = memo(() => {
         disabled: !isActive,
       })}
       onClick={() => dispatch(selectLine({ line: Line.Elizabeth }))}
+      data-testid="elizabeth-line-path"
     >
       <path
         id="elizabeth_910ghtrwapt_910ghtrwtm5"

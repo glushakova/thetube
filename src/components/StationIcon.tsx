@@ -20,7 +20,7 @@ export const StationIcon: FC<StationIconProps> = ({
   return (
     <g
       transform={`translate(${x}, ${y})`}
-      id="StationIconStationIcon"
+      data-testid="station-icon"
       onClick={onClick}
     >
       <rect className="transparent-field" width="8" height="8" x="-4" y="-4" />
