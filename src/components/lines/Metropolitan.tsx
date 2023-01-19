@@ -1,16 +1,26 @@
 import React, { memo, FC } from "react";
 import classNames from "classnames";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getIsLineActiveSelector, selectLine } from "../../store/map";
-import { Line } from "../../config";
+import {
+  getIsLineActiveSelector,
+  selectLine,
+  selectSelectedStation,
+  selectStation,
+} from "../../store/map";
+import { Line, Station } from "../../config";
+import { StationIcon } from "../StationIcon";
+import { STROKE_WIDTH } from "../../constant/main";
 
 const Metropolitan: FC = memo(() => {
   const isActive = useAppSelector(getIsLineActiveSelector(Line.Metropolitan));
+  const selectedStation = useAppSelector(selectSelectedStation);
   const dispatch = useAppDispatch();
+
   return (
     <g
       className={classNames("line", { disabled: !isActive })}
       onClick={() => dispatch(selectLine({ line: Line.Metropolitan }))}
+      fill="#97005E"
     >
       <path
         id="metropolitan_940gzzlucsm_940gzzlucal"
@@ -20,14 +30,6 @@ const Metropolitan: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         d=" M107.4,147l11.5,11.5c1.2,1.2,3.7,2.3,5.4,2.3c1.7,0,17.9,0,17.9,0"
-      />
-      <rect
-        id="metropolitan_940gzzluwaf"
-        x="198.1"
-        y="163.8"
-        fill="#97005E"
-        width="5.4"
-        height="1.5"
       />
       <line
         id="metropolitan_940gzzluwhw_940gzzluhoh"
@@ -131,7 +133,7 @@ const Metropolitan: FC = memo(() => {
         x1="144.3"
         y1="160.7"
         x2="90.5"
-        y2="160.7"
+        y2="160.9"
       />
       <path
         id="metropolitan_940gzzlulvt_940gzzluald"
@@ -140,7 +142,7 @@ const Metropolitan: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M645.8,425.2h40.7c1.5,0,2.9,0.6,3.9,1.6c1,1,1.6,2.4,1.6,3.9v15.7"
+        d=" M645.7,425.2h40.7c1.5,0,2.9,0.6,3.9,1.6c1,1,1.6,2.4,1.6,3.9v15.7"
       />
       <line
         id="metropolitan_940gzzlubbn_940gzzlumgt_00000167392832050413192100000011799457991165312406_"
@@ -151,8 +153,8 @@ const Metropolitan: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="611.4"
         y1="408"
-        x2="624.9"
-        y2="421.5"
+        x2="625"
+        y2="421.6"
       />
       <path
         id="metropolitan_940gzzlulvt_940gzzlumgt"
@@ -281,7 +283,7 @@ const Metropolitan: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M248.9,242.8L265,259c1.2,1.2,3.7,2.3,5.4,2.3l8,0"
+        d=" M248.9,242.8L265,259c1.2,1.2,3.7,2.2,5.4,2.1l8,0"
       />
       <line
         id="metropolitan_940gzzlupnr_940gzzlunha"
@@ -304,8 +306,8 @@ const Metropolitan: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="227.8"
         y1="221.7"
-        x2="239.9"
-        y2="233.9"
+        x2="240"
+        y2="234"
       />
       <line
         id="metropolitan_940gzzlunow_940gzzlunwh"
@@ -350,8 +352,8 @@ const Metropolitan: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="177.2"
-        y1="171.1"
+        x1="177.1"
+        y1="171"
         x2="191.8"
         y2="185.7"
       />
@@ -371,7 +373,7 @@ const Metropolitan: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M200.7,178.4l0,8.6l0,4.4c0,1.8,1,4.2,2.3,5.4c1,1,4.3,4.3,4.3,4.3"
+        d="M200.7,178.4l0,8.7l0,4.4c0,1.8,1,4.2,2.3,5.4c1,1,4.3,4.3,4.3,4.3"
       />
       <line
         id="metropolitan_940gzzluwaf_940gzzlucxy"
@@ -384,67 +386,6 @@ const Metropolitan: FC = memo(() => {
         y1="163.8"
         x2="200.7"
         y2="179.9"
-      />
-      <rect
-        id="metropolitan_940gzzlucxy"
-        x="201.8"
-        y="178.4"
-        fill="#97005E"
-        width="1.5"
-        height="1.5"
-      />
-      <rect
-        id="metropolitan_940gzzlurkw"
-        x="189.2"
-        y="185.7"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -76.2375 188.9303)"
-        fill="#97005E"
-        width="1.5"
-        height="1.5"
-      />
-      <rect
-        id="metropolitan_940gzzlumpk"
-        x="207.3"
-        y="198.5"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -79.9787 205.477)"
-        fill="#97005E"
-        width="1.5"
-        height="1.5"
-      />
-      <rect
-        id="metropolitan_940gzzlunow"
-        x="218.1"
-        y="209.3"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -84.4371 216.2676)"
-        fill="#97005E"
-        width="1.5"
-        height="1.5"
-      />
-      <rect
-        id="metropolitan_940gzzlunwh"
-        x="228.9"
-        y="220.1"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -88.9121 227.0678)"
-        fill="#97005E"
-        width="1.5"
-        height="1.5"
-      />
-      <rect
-        id="metropolitan_940gzzlunha"
-        x="250"
-        y="241.3"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 -97.6894 248.1952)"
-        fill="#97005E"
-        width="1.5"
-        height="1.5"
-      />
-      <rect
-        id="metropolitan_940gzzluwhw"
-        x="250.3"
-        y="262.3"
-        fill="#97005E"
-        width="1.5"
-        height="1.5"
       />
       <rect
         id="metropolitan_940gzzlursp"
@@ -468,14 +409,6 @@ const Metropolitan: FC = memo(() => {
         x="207"
         y="244"
         transform="matrix(0.7071 -0.7071 0.7071 0.7071 -112.1917 218.6145)"
-        fill="#97005E"
-        width="1.5"
-        height="1.5"
-      />
-      <rect
-        id="metropolitan_940gzzluprd"
-        x="339.8"
-        y="258.6"
         fill="#97005E"
         width="1.5"
         height="1.5"
@@ -524,6 +457,140 @@ const Metropolitan: FC = memo(() => {
           height="1.5"
         />
       </g>
+      <StationIcon
+        x={340.55}
+        y={261.15}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.PrestonRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.PrestonRoad}
+      />
+      <StationIcon
+        x={251.05}
+        y={261.2}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WestHarrow }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WestHarrow}
+      />
+      <StationIcon
+        x={249.45}
+        y={243.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.NorthHarrow }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.NorthHarrow}
+      />
+      <StationIcon
+        x={239.1}
+        y={233.15}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Pinner }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Pinner}
+      />
+      <StationIcon
+        x={228.35}
+        y={222.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.NorthwoodHills }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.NorthwoodHills}
+      />
+      <StationIcon
+        x={217.4}
+        y={211.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Northwood }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Northwood}
+      />
+      <StationIcon
+        x={206.55}
+        y={200.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.MoorPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.MoorPark}
+      />
+      <StationIcon
+        x={200.7}
+        y={179.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Croxley }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Croxley}
+      />
+      <StationIcon
+        x={191.2}
+        y={185.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Rickmansworth }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Rickmansworth}
+      />
+      <StationIcon
+        x={177.2}
+        y={171.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Chorleywood }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Chorleywood}
+      />
+      <StationIcon
+        x={200.75}
+        y={164.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Watford }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Watford}
+        isEndingStation={true}
+      />
+      <StationIcon
+        x={107.95}
+        y={147.45}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Chesham }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Chesham}
+        isEndingStation={true}
+      />
     </g>
   );
 });

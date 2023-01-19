@@ -219,15 +219,15 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         station={Station.Chorleywood}
-        transform="matrix(1 0 0 1 143.3916 177.1592)"
+        transform="matrix(1 0 0 1 144.3916 177.1592)"
       />
       <StationTextName
         station={Station.Rickmansworth}
-        transform="matrix(1 0 0 1 154.4023 190.1495)"
+        transform="matrix(1 0 0 1 153.4023 190.1495)"
       />
       <StationTextName
         station={Station.Chesham}
-        transform="matrix(1 0 0 1 84.9634 145.7715)"
+        transform="matrix(1 0 0 1 84.1634 146)"
       />
       <StationTextName station={Station.Amersham} tag={"g"}>
         <text transform="matrix(1 0 0 1 86.6807 168.92)">
@@ -254,31 +254,31 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         station={Station.MoorPark}
-        transform="matrix(1 0 0 1 208.9727 198.1207)"
+        transform="matrix(1 0 0 1 209.4 198.1207)"
       />
       <StationTextName
         station={Station.Watford}
-        transform="matrix(1 0 0 1 204.3291 166.0284)"
+        transform="matrix(1 0 0 1 204.6 166.0284)"
       />
       <StationTextName
         station={Station.Croxley}
-        transform="matrix(1 0 0 1 204.3291 180.7535)"
+        transform="matrix(1 0 0 1 204.6 180.7535)"
       />
       <StationTextName
         station={Station.Northwood}
-        transform="matrix(1 0 0 1 219.7192 208.917)"
+        transform="matrix(1 0 0 1 220.2 208.917)"
       />
       <StationTextName
         station={Station.NorthwoodHills}
-        transform="matrix(1 0 0 1 230.519 219.7388)"
+        transform="matrix(1 0 0 1 231 219.7388)"
       />
       <StationTextName
         station={Station.Pinner}
-        transform="matrix(1 0 0 1 242.6323 230.3799)"
+        transform="matrix(1 0 0 1 242.1 230.5799)"
       />
       <StationTextName
         station={Station.NorthHarrow}
-        transform="matrix(1 0 0 1 251.6562 240.8555)"
+        transform="matrix(1 0 0 1 252.1 240.8555)"
       />
       <StationTextName
         station={Station.NorthwickPark}

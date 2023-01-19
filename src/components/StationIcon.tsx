@@ -6,6 +6,7 @@ interface StationIconProps {
   isSelected: boolean;
   x: number;
   y: number;
+  isEndingStation?: boolean;
   onClick: MouseEventHandler;
 }
 
@@ -16,6 +17,7 @@ export const StationIcon: FC<StationIconProps> = ({
   onClick,
   x,
   y,
+  isEndingStation = false,
 }) => {
   return (
     <g
@@ -36,7 +38,7 @@ export const StationIcon: FC<StationIconProps> = ({
           y={-(strokeWidth / 2 + 1.5)}
           transform={`rotate(${rotationAngle})`}
           width="1.5"
-          height={strokeWidth / 2 + 1.5}
+          height={isEndingStation ? "5.207" : strokeWidth / 2 + 1.5}
         />
       )}
     </g>
