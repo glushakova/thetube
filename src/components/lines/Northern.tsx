@@ -912,6 +912,54 @@ const Northern: FC = memo(() => {
         }}
         isSelected={selectedStation === Station.ColliersWood}
       />
+      <StationIcon
+        x={402.7}
+        y={756.7}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Morden }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Morden}
+        isEndingStation={true}
+      />
+      <StationIcon
+        x={432.9}
+        y={204.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Edgware }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Edgware}
+        isEndingStation={true}
+      />
+      <StationIcon
+        x={585}
+        y={166.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.HighBarnet }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.HighBarnet}
+        isEndingStation={true}
+      />
+      <StationIcon
+        x={568.2}
+        y={197.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.HighBarnet }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.HighBarnet}
+        isEndingStation={true}
+      />
     </g>
   );
 });

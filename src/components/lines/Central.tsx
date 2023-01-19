@@ -935,6 +935,18 @@ const Central: FC = memo(() => {
         }}
         isSelected={selectedStation === Station.TheydonBois}
       />
+      <StationIcon
+        x={887.5}
+        y={136.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Epping }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Epping}
+        isEndingStation={true}
+      />
     </g>
   );
 });

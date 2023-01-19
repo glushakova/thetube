@@ -279,7 +279,7 @@ const Jubilee: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="370"
-        y1="214.4"
+        y1="213.5"
         x2="370"
         y2="225.6"
       />
@@ -422,6 +422,18 @@ const Jubilee: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.Bermondsey}
+      />
+      <StationIcon
+        x={370}
+        y={214.2}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Bermondsey }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Bermondsey}
+        isEndingStation={true}
       />
     </g>
   );

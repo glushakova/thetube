@@ -919,6 +919,18 @@ const Piccadilly: FC = memo(() => {
         }}
         isSelected={selectedStation === Station.Oakwood}
       />
+      <StationIcon
+        x={682.41}
+        y={162.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Cockfosters }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Cockfosters}
+        isEndingStation={true}
+      />
       <rect
         id="piccadilly_940gzzlugtr"
         x="406.7"
