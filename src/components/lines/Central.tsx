@@ -508,7 +508,7 @@ const Central: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="174.4"
+        x1="174.3"
         y1="356"
         x2="198.1"
         y2="379.8"
@@ -592,6 +592,90 @@ const Central: FC = memo(() => {
         y1="214.1"
         x2="161.9"
         y2="266.8"
+      />
+      <StationIcon
+        x={607.8}
+        y={452}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.StPauls }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.StPauls}
+        isInterchange
+      />
+      <StationIcon
+        x={357.8}
+        y={452}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ShepherdsBush }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ShepherdsBush}
+        isInterchange
+      />
+      <StationIcon
+        x={324.1}
+        y={452}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WhiteCity }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WhiteCity}
+        isInterchange
+      />
+      <StationIcon
+        x={236}
+        y={417.7}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.HangerLane }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.HangerLane}
+        isInterchange
+      />
+      <StationIcon
+        x={173.4}
+        y={355.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Greenford }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Greenford}
+        isInterchange
+      />
+      <StationIcon
+        x={161.9}
+        y={291.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.SouthRuislip }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.SouthRuislip}
+        isInterchange
+      />
+      <StationIcon
+        x={161.9}
+        y={214.15}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WestRuislip }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WestRuislip}
+        isInterchange
       />
       <StationIcon
         x={161.9}
@@ -945,7 +1029,7 @@ const Central: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.Epping}
-        isEndingStation={true}
+        isEndingStation
       />
     </g>
   );

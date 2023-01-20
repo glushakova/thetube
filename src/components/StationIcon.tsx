@@ -7,6 +7,7 @@ interface StationIconProps {
   x: number;
   y: number;
   isEndingStation?: boolean;
+  isInterchange?: boolean;
   onClick: MouseEventHandler;
 }
 
@@ -18,6 +19,7 @@ export const StationIcon: FC<StationIconProps> = ({
   x,
   y,
   isEndingStation = false,
+  isInterchange = false,
 }) => {
   return (
     <g
@@ -33,13 +35,22 @@ export const StationIcon: FC<StationIconProps> = ({
           <circle r="1" fill="black" />
         </>
       ) : (
-        <rect
-          x="-0.75"
-          y={-(strokeWidth / 2 + 1.5)}
-          transform={`rotate(${rotationAngle})`}
-          width="1.5"
-          height={isEndingStation ? "5.207" : strokeWidth / 2 + 1.5}
-        />
+        <>
+          {isInterchange ? (
+            <>
+              <circle r="3.3" fill="black" className="interchange-circle" />
+              <circle r="2.3" fill="white" />
+            </>
+          ) : (
+            <rect
+              x="-0.75"
+              y={-(strokeWidth / 2 + 1.5)}
+              transform={`rotate(${rotationAngle})`}
+              width="1.5"
+              height={isEndingStation ? "5.207" : strokeWidth / 2 + 1.5}
+            />
+          )}
+        </>
       )}
     </g>
   );

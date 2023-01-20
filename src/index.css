@@ -53,3 +53,7 @@ svg .disabled .transparent-field,
 svg .transparent-field {
   fill: transparent;
 }
+
+svg .disabled .interchange-circle {
+  fill: #a6a6a6;
+}
