@@ -291,7 +291,7 @@ const Jubilee: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="463.6"
-        y1="359.5"
+        y1="359.3"
         x2="463.6"
         y2="369.2"
       />
@@ -393,13 +393,28 @@ const Jubilee: FC = memo(() => {
         }}
         isSelected={selectedStation === Station.Kilburn}
       />
-      <rect
-        id="jubilee_940gzzlusjw"
-        x="464.7"
-        y="367.8"
-        fill="#949CA1"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={463.5}
+        y={357.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.SwissCottage }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.SwissCottage}
+        isInterchange
+      />
+      <StationIcon
+        x={463.5}
+        y={365.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.StJohnsWood }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.StJohnsWood}
       />
       <StationIcon
         x={565.4}

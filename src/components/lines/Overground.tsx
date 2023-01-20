@@ -1711,6 +1711,18 @@ const Overground: FC = memo(() => {
         </g>
       </g>
       <StationIcon
+        x={474.5}
+        y={350.0}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.SouthHampstead }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.SouthHampstead}
+        isInterchange
+      />
+      <StationIcon
         x={714.15}
         y={148}
         strokeWidth={STROKE_WIDTH}
@@ -1720,7 +1732,7 @@ const Overground: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.EnfieldTown}
-        isEndingStation={true}
+        isEndingStation
       />
       <StationIcon
         x={785.35}
@@ -1732,7 +1744,7 @@ const Overground: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.Chingford}
-        isEndingStation={true}
+        isEndingStation
       />
       <StationIcon
         x={987.8}
@@ -1744,7 +1756,7 @@ const Overground: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.BarkingRiverside}
-        isEndingStation={true}
+        isEndingStation
       />
     </g>
   );

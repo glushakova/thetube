@@ -3159,7 +3159,7 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         station={Station.SwissCottage}
-        transform="matrix(1 0 0 1 468.006 361.2861)"
+        transform="matrix(1 0 0 1 468.706 359.5861)"
       />
       <StationTextName
         station={Station.FinchleyRoad}
@@ -3181,7 +3181,7 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         station={Station.StJohnsWood}
-        transform="matrix(1 0 0 1 467.7077 370.0614)"
+        transform="matrix(1 0 0 1 468.706 367.4614)"
       />
       <StationTextName
         station={Station.LancasterGate}

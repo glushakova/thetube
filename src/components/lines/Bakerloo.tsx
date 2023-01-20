@@ -377,6 +377,18 @@ const Bakerloo: FC = memo(() => {
         isSelected={selectedStation === Station.WarwickAvenue}
       />
       <StationIcon
+        x={434.1}
+        y={373.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Marylebone }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Marylebone}
+        isInterchange
+      />
+      <StationIcon
         x={400.55}
         y={373.8}
         strokeWidth={STROKE_WIDTH}

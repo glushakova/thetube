@@ -226,9 +226,9 @@ const Metropolitan: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="429.2"
+        x1="428.5"
         y1="336.9"
-        x2="472.8"
+        x2="471.4"
         y2="380.6"
       />
       <line
@@ -273,7 +273,7 @@ const Metropolitan: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="278.4"
         y1="261.2"
-        x2="305"
+        x2="305.1"
         y2="261.2"
       />
       <path
@@ -458,6 +458,54 @@ const Metropolitan: FC = memo(() => {
         />
       </g>
       <StationIcon
+        x={305.7}
+        y={261.15}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.NorthwickPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.NorthwickPark}
+        isInterchange
+      />
+      <StationIcon
+        x={278.5}
+        y={261.15}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.HarrowOnTheHill }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.HarrowOnTheHill}
+        isInterchange
+      />
+      <StationIcon
+        x={144.1}
+        y={160.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ChalfontLatimer }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ChalfontLatimer}
+        isInterchange
+      />
+      <StationIcon
+        x={90.75}
+        y={160.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Amersham }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Amersham}
+        isInterchange
+      />
+      <StationIcon
         x={340.55}
         y={261.15}
         strokeWidth={STROKE_WIDTH}
@@ -577,7 +625,7 @@ const Metropolitan: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.Watford}
-        isEndingStation={true}
+        isEndingStation
       />
       <StationIcon
         x={107.95}
@@ -589,7 +637,7 @@ const Metropolitan: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.Chesham}
-        isEndingStation={true}
+        isEndingStation
       />
     </g>
   );
