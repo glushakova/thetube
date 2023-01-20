@@ -22,7 +22,6 @@ import { Line, Station } from "../config";
 import InterchangeCircles from "./symbol/InterchangeCircles";
 import StationNames from "./symbol/StationNames";
 import River from "./details/River";
-import RiverBus from "./details/RiverBus";
 import OSIs from "./OSIs";
 import KeyToLines from "./KeyToLines";
 
@@ -68,7 +67,6 @@ function Map() {
         <Metropolitan />
         <StationNames />
         <CloudCableCar />
-        <RiverBus />
         <CableCar />
         <InterchangeCircles />
         <OSIs />

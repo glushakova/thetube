@@ -21,6 +21,9 @@ svg transport {
   fill: #1C3F94;
 }
 
+svg .disabled .transport {
+  stroke: none;
+}
 
 svg .disabled path,
 svg .disabled line,
