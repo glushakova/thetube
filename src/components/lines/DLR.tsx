@@ -4,20 +4,23 @@ import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import {
   getIsLineActiveSelector,
   selectLine,
-  selectSelectedLine,
   selectSelectedStation,
+  selectStation,
 } from "../../store/map";
-import { Line, LinesByStation } from "../../config";
+import { Line, Station } from "../../config";
+import { StationIcon } from "../StationIcon";
+import { STROKE_WIDTH } from "../../constant/main";
 
 const DLR: FC = memo(() => {
   const isActive = useAppSelector(getIsLineActiveSelector(Line.DLR));
-
+  const selectedStation = useAppSelector(selectSelectedStation);
   const dispatch = useAppDispatch();
 
   return (
     <g
       className={classNames("line", { disabled: !isActive })}
       onClick={() => dispatch(selectLine({ line: Line.DLR }))}
+      fill="#00B1B0"
     >
       <path
         id="dlr_940gzzdlwfe_940gzzdlwiq"
@@ -618,6 +621,18 @@ const DLR: FC = memo(() => {
           d=" M954.4,555.5c0-2.5,0-48.5,0-48.5v-0.1c0-1.8-1-4.2-2.2-5.4c-1.7-1.7-5.1-5.1-5.1-5.1l-0.4-0.4l-26.3-26.3 c-1.2-1.2-3.8-2.3-5.2-2.3H709.6c-2.4,0-4.8-1-6-2.3l-4.3-4.3c-1.2-1.2-3.7-2.3-5.4-2.3h-58.1"
         />
       </g>
+      <StationIcon
+        x={954.3}
+        y={555.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Beckton }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Beckton}
+        isEndingStation={true}
+      />
     </g>
   );
 });

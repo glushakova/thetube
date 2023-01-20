@@ -58,7 +58,7 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.EnfieldTown}
-        transform="matrix(1 0 0 1 680.3973 150.3345)"
+        transform="matrix(1 0 0 1 680.3973 149.3)"
       />
       <StationTextName
         station={Station.StamfordHill}
@@ -1617,7 +1617,7 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.BatterseaPowerStation}
-        transform="matrix(1 0 0 1 423.3479 611.359)"
+        transform="matrix(1 0 0 1 425.1 611.5)"
       >
         <tspan x="0" y="0">
           Battersea
@@ -1799,19 +1799,16 @@ const StationNames: FC = memo(() => {
         station={Station.HattonCross}
         transform="matrix(1 0 0 1 127.0797 575.0977)"
       />
-      <StationTextName station={Station.HeathrowTerminals23} tag={"g"}>
-        <text transform="matrix(1 0 0 1 82.96 571.35)">
-          <tspan x="0" y="0">
-            Heathrow
-          </tspan>
-          <tspan x="-12.5" y="4.5">
-            Terminals 2 &amp; 3
-          </tspan>
-        </text>
-        <path
-          fill="#1C3F94"
-          d="M85.6,582.7c0.3,0,0.4,0.4,0.4,0.7l0,1.8l2.5,1.9c0.1,0.1,0.4,0.3,0.4,0.3 c0.1,0.1,0.1,0.3,0.1,0.4v0.2l-2.4-1c-0.1,0-0.2-0.1-0.3-0.1c-0.3,0-0.2,0.4-0.3,0.5l0,1l0.8,0.6l0.1,0.5l-1.1-0.3h-0.2l-1.1,0.3 l0.1-0.5l0.8-0.6l0-1c0-0.2,0-0.5-0.2-0.5c-0.1,0-0.2,0-0.4,0.1l-2.4,1v-0.2c0-0.1,0-0.3,0.1-0.4c0-0.1,0.4-0.3,0.4-0.3l2.5-1.9 l0-1.8C85.3,583.1,85.3,582.7,85.6,582.7L85.6,582.7z"
-        />
+      <StationTextName
+        station={Station.HeathrowTerminals23}
+        transform="matrix(1 0 0 1 82.96 571.35)"
+      >
+        <tspan x="0" y="0">
+          Heathrow
+        </tspan>
+        <tspan x="-12.5" y="4.5">
+          Terminals 2 &amp; 3
+        </tspan>
       </StationTextName>
       <StationTextName
         station={Station.RussellSquare}
@@ -2876,7 +2873,7 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.NewAddington}
-        transform="matrix(0.9997 0 0 1 836.2895 803.8238)"
+        transform="matrix(0.9997 0 0 1 837.2 805.1)"
       />
       <StationTextName
         station={Station.Fieldway}
@@ -3242,16 +3239,10 @@ const StationNames: FC = memo(() => {
           points="125.5,431.6 123.9,430.9 126.2,430.9 126.2,430.4 123.8,430.4 125,429.8 126.2,429.8 126.2,429.4 125,429.4 123.6,428.7 122.5,428.7 124,429.4 121.6,429.4 121.6,429.8 124,429.8 122.8,430.4 121.6,430.4 121.6,430.9 122.9,430.9 124.4,431.6 "
         />
       </StationTextName>
-      <StationTextName station={Station.PutneyBridge} tag={"g"}>
-        <text transform="matrix(1 0 0 1 340.8 587.1)">
-          {multiWordStationNames[Station.PutneyBridge]}
-        </text>
-        <path
-          fill="#1C3F94"
-          className="transport"
-          d="M366.5,591l-0.8-1.1h0.8l0.5-0.6c0,0,0,0,0.1-0.1c0,0,0.1,0,0.1,0h0.6 v-0.2h0.3l0.2-0.4h0.2l-0.1,0.2l0.1,0.2h0.8v0.2h1.3c0,0,0.1,0,0.2,0.1c0.1,0.1,0.1,0.1,0.1,0.1l0.2,0.5h0.5l0.4,1.1 c0,0-0.5-0.3-1.3-0.3c-0.6,0-0.9,0.3-1.6,0.3c-0.4,0-1-0.2-1.5-0.2C367.3,590.8,366.7,590.9,366.5,591z M366.9,591.5 c0.3-0.1,0.6-0.2,1.3,0c0.3,0.1,0.6,0.1,0.9,0.1c0.4,0,0.6-0.1,0.9-0.1c0.3-0.1,0.6-0.1,0.8-0.1c0.4,0,0.7,0.1,0.9,0.2l-0.1-0.3 c-0.3-0.1-0.9-0.2-1.6,0c-0.3,0.1-0.6,0.1-0.9,0.1c-0.3,0-0.5,0-0.8-0.1c-0.9-0.2-1.2-0.1-1.6,0.1L366.9,591.5z M366.9,589.9 h0.8v-0.5h-0.3c0,0-0.1,0-0.1,0.1c0,0-0.1,0.1-0.1,0.1L366.9,589.9z M368.9,589.9h0.8v-0.5h-0.8V589.9z M370.7,589.5 C370.7,589.5,370.7,589.4,370.7,589.5c-0.1-0.1-0.1-0.1-0.1-0.1H370v0.5h0.9L370.7,589.5z M367.9,589.9h0.8l0-0.5h-0.8V589.9z"
-        />
-      </StationTextName>
+      <StationTextName
+        station={Station.PutneyBridge}
+        transform="matrix(1 0 0 1 340.8 587.1)"
+      />
       <StationTextName station={Station.CanaryWharf} tag={"g"}>
         <text transform="matrix(1 0 0 1 759.4282 507.24)">
           {multiWordStationNames[Station.CanaryWharf]}

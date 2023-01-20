@@ -1,17 +1,26 @@
 import React, { memo, FC } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getIsLineActiveSelector, selectLine } from "../../store/map";
-import { Line } from "../../config";
+import {
+  getIsLineActiveSelector,
+  selectLine,
+  selectSelectedStation,
+  selectStation,
+} from "../../store/map";
+import { Line, Station } from "../../config";
 import classNames from "classnames";
+import { StationIcon } from "../StationIcon";
+import { STROKE_WIDTH } from "../../constant/main";
 
 const Overground: FC = memo(() => {
   const isActive = useAppSelector(getIsLineActiveSelector(Line.Overground));
+  const selectedStation = useAppSelector(selectSelectedStation);
 
   const dispatch = useAppDispatch();
   return (
     <g
       className={classNames("line", { disabled: !isActive })}
       onClick={() => dispatch(selectLine({ line: Line.Overground }))}
+      fill="#F58025"
     >
       <path
         id="overground_910ggosplok_910guprhlwy"
@@ -1701,6 +1710,42 @@ const Overground: FC = memo(() => {
           />
         </g>
       </g>
+      <StationIcon
+        x={714.15}
+        y={148}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.EnfieldTown }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.EnfieldTown}
+        isEndingStation={true}
+      />
+      <StationIcon
+        x={785.35}
+        y={180}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Chingford }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Chingford}
+        isEndingStation={true}
+      />
+      <StationIcon
+        x={987.8}
+        y={406.2}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.BarkingRiverside }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.BarkingRiverside}
+        isEndingStation={true}
+      />
     </g>
   );
 });

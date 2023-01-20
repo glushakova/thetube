@@ -1,16 +1,26 @@
 import React, { memo, FC } from "react";
 import classNames from "classnames";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getIsLineActiveSelector, selectLine } from "../../store/map";
-import { Line } from "../../config";
+import {
+  getIsLineActiveSelector,
+  selectLine,
+  selectSelectedStation,
+  selectStation,
+} from "../../store/map";
+import { Line, Station } from "../../config";
+import { StationIcon } from "../StationIcon";
+import { STROKE_WIDTH } from "../../constant/main";
 
 const Tram: FC = memo(() => {
   const isActive = useAppSelector(getIsLineActiveSelector(Line.Tram));
+  const selectedStation = useAppSelector(selectSelectedStation);
+
   const dispatch = useAppDispatch();
   return (
     <g
       className={classNames("line", { disabled: !isActive })}
       onClick={() => dispatch(selectLine({ line: Line.Tram }))}
+      fill="#7AC143"
     >
       <path
         id="tram-tram_940gzzcrwel_940gzzcrecr"
@@ -783,6 +793,18 @@ const Tram: FC = memo(() => {
           points="717.9,726.5 719.5,726.5 721.2,724.2 719.5,722 717.9,722 719.5,724.2 "
         />
       </g>
+      <StationIcon
+        x={875.15}
+        y={801.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.NewAddington }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.NewAddington}
+        isEndingStation={true}
+      />
     </g>
   );
 });

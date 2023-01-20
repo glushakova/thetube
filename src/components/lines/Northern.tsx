@@ -960,6 +960,18 @@ const Northern: FC = memo(() => {
         isSelected={selectedStation === Station.HighBarnet}
         isEndingStation={true}
       />
+      <StationIcon
+        x={445.1}
+        y={604.2}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.BatterseaPowerStation }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.BatterseaPowerStation}
+        isEndingStation={true}
+      />
     </g>
   );
 });
