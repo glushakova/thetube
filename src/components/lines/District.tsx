@@ -122,7 +122,7 @@ const District: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="376.6"
-        y1="616"
+        y1="615.9"
         x2="376.6"
         y2="627.9"
         className="disrupted"
@@ -963,6 +963,18 @@ const District: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.ParsonsGreen}
+      />
+      <StationIcon
+        x={376.6}
+        y={585.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.PutneyBridge }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.PutneyBridge}
+        isInterchange
       />
       <StationIcon
         x={376.6}

@@ -622,6 +622,30 @@ const DLR: FC = memo(() => {
         />
       </g>
       <StationIcon
+        x={893.6}
+        y={467.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.RoyalVictoria }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.RoyalVictoria}
+        isInterchange
+      />
+      <StationIcon
+        x={908.4}
+        y={585.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WoolwichArsenal }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WoolwichArsenal}
+        isInterchange
+      />
+      <StationIcon
         x={954.3}
         y={555.5}
         strokeWidth={STROKE_WIDTH}
@@ -631,7 +655,7 @@ const DLR: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.Beckton}
-        isEndingStation={true}
+        isEndingStation
       />
     </g>
   );

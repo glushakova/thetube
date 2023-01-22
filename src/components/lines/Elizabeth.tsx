@@ -4,10 +4,12 @@ import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import {
   getIsLineActiveSelector,
   selectLine,
-  selectSelectedLine,
   selectSelectedStation,
+  selectStation,
 } from "../../store/map";
-import { Line, LinesByStation } from "../../config";
+import { Line, Station } from "../../config";
+import { StationIcon } from "../StationIcon";
+import { STROKE_WIDTH } from "../../constant/main";
 
 const Elizabeth: FC = memo(() => {
   const isActive = useAppSelector(getIsLineActiveSelector(Line.Elizabeth));
@@ -710,6 +712,30 @@ const Elizabeth: FC = memo(() => {
           points=" 463.7,426.3 500.5,426.3 536.7,426.3 "
         />
       </g>
+      <StationIcon
+        x={928.9}
+        y={585.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Woolwich }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Woolwich}
+        isInterchange
+      />
+      <StationIcon
+        x={928.9}
+        y={597.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.AbbeyWood }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.AbbeyWood}
+        isInterchange
+      />
     </g>
   );
 });

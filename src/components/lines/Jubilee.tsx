@@ -50,7 +50,7 @@ const Jubilee: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M834.5,508.3l9.7-9.7c1.2-1.2,2.3-2.8,2.3-5.1l0-26.2"
+        d="M834.3,508.4l9.7-9.7c1.2-1.2,2.3-2.8,2.3-5.1l0-26.2"
       />
       <path
         id="jubilee_940gzzlucyf_940gzzlungw"
@@ -439,16 +439,28 @@ const Jubilee: FC = memo(() => {
         isSelected={selectedStation === Station.Bermondsey}
       />
       <StationIcon
+        x={832}
+        y={511}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.NorthGreenwich }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.NorthGreenwich}
+        isInterchange
+      />
+      <StationIcon
         x={370}
         y={214.2}
         strokeWidth={STROKE_WIDTH}
         rotationAngle={90}
         onClick={(event) => {
-          dispatch(selectStation({ station: Station.Bermondsey }));
+          dispatch(selectStation({ station: Station.Stanmore }));
           event.stopPropagation();
         }}
-        isSelected={selectedStation === Station.Bermondsey}
-        isEndingStation={true}
+        isSelected={selectedStation === Station.Stanmore}
+        isEndingStation
       />
     </g>
   );
