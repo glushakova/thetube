@@ -29,7 +29,7 @@ const DLR: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M795.5,489.8c0,0,0-8.5,0-10.2c0-1.8-1-4.2-2.3-5.4l-4.6-4.6c-1.2-1.2-3.5-2.3-5.1-2.3c-1.7,0-10.9,0-10.9,0"
+        d="M795.5,489.9c0,0,0-8.5,0-10.2c0-1.8-1-4.2-2.3-5.4l-4.6-4.6c-1.2-1.2-3.5-2.3-5.1-2.3c-1.7,0-10.9,0-10.9,0"
       />
       <line
         id="dlr_940gzzdlgal_940gzzdlbec"
@@ -209,7 +209,7 @@ const DLR: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M692.4,480.8c0,0,9.5-9.5,11.2-11.2c1.2-1.2,3.7-2.3,5.4-2.3c1.5,0,27.4,0,27.4,0"
+        d=" M692.4,480.9c0,0,9.5-9.5,11.2-11.2c1.2-1.2,3.7-2.3,5.4-2.3c1.5,0,27.4,0,27.4,0"
       />
       <line
         id="dlr_940gzzdlelv_940gzzdllew"
@@ -574,27 +574,24 @@ const DLR: FC = memo(() => {
         strokeMiterlimit="3.9938"
         d=" M905.2,507.2l-37.6-37.6c-1.2-1.2-3.7-2.3-5.4-2.3c-2,0-15.2,0-15.2,0"
       />
-      <g id="dlr_white_line">
+      <g className="white_line">
         <path
-          id="dlr_white_line"
           fill="none"
           stroke="#FFFFFF"
           strokeWidth="0.7795"
           strokeLinejoin="round"
           strokeMiterlimit="3.9938"
-          d=" M795.5,479.6c0-1.8-1-4.2-2.3-5.4l-4.6-4.6c-1.2-1.2-3.5-2.3-5.1-2.3"
+          d="M795.5,479.7c0-1.8-1-4.2-2.3-5.4l-4.6-4.6c-1.2-1.2-3.5-2.3-5.1-2.3"
         />
         <path
-          id="dlr_white_line"
           fill="none"
           stroke="#FFFFFF"
           strokeWidth="0.7795"
           strokeLinejoin="round"
           strokeMiterlimit="3.9938"
-          d=" M692.4,480.8c0,0,9.5-9.5,11.2-11.2c1.2-1.2,3.7-2.3,5.4-2.3"
+          d="M692.4,480.9c0,0,9.5-9.5,11.2-11.2c1.2-1.2,3.7-2.3,5.4-2.31"
         />
         <path
-          id="dlr_white_line"
           fill="none"
           stroke="#FFFFFF"
           strokeWidth="0.7795"
@@ -603,7 +600,6 @@ const DLR: FC = memo(() => {
           d=" M853.6,339.5l-55.8,55.9c-1.2,1.2-2.3,3.1-2.3,4.9V638"
         />
         <path
-          id="dlr_white_line"
           fill="none"
           stroke="#FFFFFF"
           strokeWidth="0.7795"
@@ -621,6 +617,140 @@ const DLR: FC = memo(() => {
           d=" M954.4,555.5c0-2.5,0-48.5,0-48.5v-0.1c0-1.8-1-4.2-2.2-5.4c-1.7-1.7-5.1-5.1-5.1-5.1l-0.4-0.4l-26.3-26.3 c-1.2-1.2-3.8-2.3-5.2-2.3H709.6c-2.4,0-4.8-1-6-2.3l-4.3-4.3c-1.2-1.2-3.7-2.3-5.4-2.3h-58.1"
         />
       </g>
+      <StationIcon
+        x={818.3}
+        y={315.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.StratfordInternational }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.StratfordInternational}
+        isInterchange
+      />
+      <StationIcon
+        x={692.5}
+        y={481}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.TowerGateway }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.TowerGateway}
+        isInterchange
+      />
+      <StationIcon
+        x={732.4}
+        y={467.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Shadwell }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Shadwell}
+        isInterchange
+      />
+      <StationIcon
+        x={748.4}
+        y={467.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Limehouse }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Limehouse}
+        isInterchange
+      />
+      <StationIcon
+        x={764.1}
+        y={467.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Westferry }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Westferry}
+        isInterchange
+      />
+      <StationIcon
+        x={795.5}
+        y={467.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={310}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Poplar }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Poplar}
+        isInterchange
+      />
+      <StationIcon
+        x={795.5}
+        y={485.2}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={310}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WestIndiaQuay }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WestIndiaQuay}
+        isInterchange
+      />
+      <StationIcon
+        x={795.5}
+        y={590.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(
+            selectStation({ station: Station.CuttySarkForMaritimeGreenwich })
+          );
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.CuttySarkForMaritimeGreenwich}
+        isInterchange
+      />
+      <StationIcon
+        x={795.5}
+        y={603.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Greenwich }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Greenwich}
+        isInterchange
+      />
+      <StationIcon
+        x={795.5}
+        y={637.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Lewisham }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Lewisham}
+        isInterchange
+      />
+      <StationIcon
+        x={908.4}
+        y={542.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.LondonCityAirport }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.LondonCityAirport}
+        isInterchange
+      />
       <StationIcon
         x={893.6}
         y={467.5}
