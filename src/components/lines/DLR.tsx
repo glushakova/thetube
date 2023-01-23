@@ -618,6 +618,18 @@ const DLR: FC = memo(() => {
         />
       </g>
       <StationIcon
+        x={795.5}
+        y={407.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.BowChurch }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.BowChurch}
+        isInterchange
+      />
+      <StationIcon
         x={818.3}
         y={315.6}
         strokeWidth={STROKE_WIDTH}

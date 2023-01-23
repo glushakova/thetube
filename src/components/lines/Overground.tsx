@@ -49,7 +49,7 @@ const Overground: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M695.4,244.7l-45.1,0c-1.8,0-4.2,1-5.4,2.3l-7.8,7.8"
+        d="M695.2,244.7l-45.1,0c-1.8,0-4.2,1-5.4,2.3l-7.8,7.8"
         className="disrupted"
       />
       <line
@@ -971,7 +971,7 @@ const Overground: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="737.5"
         y1="161.1"
-        x2="723.4"
+        x2="723.5"
         y2="175.1"
         className="disrupted"
       />
@@ -997,7 +997,7 @@ const Overground: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="760.9"
         y1="137.6"
-        x2="748.8"
+        x2="748.9"
         y2="149.7"
         className="disrupted"
       />
@@ -1147,7 +1147,7 @@ const Overground: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M714.1,282c0,0,0-13.1,0-20.4"
+        d="M714,282c0,0,0-13.1,0-20.4"
         className="disrupted"
       />
       <path
@@ -1167,9 +1167,9 @@ const Overground: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="740.7"
+        x1="740.5"
         y1="313.9"
-        x2="725.5"
+        x2="725.4"
         y2="298.7"
         className="disrupted"
       />
@@ -1696,7 +1696,7 @@ const Overground: FC = memo(() => {
           <path
             strokeWidth="0.7795"
             strokeMiterlimit="3.9938"
-            d=" M760.9,137.6l-44.6,44.6c-1.2,1.2-2.3,3.7-2.3,5.4"
+            d="M761.0,137.6l-44.6,44.6c-1.2,1.2-2.3,3.7-2.3,5.4"
           />
           <path
             strokeWidth="0.7795"
@@ -1706,10 +1706,70 @@ const Overground: FC = memo(() => {
           <path
             strokeWidth="0.7795"
             strokeMiterlimit="3.9938"
-            d=" M747.9,324.4c0-1.8,1-4.2,2.3-5.5l32.8-32.8c1.3-1.3,2.4-3.8,2.4-5.5c0-0.5,0-101,0-101"
+            d="M748.0,324.4c0-1.8,1-4.2,2.3-5.5l32.8-32.8c1.3-1.3,2.4-3.8,2.4-5.5c0-0.5,0-101,0-101"
           />
         </g>
       </g>
+      <StationIcon
+        x={594.6}
+        y={272.34}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.UpperHolloway }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.UpperHolloway}
+        isInterchange
+      />
+      <StationIcon
+        x={695.1}
+        y={244.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.HarringayGreenLanes }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.HarringayGreenLanes}
+        isInterchange
+      />
+      <StationIcon
+        x={731}
+        y={244.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.SouthTottenham }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.SouthTottenham}
+        isInterchange
+      />
+      <StationIcon
+        x={714.1}
+        y={192.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.EdmontonGreen }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.EdmontonGreen}
+        isInterchange
+      />
+      <StationIcon
+        x={759.9}
+        y={138.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Cheshunt }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Cheshunt}
+        isInterchange
+      />
       <StationIcon
         x={474.5}
         y={350.0}
