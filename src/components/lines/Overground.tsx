@@ -681,7 +681,7 @@ const Overground: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M402.8,583.7l13,13c1.2,1.2,2.3,4.5,2.3,6.3c0,2.7,0,18.2,0,18.2"
+        d="M402.8,583.6l13,13c1.2,1.2,2.3,4.5,2.3,6.3c0,2.7,0,18.2,0,18.2"
         className="disrupted"
       />
       <path
@@ -1768,6 +1768,162 @@ const Overground: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.Cheshunt}
+        isInterchange
+      />
+      <StationIcon
+        x={776}
+        y={276.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WalthamstowQueensRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WalthamstowQueensRoad}
+        isInterchange
+      />
+      <StationIcon
+        x={872}
+        y={294.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WansteadPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WansteadPark}
+        isInterchange
+      />
+      <StationIcon
+        x={643}
+        y={328.0}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.CaledonianRoadBarnsbury }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.CaledonianRoadBarnsbury}
+        isInterchange
+      />
+      <StationIcon
+        x={458.4}
+        y={307.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.FinchleyRoadFrognal }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.FinchleyRoadFrognal}
+        isInterchange
+      />
+      <StationIcon
+        x={399.9}
+        y={580.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ImperialWharf }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ImperialWharf}
+        isInterchange
+      />
+      <StationIcon
+        x={579.9}
+        y={655.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.DenmarkHill }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.DenmarkHill}
+        isInterchange
+      />
+      <StationIcon
+        x={641}
+        y={629.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={315}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.PeckhamRye }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.PeckhamRye}
+        isInterchange
+      />
+      <StationIcon
+        x={662.9}
+        y={607.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={315}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.QueensRoadPeckham }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.QueensRoadPeckham}
+        isInterchange
+      />
+      <StationIcon
+        x={733.8}
+        y={596.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.NewCross }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.NewCross}
+        isInterchange
+      />
+      <StationIcon
+        x={722.75}
+        y={607.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.NewCrossGate }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.NewCrossGate}
+        isInterchange
+      />
+      <StationIcon
+        x={722.75}
+        y={658.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Sydenham }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Sydenham}
+        isInterchange
+      />
+      <StationIcon
+        x={722.75}
+        y={694.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.NorwoodJunction }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.NorwoodJunction}
+        isInterchange
+      />
+      <StationIcon
+        x={701.75}
+        y={687.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.CrystalPalace }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.CrystalPalace}
         isInterchange
       />
       <StationIcon
