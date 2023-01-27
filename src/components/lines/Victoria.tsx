@@ -1,16 +1,26 @@
 import React, { memo, FC } from "react";
 import classNames from "classnames";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getIsLineActiveSelector, selectLine } from "../../store/map";
-import { Line } from "../../config";
+import {
+  getIsLineActiveSelector,
+  selectLine,
+  selectSelectedStation,
+  selectStation,
+} from "../../store/map";
+import { Line, Station } from "../../config";
+import { STROKE_WIDTH } from "../../constant/main";
+import { StationIcon } from "../StationIcon";
 
 const Victoria: FC = memo(() => {
   const isActive = useAppSelector(getIsLineActiveSelector(Line.Victoria));
+  const selectedStation = useAppSelector(selectSelectedStation);
+
   const dispatch = useAppDispatch();
   return (
     <g
       className={classNames("line", { disabled: !isActive })}
       onClick={() => dispatch(selectLine({ line: Line.Victoria }))}
+      fill="#009DDC"
     >
       <line
         id="victoria_940gzzluwwl_940gzzlublr"
@@ -153,8 +163,8 @@ const Victoria: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="514.6"
         y1="644.9"
-        x2="481.4"
-        y2="611.7"
+        x2="481.3"
+        y2="611.6"
       />
       <line
         id="victoria_940gzzluskw_940gzzlubxn"
@@ -168,13 +178,40 @@ const Victoria: FC = memo(() => {
         x2="514.6"
         y2="644.9"
       />
-      <rect
-        id="victoria_940gzzlupco"
-        x="473.2"
-        y="553.3"
-        fill="#009DDC"
-        width="1.5"
-        height="1.5"
+      <StationIcon
+        x={475.8}
+        y={554.05}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Pimlico }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Pimlico}
+      />
+      <StationIcon
+        x={485.3}
+        y={615.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Vauxhall }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Vauxhall}
+        isInterchange
+      />
+      <StationIcon
+        x={538.3}
+        y={668.7}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Brixton }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Brixton}
+        isInterchange
       />
     </g>
   );

@@ -690,6 +690,18 @@ const Piccadilly: FC = memo(() => {
       />
       <StationIcon
         x={225}
+        y={428.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ParkRoyal }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ParkRoyal}
+        isInterchange
+      />
+      <StationIcon
+        x={225}
         y={436.45}
         strokeWidth={STROKE_WIDTH}
         rotationAngle={270}
@@ -832,6 +844,18 @@ const Piccadilly: FC = memo(() => {
         isSelected={selectedStation === Station.Knightsbridge}
       />
       <StationIcon
+        x={634.0}
+        y={318.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={315}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.CaledonianRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.CaledonianRoad}
+        isInterchange
+      />
+      <StationIcon
         x={646.35}
         y={305.9}
         strokeWidth={STROKE_WIDTH}
@@ -921,6 +945,18 @@ const Piccadilly: FC = memo(() => {
       />
       <StationIcon
         x={682.41}
+        y={257}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ManorHouse }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ManorHouse}
+        isInterchange
+      />
+      <StationIcon
+        x={682.41}
         y={162.4}
         strokeWidth={STROKE_WIDTH}
         rotationAngle={270}
@@ -929,7 +965,7 @@ const Piccadilly: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.Cockfosters}
-        isEndingStation={true}
+        isEndingStation
       />
       <rect
         id="piccadilly_940gzzlugtr"

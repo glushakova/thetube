@@ -1927,6 +1927,54 @@ const Overground: FC = memo(() => {
         isInterchange
       />
       <StationIcon
+        x={322.6}
+        y={146.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WatfordJunction }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WatfordJunction}
+        isInterchange
+      />
+      <StationIcon
+        x={322.6}
+        y={175.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Bushey }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Bushey}
+        isInterchange
+      />
+      <StationIcon
+        x={565.9}
+        y={322.2}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.CamdenRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.CamdenRoad}
+        isInterchange
+      />
+      <StationIcon
+        x={499.2}
+        y={647.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ClaphamHighStreet }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ClaphamHighStreet}
+        isInterchange
+      />
+      <StationIcon
         x={474.5}
         y={350.0}
         strokeWidth={STROKE_WIDTH}

@@ -693,6 +693,18 @@ const Northern: FC = memo(() => {
       />
       <StationIcon
         x={585}
+        y={263.0}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Archway }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Archway}
+        isInterchange
+      />
+      <StationIcon
+        x={585}
         y={289.15}
         strokeWidth={STROKE_WIDTH}
         rotationAngle={90}
@@ -701,6 +713,78 @@ const Northern: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.TufnellPark}
+      />
+      <StationIcon
+        x={579.9}
+        y={298.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.KentishTown }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.KentishTown}
+        isInterchange
+      />
+      <StationIcon
+        x={553.4}
+        y={334.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.CamdenTown }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.CamdenTown}
+        isInterchange
+      />
+      <StationIcon
+        x={636.65}
+        y={383.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.OldStreet }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.OldStreet}
+        isInterchange
+      />
+      <StationIcon
+        x={499.2}
+        y={660.2}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ClaphamNorth }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ClaphamNorth}
+        isInterchange
+      />
+      <StationIcon
+        x={470.4}
+        y={689.0}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={310}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Balham }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Balham}
+        isInterchange
+      />
+      <StationIcon
+        x={434.35}
+        y={725.0}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={310}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.SouthWimbledon }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.SouthWimbledon}
+        isInterchange
       />
       <StationIcon
         x={448.7}
@@ -922,7 +1006,7 @@ const Northern: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.Morden}
-        isEndingStation={true}
+        isEndingStation
       />
       <StationIcon
         x={432.9}
@@ -934,7 +1018,7 @@ const Northern: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.Edgware}
-        isEndingStation={true}
+        isEndingStation
       />
       <StationIcon
         x={585}
@@ -946,7 +1030,7 @@ const Northern: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.HighBarnet}
-        isEndingStation={true}
+        isEndingStation
       />
       <StationIcon
         x={568.2}
@@ -958,7 +1042,7 @@ const Northern: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.HighBarnet}
-        isEndingStation={true}
+        isEndingStation
       />
       <StationIcon
         x={445.1}
@@ -970,7 +1054,7 @@ const Northern: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.BatterseaPowerStation}
-        isEndingStation={true}
+        isEndingStation
       />
     </g>
   );

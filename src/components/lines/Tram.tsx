@@ -268,7 +268,7 @@ const Tram: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="715.1"
-        y1="745"
+        y1="745.15"
         x2="666.2"
         y2="745"
       />
@@ -479,7 +479,7 @@ const Tram: FC = memo(() => {
         <path
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          d=" M703,724.3c-5.7,0-10.4,4.6-10.4,10.4c0,5.7,4.6,10.4,10.4,10.4"
+          d="M703,724.2c-5.7,0-10.4,4.6-10.4,10.4c0,5.7,4.6,10.4,10.4,10.4"
         />
         <line
           strokeWidth="0.7795"
@@ -794,6 +794,78 @@ const Tram: FC = memo(() => {
         />
       </g>
       <StationIcon
+        x={998}
+        y={675.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.BeckenhamJunction }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.BeckenhamJunction}
+        isInterchange
+      />
+      <StationIcon
+        x={924.2}
+        y={675.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Birkbeck }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Birkbeck}
+        isInterchange
+      />
+      <StationIcon
+        x={893}
+        y={695.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ElmersEnd }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ElmersEnd}
+        isInterchange
+      />
+      <StationIcon
+        x={776.8}
+        y={744.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.EastCroydon }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.EastCroydon}
+        isInterchange
+      />
+      <StationIcon
+        x={532.8}
+        y={744.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.MitchamJunction }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.MitchamJunction}
+        isInterchange
+      />
+      <StationIcon
+        x={434.35}
+        y={744.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.MordenRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.MordenRoad}
+        isInterchange
+      />
+      <StationIcon
         x={875.15}
         y={801.9}
         strokeWidth={STROKE_WIDTH}
@@ -803,7 +875,7 @@ const Tram: FC = memo(() => {
           event.stopPropagation();
         }}
         isSelected={selectedStation === Station.NewAddington}
-        isEndingStation={true}
+        isEndingStation
       />
     </g>
   );

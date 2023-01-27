@@ -1542,7 +1542,7 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.Archway}
-        transform="matrix(1 0 0 1 589.65 260.3068)"
+        transform="matrix(1 0 0 1 589.65 261.7068)"
       />
       <StationTextName station={Station.KentishTown} tag={"g"}>
         <text transform="matrix(1 0 0 1 583.7312 303.7052)">
@@ -1994,7 +1994,7 @@ const StationNames: FC = memo(() => {
         transform="matrix(1 0 0 1 455.7627 555.3077)"
       />
       <StationTextName station={Station.Vauxhall} tag={"g"}>
-        <text transform="matrix(1 0 0 1 458.1848 618.1716)">
+        <text transform="matrix(1 0 0 1 461.3 618.1716)">
           {Station.Vauxhall}
         </text>
         <polygon
