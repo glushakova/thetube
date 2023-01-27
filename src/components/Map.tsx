@@ -22,7 +22,7 @@ import { Line, Station } from "../config";
 import InterchangeCircles from "./symbol/InterchangeCircles";
 import StationNames from "./symbol/StationNames";
 import River from "./details/River";
-import OSIs from "./OSIs";
+import Pathway from "./Pathway";
 import KeyToLines from "./KeyToLines";
 
 import "./Map.css";
@@ -69,7 +69,7 @@ function Map() {
         <CloudCableCar />
         <CableCar />
         <InterchangeCircles />
-        <OSIs />
+        <Pathway />
         <KeyToLines />
       </svg>
     </div>

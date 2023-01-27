@@ -54,6 +54,7 @@ svg .transparent-field {
   fill: transparent;
 }
 
-svg .disabled .interchange-circle {
+svg .disabled .interchange-circle,
+svg .disabled.pathway rect {
   fill: #a6a6a6;
 }

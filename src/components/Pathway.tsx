@@ -1,9 +1,23 @@
 import React, { memo, FC } from "react";
+import classNames from "classnames";
+import { useAppSelector } from "../store/hooks";
+import { selectSelectedLine, selectSelectedStation } from "../store/map";
+import { Station } from "../config";
 
-const OSIs: FC = memo(() => {
+const Pathway: FC = memo(() => {
+  const selectedStation = useAppSelector(selectSelectedStation);
+  const selectedLine = useAppSelector(selectSelectedLine);
+
+  const stationsAndLinesActive = !(selectedStation || selectedLine);
+
   return (
-    <g id="OSIs">
-      <g id="OSI_00000020400999410331733210000016494970171536804287_">
+    <g>
+      <g
+        id="OSI_00000020400999410331733210000016494970171536804287_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="230.5"
           y="421.7"
@@ -18,8 +32,6 @@ const OSIs: FC = memo(() => {
           width="1.4"
           height="1.4"
         />
-      </g>
-      <g id="OSI_00000052072351832022465730000017985896485861053594_">
         <rect
           x="227.5"
           y="424.6"
@@ -35,7 +47,14 @@ const OSIs: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_1_">
+      <g
+        id="OSI_1_"
+        className={classNames("pathway", {
+          disabled: !(
+            selectedStation === Station.Hammersmith || stationsAndLinesActive
+          ),
+        })}
+      >
         <rect
           x="332.4"
           y="496.8"
@@ -58,7 +77,12 @@ const OSIs: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_2_">
+      <g
+        id="OSI_2_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="636.5"
           y="320.9"
@@ -81,7 +105,12 @@ const OSIs: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_15_">
+      <g
+        id="OSI_15_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="558.9"
           y="327.7"
@@ -103,8 +132,6 @@ const OSIs: FC = memo(() => {
           width="1.4"
           height="1.4"
         />
-      </g>
-      <g id="OSI_16_">
         <rect
           x="561.8"
           y="324.8"
@@ -120,30 +147,14 @@ const OSIs: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_18_">
-        <rect
-          x="444.3"
-          y="320.3"
-          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 986.5341 233.3016)"
-          width="1.4"
-          height="1.4"
-        />
-        <rect
-          x="442.8"
-          y="321.7"
-          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 985.0719 236.8318)"
-          width="1.4"
-          height="1.4"
-        />
-        <rect
-          x="441.3"
-          y="323.2"
-          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 983.6097 240.3619)"
-          width="1.4"
-          height="1.4"
-        />
-      </g>
-      <g id="OSI_32_">
+      <g
+        id="OSI_32_"
+        className={classNames("pathway", {
+          disabled: !(
+            selectedStation === Station.WestHampstead || stationsAndLinesActive
+          ),
+        })}
+      >
         <rect
           x="434.1"
           y="310.1"
@@ -166,7 +177,33 @@ const OSIs: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_17_">
+      <g
+        id="OSI_18_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
+        <rect
+          x="444.3"
+          y="320.3"
+          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 986.5341 233.3016)"
+          width="1.4"
+          height="1.4"
+        />
+        <rect
+          x="442.8"
+          y="321.7"
+          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 985.0719 236.8318)"
+          width="1.4"
+          height="1.4"
+        />
+        <rect
+          x="441.3"
+          y="323.2"
+          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 983.6097 240.3619)"
+          width="1.4"
+          height="1.4"
+        />
         <rect
           x="447.2"
           y="317.4"
@@ -181,8 +218,6 @@ const OSIs: FC = memo(() => {
           width="1.4"
           height="1.4"
         />
-      </g>
-      <g id="OSI_20_">
         <rect
           x="450.1"
           y="314.4"
@@ -197,8 +232,6 @@ const OSIs: FC = memo(() => {
           width="1.4"
           height="1.4"
         />
-      </g>
-      <g id="OSI_19_">
         <rect
           x="453"
           y="311.5"
@@ -213,8 +246,6 @@ const OSIs: FC = memo(() => {
           width="1.4"
           height="1.4"
         />
-      </g>
-      <g id="OSI_21_">
         <rect
           x="454.5"
           y="310"
@@ -223,7 +254,12 @@ const OSIs: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_13_">
+      <g
+        id="OSI_13_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="531.2"
           y="374.4"
@@ -245,31 +281,57 @@ const OSIs: FC = memo(() => {
           width="1.4"
           height="1.4"
         />
-      </g>
-      <g id="OSI_27_">
         <rect
-          x="357.1"
+          x="534.1"
+          y="371.5"
+          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1176.0538 257.1815)"
+          width="1.4"
+          height="1.4"
+        />
+        <rect
+          x="532.6"
+          y="372.9"
+          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1174.6022 260.6861)"
+          width="1.4"
+          height="1.4"
+        />
+      </g>
+      <g
+        id="OSI_27_"
+        className={classNames("pathway", {
+          disabled: !(
+            selectedStation === Station.ShepherdsBush || stationsAndLinesActive
+          ),
+        })}
+      >
+        <rect
+          x="356.8"
           y="456.1"
           transform="matrix(-4.518804e-11 1 -1 -4.518804e-11 814.5601 99.0559)"
           width="1.4"
           height="1.4"
         />
         <rect
-          x="357.1"
+          x="356.8"
           y="458.2"
           transform="matrix(-4.518804e-11 1 -1 -4.518804e-11 816.613 101.1088)"
           width="1.4"
           height="1.4"
         />
         <rect
-          x="357.1"
+          x="356.8"
           y="460.2"
           transform="matrix(-4.518804e-11 1 -1 -4.518804e-11 818.666 103.1618)"
           width="1.4"
           height="1.4"
         />
       </g>
-      <g id="OSI_34_">
+      <g
+        id="OSI_34_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="326.4"
           y="454.6"
@@ -292,7 +354,12 @@ const OSIs: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_23_">
+      <g
+        id="OSI_23_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="468.2"
           y="352.6"
@@ -315,28 +382,35 @@ const OSIs: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_22_">
+      <g
+        id="OSI_22_"
+        className={classNames("pathway", {
+          disabled: !(
+            selectedStation === Station.Shadwell || stationsAndLinesActive
+          ),
+        })}
+      >
         <rect
           x="728.3"
           y="470.1"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1577.3682 288.1417)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="726.9"
           y="471.5"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1575.9165 291.6463)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="725.4"
           y="473"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1574.4648 295.1509)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
       </g>
       <g id="OSI_00000163049332414455016800000005539418339141581191_">
         <rect
@@ -361,30 +435,33 @@ const OSIs: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_45_">
+      <g
+        id="OSI_45_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="683.1"
           y="471.6"
           transform="matrix(0.7071 0.7071 -0.7071 0.7071 534.227 -345.1474)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="684.5"
           y="473"
           transform="matrix(0.7071 0.7071 -0.7071 0.7071 535.6359 -345.731)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="685.9"
           y="474.4"
           transform="matrix(0.7071 0.7071 -0.7071 0.7071 537.0448 -346.3146)"
           width="1.4"
           height="1.4"
-        ></rect>
-      </g>
-      <g id="OSI_44_">
+        />
         <rect
           x="687.3"
           y="475.8"
@@ -400,7 +477,12 @@ const OSIs: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_28_">
+      <g
+        id="OSI_28_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="893"
           y="471.5"
@@ -423,114 +505,144 @@ const OSIs: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_00000174570247586725381340000000991289690638750382_">
+      <g
+        id="OSI_00000034793234656385212670000008432938084740758923_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect x="912.8" y="584.4" width="1.4" height="1.4" />
         <rect x="914.9" y="584.4" width="1.4" height="1.4" />
         <rect x="916.9" y="584.4" width="1.4" height="1.4" />
+        <rect x="919" y="584.4" width="1.4" height="1.4" />
+        <rect x="921.1" y="584.4" width="1.4" height="1.4" />
+        <rect x="923.1" y="584.4" width="1.4" height="1.4" />
       </g>
-      <g id="OSI_00000034793234656385212670000008432938084740758923_">
-        <rect x="919" y="584.4" width="1.4" height="1.4"></rect>
-        <rect x="921.1" y="584.4" width="1.4" height="1.4"></rect>
-        <rect x="923.1" y="584.4" width="1.4" height="1.4"></rect>
+      <g
+        id="OSI_29_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
+        <rect x="836.3" y="510.2" width="1.4" height="1.4" />
+        <rect x="838.4" y="510.2" width="1.4" height="1.4" />
+        <rect x="840.4" y="510.2" width="1.4" height="1.4" />
       </g>
-      <g id="OSI_29_">
-        <rect x="836.3" y="510.2" width="1.4" height="1.4"></rect>
-        <rect x="838.4" y="510.2" width="1.4" height="1.4"></rect>
-        <rect x="840.4" y="510.2" width="1.4" height="1.4"></rect>
-      </g>
-      <g id="OSI_43_">
+      <g
+        id="OSI_43_"
+        className={classNames("pathway", {
+          disabled: !(
+            selectedStation === Station.CanaryWharf || stationsAndLinesActive
+          ),
+        })}
+      >
         <rect
           x="788.6"
           y="509.5"
           transform="matrix(0.7071 -0.7071 0.7071 0.7071 -129.5816 707.5793)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="790.1"
           y="508.1"
           transform="matrix(0.7071 -0.7071 0.7071 0.7071 -128.1299 708.1806)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="791.6"
           y="506.6"
           transform="matrix(0.7071 -0.7071 0.7071 0.7071 -126.6783 708.7819)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
       </g>
-      <g id="OSI_00000162319186157777495120000005482341132251774890_">
+      <g
+        id="OSI_00000162319186157777495120000005482341132251774890_"
+        className={classNames("pathway", {
+          disabled: !(
+            selectedStation === Station.CanaryWharf || stationsAndLinesActive
+          ),
+        })}
+      >
         <rect
           x="798"
           y="500.2"
           transform="matrix(0.7071 -0.7071 0.7071 0.7071 -120.237 711.45)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="799.4"
           y="498.7"
           transform="matrix(0.7071 -0.7071 0.7071 0.7071 -118.7853 712.0513)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="800.9"
           y="497.3"
           transform="matrix(0.7071 -0.7071 0.7071 0.7071 -117.3337 712.6525)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
       </g>
-      <g id="OSI_00000178166807650754347080000004287616494832434076_">
+      <g
+        id="OSI_00000178166807650754347080000004287616494832434076_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="801.2"
           y="490.5"
           transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 1021.5988 1405.5635)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="799.8"
           y="489.1"
           transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 1020.1472 1402.0588)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="798.3"
           y="487.6"
           transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 1018.6955 1398.5543)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
       </g>
-      <g id="OSI_25_">
+      <g
+        id="OSI_25_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="728.4"
           y="600.5"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1669.7144 510.8151)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="726.9"
           y="602"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1668.2627 514.3197)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="725.5"
           y="603.4"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1666.811 517.8243)"
           width="1.4"
           height="1.4"
-        ></rect>
-      </g>
-      <g id="OSI_26_">
+        />
         <rect
           x="729.8"
           y="599.1"
@@ -539,154 +651,161 @@ const OSIs: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_55_">
+      <g
+        id="OSI_55_"
+        className={classNames("pathway", {
+          disabled: !(
+            selectedStation === Station.WestCroydon || stationsAndLinesActive
+          ),
+        })}
+      >
         <rect
           x="725.4"
           y="717.4"
           transform="matrix(0.7071 0.7071 -0.7071 0.7071 720.4561 -303.1043)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="726.9"
           y="718.9"
           transform="matrix(0.7071 0.7071 -0.7071 0.7071 721.9077 -303.7056)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="728.3"
           y="720.3"
           transform="matrix(0.7071 0.7071 -0.7071 0.7071 723.3594 -304.3069)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
       </g>
-      <g id="OSI_24_">
+      <g
+        id="OSI_24_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="498.4"
           y="651"
           transform="matrix(-4.518804e-11 1 -1 -4.518804e-11 1150.7515 152.6623)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="498.4"
           y="653.1"
           transform="matrix(-4.518804e-11 1 -1 -4.518804e-11 1152.8044 154.7152)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="498.4"
           y="655.1"
           transform="matrix(-4.651764e-11 1 -1 -4.651764e-11 1154.8574 156.7682)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
       </g>
-      <g id="OSI_30_">
+      <g
+        id="OSI_30_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="433.6"
           y="729.2"
           transform="matrix(-4.518804e-11 1 -1 -4.518804e-11 1164.1849 295.6711)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="433.6"
           y="731.3"
           transform="matrix(-4.518804e-11 1 -1 -4.518804e-11 1166.2379 297.724)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="433.6"
           y="733.3"
           transform="matrix(-4.651764e-11 1 -1 -4.651764e-11 1168.2908 299.7769)"
           width="1.4"
           height="1.4"
-        ></rect>
-      </g>
-      <g id="OSI_31_">
+        />
         <rect
           x="433.6"
           y="735.4"
           transform="matrix(-4.518804e-11 1 -1 -4.518804e-11 1170.3438 301.8299)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="433.6"
           y="737.5"
           transform="matrix(-4.518804e-11 1 -1 -4.518804e-11 1172.3967 303.8828)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="433.6"
           y="739.5"
           transform="matrix(-4.651764e-11 1 -1 -4.651764e-11 1174.4497 305.9358)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
       </g>
-      <g id="OSI_14_">
-        <rect
-          x="534.1"
-          y="371.5"
-          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1176.0538 257.1815)"
-          width="1.4"
-          height="1.4"
-        ></rect>
-        <rect
-          x="532.6"
-          y="372.9"
-          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1174.6022 260.6861)"
-          width="1.4"
-          height="1.4"
-        ></rect>
-      </g>
-      <g id="OSI_3_">
+      <g
+        id="OSI_3_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="688.2"
           y="250.3"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1353.4631 -58.6959)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="686.8"
           y="251.7"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1352.0115 -55.1913)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="685.3"
           y="253.2"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1350.5598 -51.6867)"
           width="1.4"
           height="1.4"
-        ></rect>
-      </g>
-      <g id="OSI_4_">
+        />
         <rect
           x="691.1"
           y="247.4"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1356.3665 -65.7051)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="689.7"
           y="248.8"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1354.9148 -62.2005)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
       </g>
-      <g id="OSI_33_">
+      <g
+        id="OSI_33_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="587.7"
           y="265.6"
@@ -700,76 +819,49 @@ const OSIs: FC = memo(() => {
           transform="matrix(0.7071 0.7071 -0.7071 0.7071 362.047 -338.6788)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="590.6"
           y="268.5"
           transform="matrix(0.7071 0.7071 -0.7071 0.7071 363.4987 -339.2801)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
       </g>
-      <g id="OSI_6_">
-        <rect
-          x="719.7"
-          y="254.6"
-          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1410.2429 -73.5306)"
-          width="1.4"
-          height="1.4"
-        ></rect>
-        <rect
-          x="718.2"
-          y="256.1"
-          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1408.7913 -70.026)"
-          width="1.4"
-          height="1.4"
-        ></rect>
-        <rect
-          x="716.8"
-          y="257.5"
-          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1407.3396 -66.5214)"
-          width="1.4"
-          height="1.4"
-        ></rect>
-      </g>
-      <rect
-        x="722.6"
-        y="251.7"
-        transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1413.1462 -80.5398)"
-        width="1.4"
-        height="1.4"
-      />
-      <rect
-        x="721.1"
-        y="253.2"
-        transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1411.6946 -77.0352)"
-        width="1.4"
-        height="1.4"
-      />
-      <g id="OSI_9_">
+      <g
+        id="OSI_9_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="781.5"
           y="269.7"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1526.5015 -91.4323)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="780.1"
           y="271.2"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1525.0498 -87.9277)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="778.6"
           y="272.7"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1523.5981 -84.4232)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
       </g>
-      <g id="OSI_5_">
+      <g
+        id="OSI_5_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="877.3"
           y="299.9"
@@ -792,7 +884,19 @@ const OSIs: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_8_">
+      <g
+        id="OSI_8_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
+        <rect
+          x="726.9"
+          y="247.4"
+          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1417.5012 -91.0536)"
+          width="1.4"
+          height="1.4"
+        />
         <rect
           x="725.5"
           y="248.8"
@@ -807,73 +911,100 @@ const OSIs: FC = memo(() => {
           width="1.4"
           height="1.4"
         />
-      </g>
-      <g id="OSI_7_">
         <rect
-          x="726.9"
-          y="247.4"
-          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1417.5012 -91.0536)"
+          x="722.6"
+          y="251.7"
+          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1413.1462 -80.5398)"
+          width="1.4"
+          height="1.4"
+        />
+        <rect
+          x="721.1"
+          y="253.2"
+          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1411.6946 -77.0352)"
+          width="1.4"
+          height="1.4"
+        />
+        <rect
+          x="719.7"
+          y="254.6"
+          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1410.2429 -73.5306)"
+          width="1.4"
+          height="1.4"
+        />
+        <rect
+          x="718.2"
+          y="256.1"
+          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1408.7913 -70.026)"
+          width="1.4"
+          height="1.4"
+        />
+        <rect
+          x="716.8"
+          y="257.5"
+          transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1407.3396 -66.5214)"
           width="1.4"
           height="1.4"
         />
       </g>
-      <g id="OSI_10_">
+      <g
+        id="OSI_10_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="316.9"
           y="248.5"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 718.4202 200.8193)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="315.5"
           y="250"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 716.9686 204.3239)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="314"
           y="251.4"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 715.517 207.8285)"
           width="1.4"
           height="1.4"
-        ></rect>
-      </g>
-      <g id="OSI_11_">
+        />
         <rect
           x="312.6"
           y="252.9"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 714.0653 211.3331)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="311.1"
           y="254.3"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 712.6136 214.8377)"
           width="1.4"
           height="1.4"
-        ></rect>
-      </g>
-      <g id="OSI_12_">
+        />
         <rect
           x="309.7"
           y="255.8"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 711.162 218.3423)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
         <rect
           x="308.2"
           y="257.2"
           transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 709.7103 221.8469)"
           width="1.4"
           height="1.4"
-        ></rect>
+        />
       </g>
     </g>
   );
 });
 
-export default OSIs;
+export default Pathway;

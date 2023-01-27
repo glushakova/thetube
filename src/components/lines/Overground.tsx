@@ -141,7 +141,7 @@ const Overground: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M909,345l-3.1-3.1c-1.2-1.2-2.3-3.7-2.3-5.4l0-6.9l0-1l0-7.8c0-1.8-1-4.2-2.3-5.4l-3.1-3.1"
+        d="M909.1,345l-3.1-3.1c-1.2-1.2-2.3-3.7-2.3-5.4l0-6.9l0-1l0-7.8c0-1.8-1-4.2-2.3-5.4l-3.1-3.1"
       />
       <path
         id="overground_910gdalskld_910ghacknyc"
@@ -389,9 +389,9 @@ const Overground: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="709.1"
-        y1="327.9"
+        y1="327.8"
         x2="691.7"
-        y2="327.9"
+        y2="327.8"
         className="disrupted"
       />
       <line
@@ -486,7 +486,7 @@ const Overground: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M438.2,307.4h-18.5c-1.8,0-4.2,1-5.4,2.3l0,0l-7.5,7.5c-1.2,1.2-3.7,2.3-5.4,2.3h-0.8h-4.8"
+        d="M438.2,307.2h-18.5c-1.8,0-4.2,1-5.4,2.3l0,0l-7.5,7.5c-1.2,1.2-3.7,2.3-5.4,2.3h-0.8h-4.8"
         className="disrupted"
       />
       <line
@@ -714,7 +714,7 @@ const Overground: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M355.1,463l12.2,12.2c1.2,1.2,2.2,3.6,2.2,5.3v3.2"
+        d="M354.8,462.9l12.2,12.2c1.2,1.2,2.2,3.6,2.2,5.3v3.2"
         className="disrupted"
       />
       <path
@@ -1584,7 +1584,7 @@ const Overground: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M722.8,536.6c0,0,0-10.2,0-20.9"
+        d="M722.8,536.5c0,0,0-10.2,0-20.9"
         className="disrupted"
       />
       <path
@@ -1655,7 +1655,7 @@ const Overground: FC = memo(() => {
         <path
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          d=" M287.5,357.3c-1.2,1.2-2.3,3.7-2.3,5.4l-0.1,26.1c0,2.3,0.6,4.9,2.2,6.5l79.8,79.8c1.2,1.2,2.2,3.6,2.2,5.3v62.2v4.4 c0,1.8,1,4.2,2.3,5.4l44.2,44.2c1.2,1.2,2.3,4.5,2.3,6.3c0,2.7,0,18.2,0,18.2"
+          d="M287.6,357.4c-1.2,1.2-2.3,3.7-2.3,5.4l-0.1,26.1c0,2.3,0.6,4.9,2.2,6.5l79.8,79.8c1.2,1.2,2.2,3.6,2.2,5.3v62.2v4.4 c0,1.8,1,4.2,2.3,5.4l44.2,44.2c1.2,1.2,2.3,4.5,2.3,6.3c0,2.7,0,18.2,0,18.2"
         />
         <path
           strokeWidth="0.7795"
