@@ -154,7 +154,7 @@ const DLR: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="795.5"
         y1="467.4"
-        x2="810.2"
+        x2="810.3"
         y2="467.4"
       />
       <line
@@ -231,9 +231,9 @@ const DLR: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="795.5"
-        y1="614.9"
+        y1="614.8"
         x2="795.5"
-        y2="626.4"
+        y2="626.5"
       />
       <line
         id="dlr_940gzzdlgre_940gzzdldep"
@@ -281,7 +281,7 @@ const DLR: FC = memo(() => {
         x1="795.5"
         y1="558.8"
         x2="795.5"
-        y2="570.6"
+        y2="570.7"
       />
       <line
         id="dlr_940gzzdlcla_940gzzdlmud"
@@ -315,7 +315,7 @@ const DLR: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="795.5"
-        y1="523.4"
+        y1="523.3"
         x2="795.5"
         y2="535.3"
       />
@@ -399,9 +399,9 @@ const DLR: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="795.5"
-        y1="426.6"
+        y1="426.5"
         x2="795.5"
-        y2="438.3"
+        y2="438.4"
       />
       <line
         id="dlr_940gzzdlbow_940gzzdldev"
@@ -433,8 +433,8 @@ const DLR: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="853.6"
         y1="339.5"
-        x2="825.6"
-        y2="367.5"
+        x2="825.5"
+        y2="367.6"
       />
       <path
         id="dlr_940gzzdlsit_940gzzdlstd"
@@ -465,9 +465,9 @@ const DLR: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="854.8"
-        y1="377.9"
+        y1="378"
         x2="854.8"
-        y2="359.8"
+        y2="359.7"
       />
       <line
         id="dlr_940gzzdlabr_940gzzdlwhm"
@@ -489,9 +489,9 @@ const DLR: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="854.8"
-        y1="429.7"
+        y1="429.8"
         x2="854.8"
-        y2="402.6"
+        y2="402.5"
       />
       <line
         id="dlr_940gzzdlstl_940gzzdlcgt"
@@ -617,6 +617,294 @@ const DLR: FC = memo(() => {
           d=" M954.4,555.5c0-2.5,0-48.5,0-48.5v-0.1c0-1.8-1-4.2-2.2-5.4c-1.7-1.7-5.1-5.1-5.1-5.1l-0.4-0.4l-26.3-26.3 c-1.2-1.2-3.8-2.3-5.2-2.3H709.6c-2.4,0-4.8-1-6-2.3l-4.3-4.3c-1.2-1.2-3.7-2.3-5.4-2.3h-58.1"
         />
       </g>
+      <StationIcon
+        x={854.85}
+        y={429.7}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.StarLane }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.StarLane}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={854.85}
+        y={377.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.AbbeyRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.AbbeyRoad}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={854.85}
+        y={359.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.StratfordHighStreet }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.StratfordHighStreet}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={825.1}
+        y={368.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.PuddingMillLane }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.PuddingMillLane}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={795.45}
+        y={416.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.DevonsRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.DevonsRoad}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={795.45}
+        y={429.9}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.LangdonPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.LangdonPark}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={795.45}
+        y={440.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.AllSaints }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.AllSaints}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={795.45}
+        y={523.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.HeronQuays }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.HeronQuays}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={795.45}
+        y={535.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.SouthQuay }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.SouthQuay}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={795.45}
+        y={547}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Crossharbour }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Crossharbour}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={795.45}
+        y={558.7}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Mudchute }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Mudchute}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={795.45}
+        y={570.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.IslandGardens }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.IslandGardens}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={795.55}
+        y={615.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.DeptfordBridge }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.DeptfordBridge}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={795.55}
+        y={626.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ElversonRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ElversonRoad}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={905.35}
+        y={507.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WestSilvertown }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WestSilvertown}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={908.35}
+        y={527.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.PontoonDock }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.PontoonDock}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={908.35}
+        y={557.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.KingGeorgeV }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.KingGeorgeV}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={954.45}
+        y={544.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.GallionsReach }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.GallionsReach}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={954.45}
+        y={533.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Cyprus }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Cyprus}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={954.45}
+        y={523}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.BecktonPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.BecktonPark}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={954.45}
+        y={512.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.RoyalAlbert }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.RoyalAlbert}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={946.05}
+        y={495.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.PrinceRegent }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.PrinceRegent}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={810}
+        y={467.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Blackwall }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Blackwall}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={832}
+        y={467.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.EastIndia }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.EastIndia}
+        isWithWhiteLine
+      />
       <StationIcon
         x={795.5}
         y={407.1}

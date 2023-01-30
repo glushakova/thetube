@@ -1140,7 +1140,7 @@ const StationNames: FC = memo(() => {
         </tspan>
       </StationTextName>
       <StationTextName station={Station.WestHam} tag={"g"}>
-        <text transform="matrix(1 0 0 1 858.0725 406.183)">
+        <text transform="matrix(1 0 0 1 858.1725 406.183)">
           <tspan x="0" y="0">
             West
           </tspan>
@@ -2022,7 +2022,7 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         station={Station.WestSilvertown}
-        transform="matrix(1 0 0 1 894.7065 513.515)"
+        transform="matrix(1 0 0 1 894.7065 514.115)"
       >
         <tspan x="0" y="0">
           West
@@ -2033,7 +2033,7 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         station={Station.PontoonDock}
-        transform="matrix(1 0 0 1 883.8154 526.5579)"
+        transform="matrix(1 0 0 1 884.5 526.5579)"
       >
         <tspan x="1" y="0">
           Pontoon
@@ -2059,15 +2059,15 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.RoyalAlbert}
-        transform="matrix(1 0 0 1 959.1375 513.726)"
+        transform="matrix(1 0 0 1 958.8894 513.726)"
       />
       <StationTextName
         station={Station.BecktonPark}
-        transform="matrix(1 0 0 1 959.0289 524.2914)"
+        transform="matrix(1 0 0 1 958.8894 524.2914)"
       />
       <StationTextName
         station={Station.Cyprus}
-        transform="matrix(1 0 0 1 959.1378 534.4178)"
+        transform="matrix(1 0 0 1 958.8894 534.4178)"
       />
       <StationTextName
         station={Station.GallionsReach}
@@ -2075,7 +2075,7 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.Beckton}
-        transform="matrix(1 0 0 1 959.0297 556.8019)"
+        transform="matrix(1 0 0 1 958.8894 556.8019)"
       />
       <StationTextName
         station={Station.Blackwall}
@@ -2105,7 +2105,7 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         station={Station.IslandGardens}
-        transform="matrix(1 0 0 1 757.3604 571.5528)"
+        transform="matrix(1 0 0 1 757.5604 571.5528)"
       />
       <StationTextName
         station={Station.DeptfordBridge}
@@ -2113,19 +2113,19 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.SouthQuay}
-        transform="matrix(1 0 0 1 764.2148 536.4673)"
+        transform="matrix(1 0 0 1 765.35 536.4673)"
       />
       <StationTextName
         station={Station.Crossharbour}
-        transform="matrix(1 0 0 1 760.2109 548.1621)"
+        transform="matrix(1 0 0 1 760.4 548.1621)"
       />
       <StationTextName
         station={Station.Mudchute}
-        transform="matrix(1 0 0 1 767.877 559.858)"
+        transform="matrix(1 0 0 1 768.7 559.858)"
       />
       <StationTextName
         station={Station.HeronQuays}
-        transform="matrix(1 0 0 1 761.3691 524.7725)"
+        transform="matrix(1 0 0 1 762.4 524.7725)"
       />
       <StationTextName
         station={Station.WestIndiaQuay}
@@ -2140,15 +2140,15 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         station={Station.ElversonRoad}
-        transform="matrix(1 0 0 1 800.2549 628.0928)"
+        transform="matrix(1 0 0 1 800.1992 628.0928)"
       />
       <StationTextName
         station={Station.DevonsRoad}
-        transform="matrix(1 0 0 1 762.1582 418.2907)"
+        transform="matrix(1 0 0 1 762.9582 418.2907)"
       />
       <StationTextName
         station={Station.LangdonPark}
-        transform="matrix(1 0 0 1 772.2471 428.9059)"
+        transform="matrix(1 0 0 1 772.471 428.9059)"
       >
         <tspan x="0" y="0">
           Langdon
@@ -2159,18 +2159,18 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         station={Station.AllSaints}
-        transform="matrix(1 0 0 1 784.6592 439.522)"
+        transform="matrix(1 0 0 1 784.8592 439.522)"
       >
         <tspan x="0" y="0">
           All
         </tspan>
-        <tspan x="-6.9" y="4.5">
+        <tspan x="-7" y="4.5">
           Saints
         </tspan>
       </StationTextName>
       <StationTextName
         station={Station.CanningTown}
-        transform="matrix(1 0 0 1 857.937 450.8135)"
+        transform="matrix(1 0 0 1 858.837 450.8135)"
       >
         <tspan x="0" y="0">
           Canning
@@ -2206,7 +2206,7 @@ const StationNames: FC = memo(() => {
         </tspan>
       </StationTextName>
       <StationTextName station={Station.LondonCityAirport} tag={"g"}>
-        <text transform="matrix(1 0 0 1 887.2384 539.1827)">
+        <text transform="matrix(1 0 0 1 887.9384 539.1827)">
           <tspan x="0" y="0">
             London
           </tspan>
@@ -2359,7 +2359,7 @@ const StationNames: FC = memo(() => {
       </StationTextName>
       <StationTextName
         station={Station.StarLane}
-        transform="matrix(1 0 0 1 859.5767 431.2884)"
+        transform="matrix(1 0 0 1 858.837 431.2884)"
       />
       <StationTextName
         station={Station.ActonCentral}

@@ -357,7 +357,7 @@ const Central: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="775"
         y1="390.9"
-        x2="739.4"
+        x2="739.3"
         y2="390.9"
       />
       <path

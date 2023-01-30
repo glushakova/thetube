@@ -8,6 +8,7 @@ interface StationIconProps {
   y: number;
   isEndingStation?: boolean;
   isInterchange?: boolean;
+  isWithWhiteLine?: boolean;
   onClick: MouseEventHandler;
 }
 
@@ -20,6 +21,7 @@ export const StationIcon: FC<StationIconProps> = ({
   y,
   isEndingStation = false,
   isInterchange = false,
+  isWithWhiteLine = false,
 }) => {
   return (
     <g
@@ -47,7 +49,13 @@ export const StationIcon: FC<StationIconProps> = ({
               y={-(strokeWidth / 2 + 1.5)}
               transform={`rotate(${rotationAngle})`}
               width="1.5"
-              height={isEndingStation ? "5.207" : strokeWidth / 2 + 1.5}
+              height={
+                isEndingStation
+                  ? "5.207"
+                  : isWithWhiteLine
+                  ? strokeWidth
+                  : strokeWidth / 2 + 1.5
+              }
             />
           )}
         </>
