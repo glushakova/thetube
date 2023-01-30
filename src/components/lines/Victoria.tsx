@@ -179,6 +179,30 @@ const Victoria: FC = memo(() => {
         y2="644.9"
       />
       <StationIcon
+        x={714.1}
+        y={261.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={270}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.SevenSisters }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.SevenSisters}
+        isInterchange
+      />
+      <StationIcon
+        x={732.8}
+        y={261.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.TottenhamHale }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.TottenhamHale}
+        isInterchange
+      />
+      <StationIcon
         x={475.8}
         y={554.05}
         strokeWidth={STROKE_WIDTH}

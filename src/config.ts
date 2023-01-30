@@ -1401,4 +1401,5 @@ export const multiWordStationNames: Partial<Record<Station, string>> = {
   [Station.RectoryRoad]: "Rectory Road",
   [Station.LondonFields]: "London Fields",
   [Station.CambridgeHeath]: "Cambridge Heath",
+  [Station.HighamsPark]: "Highams Park",
 };
