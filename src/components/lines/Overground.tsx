@@ -804,25 +804,6 @@ const Overground: FC = memo(() => {
         height="1.5"
         className="disrupted"
       />
-      <rect
-        id="overground_910gklbrnhr"
-        x="374.7"
-        y="347.4"
-        fill="#F58025"
-        width="1.5"
-        height="1.5"
-        className="disrupted"
-      />
-      <rect
-        id="overground_910gcrouchh"
-        x="635.4"
-        y="252.2"
-        transform="matrix(0.7071 -0.7071 0.7071 0.7071 7.4928 523.9271)"
-        fill="#F58025"
-        width="1.5"
-        height="1.5"
-        className="disrupted"
-      />
       <path
         id="overground_910gsurreyq_910gpckhmqd"
         fill="none"
@@ -1111,7 +1092,7 @@ const Overground: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="762.7"
         y1="306.4"
-        x2="773.1"
+        x2="773.2"
         y2="296"
         className="disrupted"
       />
@@ -1123,76 +1104,6 @@ const Overground: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         d=" M763.8,305.3l-13.5,13.5c-1.4,1.4-2.4,3.8-2.4,5.6c0,1.5,0,6.2,0,6.2"
-        className="disrupted"
-      />
-      <rect
-        id="overground_910gsbury"
-        x="724.6"
-        y="175.2"
-        transform="matrix(0.707 -0.7072 0.7072 0.707 88.0782 564.4648)"
-        fill="#F58025"
-        width="1.5"
-        height="1.6"
-        className="disrupted"
-      />
-      <rect
-        id="overground_910gturkyst"
-        x="737.5"
-        y="162.2"
-        transform="matrix(0.707 -0.7072 0.7072 0.707 101.0484 569.8392)"
-        fill="#F58025"
-        width="1.5"
-        height="1.6"
-        className="disrupted"
-      />
-      <rect
-        id="overground_910gthbldsg"
-        x="750"
-        y="149.7"
-        transform="matrix(0.707 -0.7072 0.7072 0.707 113.4861 574.9827)"
-        fill="#F58025"
-        width="1.5"
-        height="1.6"
-        className="disrupted"
-      />
-      <rect
-        id="overground_910gclapton"
-        x="763.9"
-        y="306.4"
-        transform="matrix(0.707 -0.7072 0.7072 0.707 6.7604 630.7397)"
-        fill="#F58025"
-        width="1.5"
-        height="1.6"
-        className="disrupted"
-      />
-      <rect
-        id="overground_910gstjmsst"
-        x="773.2"
-        y="297.2"
-        transform="matrix(0.707 -0.7072 0.7072 0.707 16.0394 634.5893)"
-        fill="#F58025"
-        width="1.5"
-        height="1.6"
-        className="disrupted"
-      />
-      <rect
-        id="overground_910grctryrd"
-        x="740.7"
-        y="311.3"
-        transform="matrix(0.707 -0.7072 0.7072 0.707 -3.4333 615.7886)"
-        fill="#F58025"
-        width="1.6"
-        height="1.5"
-        className="disrupted"
-      />
-      <rect
-        id="overground_910gstknwng"
-        x="726.5"
-        y="297.2"
-        transform="matrix(0.707 -0.7072 0.7072 0.707 2.4095 601.6308)"
-        fill="#F58025"
-        width="1.6"
-        height="1.5"
         className="disrupted"
       />
       <path
@@ -1481,7 +1392,7 @@ const Overground: FC = memo(() => {
         <path
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          d=" M544.2,296.9c0,0,2.4,0,3.7,0c1.8,0,4.2-1,5.4-2.3l19.9-19.9c1.2-1.2,3.7-2.3,5.4-2.3h37.4c1.8,0,4.2-1,5.4-2.3l23.3-23.3 c1.2-1.2,3.7-2.3,5.4-2.3c2.3,0,90.7,0,90.7,0c1.9,0,4.2,1,5.4,2.3l45.2,45.3c1.2,1.2,3.7,2.3,6.5,2.3l79.4,0c1.5,0,4,1,5.2,2.3 l18.7,18.7c1.2,1.2,2.3,3.7,2.3,5.4l0,7.8l0,1l0,6.9c0,1.8,1,4.2,2.3,5.4l3.1,3.1l0.5,0.5l9.2,9.2c1.2,1.2,3.7,2.3,5.4,2.3l5.2,0 l2.1,0l4.1,0c1.8,0,4.2,1,5.4,2.3l46.6,46.6"
+          d="M544.35,297c0,0,2.4,0,3.7,0c1.8,0,4.2-1,5.4-2.3l19.9-19.9c1.2-1.2,3.7-2.3,5.4-2.3h37.4c1.8,0,4.2-1,5.4-2.3l23.3-23.3 c1.2-1.2,3.7-2.3,5.4-2.3c2.3,0,90.7,0,90.7,0c1.9,0,4.2,1,5.4,2.3l45.2,45.3c1.2,1.2,3.7,2.3,6.5,2.3l79.4,0c1.5,0,4,1,5.2,2.3 l18.7,18.7c1.2,1.2,2.3,3.7,2.3,5.4l0,7.8l0,1l0,6.9c0,1.8,1,4.2,2.3,5.4l3.1,3.1l0.5,0.5l9.2,9.2c1.2,1.2,3.7,2.3,5.4,2.3l5.2,0 l2.1,0l4.1,0c1.8,0,4.2,1,5.4,2.3l46.6,46.6"
         />
         <g>
           <path
@@ -1501,6 +1412,114 @@ const Overground: FC = memo(() => {
           />
         </g>
       </g>
+      <StationIcon
+        x={724.1}
+        y={174.55}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Southbury }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Southbury}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={737.05}
+        y={161.6}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.TurkeyStreet }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.TurkeyStreet}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={749.55}
+        y={149.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.TheobaldsGrove }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.TheobaldsGrove}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={375.45}
+        y={350}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.KilburnHighRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.KilburnHighRoad}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={763.4}
+        y={305.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Clapton }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Clapton}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={772.75}
+        y={296.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.StJamesStreet }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.StJamesStreet}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={740.2}
+        y={313.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.RectoryRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.RectoryRoad}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={726}
+        y={299.25}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.StokeNewington }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.StokeNewington}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={637.4}
+        y={254.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={315}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.CrouchHill }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.CrouchHill}
+        isWithWhiteLine
+      />
       <StationIcon
         x={271.5}
         y={488.4}

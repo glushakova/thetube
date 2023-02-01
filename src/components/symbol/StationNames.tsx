@@ -106,7 +106,7 @@ const StationNames: FC = memo(() => {
           Stoke
         </tspan>
         <tspan x="0" y="4.5">
-          Park
+          Newington
         </tspan>
       </StationTextName>
       <StationTextName station={Station.HackneyDowns} tag={"g"}>
