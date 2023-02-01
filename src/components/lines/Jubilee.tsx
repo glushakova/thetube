@@ -143,7 +143,7 @@ const Jubilee: FC = memo(() => {
         x1="475.8"
         y1="464.8"
         x2="516.3"
-        y2="505.1"
+        y2="505.2"
       />
       <path
         id="jubilee_940gzzlubnd_940gzzlugpk"

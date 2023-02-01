@@ -129,7 +129,7 @@ const Victoria: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="475.9"
-        y1="505.9"
+        y1="506"
         x2="475.9"
         y2="464.8"
       />

@@ -1,10 +1,13 @@
 import React, { memo, FC } from "react";
-import { useAppSelector } from "../../store/hooks";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import {
-  selectActiveStationsSet,
+  getIsLineActiveSelector,
   selectSelectedStation,
+  selectStation,
 } from "../../store/map";
-import { Station } from "../../config";
+import { Line, Station } from "../../config";
+import { StationIcon } from "../StationIcon";
+import { STROKE_WIDTH } from "../../constant/main";
 import classNames from "classnames";
 
 // const LiverpoolMoorgate = memo(() => {
@@ -263,8 +266,248 @@ import classNames from "classnames";
 // });
 
 const InterchangeCircles: FC = memo(() => {
+  const selectedStation = useAppSelector(selectSelectedStation);
+
+  const isJubileeActive = useAppSelector(getIsLineActiveSelector(Line.Jubilee));
+  const isOvergroundActive = useAppSelector(
+    getIsLineActiveSelector(Line.Overground)
+  );
+  const isNorthernActive = useAppSelector(
+    getIsLineActiveSelector(Line.Northern)
+  );
+  const isDistrictActive = useAppSelector(
+    getIsLineActiveSelector(Line.District)
+  );
+  const isPiccadillyActive = useAppSelector(
+    getIsLineActiveSelector(Line.Piccadilly)
+  );
+  const isCentralActive = useAppSelector(getIsLineActiveSelector(Line.Central));
+  const isBakerlooActive = useAppSelector(
+    getIsLineActiveSelector(Line.Bakerloo)
+  );
+  const isCircleActive = useAppSelector(getIsLineActiveSelector(Line.Circle));
+  const isVictoriaActive = useAppSelector(
+    getIsLineActiveSelector(Line.Victoria)
+  );
+
+  const dispatch = useAppDispatch();
   return (
-    <g id="interchange-circles">
+    <g>
+      <g
+        className={classNames({
+          disabled: !(isJubileeActive || isOvergroundActive),
+        })}
+      >
+        <StationIcon
+          x={722.75}
+          y={536.8}
+          strokeWidth={STROKE_WIDTH}
+          rotationAngle={225}
+          onClick={(event) => {
+            dispatch(selectStation({ station: Station.CanadaWater }));
+            event.stopPropagation();
+          }}
+          isSelected={selectedStation === Station.CanadaWater}
+          isInterchange
+        />
+      </g>
+      <g
+        className={classNames({
+          disabled: !(isJubileeActive || isNorthernActive),
+        })}
+      >
+        <StationIcon
+          x={636.75}
+          y={513.25}
+          strokeWidth={STROKE_WIDTH}
+          rotationAngle={135}
+          onClick={(event) => {
+            dispatch(selectStation({ station: Station.LondonBridge }));
+            event.stopPropagation();
+          }}
+          isSelected={selectedStation === Station.LondonBridge}
+          isInterchange
+        />
+      </g>
+      <g
+        className={classNames({
+          disabled: !(isJubileeActive || isDistrictActive || isCircleActive),
+        })}
+      >
+        <StationIcon
+          x={522.8}
+          y={512.1}
+          strokeWidth={STROKE_WIDTH}
+          rotationAngle={315}
+          onClick={(event) => {
+            dispatch(selectStation({ station: Station.Westminster }));
+            event.stopPropagation();
+          }}
+          isSelected={selectedStation === Station.Westminster}
+          isInterchange
+        />
+      </g>
+      <g
+        className={classNames({
+          disabled: !(isVictoriaActive || isDistrictActive || isCircleActive),
+        })}
+      >
+        <StationIcon
+          x={475.9}
+          y={512.1}
+          strokeWidth={STROKE_WIDTH}
+          rotationAngle={315}
+          onClick={(event) => {
+            dispatch(selectStation({ station: Station.Victoria }));
+            event.stopPropagation();
+          }}
+          isSelected={selectedStation === Station.Victoria}
+          isInterchange
+        />
+      </g>
+      <g
+        className={classNames("line", {
+          disabled: !(isDistrictActive || isCircleActive),
+        })}
+      >
+        <StationIcon
+          x={680.5}
+          y={469.1}
+          strokeWidth={STROKE_WIDTH}
+          rotationAngle={225}
+          onClick={(event) => {
+            dispatch(selectStation({ station: Station.TowerHill }));
+            event.stopPropagation();
+          }}
+          isSelected={selectedStation === Station.TowerHill}
+          isInterchange
+        />
+        <StationIcon
+          x={613.7}
+          y={483.5}
+          strokeWidth={STROKE_WIDTH}
+          rotationAngle={315}
+          onClick={(event) => {
+            dispatch(selectStation({ station: Station.CannonStreet }));
+            event.stopPropagation();
+          }}
+          isSelected={selectedStation === Station.CannonStreet}
+          isInterchange
+        />
+        <StationIcon
+          x={598.1}
+          y={498.9}
+          strokeWidth={STROKE_WIDTH}
+          rotationAngle={315}
+          onClick={(event) => {
+            dispatch(selectStation({ station: Station.Blackfriars }));
+            event.stopPropagation();
+          }}
+          isSelected={selectedStation === Station.Blackfriars}
+          isInterchange
+        />
+      </g>
+      <g
+        className={classNames({
+          disabled: !(
+            isVictoriaActive ||
+            isJubileeActive ||
+            isPiccadillyActive
+          ),
+        })}
+      >
+        <StationIcon
+          x={475.9}
+          y={464.8}
+          strokeWidth={STROKE_WIDTH}
+          rotationAngle={45}
+          onClick={(event) => {
+            dispatch(selectStation({ station: Station.GreenPark }));
+            event.stopPropagation();
+          }}
+          isSelected={selectedStation === Station.GreenPark}
+          isInterchange
+        />
+      </g>
+      <g
+        className={classNames({
+          disabled: !(isBakerlooActive || isPiccadillyActive),
+        })}
+      >
+        <StationIcon
+          x={515.5}
+          y={464.8}
+          strokeWidth={STROKE_WIDTH}
+          rotationAngle={180}
+          onClick={(event) => {
+            dispatch(selectStation({ station: Station.PiccadillyCircus }));
+            event.stopPropagation();
+          }}
+          isSelected={selectedStation === Station.PiccadillyCircus}
+          isInterchange
+        />
+      </g>
+      <g
+        className={classNames({
+          disabled: !(isBakerlooActive || isNorthernActive),
+        })}
+      >
+        <StationIcon
+          x={536.7}
+          y={486.1}
+          strokeWidth={STROKE_WIDTH}
+          rotationAngle={270}
+          onClick={(event) => {
+            dispatch(selectStation({ station: Station.CharingCross }));
+            event.stopPropagation();
+          }}
+          isSelected={selectedStation === Station.CharingCross}
+          isInterchange
+        />
+        <StationIcon
+          x={552.4}
+          y={613.6}
+          strokeWidth={STROKE_WIDTH}
+          rotationAngle={135}
+          onClick={(event) => {
+            dispatch(selectStation({ station: Station.ElephantCastle }));
+            event.stopPropagation();
+          }}
+          isSelected={selectedStation === Station.ElephantCastle}
+          isInterchange
+        />
+      </g>
+      <g
+        className={classNames({
+          disabled: !(isVictoriaActive || isPiccadillyActive),
+        })}
+      >
+        <StationIcon
+          x={514.5}
+          y={644.9}
+          strokeWidth={STROKE_WIDTH}
+          rotationAngle={90}
+          onClick={(event) => {
+            dispatch(selectStation({ station: Station.Stockwell }));
+            event.stopPropagation();
+          }}
+          isSelected={selectedStation === Station.Stockwell}
+          isInterchange
+        />
+        <StationIcon
+          x={536.7}
+          y={391.6}
+          strokeWidth={STROKE_WIDTH}
+          rotationAngle={90}
+          onClick={(event) => {
+            dispatch(selectStation({ station: Station.WarrenStreet }));
+            event.stopPropagation();
+          }}
+          isSelected={selectedStation === Station.WarrenStreet}
+          isInterchange
+        />
+      </g>
+
       <g id="lul-jubilee_940gzzlucgt_dlr-dlr_940gzzdlcgt" data-linestop="dlr">
         <g id="lul-jubilee_940gzzdlcgt_dlr-dlr_940gzzdlcgt" data-linestop="dlr">
           <rect
@@ -740,53 +983,6 @@ const InterchangeCircles: FC = memo(() => {
         </g>
       </g>
       <g
-        id="lul-jubilee_lul-piccadilly_lul-victoria_940gzzlugpk"
-        data-linestop="piccadilly"
-      >
-        <g>
-          <path
-            fill="#1C3F94"
-            d="M475.8,461.4c1.9,0,3.4,1.5,3.4,3.4s-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4S473.9,461.4,475.8,461.4z "
-            className="blue-fill"
-          ></path>
-        </g>
-        <g>
-          <g>
-            <path
-              fill="#FFFFFF"
-              d="M474.6,465.8c0.2,0.5,0.7,0.9,1.2,0.9c0.7,0,1.3-0.6,1.3-1.3c0-0.4-0.2-0.7-0.4-1l0.1-0.6 c0.5,0.3,0.8,0.9,0.8,1.5c0,1-0.8,1.8-1.8,1.8c-0.6,0-1.2-0.3-1.5-0.8L474.6,465.8z"
-              className="white-fill"
-            ></path>
-            <path
-              fill="#FFFFFF"
-              d="M475.8,462.5c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5c0-0.3-0.2-0.5-0.5-0.5 C476,462,475.8,462.3,475.8,462.5z"
-              className="white-fill"
-            ></path>
-            <path
-              fill="#FFFFFF"
-              d="M476.1,463.4l-0.1,0.4H475c0,0-0.2,0-0.2,0.2c0,0.2,0.2,0.2,0.2,0.2h1l0,0.3h-1.4c0,0-0.1,0-0.1,0 c0,0-0.1,0.1-0.1,0.1l-0.8,1.6c0,0-0.1,0.2,0.1,0.3c0.2,0.1,0.4-0.1,0.4-0.1l0.6-1.2c0,0,0.1-0.1,0.1-0.1c0.1,0,0.1,0,0.1,0 h1.3c0,0,0.1,0,0.2-0.1c0.1-0.1,0.1-0.2,0.1-0.2l0.2-1.4c0,0,0-0.3-0.3-0.3C476.2,463.2,476.1,463.4,476.1,463.4z"
-              className="white-fill"
-            ></path>
-          </g>
-        </g>
-      </g>
-      <g id="lul-bakerloo_lul-northern_940gzzlueac" data-linestop="northern">
-        <path
-          fill="#FFFFFF"
-          d="M555.4,613.6c0,1.6-1.3,2.8-2.8,2.8c-1.6,0-2.8-1.3-2.8-2.8c0-1.6,1.3-2.8,2.8-2.8 C554.2,610.8,555.4,612,555.4,613.6z"
-          className="white-fill"
-        ></path>
-        <path d="M556,613.6c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4C554.5,610.2,556,611.7,556,613.6z M552.6,615.9c1.3,0,2.3-1,2.3-2.3c0-1.3-1-2.3-2.3-2.3c-1.3,0-2.3,1-2.3,2.3C550.3,614.9,551.3,615.9,552.6,615.9z"></path>
-      </g>
-      <g id="lul-northern_lul-victoria_940gzzluskw" data-linestop="victoria">
-        <path
-          fill="#FFFFFF"
-          d="M517.4,644.9c0,1.6-1.3,2.8-2.8,2.8c-1.6,0-2.8-1.3-2.8-2.8c0-1.6,1.3-2.8,2.8-2.8 C516.1,642,517.4,643.3,517.4,644.9z"
-          className="white-fill"
-        ></path>
-        <path d="M517.9,644.9c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4C516.4,641.5,517.9,643,517.9,644.9z M514.5,647.2c1.3,0,2.3-1,2.3-2.3c0-1.3-1-2.3-2.3-2.3s-2.3,1-2.3,2.3C512.2,646.1,513.3,647.2,514.5,647.2z"></path>
-      </g>
-      <g
         id="lul-bakerloo_940gzzluken_raillo-overground_910gkton"
         data-linestop="london-overground"
         className="disrupted"
@@ -885,19 +1081,6 @@ const InterchangeCircles: FC = memo(() => {
         <path d="M393,452.1c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4C391.4,448.7,393,450.2,393,452.1z M389.6,454.4c1.3,0,2.3-1,2.3-2.3c0-1.3-1-2.3-2.3-2.3c-1.3,0-2.3,1-2.3,2.3C387.3,453.4,388.3,454.4,389.6,454.4z"></path>
       </g>
       <g
-        id="lul-circle_lul-district_940gzzlucst_00000114777851626122284770000007058469841710197649_"
-        data-linestop="district"
-      >
-        <circle
-          fill="#FFFFFF"
-          cx="613.7"
-          cy="483.5"
-          r="2.8"
-          className="white-fill"
-        ></circle>
-        <path d="M617.1,483.5c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4C615.6,480,617.1,481.6,617.1,483.5z M613.7,485.7c1.3,0,2.3-1,2.3-2.3s-1-2.3-2.3-2.3c-1.3,0-2.3,1-2.3,2.3S612.4,485.7,613.7,485.7z"></path>
-      </g>
-      <g
         id="lul-bakerloo_lul-central_lul-victoria_940gzzluoxc"
         data-linestop="victoria"
       >
@@ -907,14 +1090,6 @@ const InterchangeCircles: FC = memo(() => {
           className="white-fill"
         ></path>
         <path d="M499.4,432.3c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4C497.9,428.9,499.4,430.5,499.4,432.3 z M496,434.6c1.3,0,2.3-1,2.3-2.3c0-1.3-1-2.3-2.3-2.3c-1.3,0-2.3,1-2.3,2.3C493.8,433.6,494.8,434.6,496,434.6z"></path>
-      </g>
-      <g id="lul-northern_lul-victoria_940gzzluwrr" data-linestop="victoria">
-        <path
-          fill="#FFFFFF"
-          d="M539.6,391.6c0,1.6-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8c0-1.6,1.3-2.8,2.8-2.8S539.6,390.1,539.6,391.6z"
-          className="white-fill"
-        ></path>
-        <path d="M540.2,391.6c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4C538.6,388.2,540.2,389.7,540.2,391.6 z M536.7,393.9c1.3,0,2.3-1,2.3-2.3c0-1.3-1-2.3-2.3-2.3s-2.3,1-2.3,2.3C534.5,392.9,535.5,393.9,536.7,393.9z"></path>
       </g>
       <g
         id="lul-circle_lul-hammersmith-city_lul-metropolitan_940gzzluesq"
@@ -947,17 +1122,6 @@ const InterchangeCircles: FC = memo(() => {
         <path d="M432,317.1c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4C430.5,313.6,432,315.2,432,317.1z M428.6,319.3c1.3,0,2.3-1,2.3-2.3c0-1.3-1-2.3-2.3-2.3c-1.3,0-2.3,1-2.3,2.3C426.3,318.3,427.4,319.3,428.6,319.3z"></path>
       </g>
       <g
-        id="lul-bakerloo_lul-piccadilly_940gzzlupcc"
-        data-linestop="piccadilly"
-      >
-        <path
-          fill="#FFFFFF"
-          d="M518.4,464.8c0,1.6-1.3,2.8-2.8,2.8c-1.6,0-2.8-1.3-2.8-2.8c0-1.6,1.3-2.8,2.8-2.8 C517.1,461.9,518.4,463.2,518.4,464.8z"
-          className="white-fill"
-        ></path>
-        <path d="M519,464.8c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4C517.5,461.4,519,462.9,519,464.8z M515.6,467.1c1.3,0,2.3-1,2.3-2.3s-1-2.3-2.3-2.3s-2.3,1-2.3,2.3S514.3,467.1,515.6,467.1z"></path>
-      </g>
-      <g
         id="lul-northern_lul-piccadilly_940gzzlulsq"
         data-linestop="piccadilly"
       >
@@ -967,14 +1131,6 @@ const InterchangeCircles: FC = memo(() => {
           className="white-fill"
         ></path>
         <path d="M540.2,457.4c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4C538.6,454,540.2,455.5,540.2,457.4z M536.7,459.7c1.3,0,2.3-1,2.3-2.3c0-1.3-1-2.3-2.3-2.3s-2.3,1-2.3,2.3C534.5,458.7,535.5,459.7,536.7,459.7z"></path>
-      </g>
-      <g id="lul-bakerloo_lul-northern_940gzzluchx" data-linestop="northern">
-        <path
-          fill="#FFFFFF"
-          d="M539.6,486c0,1.6-1.3,2.8-2.8,2.8c-1.6,0-2.8-1.3-2.8-2.8c0-1.6,1.3-2.8,2.8-2.8 C538.3,483.1,539.6,484.4,539.6,486z"
-          className="white-fill"
-        ></path>
-        <path d="M540.2,486c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4C538.6,482.6,540.2,484.1,540.2,486z M536.7,488.3c1.3,0,2.3-1,2.3-2.3c0-1.3-1-2.3-2.3-2.3s-2.3,1-2.3,2.3C534.5,487.2,535.5,488.3,536.7,488.3z"></path>
       </g>
       <g id="lul-central_lul-piccadilly_940gzzluhbn" data-linestop="piccadilly">
         <path
@@ -2544,123 +2700,6 @@ const InterchangeCircles: FC = memo(() => {
         </g>
       </g>
       <g
-        id="lul-circle_lul-district_lul_jubilee_940gzzluwsm"
-        data-linestop="jubilee"
-      >
-        <g id="940gzzluwsm" data-linestop="jubilee">
-          <rect x="514.5" y="503.9" width="3.4" height="8.9"></rect>
-          <rect
-            x="515.7"
-            y="503.7"
-            fill="#FFFFFF"
-            width="1.1"
-            height="9.3"
-            className="white-fill"
-          ></rect>
-        </g>
-        <g id="940gzzluwsm" data-linestop="jubilee">
-          <g id="lul-jubilee_940gzzluwsm" data-linestop="jubilee">
-            <g>
-              <path
-                fill="#1C3F94"
-                d="M516.2,501.5c1.9,0,3.4,1.5,3.4,3.4c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4 C512.8,503.1,514.3,501.5,516.2,501.5z"
-                className="blue-fill"
-              ></path>
-            </g>
-            <g>
-              <g>
-                <path
-                  fill="#FFFFFF"
-                  d="M515.1,506c0.2,0.5,0.7,0.9,1.2,0.9c0.7,0,1.3-0.6,1.3-1.3c0-0.4-0.2-0.7-0.4-1l0.1-0.6 c0.5,0.3,0.8,0.9,0.8,1.5c0,1-0.8,1.8-1.8,1.8c-0.6,0-1.2-0.3-1.5-0.8L515.1,506z"
-                  className="white-fill"
-                ></path>
-                <path
-                  fill="#FFFFFF"
-                  d="M516.3,502.7c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5c0-0.3-0.2-0.5-0.5-0.5 C516.5,502.2,516.3,502.4,516.3,502.7z"
-                  className="white-fill"
-                ></path>
-                <path
-                  fill="#FFFFFF"
-                  d="M516.6,503.6l-0.1,0.4h-1.1c0,0-0.2,0-0.2,0.2c0,0.2,0.2,0.2,0.2,0.2h1l0,0.3H515c0,0-0.1,0-0.1,0.1 c0,0-0.1,0.1-0.1,0.1l-0.8,1.6c0,0-0.1,0.2,0.1,0.3c0.2,0.1,0.4-0.1,0.4-0.1l0.6-1.2c0,0,0.1-0.1,0.1-0.1c0.1,0,0.1,0,0.1,0 l1.3,0c0,0,0.1,0,0.2-0.1c0.1-0.1,0.1-0.2,0.1-0.2l0.2-1.4c0,0,0-0.3-0.3-0.3C516.6,503.4,516.6,503.6,516.6,503.6z"
-                  className="white-fill"
-                ></path>
-              </g>
-            </g>
-          </g>
-          <g id="lul-circle_lul-district_940gzzluwsm" data-linestop="jubilee">
-            <g>
-              <path
-                fill="#1C3F94"
-                d="M516.2,508.9c1.9,0,3.4,1.5,3.4,3.4c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4 C512.8,510.4,514.3,508.9,516.2,508.9z"
-                className="blue-fill"
-              ></path>
-              <path
-                fill="#FFFFFF"
-                d="M516.2,515.3c-1.7,0-3.1-1.4-3.1-3.1c0-1.7,1.4-3.1,3.1-3.1c1.7,0,3.1,1.4,3.1,3.1 C519.3,514,517.9,515.3,516.2,515.3L516.2,515.3z"
-                className="white-fill"
-              ></path>
-            </g>
-            <g>
-              <g>
-                <path
-                  fill="#1C3F94"
-                  d="M515.1,513.3c0.2,0.5,0.7,0.9,1.2,0.9c0.7,0,1.3-0.6,1.3-1.3c0-0.4-0.2-0.7-0.4-1l0.1-0.6 c0.5,0.3,0.8,0.9,0.8,1.5c0,1-0.8,1.8-1.8,1.8c-0.6,0-1.2-0.3-1.5-0.8L515.1,513.3z"
-                  className="blue-fill"
-                ></path>
-                <path
-                  fill="#1C3F94"
-                  d="M516.3,510c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5c0-0.3-0.2-0.5-0.5-0.5 C516.5,509.5,516.3,509.7,516.3,510z"
-                  className="blue-fill"
-                ></path>
-                <path
-                  fill="#1C3F94"
-                  d="M516.6,510.9l-0.1,0.4h-1.1c0,0-0.2,0-0.2,0.2c0,0.2,0.2,0.2,0.2,0.2h1l0,0.3H515c0,0-0.1,0-0.1,0.1 c0,0-0.1,0.1-0.1,0.1l-0.8,1.6c0,0-0.1,0.2,0.1,0.3c0.2,0.1,0.4-0.1,0.4-0.1l0.6-1.2c0,0,0.1-0.1,0.1-0.1c0.1,0,0.1,0,0.1,0 h1.3c0,0,0.1,0,0.2-0.1c0.1-0.1,0.1-0.2,0.1-0.2l0.2-1.4c0,0,0-0.3-0.3-0.3C516.6,510.7,516.6,510.9,516.6,510.9z"
-                  className="blue-fill"
-                ></path>
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g
-        id="lul-jubilee_940gzzlucwr_raillo-overground_910gcndaw_00000167387937797048672300000005199804800747752381_"
-        data-linestop="london-overground"
-        className="disrupted"
-      >
-        <g
-          id="lul-jubilee_940gzzlucwr_raillo-overground_910gcndaw_00000144297201033532222640000001896999798440301475_"
-          data-linestop="london-overground"
-          className="disrupted"
-        >
-          <g>
-            <path
-              fill="#1C3F94"
-              d="M722.8,533.3c1.9,0,3.4,1.5,3.4,3.4c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4 C719.4,534.8,720.9,533.3,722.8,533.3z"
-              className="blue-fill"
-            ></path>
-          </g>
-          <g>
-            <g>
-              <path
-                fill="#FFFFFF"
-                d="M721.7,537.7c0.2,0.5,0.7,0.9,1.2,0.9c0.7,0,1.3-0.6,1.3-1.3c0-0.4-0.2-0.7-0.4-1l0.1-0.6 c0.5,0.3,0.8,0.9,0.8,1.5c0,1-0.8,1.8-1.8,1.8c-0.6,0-1.2-0.3-1.5-0.9L721.7,537.7z"
-                className="white-fill"
-              ></path>
-              <path
-                fill="#FFFFFF"
-                d="M722.9,534.4c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5c0-0.3-0.2-0.5-0.5-0.5 C723.1,533.9,722.9,534.2,722.9,534.4z"
-                className="white-fill"
-              ></path>
-              <path
-                fill="#FFFFFF"
-                d="M723.1,535.3l-0.1,0.4H722c0,0-0.2,0-0.2,0.2c0,0.2,0.2,0.2,0.2,0.2h1l0,0.3h-1.4c0,0-0.1,0-0.1,0.1 c0,0-0.1,0.1-0.1,0.1l-0.8,1.6c0,0-0.1,0.2,0.1,0.3c0.2,0.1,0.4-0.1,0.4-0.1l0.6-1.2c0,0,0-0.1,0.1-0.1c0.1,0,0.1,0,0.1,0 l1.3,0c0,0,0.1,0,0.2-0.1c0.1-0.1,0.1-0.2,0.1-0.2l0.2-1.4c0,0,0-0.3-0.3-0.3C723.2,535.1,723.1,535.3,723.1,535.3z"
-                className="white-fill"
-              ></path>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g
         id="lul-bakerloo_lul-circle_lul-hammersmith-city_lul-jubilee_lul-metropolitan_940gzzlubst"
         data-linestop="metropolitan"
       >
@@ -3877,34 +3916,6 @@ const InterchangeCircles: FC = memo(() => {
           data-linestop="metropolitan"
         ></path>
       </g>
-      <g id="lul_jubilee_lul_northern_940gzzlulnb" data-linestop="northern">
-        <g>
-          <path
-            fill="#1C3F94"
-            d="M636.7,510c1.9,0,3.4,1.5,3.4,3.4c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4 C633.3,511.5,634.8,510,636.7,510z"
-            className="blue-fill"
-          ></path>
-        </g>
-        <g>
-          <g>
-            <path
-              fill="#FFFFFF"
-              d="M635.5,514.4c0.2,0.5,0.7,0.9,1.2,0.9c0.4,0,0.7-0.1,0.9-0.4c0.2-0.2,0.4-0.6,0.4-0.9 c0-0.4-0.2-0.7-0.4-1l0.1-0.6c0.5,0.3,0.8,0.9,0.8,1.5c0,1-0.8,1.8-1.8,1.8c-0.6,0-1.2-0.3-1.5-0.8L635.5,514.4z"
-              className="white-fill"
-            ></path>
-            <path
-              fill="#FFFFFF"
-              d="M636.7,511.1c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5c0-0.3-0.2-0.5-0.5-0.5 C637,510.6,636.7,510.9,636.7,511.1z"
-              className="white-fill"
-            ></path>
-            <path
-              fill="#FFFFFF"
-              d="M637,512l-0.1,0.4h-1.1c0,0-0.2,0-0.2,0.2c0,0.2,0.2,0.2,0.2,0.2h1l0,0.3h-1.4c0,0-0.1,0-0.1,0 c0,0-0.1,0.1-0.1,0.1l-0.8,1.6c0,0-0.1,0.2,0.1,0.3c0.2,0.1,0.4-0.1,0.4-0.1l0.6-1.2c0,0,0.1-0.1,0.1-0.1c0.1,0,0.1,0,0.1,0 l1.3,0c0,0,0.1,0,0.2-0.1c0.1-0.1,0.1-0.2,0.1-0.2l0.2-1.4c0,0,0-0.3-0.3-0.3C637.1,511.8,637,512,637,512z"
-              className="white-fill"
-            ></path>
-          </g>
-        </g>
-      </g>
       <g
         id="910gwcroydn"
         data-linestop="london-overground"
@@ -4064,67 +4075,6 @@ const InterchangeCircles: FC = memo(() => {
                 className="white-fill"
               ></path>
             </g>
-          </g>
-        </g>
-      </g>
-      <g id="lul-circle_lul-district_940gzzlubkf" data-linestop="district">
-        <g>
-          <path
-            fill="#1C3F94"
-            d="M598.2,495.6c1.9,0,3.4,1.5,3.4,3.4c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4 C594.8,497.1,596.3,495.6,598.2,495.6z"
-            className="blue-fill"
-          ></path>
-        </g>
-        <g>
-          <g>
-            <path
-              fill="#FFFFFF"
-              d="M597.1,500c0.2,0.5,0.7,0.9,1.2,0.9c0.4,0,0.7-0.1,0.9-0.4c0.2-0.2,0.4-0.6,0.4-0.9 c0-0.4-0.2-0.7-0.4-1l0.1-0.6c0.5,0.3,0.8,0.9,0.8,1.5c0,1-0.8,1.8-1.8,1.8c-0.6,0-1.2-0.3-1.5-0.8L597.1,500z"
-              className="white-fill"
-            ></path>
-            <path
-              fill="#FFFFFF"
-              d="M598.3,496.7c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5c0-0.3-0.2-0.5-0.5-0.5 C598.5,496.2,598.3,496.4,598.3,496.7z"
-              className="white-fill"
-            ></path>
-            <path
-              fill="#FFFFFF"
-              d="M598.6,497.6l-0.1,0.4h-1.1c0,0-0.2,0-0.2,0.2c0,0.2,0.2,0.2,0.2,0.2h1l0,0.3H597c0,0-0.1,0-0.1,0 c0,0-0.1,0.1-0.1,0.1l-0.8,1.6c0,0-0.1,0.2,0.1,0.3c0.2,0.1,0.4-0.1,0.4-0.1l0.6-1.2c0,0,0.1-0.1,0.1-0.1c0.1,0,0.1,0,0.1,0 l1.3,0c0,0,0.1,0,0.2-0.1c0.1-0.1,0.1-0.2,0.1-0.2l0.2-1.4c0,0,0-0.3-0.3-0.3C598.6,497.4,598.6,497.6,598.6,497.6z"
-              className="white-fill"
-            ></path>
-          </g>
-        </g>
-      </g>
-      <g id="lul-circle_lul-district_940gzzlutwh" data-linestop="district">
-        <g>
-          <path
-            fill="#1C3F94"
-            d="M680.5,465.7c1.9,0,3.4,1.5,3.4,3.4c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4 C677.1,467.3,678.7,465.7,680.5,465.7z"
-            className="blue-fill"
-          ></path>
-          <path
-            fill="#FFFFFF"
-            d="M680.5,472.2c-1.7,0-3.1-1.4-3.1-3.1c0-1.7,1.4-3.1,3.1-3.1c1.7,0,3.1,1.4,3.1,3.1 C683.6,470.8,682.2,472.2,680.5,472.2L680.5,472.2z"
-            className="white-fill"
-          ></path>
-        </g>
-        <g>
-          <g>
-            <path
-              fill="#1C3F94"
-              d="M679.4,470.1c0.2,0.5,0.7,0.9,1.2,0.9c0.7,0,1.3-0.6,1.3-1.3c0-0.4-0.2-0.7-0.4-1l0.1-0.6 c0.5,0.3,0.8,0.9,0.8,1.5c0,1-0.8,1.8-1.8,1.8c-0.6,0-1.2-0.3-1.5-0.9L679.4,470.1z"
-              className="blue-fill"
-            ></path>
-            <path
-              fill="#1C3F94"
-              d="M680.6,466.9c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5c0-0.3-0.2-0.5-0.5-0.5 C680.8,466.4,680.6,466.6,680.6,466.9z"
-              className="blue-fill"
-            ></path>
-            <path
-              fill="#1C3F94"
-              d="M680.9,467.8l-0.1,0.4h-1.1c0,0-0.2,0-0.2,0.2c0,0.2,0.2,0.2,0.2,0.2h1l0,0.3h-1.4c0,0-0.1,0-0.1,0.1 c0,0-0.1,0.1-0.1,0.1l-0.8,1.6c0,0-0.1,0.2,0.1,0.3c0.2,0.1,0.4-0.1,0.4-0.1l0.6-1.2c0,0,0.1-0.1,0.1-0.1c0.1,0,0.1,0,0.1,0 l1.3,0c0,0,0.1,0,0.2-0.1c0.1-0.1,0.1-0.2,0.1-0.2l0.2-1.4c0,0,0-0.3-0.3-0.3C680.9,467.5,680.9,467.8,680.9,467.8z"
-              className="blue-fill"
-            ></path>
           </g>
         </g>
       </g>
@@ -4760,88 +4710,6 @@ const InterchangeCircles: FC = memo(() => {
               d="M438.5,306.1l-0.1,0.4h-1.1c0,0-0.2,0-0.2,0.2c0,0.2,0.2,0.2,0.2,0.2h1l0,0.3H437c0,0-0.1,0-0.1,0.1 c0,0-0.1,0.1-0.1,0.1l-0.8,1.6c0,0-0.1,0.2,0.1,0.3c0.2,0.1,0.4-0.1,0.4-0.1l0.6-1.2c0,0,0-0.1,0.1-0.1c0.1,0,0.1,0,0.1,0 l1.3,0c0,0,0.1,0,0.2-0.1c0.1-0.1,0.1-0.2,0.1-0.2l0.2-1.4c0,0,0-0.3-0.3-0.3C438.6,305.9,438.5,306.1,438.5,306.1z"
               className="blue-fill"
             ></path>
-          </g>
-        </g>
-      </g>
-      <g
-        id="lul-circle_lul-district_lul-victoria_940gzzluvic"
-        data-linestop="victoria"
-      >
-        <rect
-          x="467.1"
-          y="507.9"
-          transform="matrix(0.7072 -0.707 0.707 0.7072 -222.191 482.6406)"
-          width="8.9"
-          height="3.4"
-        ></rect>
-        <rect
-          x="466.9"
-          y="509"
-          transform="matrix(0.707 -0.7072 0.7072 0.707 -222.2234 482.7921)"
-          fill="#FFFFFF"
-          width="9.3"
-          height="1.1"
-          className="white-fill"
-        ></rect>
-        <g id="lul-victoria_940gzzluvic" data-linestop="victoria">
-          <g>
-            <path
-              fill="#1C3F94"
-              d="M475.9,501.6c1.9,0,3.5,1.6,3.5,3.5c0,1.9-1.6,3.5-3.5,3.5c-1.9,0-3.5-1.6-3.5-3.5 C472.4,503.2,473.9,501.6,475.9,501.6z"
-              className="blue-fill"
-            ></path>
-          </g>
-          <g>
-            <g>
-              <path
-                fill="#FFFFFF"
-                d="M474.7,506.1c0.2,0.6,0.7,1,1.3,1c0.7,0,1.3-0.6,1.3-1.3c0-0.4-0.2-0.7-0.4-1l0.1-0.6 c0.5,0.3,0.9,0.9,0.9,1.6c0,1-0.8,1.8-1.8,1.8c-0.7,0-1.2-0.4-1.6-0.9L474.7,506.1z"
-                className="white-fill"
-              ></path>
-              <path
-                fill="#FFFFFF"
-                d="M475.9,502.8c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5c0-0.3-0.2-0.5-0.5-0.5 C476.1,502.3,475.9,502.5,475.9,502.8z"
-                className="white-fill"
-              ></path>
-              <path
-                fill="#FFFFFF"
-                d="M476.2,503.7l-0.1,0.4H475c0,0-0.2,0-0.2,0.3c0,0.2,0.2,0.2,0.2,0.2h1.1l-0.1,0.3h-1.4 c0,0-0.1,0-0.2,0.1c0,0-0.1,0.1-0.1,0.1l-0.8,1.6c0,0-0.1,0.2,0.1,0.3c0.2,0.1,0.4-0.1,0.4-0.1l0.6-1.3c0,0,0.1-0.1,0.1-0.1 c0.1,0,0.1,0,0.1,0l1.3,0c0,0,0.1,0,0.2-0.1c0.1-0.1,0.1-0.2,0.1-0.2l0.2-1.4c0,0,0-0.3-0.3-0.3 C476.3,503.5,476.2,503.7,476.2,503.7z"
-                className="white-fill"
-              ></path>
-            </g>
-          </g>
-        </g>
-        <g id="lul-circle_lul-district_940gzzluvic" data-linestop="victoria">
-          <g>
-            <path
-              fill="#1C3F94"
-              d="M468.8,508.8c1.9,0,3.4,1.5,3.4,3.4c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4 C465.3,510.4,466.9,508.8,468.8,508.8z"
-              className="blue-fill"
-            ></path>
-            <path
-              fill="#FFFFFF"
-              d="M468.8,515.3c-1.7,0-3.1-1.4-3.1-3.1c0-1.7,1.4-3.1,3.1-3.1c1.7,0,3.1,1.4,3.1,3.1 C471.8,513.9,470.4,515.3,468.8,515.3L468.8,515.3z"
-              className="white-fill"
-            ></path>
-          </g>
-          <g>
-            <g>
-              <path
-                fill="#1C3F94"
-                d="M467.6,513.3c0.2,0.5,0.7,0.9,1.2,0.9c0.7,0,1.3-0.6,1.3-1.3c0-0.4-0.2-0.7-0.4-1l0.1-0.6 c0.5,0.3,0.8,0.9,0.8,1.5c0,1-0.8,1.8-1.8,1.8c-0.6,0-1.2-0.3-1.5-0.9L467.6,513.3z"
-                className="blue-fill"
-              ></path>
-              <path
-                fill="#1C3F94"
-                d="M468.8,510c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5c0-0.3-0.2-0.5-0.5-0.5 C469,509.5,468.8,509.7,468.8,510z"
-                className="blue-fill"
-              ></path>
-              <path
-                fill="#1C3F94"
-                d="M469.1,510.9l-0.1,0.4h-1.1c0,0-0.2,0-0.2,0.2c0,0.2,0.2,0.2,0.2,0.2h1l0,0.3h-1.4c0,0-0.1,0-0.1,0.1 c0,0-0.1,0.1-0.1,0.1l-0.8,1.6c0,0-0.1,0.2,0.1,0.3c0.2,0.1,0.4-0.1,0.4-0.1l0.6-1.2c0,0,0.1-0.1,0.1-0.1c0.1,0,0.1,0,0.1,0 l1.3,0c0,0,0.1,0,0.2-0.1c0.1-0.1,0.1-0.2,0.1-0.2l0.2-1.4c0,0,0-0.3-0.3-0.3C469.2,510.7,469.1,510.9,469.1,510.9z"
-                className="blue-fill"
-              ></path>
-            </g>
           </g>
         </g>
       </g>

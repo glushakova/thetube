@@ -242,7 +242,7 @@ const District: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="468.7"
+        x1="468.8"
         y1="513.3"
         x2="448.2"
         y2="513.3"
@@ -266,7 +266,7 @@ const District: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="516.3"
+        x1="516.4"
         y1="513.3"
         x2="489.1"
         y2="513.3"
@@ -367,8 +367,8 @@ const District: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="723.6"
         y1="420.9"
-        x2="714.4"
-        y2="430.1"
+        x2="714.3"
+        y2="430.2"
       />
       <line
         id="district_940gzzluwpl_940gzzlusgn"
@@ -389,7 +389,7 @@ const District: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M775,399.1l-26.4-0.1c-1.8,0-4.2,1-5.4,2.3l-1.7,1.7"
+        d="M774.9,399.1l-26.4-0.1c-1.8,0-4.2,1-5.4,2.3l-1.7,1.7"
       />
       <line
         id="district_940gzzlumed_940gzzlubwr"
@@ -434,7 +434,7 @@ const District: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M875.1,392l-5,5c-1.2,1.2-3.7,2.3-5.4,2.3l-9.9,0"
+        d="M875.1,391.9l-5,5c-1.2,1.2-3.7,2.3-5.4,2.3l-9.9,0"
       />
       <line
         id="district_940gzzluplw_940gzzluupk"
