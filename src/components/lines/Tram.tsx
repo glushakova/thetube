@@ -38,7 +38,7 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M687.6,735.4c0,0-6.7,6.7-7.2,7.3c-1.2,1.2-3.7,2.3-5.5,2.3c-1.6,0-8.6,0-8.6,0"
+        d="M687.7,735.3c0,0-6.7,6.7-7.2,7.3c-1.2,1.2-3.7,2.3-5.5,2.3c-1.6,0-8.6,0-8.6,0"
       />
       <line
         id="tram-tram_940gzzcrkgh_940gzzcrnwa"
@@ -59,10 +59,10 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="858.9"
-        y1="785.7"
-        x2="867.3"
-        y2="794"
+        x1="858.8"
+        y1="785.6"
+        x2="867.4"
+        y2="794.1"
       />
       <line
         id="tram-tram_940gzzcradv_940gzzcrfld"
@@ -83,10 +83,10 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="842.4"
-        y1="769.1"
-        x2="850.6"
-        y2="777.4"
+        x1="842.3"
+        y1="769.0"
+        x2="850.9"
+        y2="777.7"
       />
       <line
         id="tram-tram_940gzzcrcoo_940gzzcrgra"
@@ -107,10 +107,10 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="825.8"
-        y1="752.6"
-        x2="834.1"
-        y2="760.8"
+        x1="825.7"
+        y1="752.5"
+        x2="834.2"
+        y2="760.9"
       />
       <path
         id="tram-tram_940gzzcrsan_940gzzcrloy"
@@ -150,7 +150,7 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M434.3,745h-5.5c-2.1,0-4.6-1-5.8-2.3l-28.6-28.6"
+        d="M434.2,744.9h-5.5c-2.1,0-4.6-1-5.8-2.3l-28.6-28.6"
       />
       <line
         id="tram-tram_940gzzcrmdn_940gzzcrphi"
@@ -185,7 +185,7 @@ const Tram: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="506.5"
         y1="745"
-        x2="480.3"
+        x2="480.2"
         y2="745"
       />
       <line
@@ -231,9 +231,9 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="617.6"
+        x1="617.7"
         y1="745"
-        x2="593.2"
+        x2="593.1"
         y2="745"
       />
       <line
@@ -255,7 +255,7 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="666.2"
+        x1="666.3"
         y1="745"
         x2="642.2"
         y2="745"
@@ -267,8 +267,8 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="715.1"
-        y1="745.15"
+        x1="715.2"
+        y1="745"
         x2="666.2"
         y2="745"
       />
@@ -288,7 +288,7 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="973.8"
+        x1="973.7"
         y1="675.2"
         x2="998.1"
         y2="675.2"
@@ -300,7 +300,7 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="949"
+        x1="948.9"
         y1="675.2"
         x2="973.8"
         y2="675.2"
@@ -333,7 +333,7 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M859.2,703.9l26.5-26.5c1.4-1.4,3.3-2.3,5.5-2.3c0.3,0,3.9,0,8.7,0"
+        d="M859.3,704l26.5-26.5c1.4-1.4,3.3-2.3,5.5-2.3c0.3,0,3.9,0,8.7,0"
       />
       <line
         id="tram-tram_940gzzcrwod_940gzzcrara"
@@ -342,9 +342,9 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="848.7"
-        y1="714.5"
-        x2="859.2"
+        x1="848.6"
+        y1="714.6"
+        x2="859.3"
         y2="704"
       />
       <line
@@ -354,8 +354,8 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="838.2"
-        y1="725"
+        x1="838.1"
+        y1="725.1"
         x2="848.7"
         y2="714.5"
       />
@@ -367,7 +367,7 @@ const Tram: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="827.6"
-        y1="735.5"
+        y1="735.6"
         x2="838.2"
         y2="725"
       />
@@ -401,7 +401,7 @@ const Tram: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="776.8"
         y1="745"
-        x2="792.2"
+        x2="792.3"
         y2="745"
       />
       <line
@@ -411,7 +411,7 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="745.7"
+        x1="745.6"
         y1="745"
         x2="776.8"
         y2="745"
@@ -456,7 +456,7 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="749.7"
+        x1="749.8"
         y1="724.3"
         x2="732.3"
         y2="724.3"
@@ -468,7 +468,7 @@ const Tram: FC = memo(() => {
         strokeWidth="2.3737"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M707.4,724.3H703c-5.7,0-10.4,4.6-10.4,10.4c0,5.7,4.6,10.4,10.4,10.4c0.6,0,11.4,0,11.4,0"
+        d="M707.4,724.3H703c-5.7,0-10.4,4.6-10.4,10.4c0,5.7,4.6,10.4,10.4,10.3c0.6,0,11.4,0,11.4,0"
       />
       <g className="white_line">
         <path
@@ -479,12 +479,12 @@ const Tram: FC = memo(() => {
         <path
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          d="M703,724.2c-5.7,0-10.4,4.6-10.4,10.4c0,5.7,4.6,10.4,10.4,10.4"
+          d="M702.9,724.3c-5.7,0-10.4,4.6-10.4,10.4c0,5.7,4.6,10.4,10.4,10.3"
         />
         <line
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          x1="745.7"
+          x1="745.6"
           y1="745"
           x2="776.8"
           y2="745"
@@ -500,10 +500,10 @@ const Tram: FC = memo(() => {
         <line
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          x1="858.9"
-          y1="785.7"
-          x2="867.3"
-          y2="794"
+          x1="858.8"
+          y1="785.6"
+          x2="867.4"
+          y2="794.1"
         />
         <line
           strokeWidth="0.7795"
@@ -516,10 +516,10 @@ const Tram: FC = memo(() => {
         <line
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          x1="842.4"
-          y1="769.1"
-          x2="850.6"
-          y2="777.4"
+          x1="842.3"
+          y1="769.0"
+          x2="850.9"
+          y2="777.7"
         />
         <line
           strokeWidth="0.7795"
@@ -532,10 +532,10 @@ const Tram: FC = memo(() => {
         <line
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          x1="825.8"
-          y1="752.6"
-          x2="834.1"
-          y2="760.8"
+          x1="825.7"
+          y1="752.5"
+          x2="834.2"
+          y2="760.9"
         />
         <path
           strokeWidth="0.7795"
@@ -558,7 +558,7 @@ const Tram: FC = memo(() => {
         <path
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          d=" M434.3,745h-5.5c-2.1,0-4.6-1-5.8-2.3l-28.6-28.6"
+          d="M434.2,744.9h-5.5c-2.1,0-4.6-1-5.8-2.3l-28.6-28.6"
         />
         <line
           strokeWidth="0.7795"
@@ -571,7 +571,7 @@ const Tram: FC = memo(() => {
         <line
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          x1="480.3"
+          x1="480.2"
           y1="745"
           x2="456.2"
           y2="745"
@@ -581,7 +581,7 @@ const Tram: FC = memo(() => {
           strokeMiterlimit="3.9938"
           x1="506.5"
           y1="745"
-          x2="480.3"
+          x2="480.2"
           y2="745"
         />
         <line
@@ -603,7 +603,7 @@ const Tram: FC = memo(() => {
         <line
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          x1="593.2"
+          x1="593.3"
           y1="745"
           x2="565.6"
           y2="745"
@@ -621,13 +621,13 @@ const Tram: FC = memo(() => {
           strokeMiterlimit="3.9938"
           x1="642.2"
           y1="745"
-          x2="617.6"
+          x2="617.5"
           y2="745"
         />
         <line
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          x1="666.2"
+          x1="666.3"
           y1="745"
           x2="642.2"
           y2="745"
@@ -648,7 +648,7 @@ const Tram: FC = memo(() => {
         <line
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          x1="973.8"
+          x1="973.7"
           y1="675.2"
           x2="998.1"
           y2="675.2"
@@ -666,7 +666,7 @@ const Tram: FC = memo(() => {
           strokeMiterlimit="3.9938"
           x1="924.2"
           y1="675.2"
-          x2="949"
+          x2="949.1"
           y2="675.2"
         />
         <path
@@ -677,21 +677,21 @@ const Tram: FC = memo(() => {
         <path
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          d=" M859.2,703.9l26.5-26.5c1.4-1.4,3.3-2.3,5.5-2.3c0.3,0,3.9,0,8.7,0"
+          d="M859.3,704l26.5-26.5c1.4-1.4,3.3-2.3,5.5-2.3c0.3,0,3.9,0,8.7,0"
         />
         <line
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          x1="848.7"
-          y1="714.5"
-          x2="859.2"
+          x1="848.6"
+          y1="714.6"
+          x2="859.3"
           y2="704"
         />
         <line
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
-          x1="838.2"
-          y1="725"
+          x1="838.1"
+          y1="725.1"
           x2="848.7"
           y2="714.5"
         />
@@ -699,7 +699,7 @@ const Tram: FC = memo(() => {
           strokeWidth="0.7795"
           strokeMiterlimit="3.9938"
           x1="827.6"
-          y1="735.5"
+          y1="735.6"
           x2="838.2"
           y2="725"
         />
@@ -721,7 +721,7 @@ const Tram: FC = memo(() => {
           strokeMiterlimit="3.9938"
           x1="776.8"
           y1="745"
-          x2="792.2"
+          x2="792.3"
           y2="745"
         />
         <line
@@ -794,8 +794,368 @@ const Tram: FC = memo(() => {
         />
       </g>
       <StationIcon
+        x={866.9}
+        y={793.7}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.KingHenrysDrive }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.KingHenrysDrive}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={860.3}
+        y={787.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Fieldway }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Fieldway}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={849.9}
+        y={776.7}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.AddingtonVillage }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.AddingtonVillage}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={843.8}
+        y={770.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.GravelHill }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.GravelHill}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={832.7}
+        y={759.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={225}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.CoombeLane }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.CoombeLane}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={827.2}
+        y={754}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.LloydPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.LloydPark}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={828.8}
+        y={734.4}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Addiscombe }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Addiscombe}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={839.1}
+        y={724.1}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.BlackhorseLane }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.BlackhorseLane}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={849.7}
+        y={713.5}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Woodside }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Woodside}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={861}
+        y={702.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={135}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Arena }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Arena}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={900.9}
+        y={675.15}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.AvenueRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.AvenueRoad}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={949.1}
+        y={675.15}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.AvenueRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.AvenueRoad}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={973.7}
+        y={675.25}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.BeckenhamRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.BeckenhamRoad}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={687.7}
+        y={735.25}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={315}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ReevesCorner }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ReevesCorner}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={749.3}
+        y={724.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WellesleyRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WellesleyRoad}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={706.9}
+        y={724.3}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Centrale }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Centrale}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={383.15}
+        y={671.55}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={90}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.DundonaldRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.DundonaldRoad}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={394.15}
+        y={713.8}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={45}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.MertonPark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.MertonPark}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={808}
+        y={745}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Sandilands }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Sandilands}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={792.3}
+        y={744.97}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={0}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.LebanonRoad }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.LebanonRoad}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={745.3}
+        y={745}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.GeorgeStreet }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.GeorgeStreet}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={713.9}
+        y={745}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.ChurchStreet }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.ChurchStreet}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={666.3}
+        y={745}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WandlePark }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WandlePark}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={641.8}
+        y={745}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.WaddonMarsh }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.WaddonMarsh}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={617.5}
+        y={745}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.AmpereWay }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.AmpereWay}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={593.3}
+        y={745}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.TherapiaLane }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.TherapiaLane}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={565}
+        y={745}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.BeddingtonLane }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.BeddingtonLane}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={506}
+        y={745}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.Mitcham }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.Mitcham}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={480}
+        y={745}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.BelgraveWalk }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.BelgraveWalk}
+        isWithWhiteLine
+      />
+      <StationIcon
+        x={455.7}
+        y={745}
+        strokeWidth={STROKE_WIDTH}
+        rotationAngle={180}
+        onClick={(event) => {
+          dispatch(selectStation({ station: Station.PhippsBridge }));
+          event.stopPropagation();
+        }}
+        isSelected={selectedStation === Station.PhippsBridge}
+        isWithWhiteLine
+      />
+      <StationIcon
         x={998}
-        y={675.1}
+        y={675.25}
         strokeWidth={STROKE_WIDTH}
         rotationAngle={90}
         onClick={(event) => {
@@ -807,7 +1167,7 @@ const Tram: FC = memo(() => {
       />
       <StationIcon
         x={924.2}
-        y={675.1}
+        y={675.25}
         strokeWidth={STROKE_WIDTH}
         rotationAngle={180}
         onClick={(event) => {
@@ -831,7 +1191,7 @@ const Tram: FC = memo(() => {
       />
       <StationIcon
         x={776.8}
-        y={744.9}
+        y={745}
         strokeWidth={STROKE_WIDTH}
         rotationAngle={180}
         onClick={(event) => {
@@ -843,7 +1203,7 @@ const Tram: FC = memo(() => {
       />
       <StationIcon
         x={532.8}
-        y={744.9}
+        y={745}
         strokeWidth={STROKE_WIDTH}
         rotationAngle={180}
         onClick={(event) => {
@@ -855,7 +1215,7 @@ const Tram: FC = memo(() => {
       />
       <StationIcon
         x={434.35}
-        y={744.9}
+        y={745}
         strokeWidth={STROKE_WIDTH}
         rotationAngle={180}
         onClick={(event) => {
