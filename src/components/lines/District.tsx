@@ -399,9 +399,9 @@ const District: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="804.9"
-        y1="399.2"
+        y1="399.1"
         x2="775"
-        y2="399.1"
+        y2="399.05"
       />
       <line
         id="district_940gzzlubwr_940gzzlubbb"
@@ -411,9 +411,9 @@ const District: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="833.3"
-        y1="399.2"
+        y1="399.1"
         x2="804.9"
-        y2="399.2"
+        y2="399.1"
       />
       <line
         id="district_940gzzlubbb_940gzzluwhm"
@@ -423,9 +423,9 @@ const District: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="854.9"
-        y1="399.2"
+        y1="399.1"
         x2="833.3"
-        y2="399.2"
+        y2="399.1"
       />
       <path
         id="district_940gzzluwhm_940gzzluplw"
@@ -434,7 +434,7 @@ const District: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d="M875.1,391.9l-5,5c-1.2,1.2-3.7,2.3-5.4,2.3l-9.9,0"
+        d="M875.1,391.8l-5,5c-1.2,1.2-3.7,2.3-5.4,2.3l-9.9,0"
       />
       <line
         id="district_940gzzluplw_940gzzluupk"
@@ -821,46 +821,6 @@ const District: FC = memo(() => {
           y="428"
           transform="matrix(0.7071 -0.7071 0.7071 0.7071 -94.3275 629.7523)"
           fill="#00853F"
-          width="1.5"
-          height="1.5"
-        />
-      </g>
-      <g id="district_lul-hammersmith-city_940gzzluplw">
-        <rect
-          id="district_940gzzluplw"
-          x="875.2"
-          y="393.1"
-          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -21.9474 734.7179)"
-          fill="#00853F"
-          width="1.5"
-          height="1.5"
-        />
-        <rect
-          id="lul-hammersmith-city_940gzzluplw"
-          x="873.6"
-          y="391.5"
-          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -21.2688 733.1571)"
-          fill="#F386A1"
-          width="1.5"
-          height="1.5"
-        />
-      </g>
-      <g id="district_lul-hammersmith-city_940gzzluupk">
-        <rect
-          id="district_940gzzluupk"
-          x="888"
-          y="380.3"
-          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -9.1234 740.0315)"
-          fill="#00853F"
-          width="1.5"
-          height="1.5"
-        />
-        <rect
-          id="lul-hammersmith-city_940gzzluupk"
-          x="886.4"
-          y="378.7"
-          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -8.4602 738.4303)"
-          fill="#F386A1"
           width="1.5"
           height="1.5"
         />

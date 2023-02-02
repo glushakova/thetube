@@ -677,7 +677,7 @@ const StationNames: FC = memo(() => {
         station={Station.Harlesden}
       />
       <StationTextName
-        transform="matrix(1 0 0 1 273.5 325.4339)"
+        transform="matrix(1 0 0 1 273.5 324.9339)"
         station={Station.WillesdenJunction}
       />
       <StationTextName station={Station.WembleyCentral} tag={"g"}>
@@ -1091,7 +1091,7 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.BowRoad}
-        transform="matrix(1 0 0 1 304.127 474.1543)"
+        transform="matrix(1 0 0 1 304.127 473.5543)"
       >
         <tspan x="0" y="0">
           Shepherd’s
@@ -1122,7 +1122,7 @@ const StationNames: FC = memo(() => {
       />
       <StationTextName
         station={Station.WoodLane}
-        transform="matrix(1 0 0 1 304.3044 465.3506)"
+        transform="matrix(1 0 0 1 304.3044 463.3506)"
       />
       <StationTextName
         station={Station.Hammersmith}

@@ -606,18 +606,6 @@ const Central: FC = memo(() => {
         isInterchange
       />
       <StationIcon
-        x={357.8}
-        y={452}
-        strokeWidth={STROKE_WIDTH}
-        rotationAngle={0}
-        onClick={(event) => {
-          dispatch(selectStation({ station: Station.ShepherdsBush }));
-          event.stopPropagation();
-        }}
-        isSelected={selectedStation === Station.ShepherdsBush}
-        isInterchange
-      />
-      <StationIcon
         x={324.1}
         y={452}
         strokeWidth={STROKE_WIDTH}

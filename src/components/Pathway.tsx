@@ -151,7 +151,9 @@ const Pathway: FC = memo(() => {
         id="OSI_32_"
         className={classNames("pathway", {
           disabled: !(
-            selectedStation === Station.WestHampstead || stationsAndLinesActive
+            selectedStation === Station.WestHampstead ||
+            selectedStation === Station.WestHampsteadJubilee ||
+            stationsAndLinesActive
           ),
         })}
       >
@@ -300,7 +302,9 @@ const Pathway: FC = memo(() => {
         id="OSI_27_"
         className={classNames("pathway", {
           disabled: !(
-            selectedStation === Station.ShepherdsBush || stationsAndLinesActive
+            selectedStation === Station.ShepherdsBush ||
+            selectedStation === Station.ShepherdsBushOverground ||
+            stationsAndLinesActive
           ),
         })}
       >
@@ -386,7 +390,9 @@ const Pathway: FC = memo(() => {
         id="OSI_22_"
         className={classNames("pathway", {
           disabled: !(
-            selectedStation === Station.Shadwell || stationsAndLinesActive
+            selectedStation === Station.Shadwell ||
+            selectedStation === Station.ShadwellDLR ||
+            stationsAndLinesActive
           ),
         })}
       >
@@ -412,7 +418,12 @@ const Pathway: FC = memo(() => {
           height="1.4"
         />
       </g>
-      <g id="OSI_00000163049332414455016800000005539418339141581191_">
+      <g
+        id="OSI_00000163049332414455016800000005539418339141581191_"
+        className={classNames("pathway", {
+          disabled: !stationsAndLinesActive,
+        })}
+      >
         <rect
           x="800.9"
           y="400.4"
@@ -655,7 +666,9 @@ const Pathway: FC = memo(() => {
         id="OSI_55_"
         className={classNames("pathway", {
           disabled: !(
-            selectedStation === Station.WestCroydon || stationsAndLinesActive
+            selectedStation === Station.WestCroydon ||
+            selectedStation === Station.WestCroydonTram ||
+            stationsAndLinesActive
           ),
         })}
       >

@@ -142,7 +142,7 @@ const Metropolitan: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M645.7,425.2h40.7c1.5,0,2.9,0.6,3.9,1.6c1,1,1.6,2.4,1.6,3.9v15.7"
+        d="M645.7,425.1h40.7c1.5,0,2.9,0.6,3.9,1.5c1,1,1.8,2.4,1.8,3.9v15.9"
       />
       <line
         id="metropolitan_940gzzlubbn_940gzzlumgt_00000167392832050413192100000011799457991165312406_"
@@ -163,7 +163,7 @@ const Metropolitan: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M624.9,421.5l0.7,0.8c1.9,1.9,4.4,2.9,7.1,2.9h3.9h0.4h8.8"
+        d=" M625.0,421.4l0.7,0.8c1.9,1.9,4.4,2.9,7.1,2.9h3.9h0.4h8.8"
       />
       <line
         id="metropolitan_940gzzlufcn_940gzzlubbn"
@@ -184,7 +184,7 @@ const Metropolitan: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M578,383.6l6.7,0c1.5,0,2.9,0.6,3.9,1.6l9.9,9.9"
+        d=" M578,383.5l6.7,0c1.5,0,2.9,0.6,3.9,1.6l9.9,9.9"
       />
       <line
         id="metropolitan_940gzzluesq_940gzzluksx"
@@ -194,9 +194,9 @@ const Metropolitan: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="524.8"
-        y1="383.6"
+        y1="383.5"
         x2="578"
-        y2="383.6"
+        y2="383.5"
       />
       <line
         id="metropolitan_940gzzlugps_940gzzluesq"
@@ -206,9 +206,9 @@ const Metropolitan: FC = memo(() => {
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
         x1="491.7"
-        y1="383.6"
+        y1="383.5"
         x2="526.3"
-        y2="383.6"
+        y2="383.5"
       />
       <path
         id="metropolitan_940gzzlubst_940gzzlugps"
@@ -217,7 +217,7 @@ const Metropolitan: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M472.8,380.6l0.7,0.7c1.2,1.2,3.8,2.1,5.4,2.3l14.2,0"
+        d="M472.8,380.5l0.7,0.7c1.2,1.2,3.8,2.1,5.4,2.3l14.2,0"
       />
       <line
         id="metropolitan_940gzzlufyr_940gzzlubst"

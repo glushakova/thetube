@@ -155,7 +155,7 @@ const HammersmithCity: FC = memo(() => {
         strokeWidth="2.2709"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        x1="615"
+        x1="614.9"
         y1="405.2"
         x2="628.8"
         y2="419.1"
@@ -169,7 +169,7 @@ const HammersmithCity: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="601.5"
         y1="391.7"
-        x2="615"
+        x2="614.9"
         y2="405.2"
       />
       <path

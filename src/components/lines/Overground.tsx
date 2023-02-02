@@ -462,7 +462,7 @@ const Overground: FC = memo(() => {
         strokeMiterlimit="3.9938"
         x1="377.4"
         y1="319.3"
-        x2="349.6"
+        x2="349.3"
         y2="319.3"
         className="disrupted"
       />
@@ -734,7 +734,7 @@ const Overground: FC = memo(() => {
         strokeWidth="2.2707"
         strokeLinejoin="round"
         strokeMiterlimit="3.9938"
-        d=" M349.6,319.3h-18.2h-1h-1.7c-1.8,0-4.2,1-5.4,2.3"
+        d="M349.3,319.3h-18.2h-1h-1.7c-1.8,0-4.2,1-5.3,2.3"
         className="disrupted"
       />
       <path
