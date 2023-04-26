@@ -394,10 +394,10 @@ const Bakerloo: FC = memo(() => {
         strokeWidth={STROKE_WIDTH}
         rotationAngle={0}
         onClick={(event) => {
-          dispatch(selectStation({ station: Station.EdgwareRoad }));
+          dispatch(selectStation({ station: Station.EdgwareRoadBakerloo }));
           event.stopPropagation();
         }}
-        isSelected={selectedStation === Station.EdgwareRoad}
+        isSelected={selectedStation === Station.EdgwareRoadBakerloo}
       />
       <StationIcon
         x={482.4}

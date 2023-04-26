@@ -1,0 +1,116 @@
+.search {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    left: 0;
+    padding: 18px 12px 0;
+}
+
+.search-textField {
+    position: relative;
+    cursor: text;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-inputBase {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.search-input {
+    display: block;
+    width: 100%;
+    min-width: 30px;
+    height: 22px;
+    padding: 8px 50px 8px 13px;
+    border: 1px solid;
+    border-radius: 4px 4px 0 0;
+    animation-duration: 10ms;
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    opacity: 1;
+    outline: none;
+}
+
+.search-input-border {
+    border-radius: 4px;
+}
+
+.search-button {
+    position: absolute;
+    right: 9px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    overflow: visible;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 3px;
+    width: 28px;
+    height: 28px;
+}
+
+.search-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.search-buttonRotate svg{
+    transform: rotate(180deg);
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.suggestion {
+    border: none;
+    font-size: 12px;
+    padding: 13px 12px;
+    cursor: pointer;
+}
+
+.suggestion:hover,
+.suggestion.active {
+    background-color: #f2f2f2;
+}
+
+.suggestions-notFound{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding: 13px 15px;
+}
+
+.suggestions-notFound span {
+    font-size: 16px;
+}
+
+.suggestions-notFound p {
+    font-size: 12px;
+    margin: 10px 0 0 0;
+}
+
+.displayNone {
+    display: none
+}

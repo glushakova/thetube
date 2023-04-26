@@ -12,7 +12,7 @@ export enum Line {
   Circle = "Circle",
   Metropolitan = "Metropolitan",
   Overground = "Overground",
-  HammersmithCity = "HammersmithСity",
+  HammersmithCity = "HammersmithCity",
   Tram = "Tram",
   CloudCableCar = "CloudCableCar",
 }
@@ -76,7 +76,6 @@ export enum Station {
   CoventGarden = "CoventGarden",
   Vauxhall = "Vauxhall",
   Pimlico = "Pimlico",
-  EdgwareRoud = "EdgwareRoud",
   Marylebone = "Marylebone",
   Upminster = "Upminster",
   UpminsterBridge = "UpminsterBridge",
@@ -691,17 +690,8 @@ export const LinesByStation: Record<Station, Set<Line>> = {
   [Station.Vauxhall]: new Set([Line.Victoria]),
   [Station.Pimlico]: new Set([Line.Victoria]),
   [Station.Brixton]: new Set([Line.Victoria]),
-  [Station.TottenhamHale]: new Set([Line.Victoria]),
-  [Station.Vauxhall]: new Set([Line.Victoria]),
-  [Station.Pimlico]: new Set([Line.Victoria]),
-  [Station.Brixton]: new Set([Line.Victoria]),
-  [Station.TottenhamHale]: new Set([Line.Victoria]),
-  [Station.Vauxhall]: new Set([Line.Victoria]),
-  [Station.Pimlico]: new Set([Line.Victoria]),
-  [Station.Brixton]: new Set([Line.Victoria]),
 
   [Station.Marylebone]: new Set([Line.Bakerloo]),
-  [Station.EdgwareRoud]: new Set([Line.Bakerloo]),
   [Station.LambethNorth]: new Set([Line.Bakerloo]),
   [Station.RegentsPark]: new Set([Line.Bakerloo]),
   [Station.MaidaVale]: new Set([Line.Bakerloo]),
@@ -1410,4 +1400,12 @@ export const multiWordStationNames: Partial<Record<Station, string>> = {
   [Station.LondonFields]: "London Fields",
   [Station.CambridgeHeath]: "Cambridge Heath",
   [Station.HighamsPark]: "Highams Park",
+  [Station.TottenhamHale]: "Tottenham Hale",
+};
+
+export const multiWordLineNames: Partial<Record<Line, string>> = {
+  [Line.HammersmithCity]: "Hammersmith & City",
+  [Line.Waterloo]: "Waterloo & City",
+  [Line.Elizabeth]: "Elizabeth line",
+  [Line.CloudCableCar]: "IFS Cloud Cable Car",
 };

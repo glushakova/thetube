@@ -18,26 +18,20 @@ import {
   Tram,
 } from "./lines";
 
-import { Line, Station } from "../config";
-import InterchangeCircles from "./symbol/InterchangeCircles";
-import StationNames from "./symbol/StationNames";
-import River from "./details/River";
+import InterchangeCircles from "./stations/InterchangeCircles";
+import StationNames from "./stations/StationNames";
 import Pathway from "./Pathway";
-import KeyToLines from "./KeyToLines";
+
+import { River, CableCar } from "./backgroundItems";
 
 import "./Map.css";
-import CableCar from "./details/CableCar";
-
-interface SelectedItem {
-  name: Line | Station;
-  type: "line" | "station";
-}
+import { StationModal } from "./stations/StationModal";
 
 function Map() {
   return (
-    <div className="Map">
+    <div className="map-wrapper">
+      <StationModal />
       <svg
-        id="status-map"
         version="1.1"
         x="0px"
         y="0px"
@@ -45,7 +39,6 @@ function Map() {
         height="907.087px"
         viewBox="64.094 122.25 985.889 657.072"
         enableBackground="new 0 0 1247.244 907.087"
-        className="grey-disruptions"
         data-margin-width="7.5"
         data-margin-height="44.99946842628523"
       >
@@ -70,7 +63,6 @@ function Map() {
         <CableCar />
         <InterchangeCircles />
         <Pathway />
-        <KeyToLines />
       </svg>
     </div>
   );
