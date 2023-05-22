@@ -6,6 +6,7 @@ import React, {
   useState,
   useRef,
   KeyboardEvent,
+  useCallback,
 } from "react";
 import classNames from "classnames";
 import "./style.css";
@@ -18,9 +19,9 @@ const allStation = Object.values(Station);
 
 const SearchInput: FC = memo(() => {
   const [value, setValue] = useState<string>("");
-  const [active, setActive] = useState<number | undefined>();
+  const [active, setActive] = useState<number>(0);
   const listRef = useRef<HTMLDivElement>(null);
-  const [isListOpen, setIsListOpen] = useState<boolean>(true);
+  const [isListOpen, setIsListOpen] = useState<boolean>(false);
   const dispatch = useAppDispatch();
 
   const filteredSuggestions = useMemo(() => {
@@ -39,38 +40,56 @@ const SearchInput: FC = memo(() => {
   }, [filteredSuggestions]);
 
   useEffect(() => {
-    setActive(undefined);
+    setActive(0);
   }, [filteredSuggestions]);
 
+  const handleStationChange = useCallback((suggestion: Station) => {
+    dispatch(selectStation({ station: suggestion }));
+    setValue("");
+  }, []);
+
   const onKeyDown = (event: KeyboardEvent) => {
+    if (filteredSuggestions.length === 0) {
+      return;
+    }
+
     switch (event.key) {
       case "ArrowUp": {
         setActive((prevActive) => {
-          if (prevActive === undefined || prevActive === 0) {
-            return filteredSuggestions.length - 1;
-          }
-          return prevActive - 1;
+          return prevActive === 0
+            ? filteredSuggestions.length - 1
+            : prevActive - 1;
         });
         break;
       }
       case "ArrowDown": {
         setActive((prevActive) => {
-          if (
-            prevActive === undefined ||
-            prevActive === filteredSuggestions.length
-          ) {
-            return 0;
-          }
-          return prevActive + 1;
+          return prevActive === filteredSuggestions.length - 1
+            ? 0
+            : prevActive + 1;
         });
         break;
       }
-
       case "Enter": {
         if (active !== undefined) {
-          dispatch(selectStation({ station: filteredSuggestions[active] }));
+          handleStationChange(filteredSuggestions[active]);
         }
+        setIsListOpen(false);
+        break;
       }
+    }
+
+    const suggestionsList = listRef.current;
+
+    const selectedSuggestionElement = suggestionsList?.childNodes[
+      active
+    ] as HTMLElement;
+
+    if (selectedSuggestionElement) {
+      selectedSuggestionElement.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
     }
   };
 
@@ -105,10 +124,7 @@ const SearchInput: FC = memo(() => {
                   className={classNames("suggestion", {
                     active: index === active,
                   })}
-                  onClick={() => {
-                    dispatch(selectStation({ station: suggestion }));
-                    setValue("");
-                  }}
+                  onClick={() => handleStationChange(suggestion)}
                 >
                   {(suggestion && multiWordStationNames[suggestion]) ||
                     suggestion}
